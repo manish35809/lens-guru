@@ -1,115 +1,130 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+export default function FramesPage() {
+  const [prescription, setPrescription] = useState({
+    RE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
+    LE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
+  });
+  const [isSaved, setIsSaved] = useState(false);
+  const router = useRouter();
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  useEffect(() => {
+    const saved = localStorage.getItem("prescription");
+    if (saved) {
+      setPrescription(JSON.parse(saved));
+      setIsSaved(true);
+    }
+  }, []);
 
-export default function Home() {
+  const handleChange = (eye, field, value) => {
+    setPrescription((prev) => ({
+      ...prev,
+      [eye]: { ...prev[eye], [field]: value },
+    }));
+    setIsSaved(false);
+  };
+
+  const isValidPrescription = () => {
+    const { RE, LE } = prescription;
+    const fields = ["SPH", "CYL", "AXIS", "ADD"];
+    return fields.some((field) => RE[field] || LE[field]);
+  };
+
+  const hasAddition = () => {
+    const addRE = prescription.RE.ADD?.trim();
+    const addLE = prescription.LE.ADD?.trim();
+    return addRE !== "" || addLE !== "";
+  };
+
+  const savePrescription = () => {
+    if (!isValidPrescription()) {
+      alert("Invalid prescription. Please enter at least one value.");
+      return;
+    }
+    localStorage.setItem("prescription", JSON.stringify(prescription));
+    setIsSaved(true);
+    alert("Prescription saved!");
+  };
+
+  const clearPrescription = () => {
+    const empty = {
+      RE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
+      LE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
+    };
+    setPrescription(empty);
+    localStorage.removeItem("prescription");
+    setIsSaved(false);
+  };
+
+  const goToLensType = () => {
+    if (hasAddition()) {
+      router.push("/mf");
+    } else {
+      router.push("/sv");
+    }
+  };
+
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <main className="min-h-screen flex flex-col justify-between items-center bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-800 p-6">
+      {/* Logo and Heading */}
+      <div className="text-center mt-12">
+        <img
+          src="/logo.png"
+          alt="Lens Guru Logo"
+          className="mx-auto w-72 h-36 mb-4 rounded-3xl border-2 border-amber-100 shadow-2xl"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </div>
+
+      {/* Prescription Form */}
+      <div className="w-full max-w-xl bg-white rounded-2xl shadow-lg p-6 mt-6 border border-gray-200">
+        <h2 className="text-2xl font-semibold text-center text-blue-600 mb-4">PRESCRIPTION POWER</h2>
+        {["RE", "LE"].map((eye) => (
+          <div key={eye} className="mb-4">
+            <h3 className="font-bold text-lg text-gray-700 mb-2">{eye}:</h3>
+            <div className="grid grid-cols-4 gap-4">
+              {["SPH", "CYL", "AXIS", "ADD"].map((field) => (
+                <input
+                  key={field}
+                  type="text"
+                  placeholder={field}
+                  value={prescription[eye][field]}
+                  onChange={(e) => handleChange(eye, field, e.target.value)}
+                  className="p-2 border border-gray-300 rounded-xl shadow-sm text-center"
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+        <div className="flex justify-between mt-6">
+          <button
+            onClick={savePrescription}
+            className="px-6 py-3 rounded-xl bg-blue-500 text-white hover:bg-blue-600 shadow-md"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Save
+          </button>
+          <button
+            onClick={clearPrescription}
+            className="px-6 py-3 rounded-xl bg-red-500 text-white hover:bg-red-600 shadow-md"
           >
-            Read our docs
-          </a>
+            Clear
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+
+      {/* Next Button */}
+      {isSaved && (
+        <div className="mt-6">
+          <button
+            onClick={goToLensType}
+            className="px-6 py-3 rounded-xl bg-green-500 text-white hover:bg-green-600 shadow-md"
+          >
+            Next ➡
+          </button>
+        </div>
+      )}
+
+    </main>
   );
 }
