@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
+import { triggerStorageUpdate } from "@/components/Header";
 
 export default function FramesPage() {
   const [prescription, setPrescription] = useState({
@@ -11,6 +11,7 @@ export default function FramesPage() {
   const router = useRouter();
 
   useEffect(() => {
+    localStorage.removeItem("lensSelection");
     const saved = localStorage.getItem("prescription");
     if (saved) {
       setPrescription(JSON.parse(saved));
@@ -45,6 +46,7 @@ export default function FramesPage() {
     }
     localStorage.setItem("prescription", JSON.stringify(prescription));
     setIsSaved(true);
+    triggerStorageUpdate(); // Add this line to update header
     alert("Prescription saved!");
   };
 
@@ -56,6 +58,7 @@ export default function FramesPage() {
     setPrescription(empty);
     localStorage.removeItem("prescription");
     setIsSaved(false);
+    triggerStorageUpdate(); // Add this line to update header
   };
 
   const goToLensType = () => {
@@ -67,18 +70,11 @@ export default function FramesPage() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col justify-between items-center bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-800 p-6">
-      {/* Logo and Heading */}
-      <div className="text-center mt-12">
-        <img
-          src="/logo.png"
-          alt="Lens Guru Logo"
-          className="mx-auto w-72 h-36 mb-4 rounded-3xl border-2 border-amber-100 shadow-2xl"
-        />
-      </div>
+    <main className=" flex flex-col justify-between items-center bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-800 p-6">
+      
 
       {/* Prescription Form */}
-      <div className="w-full max-w-xl bg-white rounded-2xl shadow-lg p-6 mt-6 border border-gray-200">
+      <div className="w-full max-w-xl bg-white rounded-2xl shadow-lg p-4 mt-6 border border-gray-200">
         <h2 className="text-2xl font-semibold text-center text-blue-600 mb-4">PRESCRIPTION POWER</h2>
         {["RE", "LE"].map((eye) => (
           <div key={eye} className="mb-4">

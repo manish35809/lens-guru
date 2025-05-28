@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { triggerStorageUpdate } from "@/components/Header";
 
 export default function LensTypePage() {
   const router = useRouter();
@@ -20,7 +21,13 @@ export default function LensTypePage() {
 
   const saveAndRedirect = (selection) => {
     localStorage.setItem("lensSelection", JSON.stringify(selection));
-    router.push("/frames");
+    triggerStorageUpdate(); // Add this line to update header
+    
+    if (selection === "sv-far-contact" || selection === "mf-contact") {
+      router.push(`/${lensType}/contact-lenses`);
+    } else {
+      router.push(`/${lensType}/frameType`);
+    }
   };
 
   const renderInfo = () => {
@@ -30,7 +37,7 @@ export default function LensTypePage() {
           <div className="bg-white p-6 rounded-2xl shadow-lg mt-4 text-left">
             <h2 className="text-xl font-bold text-blue-700 mb-2">Near Vision Lenses</h2>
             <Image
-              src="https://images.myopiaprofile.com/tr:w-1200,h-675,fo-auto/api/KnowledgeArticle/4864cf87-7fbd-4666-6992-08db1612fe23/download/HeroImage/a1b95f30-fbc3-4a73-a939-08db1612fd32"
+              src="https://www.verywellhealth.com/thmb/0owMzY0zAzM2RiZTg2ZjY3ZDA5OTY4OGYzMDQwZGY3ZDZhNTA4Mzk4Mw==/near-vision-56a134da5f9b58b7d0bc709f.jpg"
               alt="Near Vision Example"
               width={400}
               height={200}
@@ -66,6 +73,12 @@ export default function LensTypePage() {
               className="px-6 py-3 bg-purple-500 text-white rounded-xl shadow hover:bg-purple-600"
             >
               Select Far Vision Lens
+            </button>
+            <button
+              onClick={() => saveAndRedirect("sv-far-contact")}
+              className="px-6 py-3 bg-indigo-500 text-white rounded-xl shadow hover:bg-indigo-600 mt-4"
+            >
+              Select Far Vision Contact Lens
             </button>
           </div>
         );
@@ -130,6 +143,12 @@ export default function LensTypePage() {
                     className="px-6 py-3 bg-green-500 text-white rounded-xl shadow hover:bg-green-600"
                   >
                     Select Progressive Lens
+                  </button>
+                  <button
+                    onClick={() => saveAndRedirect("mf-contact")}
+                    className="px-6 py-3 bg-green-500 text-white rounded-xl shadow hover:bg-green-600"
+                  >
+                    Select Multifocal Contact Lens
                   </button>
                 </div>
               )}
