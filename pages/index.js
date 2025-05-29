@@ -71,11 +71,9 @@ export default function FramesPage() {
 
   return (
     <main className=" flex flex-col justify-between items-center bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-800 p-6">
-      
-
-      {/* Prescription Form */}
-      <div className="w-full max-w-xl bg-white rounded-2xl shadow-lg p-4 mt-6 border border-gray-200">
-        <h2 className="text-2xl font-semibold text-center text-blue-600 mb-4">PRESCRIPTION POWER</h2>
+    {/* Prescription Form */}
+      <div className="w-full max-w-xl bg-white rounded-2xl shadow-lg p-4 my-4 border border-gray-200">
+        <h2 className="text-2xl font-semibold text-center text-blue-600 mb-2">PRESCRIPTION POWER</h2>
         {["RE", "LE"].map((eye) => (
           <div key={eye} className="mb-4">
             <h3 className="font-bold text-lg text-gray-700 mb-2">{eye}:</h3>
@@ -111,7 +109,7 @@ export default function FramesPage() {
 
       {/* Next Button */}
       {isSaved && (
-        <div className="mt-6">
+        <div className="mt-2">
           <button
             onClick={goToLensType}
             className="px-6 py-3 rounded-xl bg-green-500 text-white hover:bg-green-600 shadow-md"

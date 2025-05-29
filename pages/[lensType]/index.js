@@ -22,7 +22,7 @@ export default function LensTypePage() {
   const saveAndRedirect = (selection) => {
     localStorage.setItem("lensSelection", JSON.stringify(selection));
     triggerStorageUpdate(); // Add this line to update header
-    
+
     if (selection === "sv-far-contact" || selection === "mf-contact") {
       router.push(`/${lensType}/contact-lenses`);
     } else {
@@ -35,7 +35,9 @@ export default function LensTypePage() {
       case "near":
         return (
           <div className="bg-white p-6 rounded-2xl shadow-lg mt-4 text-left">
-            <h2 className="text-xl font-bold text-blue-700 mb-2">Near Vision Lenses</h2>
+            <h2 className="text-xl font-bold text-blue-700 mb-2">
+              Near Vision Lenses
+            </h2>
             <Image
               src="https://www.verywellhealth.com/thmb/0owMzY0zAzM2RiZTg2ZjY3ZDA5OTY4OGYzMDQwZGY3ZDZhNTA4Mzk4Mw==/near-vision-56a134da5f9b58b7d0bc709f.jpg"
               alt="Near Vision Example"
@@ -44,7 +46,8 @@ export default function LensTypePage() {
               className="rounded-xl mb-3"
             />
             <p className="mb-4 text-gray-600">
-              Near vision lenses help you see objects that are close, like books or mobile screens.
+              Near vision lenses help you see objects that are close, like books
+              or mobile screens.
             </p>
             <button
               onClick={() => saveAndRedirect("sv-near")}
@@ -57,7 +60,9 @@ export default function LensTypePage() {
       case "far":
         return (
           <div className="bg-white p-6 rounded-2xl shadow-lg mt-4 text-left">
-            <h2 className="text-xl font-bold text-purple-700 mb-2">Far Vision Lenses</h2>
+            <h2 className="text-xl font-bold text-purple-700 mb-2">
+              Far Vision Lenses
+            </h2>
             <Image
               src="https://cdn.allaboutvision.com/images/illustration-distance-vision-720x532.jpg"
               alt="Far Vision Example"
@@ -66,7 +71,8 @@ export default function LensTypePage() {
               className="rounded-xl mb-3"
             />
             <p className="mb-4 text-gray-600">
-              Far vision lenses improve clarity for distant objects like road signs or television screens.
+              Far vision lenses improve clarity for distant objects like road
+              signs or television screens.
             </p>
             <button
               onClick={() => saveAndRedirect("sv-far")}
@@ -85,9 +91,12 @@ export default function LensTypePage() {
       case "combined":
         return (
           <div className="text-left bg-white p-6 rounded-2xl shadow-lg mt-4">
-            <h2 className="text-xl font-bold text-pink-700 mb-2">Combined Vision Lenses</h2>
+            <h2 className="text-xl font-bold text-pink-700 mb-2">
+              Combined Vision Lenses
+            </h2>
             <p className="text-gray-600 mb-4">
-              Combined lenses offer both near and far vision in a single lens. Choose from:
+              Combined lenses offer both near and far vision in a single lens.
+              Choose from:
             </p>
             <div className="flex flex-col gap-4">
               <button
@@ -105,7 +114,9 @@ export default function LensTypePage() {
 
               {comboType === "bifocal" && (
                 <div className="mt-4">
-                  <h3 className="font-bold text-blue-700 mb-2">Bifocal Lenses</h3>
+                  <h3 className="font-bold text-blue-700 mb-2">
+                    Bifocal Lenses
+                  </h3>
                   <Image
                     src="https://i0.wp.com/images.ctfassets.net/6jpeaipefazr/3mKqY44fpJH0a5Ce8kpFGO/b88a20cf5c42c9d861bd96eaa4d3a3e8/Bifocal.jpg"
                     alt="Bifocal Lenses"
@@ -114,7 +125,8 @@ export default function LensTypePage() {
                     className="rounded-xl mb-3"
                   />
                   <p className="text-gray-600 mb-4">
-                    Bifocal lenses have two distinct optical zones for distance and reading. You can visibly see the division.
+                    Bifocal lenses have two distinct optical zones for distance
+                    and reading. You can visibly see the division.
                   </p>
                   <button
                     onClick={() => saveAndRedirect("mf-bifocal")}
@@ -127,7 +139,9 @@ export default function LensTypePage() {
 
               {comboType === "progressive" && (
                 <div className="mt-4">
-                  <h3 className="font-bold text-green-700 mb-2">Progressive Lenses</h3>
+                  <h3 className="font-bold text-green-700 mb-2">
+                    Progressive Lenses
+                  </h3>
                   <Image
                     src="https://cdn.allaboutvision.com/images/illustration-progressive-lens-720x532.jpg"
                     alt="Progressive Lenses"
@@ -136,7 +150,9 @@ export default function LensTypePage() {
                     className="rounded-xl mb-3"
                   />
                   <p className="text-gray-600 mb-4">
-                    Progressive lenses offer a smooth, gradual change in prescription strength for near, intermediate, and far distances — no visible lines.
+                    Progressive lenses offer a smooth, gradual change in
+                    prescription strength for near, intermediate, and far
+                    distances — no visible lines.
                   </p>
                   <button
                     onClick={() => saveAndRedirect("mf-progressive")}
@@ -163,15 +179,11 @@ export default function LensTypePage() {
   return (
     <main className="min-h-screen p-8 bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-800">
       <div className="max-w-2xl mx-auto text-center">
-        <h1 className="text-3xl font-bold text-blue-700 mb-4">Choose Your Vision Type</h1>
+        <h1 className="text-3xl font-bold text-blue-700 mb-4">
+          Choose Your Vision Type
+        </h1>
         {lensType === "sv" || lensType === "mf" ? (
           <div className="flex flex-col gap-4 mb-6">
-            <button
-              onClick={() => handleSelect("near")}
-              className="px-6 py-4 rounded-xl bg-yellow-100 hover:bg-yellow-200 text-yellow-700 shadow"
-            >
-              👓 Near Vision
-            </button>
             <button
               onClick={() => handleSelect("far")}
               className="px-6 py-4 rounded-xl bg-purple-100 hover:bg-purple-200 text-purple-700 shadow"
@@ -179,12 +191,20 @@ export default function LensTypePage() {
               🔭 Far Vision
             </button>
             {lensType === "mf" && (
-              <button
-                onClick={() => handleSelect("combined")}
-                className="px-6 py-4 rounded-xl bg-pink-100 hover:bg-pink-200 text-pink-700 shadow"
-              >
-                🔁 Combined (Near + Far)
-              </button>
+              <>
+                <button
+                  onClick={() => handleSelect("near")}
+                  className="px-6 py-4 rounded-xl bg-yellow-100 hover:bg-yellow-200 text-yellow-700 shadow"
+                >
+                  👓 Near Vision
+                </button>
+                <button
+                  onClick={() => handleSelect("combined")}
+                  className="px-6 py-4 rounded-xl bg-pink-100 hover:bg-pink-200 text-pink-700 shadow"
+                >
+                  🔁 Combined (Near + Far)
+                </button>
+              </>
             )}
           </div>
         ) : (
