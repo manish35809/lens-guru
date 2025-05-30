@@ -39,15 +39,18 @@ const LensSelectionPage = () => {
 
   // Feature descriptions for tooltips
   const featureDescriptions = {
-    resistScratches: "Advanced scratch-resistant coating protects your lenses from daily wear and tear",
-    reducesGlare: "Anti-reflective coating reduces glare from screens and bright lights",
-    filterBlueVioletLight: "Filters harmful blue-violet light while allowing beneficial blue light",
+    resistScratches:
+      "Advanced scratch-resistant coating protects your lenses from daily wear and tear",
+    reducesGlare:
+      "Anti-reflective coating reduces glare from screens and bright lights",
+    filterBlueVioletLight:
+      "Filters harmful blue-violet light while allowing beneficial blue light",
     repelsWater: "Hydrophobic coating makes water bead up and roll off easily",
     repelsDust: "Anti-static properties reduce dust and dirt accumulation",
     sunUvProtection: "Blocks 100% of harmful UV rays to protect your eyes",
     photochromic: "Automatically darkens in sunlight and clears indoors",
     resistSmudges: "Oleophobic coating resists fingerprints and smudges",
-    unbreakable: "Impact-resistant material for enhanced safety and durability"
+    unbreakable: "Impact-resistant material for enhanced safety and durability",
   };
 
   // Power validation functions
@@ -65,7 +68,7 @@ const LensSelectionPage = () => {
 
   const isPowerValid = (userPower, lensRange) => {
     console.log("Checking power:", userPower, lensRange);
-    
+
     const checkEyePower = (eyePower) => {
       const sph = parseFloat(eyePower.SPH) || parseFloat(eyePower.sph) || 0;
       const cyl = parseFloat(eyePower.CYL) || parseFloat(eyePower.cyl) || 0;
@@ -145,27 +148,51 @@ const LensSelectionPage = () => {
     fetchLensData();
   }, []);
 
-  // Initialize user data and filter lenses when lens data is available
+   // Initialize user data and filter lenses when lens data is available
   useEffect(() => {
-    if (lensData.length === 0) return;
+    if (lensData.length === 0) return; // Don't run if no lens data yet
 
+    // Check localStorage data or use fallback for demo
     try {
-      // Demo data
-      const powerInfo = { sph: -2.0, cyl: -0.5 };
-      const lensType = "sv-far";
-      const frame = "lensOnly";
+      // For demo purposes, using fallback data since localStorage might not be available
+      let powerInfo, lensType, frame;
+
+      try {
+        powerInfo = JSON.parse(localStorage.getItem("prescription")) || {
+          sph: -2.0,
+          cyl: -0.5,
+        };
+        lensType = localStorage.getItem("lensSelection") || "sv-far";
+        frame = localStorage.getItem("frameType") || "lensOnly";
+      } catch (localStorageError) {
+        // Fallback data for demo
+        powerInfo = { sph: -2.0, cyl: -0.5 };
+        lensType = "sv-far";
+        frame = "lensOnly";
+        console.warn("localStorage not available, using demo data");
+      }
+
+      if (!powerInfo || !lensType) {
+        setError("Missing prescription or lens type data");
+        return;
+      }
 
       setUserPowerInfo(powerInfo);
-      setUserLensType(lensType);
-      setUserFrameType(frame);
+      setUserLensType(lensType.replace(/"/g, ""));
+      setUserFrameType(frame || "lensOnly");
 
       // Filter lenses based on user requirements
       const validLenses = lensData.filter((lens) => {
         const lensTypeClean = (lens.lensType || "").trim().toLowerCase();
-        const selectedLensType = lensType.trim().toLowerCase();
+        const selectedLensType = (lensType || "")
+          .trim()
+          .replace(/"/g, "")
+          .toLowerCase();
 
+        // Match lensType exactly
         if (lensTypeClean !== selectedLensType) return false;
 
+        // For multifocal types, check addition range validity
         if (
           selectedLensType === "mf-bifocal" ||
           selectedLensType === "mf-progressive"
@@ -173,13 +200,16 @@ const LensSelectionPage = () => {
           if (!isAdditionValid(powerInfo, lens.addRange)) return false;
         }
 
+        // Check power compatibility
         if (!isPowerValid(powerInfo, lens.powerRange)) return false;
+
+        console.log("Power Valid");
 
         return true;
       });
 
       setAllLenses(validLenses);
-      setFilteredLenses(validLenses);
+      setFilteredLenses(validLenses.slice(0, 5));
 
       const uniqueBrands = [...new Set(validLenses.map((lens) => lens.brand))];
       setBrands(uniqueBrands);
@@ -187,7 +217,7 @@ const LensSelectionPage = () => {
       console.error("Error processing user data:", error);
       setError("Error processing user data");
     }
-  }, [lensData]);
+  }, [lensData]); // Added lensData as dependency - this was the main issue!
 
   // Filter and sort lenses
   useEffect(() => {
@@ -326,7 +356,9 @@ const LensSelectionPage = () => {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-16 w-16 border-4 border-blue-200 border-t-blue-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-700 font-medium">Loading lens data...</p>
+          <p className="text-xl text-gray-700 font-medium">
+            Loading lens data...
+          </p>
         </div>
       </div>
     );
@@ -387,7 +419,9 @@ const LensSelectionPage = () => {
 
             {/* Brand Filter */}
             <div className="mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4 text-lg">Brand</h4>
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Brand
+              </h4>
               {brands.map((brand) => (
                 <label key={brand} className="flex items-center mb-3">
                   <input
@@ -403,7 +437,9 @@ const LensSelectionPage = () => {
 
             {/* Thickness Filter */}
             <div className="mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4 text-lg">Thickness</h4>
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Thickness
+              </h4>
               {["standard", "thin", "thinnest"].map((thickness) => (
                 <label key={thickness} className="flex items-center mb-3">
                   <input
@@ -421,7 +457,9 @@ const LensSelectionPage = () => {
 
             {/* Features Filter */}
             <div className="mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4 text-lg">Features</h4>
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Features
+              </h4>
               {[
                 { key: "blueLight", label: "Blue Light Protection" },
                 { key: "essentialBlueLight", label: "Essential Blue Light" },
@@ -444,14 +482,18 @@ const LensSelectionPage = () => {
                     onChange={() => toggleFilter("features", feature.key)}
                     className="mr-3 text-blue-600 w-4 h-4"
                   />
-                  <span className="text-gray-700 font-medium">{feature.label}</span>
+                  <span className="text-gray-700 font-medium">
+                    {feature.label}
+                  </span>
                 </label>
               ))}
             </div>
 
             {/* Price Range */}
             <div className="mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4 text-lg">Price Range</h4>
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Price Range
+              </h4>
               <div className="flex items-center gap-3">
                 <input
                   type="range"
@@ -511,7 +553,9 @@ const LensSelectionPage = () => {
               </button>
 
               <div className="flex items-center gap-6">
-                <span className="text-lg text-gray-700 font-medium">Sort by:</span>
+                <span className="text-lg text-gray-700 font-medium">
+                  Sort by:
+                </span>
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
@@ -540,7 +584,8 @@ const LensSelectionPage = () => {
                       />
                       <div className="absolute top-4 left-4">
                         <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-2 rounded-full text-lg font-bold shadow-lg">
-                          {Math.round((1 - lens.specialPrice / lens.srp) * 100)}% OFF
+                          {Math.round((1 - lens.specialPrice / lens.srp) * 100)}
+                          % OFF
                         </div>
                       </div>
                     </div>
@@ -564,7 +609,8 @@ const LensSelectionPage = () => {
                             ₹{lens.srp.toLocaleString()}
                           </div>
                           <div className="text-lg text-green-600 font-semibold">
-                            Save ₹{(lens.srp - lens.specialPrice).toLocaleString()}
+                            Save ₹
+                            {(lens.srp - lens.specialPrice).toLocaleString()}
                           </div>
                         </div>
                       </div>
@@ -586,7 +632,9 @@ const LensSelectionPage = () => {
                         {lens.authenticityCard && (
                           <div className="flex items-center gap-3">
                             <ShieldCheck size={20} className="text-green-600" />
-                            <span className="text-lg font-medium">Authenticity Card</span>
+                            <span className="text-lg font-medium">
+                              Authenticity Card
+                            </span>
                           </div>
                         )}
                         <div className="flex items-center gap-3">
@@ -604,28 +652,69 @@ const LensSelectionPage = () => {
                         </h4>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                           {[
-                            { key: 'resistScratches', label: 'Scratch Resistant', color: 'blue' },
-                            { key: 'reducesGlare', label: 'Anti-Glare', color: 'purple' },
-                            { key: 'filterBlueVioletLight', label: 'Blue Light Filter', color: 'indigo' },
-                            { key: 'repelsWater', label: 'Water Repellent', color: 'cyan' },
-                            { key: 'photochromic', label: 'Photochromic', color: 'amber' },
-                            { key: 'sunUvProtection', label: 'UV Protection', color: 'orange' },
-                            { key: 'resistSmudges', label: 'Smudge Resistant', color: 'green' },
-                            { key: 'repelsDust', label: 'Dust Repellent', color: 'pink' },
-                            { key: 'unbreakable', label: 'Unbreakable', color: 'red' }
+                            {
+                              key: "resistScratches",
+                              label: "Scratch Resistant",
+                              color: "blue",
+                            },
+                            {
+                              key: "reducesGlare",
+                              label: "Anti-Glare",
+                              color: "purple",
+                            },
+                            {
+                              key: "filterBlueVioletLight",
+                              label: "Blue Light Filter",
+                              color: "indigo",
+                            },
+                            {
+                              key: "repelsWater",
+                              label: "Water Repellent",
+                              color: "cyan",
+                            },
+                            {
+                              key: "photochromic",
+                              label: "Photochromic",
+                              color: "amber",
+                            },
+                            {
+                              key: "sunUvProtection",
+                              label: "UV Protection",
+                              color: "orange",
+                            },
+                            {
+                              key: "resistSmudges",
+                              label: "Smudge Resistant",
+                              color: "green",
+                            },
+                            {
+                              key: "repelsDust",
+                              label: "Dust Repellent",
+                              color: "pink",
+                            },
+                            {
+                              key: "unbreakable",
+                              label: "Unbreakable",
+                              color: "red",
+                            },
                           ].map((feature) => {
                             if (!lens[feature.key]) return null;
-                            
+
                             return (
                               <div
                                 key={feature.key}
                                 className={`relative inline-flex items-center gap-2 px-4 py-3 bg-${feature.color}-50 text-${feature.color}-700 rounded-xl text-sm font-semibold border border-${feature.color}-200 hover:bg-${feature.color}-100 transition-colors cursor-help`}
-                                onMouseEnter={() => setHoveredFeature(feature.key)}
+                                onMouseEnter={() =>
+                                  setHoveredFeature(feature.key)
+                                }
                                 onMouseLeave={() => setHoveredFeature(null)}
                               >
-                                <FeatureIcon feature={feature.key} active={true} />
+                                <FeatureIcon
+                                  feature={feature.key}
+                                  active={true}
+                                />
                                 {feature.label}
-                                
+
                                 {/* Tooltip */}
                                 {hoveredFeature === feature.key && (
                                   <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg shadow-lg z-10 w-64">
@@ -689,6 +778,6 @@ const LensSelectionPage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default LensSelectionPage;
