@@ -619,18 +619,21 @@ export default function Home() {
                     Frame Types
                   </label>
                   <select
+                    multiple
                     value={form.frameTypeRecommended}
-                    onChange={(e) =>
-                      handleArrayChange(e, "frameTypeRecommended")
-                    }
+                    onChange={(e) => {
+                      const selected = Array.from(
+                        e.target.selectedOptions,
+                        (opt) => opt.value
+                      );
+                      setForm((prev) => ({
+                        ...prev,
+                        frameTypeRecommended: selected,
+                      }));
+                    }}
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   >
-                    {[
-                      { value: "acetate", label: "Acetate" },
-                      { value: "full-metal", label: "Full Metal" },
-                      { value: "half-metal", label: "Half Metal" },
-                      { value: "rimless", label: "Rimless" },
-                    ].map((option) => (
+                    {frameTypeOptions.map((option) => (
                       <option key={option.value} value={option.value}>
                         {option.label}
                       </option>

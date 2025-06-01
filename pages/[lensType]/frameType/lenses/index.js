@@ -209,10 +209,12 @@ const LensSelectionPage = () => {
       });
 
       setAllLenses(validLenses);
-      setFilteredLenses(validLenses.slice(0, 5));
 
+      setFilteredLenses(validLenses.slice(0, 3));
+      
       const uniqueBrands = [...new Set(validLenses.map((lens) => lens.brand))];
       setBrands(uniqueBrands);
+
     } catch (error) {
       console.error("Error processing user data:", error);
       setError("Error processing user data");
@@ -298,7 +300,8 @@ const LensSelectionPage = () => {
       }
     });
 
-    setFilteredLenses(filtered);
+    setFilteredLenses(filtered.slice(0, 3));
+
   }, [filters, sortBy, allLenses]);
 
   const toggleFilter = (category, value) => {
@@ -435,6 +438,40 @@ const LensSelectionPage = () => {
               ))}
             </div>
 
+            {/* Features Filter */}
+            <div className="mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Features
+              </h4>
+              {[
+                { key: "uv", label: "Sun UV Protection" },
+                { key: "blueLight", label: "Blue Light UV420 Protection" },
+                { key: "antiGlare", label: "Anti-Glare" },
+                { key: "water", label: "Water Repellent" },
+                { key: "smudge", label: "Smudge Resistant" },
+                { key: "dust", label: "Dust Repellent" },
+                { key: "essentialBlueLight", label: "Essential Blue Light" },
+                { key: "photochromic", label: "Photochromic" },
+                { key: "unbreakable", label: "Unbreakable" },
+                { key: "tintable", label: "Tintable" },
+                { key: "authenticityCard", label: "Authenticity Card" },
+                { key: "lensMaterialWarranty", label: "Material Warranty" },
+                { key: "lensCoatingWarranty", label: "Coating Warranty" },
+              ].map((feature) => (
+                <label key={feature.key} className="flex items-center mb-3">
+                  <input
+                    type="checkbox"
+                    checked={filters.features.includes(feature.key)}
+                    onChange={() => toggleFilter("features", feature.key)}
+                    className="mr-3 text-blue-600 w-4 h-4"
+                  />
+                  <span className="text-gray-700 font-medium">
+                    {feature.label}
+                  </span>
+                </label>
+              ))}
+            </div>
+
             {/* Thickness Filter */}
             <div className="mb-8">
               <h4 className="font-semibold text-gray-900 mb-4 text-lg">
@@ -450,40 +487,6 @@ const LensSelectionPage = () => {
                   />
                   <span className="text-gray-700 font-medium capitalize">
                     {thickness}
-                  </span>
-                </label>
-              ))}
-            </div>
-
-            {/* Features Filter */}
-            <div className="mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
-                Features
-              </h4>
-              {[
-                { key: "blueLight", label: "Blue Light Protection" },
-                { key: "essentialBlueLight", label: "Essential Blue Light" },
-                { key: "antiGlare", label: "Anti-Glare" },
-                { key: "smudge", label: "Smudge Resistant" },
-                { key: "water", label: "Water Repellent" },
-                { key: "dust", label: "Dust Repellent" },
-                { key: "photochromic", label: "Photochromic" },
-                { key: "tintable", label: "Tintable" },
-                { key: "uv", label: "UV Protection" },
-                { key: "unbreakable", label: "Unbreakable" },
-                { key: "authenticityCard", label: "Authenticity Card" },
-                { key: "lensMaterialWarranty", label: "Material Warranty" },
-                { key: "lensCoatingWarranty", label: "Coating Warranty" },
-              ].map((feature) => (
-                <label key={feature.key} className="flex items-center mb-3">
-                  <input
-                    type="checkbox"
-                    checked={filters.features.includes(feature.key)}
-                    onChange={() => toggleFilter("features", feature.key)}
-                    className="mr-3 text-blue-600 w-4 h-4"
-                  />
-                  <span className="text-gray-700 font-medium">
-                    {feature.label}
                   </span>
                 </label>
               ))}
