@@ -276,11 +276,11 @@
     "id": 1748600737185,
     "lensType": "sv-far",
     "powerRange": {
-      "rpMinus": "-14",
+      "rpMinus": "-12",
       "rpPlus": "10",
-      "maxCylMinus": "-4",
+      "maxCylMinus": "-6",
       "maxCylPlus": "4",
-      "maxCylCross": "-4"
+      "maxCylCross": "-6"
     },
     "name": "Purebase Fortus (Hi Cyl)",
     "poster": "https://robecopro.netlify.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FBcNGwV4%2Ffortus.png&w=1080&q=75",
@@ -460,7 +460,7 @@
     "powerRange": {
       "rpMinus": "-8",
       "rpPlus": "4",
-      "maxCylMinus": "-4",
+      "maxCylMinus": "-2",
       "maxCylPlus": "2",
       "maxCylCross": "-2"
     },
@@ -505,7 +505,7 @@
     "lensType": "sv-far",
     "powerRange": {
       "rpMinus": "-8",
-      "rpPlus": "4",
+      "rpPlus": "3.75",
       "maxCylMinus": "-2",
       "maxCylPlus": "2",
       "maxCylCross": "-2"
@@ -585,6 +585,228 @@
     "addRange": {
       "start": "",
       "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1748786379302,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-4"
+    },
+    "name": "HD Blue Cut (Hi Cyl)",
+    "poster": "https://redexoptical.com/cdn/shop/files/3_5d342b59-6e09-4e04-92d7-b846887c11ff.jpg?v=1703316038&width=1445",
+    "srp": "970",
+    "specialPrice": "680",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ]
+  },
+  {
+    "id": 1748786617302,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Low Reflection Blue Cut (Hi Cyl)",
+    "poster": "https://www.martinreynoldsopticians.co.uk/uploads/2/9/2/4/29248939/8522934_orig.jpg",
+    "srp": "1370",
+    "specialPrice": "960",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ]
+  },
+  {
+    "id": 1748786759989,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Drive+ Blue Cut (Hi Cyl)",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
+    "srp": "2570",
+    "specialPrice": "1800",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "3",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ]
+  },
+  {
+    "id": 1748786923419,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "8",
+      "maxCylMinus": "-6",
+      "maxCylPlus": "4",
+      "maxCylCross": "-6"
+    },
+    "name": "HD Blue Cut (Hi Cyl Ext)",
+    "poster": "https://redexoptical.com/cdn/shop/files/3_5d342b59-6e09-4e04-92d7-b846887c11ff.jpg?v=1703316038&width=1445",
+    "srp": "1770",
+    "specialPrice": "1240",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ]
+  },
+  {
+    "id": 1748799139768,
+    "lensType": "mf-progressive",
+    "powerRange": {
+      "rpMinus": "-2",
+      "rpPlus": "3",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": "0"
+    },
+    "name": "Flowform HC",
+    "poster": "",
+    "srp": "1050",
+    "specialPrice": "740",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "5",
+    "addRange": {
+      "start": "1",
+      "end": "3"
     },
     "frameTypeRecommended": [
       "acetate",

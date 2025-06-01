@@ -220,6 +220,7 @@ export default function Home() {
     reader.onload = () => {
       try {
         const imported = JSON.parse(reader.result);
+
         setLenses(imported);
       } catch {
         alert("Invalid JSON file.");
@@ -650,18 +651,18 @@ export default function Home() {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {[
-                  "authenticityCard",
                   "resistScratches",
                   "reducesGlare",
-                  "resistSmudges",
-                  "repelsWater",
-                  "repelsDust",
-                  "filterBlueVioletLight",
-                  "allowEssentialBlueLight",
                   "sunUvProtection",
+                  "filterBlueVioletLight",
+                  "repelsWater",
+                  "resistSmudges",
+                  "repelsDust",
+                  "allowEssentialBlueLight",
+                  "photochromic",
                   "unbreakable",
                   "tintable",
-                  "photochromic",
+                  "authenticityCard",
                   "lensMaterialWarranty",
                 ].map((field) => (
                   <label

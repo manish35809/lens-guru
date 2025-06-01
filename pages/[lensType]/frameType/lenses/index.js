@@ -24,7 +24,7 @@ const LensSelectionPage = () => {
     brand: [],
     thickness: [],
     features: [],
-    priceRange: [0, 30000],
+    priceRange: [0, 0],
     deliveryTime: 30,
   });
   const [sortBy, setSortBy] = useState("price");
@@ -36,6 +36,7 @@ const LensSelectionPage = () => {
   const [userLensType, setUserLensType] = useState(null);
   const [userFrameType, setUserFrameType] = useState(null);
   const [hoveredFeature, setHoveredFeature] = useState(null);
+  const [highestSRP, setHighestSRP] = useState(0);
 
   // Feature descriptions for tooltips
   const featureDescriptions = {
@@ -67,7 +68,6 @@ const LensSelectionPage = () => {
   };
 
   const isPowerValid = (userPower, lensRange) => {
-    console.log("Checking power:", userPower, lensRange);
 
     const checkEyePower = (eyePower) => {
       const sph = parseFloat(eyePower.SPH) || parseFloat(eyePower.sph) || 0;
@@ -81,23 +81,21 @@ const LensSelectionPage = () => {
       const maxCylCross = parseFloat(lensRange.maxCylCross);
 
       if (rp < rpMinus || rp > rpPlus) {
-        console.log("Resultant power out of range");
         return false;
       }
 
       if (cyl > maxCylPlus || cyl < maxCylMinus) {
-        console.log("Cylinder out of range");
         return false;
       }
 
       if (sph > 0 && cyl < 0 && Math.abs(sph) < Math.abs(cyl)) {
-        const crossPower = calculateCrossPower(sph, cyl);
-        const crossRp = calculateResultantPower(crossPower.sph, crossPower.cyl);
-        if (crossRp < rpMinus || crossRp > maxCylCross) {
-          console.log("Cross power out of range");
-          return false;
-        }
-      }
+  const crossPower = calculateCrossPower(sph, cyl);
+  const crossRp = calculateResultantPower(crossPower.sph, crossPower.cyl);
+  if (crossRp < rpMinus || crossRp > maxCylCross) {
+    console.log("Invalid cross power");
+    return false;
+  }
+}
 
       return true;
     };
@@ -106,11 +104,9 @@ const LensSelectionPage = () => {
     if (userPower.RE || userPower.LE) {
       const reValid = userPower.RE ? checkEyePower(userPower.RE) : true;
       const leValid = userPower.LE ? checkEyePower(userPower.LE) : true;
-      console.log("RE valid:", reValid, "LE valid:", leValid);
       return reValid && leValid;
     } else {
       // Single prescription format
-      console.log("Single prescription");
       return checkEyePower(userPower);
     }
   };
@@ -124,6 +120,17 @@ const LensSelectionPage = () => {
 
     return isRightValid && isLeftValid;
   }
+
+  function getHighestSRP(lenses) {
+    if (!Array.isArray(lenses) || lenses.length === 0) {
+        return 0;
+    }
+
+    return lenses.reduce((max, lens) => {
+        const srp = parseFloat(lens.srp);
+        return srp > max ? srp : max;
+    }, 0);
+}
 
   // Fetch lens data
   useEffect(() => {
@@ -183,14 +190,18 @@ const LensSelectionPage = () => {
 
       // Filter lenses based on user requirements
       const validLenses = lensData.filter((lens) => {
+        
         const lensTypeClean = (lens.lensType || "").trim().toLowerCase();
+
         const selectedLensType = (lensType || "")
           .trim()
           .replace(/"/g, "")
           .toLowerCase();
 
-        // Match lensType exactly
+// Match lensType exactly
         if (lensTypeClean !== selectedLensType) return false;
+
+        
 
         // For multifocal types, check addition range validity
         if (
@@ -203,15 +214,56 @@ const LensSelectionPage = () => {
         // Check power compatibility
         if (!isPowerValid(powerInfo, lens.powerRange)) return false;
 
-        console.log("Power Valid");
+      const RE_SPH = parseFloat(powerInfo.RE?.SPH) || 0;
+      const LE_SPH = parseFloat(powerInfo.LE?.SPH) || 0;
+      const RE_CYL = parseFloat(powerInfo.RE?.CYL) || 0;
+      const LE_CYL = parseFloat(powerInfo.LE?.CYL) || 0;
 
+      const minusTotalPower = parseFloat(lens.powerRange.rpMinus)
+      const plusTotalPower = parseFloat(lens.powerRange.rpPlus)
+
+  // Hi Cyl rejection logic
+  if (/hi\s+cyl/i.test(lens.name)) {
+
+    if (RE_SPH + RE_CYL === 0){
+      return false
+    }
+
+    if (RE_SPH + RE_CYL < 0 || LE_SPH + LE_CYL < 0){
+      
+      if (
+        (RE_CYL >= -2 || LE_CYL >= -2) &&
+        (RE_CYL <= 0 && LE_CYL <= 0) 
+        ) {
+            if (!(RE_SPH + RE_CYL <= minusTotalPower || LE_SPH + LE_CYL <= minusTotalPower)) {
+              return false 
+            }  
+        }
+    }
+
+    if (RE_SPH + RE_CYL > 0 || LE_SPH + LE_CYL > 0) {
+      if (
+        (RE_CYL <= 2 || LE_CYL <= 2) &&
+        (RE_CYL >= 0 && LE_CYL >= 0)
+      ) {
+        if (
+          !(
+            RE_SPH + RE_CYL >= plusTotalPower ||
+            LE_SPH + LE_CYL >= plusTotalPower
+          )
+        ) {
+          return false;
+        }
+      }
+    }
+  }
         return true;
       });
 
       setAllLenses(validLenses);
 
-      setFilteredLenses(validLenses.slice(0, 3));
-      
+      setFilteredLenses(validLenses.slice(0, 5));     
+            
       const uniqueBrands = [...new Set(validLenses.map((lens) => lens.brand))];
       setBrands(uniqueBrands);
 
@@ -266,24 +318,12 @@ const LensSelectionPage = () => {
               return lens.authenticityCard;
             case "lensMaterialWarranty":
               return lens.lensMaterialWarranty;
-            case "lensCoatingWarranty":
-              return (
-                typeof lens.lensCoatingWarranty === "number" &&
-                lens.lensCoatingWarranty > 0
-              );
             default:
               return true;
           }
         });
       });
     }
-
-    // Price range filter - using specialPrice from lensData
-    filtered = filtered.filter(
-      (lens) =>
-        lens.specialPrice >= filters.priceRange[0] &&
-        lens.specialPrice <= filters.priceRange[1]
-    );
 
     // Delivery time filter
     filtered = filtered.filter((lens) => lens.time <= filters.deliveryTime);
@@ -300,7 +340,7 @@ const LensSelectionPage = () => {
       }
     });
 
-    setFilteredLenses(filtered.slice(0, 3));
+    setFilteredLenses(filtered.slice(0, 10));
 
   }, [filters, sortBy, allLenses]);
 
@@ -318,7 +358,6 @@ const LensSelectionPage = () => {
       brand: [],
       thickness: [],
       features: [],
-      priceRange: [0, 30000],
       deliveryTime: 30,
     });
   };
@@ -420,33 +459,15 @@ const LensSelectionPage = () => {
               </button>
             </div>
 
-            {/* Brand Filter */}
-            <div className="mb-8">
-              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
-                Brand
-              </h4>
-              {brands.map((brand) => (
-                <label key={brand} className="flex items-center mb-3">
-                  <input
-                    type="checkbox"
-                    checked={filters.brand?.includes(brand)}
-                    onChange={() => toggleFilter("brand", brand)}
-                    className="mr-3 text-blue-600 w-4 h-4"
-                  />
-                  <span className="text-gray-700 font-medium">{brand}</span>
-                </label>
-              ))}
-            </div>
-
             {/* Features Filter */}
             <div className="mb-8">
               <h4 className="font-semibold text-gray-900 mb-4 text-lg">
                 Features
               </h4>
               {[
+                { key: "antiGlare", label: "Anti-Glare" },
                 { key: "uv", label: "Sun UV Protection" },
                 { key: "blueLight", label: "Blue Light UV420 Protection" },
-                { key: "antiGlare", label: "Anti-Glare" },
                 { key: "water", label: "Water Repellent" },
                 { key: "smudge", label: "Smudge Resistant" },
                 { key: "dust", label: "Dust Repellent" },
@@ -456,7 +477,6 @@ const LensSelectionPage = () => {
                 { key: "tintable", label: "Tintable" },
                 { key: "authenticityCard", label: "Authenticity Card" },
                 { key: "lensMaterialWarranty", label: "Material Warranty" },
-                { key: "lensCoatingWarranty", label: "Coating Warranty" },
               ].map((feature) => (
                 <label key={feature.key} className="flex items-center mb-3">
                   <input
@@ -492,30 +512,25 @@ const LensSelectionPage = () => {
               ))}
             </div>
 
-            {/* Price Range */}
+            {/* Brand Filter */}
             <div className="mb-8">
               <h4 className="font-semibold text-gray-900 mb-4 text-lg">
-                Price Range
+                Brand
               </h4>
-              <div className="flex items-center gap-3">
-                <input
-                  type="range"
-                  min="0"
-                  max="30000"
-                  value={filters.priceRange[1]}
-                  onChange={(e) =>
-                    setFilters((prev) => ({
-                      ...prev,
-                      priceRange: [0, parseInt(e.target.value)],
-                    }))
-                  }
-                  className="flex-1"
-                />
-                <span className="text-gray-700 font-semibold min-w-[80px]">
-                  ₹{filters.priceRange[1].toLocaleString()}
-                </span>
-              </div>
+              {brands.map((brand) => (
+                <label key={brand} className="flex items-center mb-3">
+                  <input
+                    type="checkbox"
+                    checked={filters.brand?.includes(brand)}
+                    onChange={() => toggleFilter("brand", brand)}
+                    className="mr-3 text-blue-600 w-4 h-4"
+                  />
+                  <span className="text-gray-700 font-medium">{brand}</span>
+                </label>
+              ))}
             </div>
+
+           
 
             {/* Delivery Time */}
             <div className="mb-8">
@@ -525,7 +540,7 @@ const LensSelectionPage = () => {
               <div className="flex items-center gap-3">
                 <input
                   type="range"
-                  min="1"
+                  min="0"
                   max="30"
                   value={filters.deliveryTime}
                   onChange={(e) =>
@@ -643,7 +658,7 @@ const LensSelectionPage = () => {
                         <div className="flex items-center gap-3">
                           <Star size={20} className="text-orange-500" />
                           <span className="text-lg font-medium">
-                            {lens.lensCoatingWarranty} months warranty
+                            {lens.lensCoatingWarranty} Months Coating Warranty
                           </span>
                         </div>
                       </div>
