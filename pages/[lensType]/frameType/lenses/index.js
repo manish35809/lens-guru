@@ -61,18 +61,10 @@ const LensSelectionPage = () => {
     return parseFloat(floatSph) + parseFloat(floatCyl);
   };
 
-  const calculateCrossPower = (sph, cyl) => {
-    const newSph = sph + cyl;
-    const newCyl = -cyl;
-    return { sph: newSph, cyl: newCyl };
-  };
-
   const isPowerValid = (userPower, lensRange) => {
-
     const checkEyePower = (eyePower) => {
-      const sph = parseFloat(eyePower.SPH) || parseFloat(eyePower.sph) || 0;
-      const cyl = parseFloat(eyePower.CYL) || parseFloat(eyePower.cyl) || 0;
-      const rp = calculateResultantPower(sph, cyl);
+      let sph = parseFloat(eyePower.SPH ?? eyePower.sph ?? 0);
+      let cyl = parseFloat(eyePower.CYL ?? eyePower.cyl ?? 0);
 
       const rpMinus = parseFloat(lensRange.rpMinus);
       const rpPlus = parseFloat(lensRange.rpPlus);
@@ -80,33 +72,66 @@ const LensSelectionPage = () => {
       const maxCylPlus = parseFloat(lensRange.maxCylPlus);
       const maxCylCross = parseFloat(lensRange.maxCylCross);
 
-      if (rp < rpMinus || rp > rpPlus) {
-        return false;
-      }
+      if (
+        (sph > 0 && cyl < 0 && Math.abs(sph) < Math.abs(cyl)) ||
+        (sph < 0 && cyl > 0 && Math.abs(sph) < Math.abs(cyl))
+      ) {
+        console.log("It's Cross Power");
 
-      if (cyl > maxCylPlus || cyl < maxCylMinus) {
-        return false;
-      }
+        // Handle reverse cross power: SPH negative, CYL positive
+        if (sph < 0 && cyl > 0) {
+          console.log("Reverse Cross Power");
+          sph = sph + cyl;
+          cyl = -cyl;
+          console.log("Transposed to Clear Cross Power");
+        }
 
-      if (sph > 0 && cyl < 0 && Math.abs(sph) < Math.abs(cyl)) {
-  const crossPower = calculateCrossPower(sph, cyl);
-  const crossRp = calculateResultantPower(crossPower.sph, crossPower.cyl);
-  if (crossRp < rpMinus || crossRp > maxCylCross) {
-    console.log("Invalid cross power");
-    return false;
-  }
-}
+        // Check transposed CYL against maxCylCross
+        if (
+          Math.abs(cyl) > Math.abs(maxCylCross) &&
+          Math.abs(cyl) != Math.abs(maxCylCross)
+        ) {
+          console.log("Invalid Cross Power: CYL exceeds maxCylCross");
+          return false;
+        } else {
+          return true;
+        }
+      } else {
+        const isCrossPower = sph * cyl < 0;
+        // Normal power validation
+        if (isCrossPower) {
+          // Transpose cross power
+          sph = sph + cyl;
+          cyl = -cyl;
+          console.log(
+            "Transposed Cross Power:",
+            `SPH: ${sph.toFixed(2)}, CYL: ${cyl.toFixed(2)}`
+          );
+        }
+
+        // Normal power validation
+        const rp = calculateResultantPower(sph, cyl);
+
+        if (rp < rpMinus || rp > rpPlus) {
+          console.log("Resultant Power Out of Range");
+          return false;
+        }
+
+        if (cyl > maxCylPlus || cyl < maxCylMinus) {
+          console.log("CYL Out of Range");
+          return false;
+        }
+      }
 
       return true;
     };
 
-    // Check if userPower has RE/LE (right eye/left eye) structure
+    // Handle RE/LE or single eye input
     if (userPower.RE || userPower.LE) {
       const reValid = userPower.RE ? checkEyePower(userPower.RE) : true;
       const leValid = userPower.LE ? checkEyePower(userPower.LE) : true;
       return reValid && leValid;
     } else {
-      // Single prescription format
       return checkEyePower(userPower);
     }
   };
@@ -123,14 +148,14 @@ const LensSelectionPage = () => {
 
   function getHighestSRP(lenses) {
     if (!Array.isArray(lenses) || lenses.length === 0) {
-        return 0;
+      return 0;
     }
 
     return lenses.reduce((max, lens) => {
-        const srp = parseFloat(lens.srp);
-        return srp > max ? srp : max;
+      const srp = parseFloat(lens.srp);
+      return srp > max ? srp : max;
     }, 0);
-}
+  }
 
   // Fetch lens data
   useEffect(() => {
@@ -155,7 +180,7 @@ const LensSelectionPage = () => {
     fetchLensData();
   }, []);
 
-   // Initialize user data and filter lenses when lens data is available
+  // Initialize user data and filter lenses when lens data is available
   useEffect(() => {
     if (lensData.length === 0) return; // Don't run if no lens data yet
 
@@ -190,7 +215,6 @@ const LensSelectionPage = () => {
 
       // Filter lenses based on user requirements
       const validLenses = lensData.filter((lens) => {
-        
         const lensTypeClean = (lens.lensType || "").trim().toLowerCase();
 
         const selectedLensType = (lensType || "")
@@ -198,10 +222,8 @@ const LensSelectionPage = () => {
           .replace(/"/g, "")
           .toLowerCase();
 
-// Match lensType exactly
+        // Match lensType exactly
         if (lensTypeClean !== selectedLensType) return false;
-
-        
 
         // For multifocal types, check addition range validity
         if (
@@ -214,59 +236,55 @@ const LensSelectionPage = () => {
         // Check power compatibility
         if (!isPowerValid(powerInfo, lens.powerRange)) return false;
 
-      const RE_SPH = parseFloat(powerInfo.RE?.SPH) || 0;
-      const LE_SPH = parseFloat(powerInfo.LE?.SPH) || 0;
-      const RE_CYL = parseFloat(powerInfo.RE?.CYL) || 0;
-      const LE_CYL = parseFloat(powerInfo.LE?.CYL) || 0;
+        const RE_SPH = parseFloat(powerInfo.RE?.SPH) || 0;
+        const LE_SPH = parseFloat(powerInfo.LE?.SPH) || 0;
+        const RE_CYL = parseFloat(powerInfo.RE?.CYL) || 0;
+        const LE_CYL = parseFloat(powerInfo.LE?.CYL) || 0;
 
-      const minusTotalPower = parseFloat(lens.powerRange.rpMinus)
-      const plusTotalPower = parseFloat(lens.powerRange.rpPlus)
+        const minusTotalPower = parseFloat(lens.powerRange.rpMinus);
+        const plusTotalPower = parseFloat(lens.powerRange.rpPlus);
 
-  // Hi Cyl rejection logic
-  if (/hi\s+cyl/i.test(lens.name)) {
+        // Hi Cyl rejection logic
+        if (/hi\s+cyl/i.test(lens.name)) {
+          if (RE_SPH + RE_CYL === 0) {
+            return false;
+          }
 
-    if (RE_SPH + RE_CYL === 0){
-      return false
-    }
+          if (RE_SPH + RE_CYL < 0 || LE_SPH + LE_CYL < 0) {
+            if ((RE_CYL >= -2 || LE_CYL >= -2) && RE_CYL <= 0 && LE_CYL <= 0) {
+              if (
+                !(
+                  RE_SPH + RE_CYL <= minusTotalPower ||
+                  LE_SPH + LE_CYL <= minusTotalPower
+                )
+              ) {
+                return false;
+              }
+            }
+          }
 
-    if (RE_SPH + RE_CYL < 0 || LE_SPH + LE_CYL < 0){
-      
-      if (
-        (RE_CYL >= -2 || LE_CYL >= -2) &&
-        (RE_CYL <= 0 && LE_CYL <= 0) 
-        ) {
-            if (!(RE_SPH + RE_CYL <= minusTotalPower || LE_SPH + LE_CYL <= minusTotalPower)) {
-              return false 
-            }  
+          if (RE_SPH + RE_CYL > 0 || LE_SPH + LE_CYL > 0) {
+            if ((RE_CYL <= 2 || LE_CYL <= 2) && RE_CYL >= 0 && LE_CYL >= 0) {
+              if (
+                !(
+                  RE_SPH + RE_CYL >= plusTotalPower ||
+                  LE_SPH + LE_CYL >= plusTotalPower
+                )
+              ) {
+                return false;
+              }
+            }
+          }
         }
-    }
-
-    if (RE_SPH + RE_CYL > 0 || LE_SPH + LE_CYL > 0) {
-      if (
-        (RE_CYL <= 2 || LE_CYL <= 2) &&
-        (RE_CYL >= 0 && LE_CYL >= 0)
-      ) {
-        if (
-          !(
-            RE_SPH + RE_CYL >= plusTotalPower ||
-            LE_SPH + LE_CYL >= plusTotalPower
-          )
-        ) {
-          return false;
-        }
-      }
-    }
-  }
         return true;
       });
 
       setAllLenses(validLenses);
 
-      setFilteredLenses(validLenses.slice(0, 5));     
-            
+      setFilteredLenses(validLenses.slice(0, 5));
+
       const uniqueBrands = [...new Set(validLenses.map((lens) => lens.brand))];
       setBrands(uniqueBrands);
-
     } catch (error) {
       console.error("Error processing user data:", error);
       setError("Error processing user data");
@@ -341,7 +359,6 @@ const LensSelectionPage = () => {
     });
 
     setFilteredLenses(filtered.slice(0, 10));
-
   }, [filters, sortBy, allLenses]);
 
   const toggleFilter = (category, value) => {
@@ -529,8 +546,6 @@ const LensSelectionPage = () => {
                 </label>
               ))}
             </div>
-
-           
 
             {/* Delivery Time */}
             <div className="mb-8">
