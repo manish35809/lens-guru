@@ -238,7 +238,7 @@
       "maxCylPlus": "4",
       "maxCylCross": "-4"
     },
-    "name": "HD ShieldX (Hi Cyl)",
+    "name": "HD ShieldX",
     "poster": "https://jgswissopti.eu/wp-content/uploads/2016/07/980x600_HartschichtENG.png",
     "srp": "650",
     "specialPrice": "450",
@@ -270,7 +270,8 @@
     },
     "frameTypeRecommended": [
       "acetate"
-    ]
+    ],
+    "isHighCyl": true
   },
   {
     "id": 1748600737185,
@@ -282,7 +283,7 @@
       "maxCylPlus": "4",
       "maxCylCross": "-6"
     },
-    "name": "Purebase Fortus (Hi Cyl)",
+    "name": "Purebase Fortus",
     "poster": "https://robecopro.netlify.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FBcNGwV4%2Ffortus.png&w=1080&q=75",
     "srp": "1300",
     "specialPrice": "900",
@@ -314,7 +315,8 @@
     },
     "frameTypeRecommended": [
       "acetate"
-    ]
+    ],
+    "isHighCyl": true
   },
   {
     "id": 1748601227827,
@@ -406,7 +408,8 @@
       "acetate",
       "full-metal",
       "half-metal"
-    ]
+    ],
+    "isHighCyl": true
   },
   {
     "id": 1748770394815,
@@ -602,7 +605,7 @@
       "maxCylPlus": "2",
       "maxCylCross": "-4"
     },
-    "name": "HD Blue Cut (Hi Cyl)",
+    "name": "HD Blue Cut",
     "poster": "https://redexoptical.com/cdn/shop/files/3_5d342b59-6e09-4e04-92d7-b846887c11ff.jpg?v=1703316038&width=1445",
     "srp": "970",
     "specialPrice": "680",
@@ -634,7 +637,8 @@
     },
     "frameTypeRecommended": [
       "acetate"
-    ]
+    ],
+    "isHighCyl": true
   },
   {
     "id": 1748786617302,
@@ -646,7 +650,7 @@
       "maxCylPlus": "2",
       "maxCylCross": "-2"
     },
-    "name": "Low Reflection Blue Cut (Hi Cyl)",
+    "name": "Low Reflection Blue Cut",
     "poster": "https://www.martinreynoldsopticians.co.uk/uploads/2/9/2/4/29248939/8522934_orig.jpg",
     "srp": "1370",
     "specialPrice": "960",
@@ -678,7 +682,8 @@
     },
     "frameTypeRecommended": [
       "acetate"
-    ]
+    ],
+    "isHighCyl": true
   },
   {
     "id": 1748786759989,
@@ -690,7 +695,7 @@
       "maxCylPlus": "2",
       "maxCylCross": "-2"
     },
-    "name": "Drive+ Blue Cut (Hi Cyl)",
+    "name": "Drive+ Blue Cut",
     "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
     "srp": "2570",
     "specialPrice": "1800",
@@ -722,7 +727,8 @@
     },
     "frameTypeRecommended": [
       "acetate"
-    ]
+    ],
+    "isHighCyl": true
   },
   {
     "id": 1748786923419,
@@ -734,7 +740,7 @@
       "maxCylPlus": "4",
       "maxCylCross": "-6"
     },
-    "name": "HD Blue Cut (Hi Cyl Ext)",
+    "name": "HD Blue Cut",
     "poster": "https://redexoptical.com/cdn/shop/files/3_5d342b59-6e09-4e04-92d7-b846887c11ff.jpg?v=1703316038&width=1445",
     "srp": "1770",
     "specialPrice": "1240",
@@ -766,7 +772,8 @@
     },
     "frameTypeRecommended": [
       "acetate"
-    ]
+    ],
+    "isHighCyl": true
   },
   {
     "id": 1748799139768,
@@ -779,7 +786,7 @@
       "maxCylCross": "0"
     },
     "name": "Flowform HC",
-    "poster": "",
+    "poster": "https://lenscaravan.com/cdn/shop/products/gg-progressivelens-v2_6a46b065-0abd-46ab-b554-50624355e80c.jpg?v=1626695500",
     "srp": "1050",
     "specialPrice": "740",
     "authenticityCard": false,
@@ -812,6 +819,98 @@
       "acetate",
       "full-metal",
       "half-metal"
+    ]
+  },
+  {
+    "id": 1749200124625,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Photochromic ShieldX",
+    "poster": "https://4.imimg.com/data4/EL/FY/MY-6713/cr-photo-coat-lenses-500x500.jpg",
+    "srp": "630",
+    "specialPrice": "440",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "photochromicColors": [
+      "Gray"
+    ],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749201118578,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "1",
+      "maxCylCross": "0"
+    },
+    "name": "Poly Blue Cut",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvfIOiXoLccPwgp8bcvYQ7PEg_Cr8qmuqLKA&s",
+    "srp": "850",
+    "specialPrice": "600",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "",
+    "thickness": {
+      "index": "",
+      "type": ""
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
     ]
   }
 ]

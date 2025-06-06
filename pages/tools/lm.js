@@ -104,6 +104,7 @@ export default function Home() {
     tintable: false,
     photochromic: false,
     lensMaterialWarranty: false,
+    isHighCyl: false,
     photochromicColors: [],
     lensCoatingWarranty: "",
     addRange: {
@@ -664,6 +665,7 @@ export default function Home() {
                   "tintable",
                   "authenticityCard",
                   "lensMaterialWarranty",
+                  "isHighCyl",
                 ].map((field) => (
                   <label
                     key={field}
@@ -831,6 +833,12 @@ export default function Home() {
                       Material Warranty
                     </span>
                   )}
+                  {lens.isHighCyl && (
+                    <span className="text-xs bg-teal-100 text-yellow-700 px-2 py-1 rounded-full">
+                      High Cylindrical
+                    </span>
+                  )
+                  }
                 </div>
 
                 {/* Action Buttons */}

@@ -45,11 +45,11 @@ export default function LensTypePage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden mb-4 shadow-xl">
                 <Image
-                  src="https://www.verywellhealth.com/thmb/0owMzY0zAzM2RiZTg2ZjY3ZDA5OTY4OGYzMDQwZGY3ZDZhNTA4Mzk4Mw==/near-vision-56a134da5f9b58b7d0bc709f.jpg"
+                  src="https://images.pexels.com/photos/15275560/pexels-photo-15275560/free-photo-of-reading-a-book.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="Near Vision Example"
                   width={400}
-                  height={200}
-                  className="w-full h-48 object-cover"
+                  height={300}
+                  className="w-full h-60 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
@@ -82,11 +82,11 @@ export default function LensTypePage() {
               </div>
               <div className="relative rounded-2xl overflow-hidden mb-4 shadow-xl">
                 <Image
-                  src="https://cdn.allaboutvision.com/images/illustration-distance-vision-720x532.jpg"
+                  src="https://images.pexels.com/photos/5996746/pexels-photo-5996746.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="Far Vision Example"
                   width={400}
-                  height={200}
-                  className="w-full h-48 object-cover"
+                  height={300}
+                  className="w-full h-70 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
@@ -168,11 +168,11 @@ export default function LensTypePage() {
                   </h3>
                   <div className="relative rounded-2xl overflow-hidden mb-4 shadow-xl">
                     <Image
-                      src="https://i0.wp.com/images.ctfassets.net/6jpeaipefazr/3mKqY44fpJH0a5Ce8kpFGO/b88a20cf5c42c9d861bd96eaa4d3a3e8/Bifocal.jpg"
+                      src="https://vzun.in/wp-content/uploads/2021/06/bifocal-lenses.png"
                       alt="Bifocal Lenses"
                       width={400}
-                      height={200}
-                      className="w-full h-48 object-cover"
+                      height={300}
+                      className="w-full h-116 object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
@@ -199,11 +199,11 @@ export default function LensTypePage() {
                   </h3>
                   <div className="relative rounded-2xl overflow-hidden mb-4 shadow-xl">
                     <Image
-                      src="https://cdn.allaboutvision.com/images/illustration-progressive-lens-720x532.jpg"
+                      src="https://www.carfia.com/cdn/shop/articles/1_fa36a779-980d-4177-ab81-552641e434ea-396401.jpg?v=1636381435"
                       alt="Progressive Lenses"
                       width={400}
                       height={200}
-                      className="w-full h-48 object-cover"
+                      className="w-full h-110 object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
