@@ -1,0 +1,970 @@
+[
+  {
+    "id": 1749309142464,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat",
+    "poster": "https://akshoptifibre.com/img/hard-coat-update.jpg",
+    "srp": "350",
+    "specialPrice": "250",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "New Celt",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749309335673,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "6",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "430",
+    "specialPrice": "300",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749309438796,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "8",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "700",
+    "specialPrice": "480",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "10",
+      "maxCylMinus": "-6",
+      "maxCylPlus": "4",
+      "maxCylCross": "-6"
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "970",
+    "specialPrice": "680",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749310084656,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Hard Coat Fortus",
+    "poster": "https://www.satisloh.com/fileadmin/user_upload/Images/02_Ophthalmic/05_Coating/Coating_Processes/Satisloh_Hard-coat-process_ophthalmic-lenses.png",
+    "srp": "750",
+    "specialPrice": "550",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Thailand",
+    "brand": "Robeco",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749310348878,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "6",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Hard Coat Titus",
+    "poster": "data:image/png;base64,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",
+    "srp": "1200",
+    "specialPrice": "800",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Thailand",
+    "brand": "Essilor",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749311212277,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "ARC Xtralite",
+    "poster": "data:image/jpeg;base64,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",
+    "srp": "970",
+    "specialPrice": "650",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Vision Rx Lab",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749311548922,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "ARC Fino",
+    "poster": "https://visionplusmag.com/wp-content/uploads/2016/12/Nova-FSV.jpg",
+    "srp": "1560",
+    "specialPrice": "1150",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749319259656,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG Hard Coat Fortus",
+    "poster": "https://image.made-in-china.com/318f0j00jQkGAiKPELcC/%E5%8F%98%E7%81%B02.mov.webp",
+    "srp": "630",
+    "specialPrice": "440",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray"
+    ],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false
+  },
+  {
+    "id": 1749319474569,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-4"
+    },
+    "name": "PG Hard Coat Fortus",
+    "poster": "https://image.made-in-china.com/318f0j00jQkGAiKPELcC/%E5%8F%98%E7%81%B02.mov.webp",
+    "srp": "1030",
+    "specialPrice": "720",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray"
+    ],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749320021777,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": "0"
+    },
+    "name": "PG ARC Crystal",
+    "poster": "https://s.alicdn.com/@sc04/kf/U559f8b7ddaa34c52bfaa936c458e05e0S.jpg_720x720q50.jpg",
+    "srp": "790",
+    "specialPrice": "550",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [
+      "Gray"
+    ],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749320382545,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-5",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG ARC Xtalite",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HZJzXu1atGfy65OhFgjBhaqAAg3ZXYpAhbU-5XDsVGpKzOwbw4Pf9AhshcXCDMCQywA&usqp=CAU",
+    "srp": "1240",
+    "specialPrice": "920",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Vision Rx Lab",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray",
+      "Brown"
+    ],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749320455513,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG ARC Xtalite",
+    "poster": "https://s.alicdn.com/@sc04/kf/U559f8b7ddaa34c52bfaa936c458e05e0S.jpg_720x720q50.jpg",
+    "srp": "1240",
+    "specialPrice": "1020",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Vision Rx Lab",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray"
+    ],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749320695343,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "1",
+      "maxCylCross": ""
+    },
+    "name": "Poly ARC Crystal",
+    "poster": "https://ae01.alicdn.com/kf/S44923ed1e1b04d25a87056712f23fbacl.jpg",
+    "srp": "610",
+    "specialPrice": "430",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Koera",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": false,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749322203076,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ThmiotzYT-vomkZfEWjPE8rCpMjFOdIKzEUogzIqrxWqOjYLqv3oYl8TsNr60EnLT2M&usqp=CAU",
+    "srp": "470",
+    "specialPrice": "330",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "New Celt",
+    "time": "0",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749322428318,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Crystal",
+    "poster": "https://image.made-in-china.com/2f0j00oJgaNkHWEFpi/Finished-1-56-Hard-Multi-Coated-Hmc-Prescription-Eyeglass-Lenses-Optical-Lens.webp",
+    "srp": "710",
+    "specialPrice": "500",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749322588277,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-4"
+    },
+    "name": "Blue Cut Crystal",
+    "poster": "https://image.made-in-china.com/2f0j00oJgaNkHWEFpi/Finished-1-56-Hard-Multi-Coated-Hmc-Prescription-Eyeglass-Lenses-Optical-Lens.webp",
+    "srp": "990",
+    "specialPrice": "700",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749322711509,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "8",
+      "maxCylMinus": "-6",
+      "maxCylPlus": "4",
+      "maxCylCross": "-6"
+    },
+    "name": "Blue Cut Crystal",
+    "poster": "https://image.made-in-china.com/2f0j00oJgaNkHWEFpi/Finished-1-56-Hard-Multi-Coated-Hmc-Prescription-Eyeglass-Lenses-Optical-Lens.webp",
+    "srp": "1400",
+    "specialPrice": "1000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749323331988,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Low Relection",
+    "poster": "https://m.media-amazon.com/images/I/81bdhbafoJL._AC_UY350_.jpg",
+    "srp": "1050",
+    "specialPrice": "740",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749323509030,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-4"
+    },
+    "name": "Blue Cut Low Relection",
+    "poster": "https://m.media-amazon.com/images/I/81bdhbafoJL._AC_UY350_.jpg",
+    "srp": "1700",
+    "specialPrice": "1200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  }
+]

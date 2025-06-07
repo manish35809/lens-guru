@@ -189,7 +189,7 @@ const LensSelectionPage = () => {
     const fetchLensData = async () => {
       try {
         setLoading(true);
-        const response = await fetch("/data/lensData.json");
+        const response = await fetch("/data/shivaOpticiansLensData.json");
         if (!response.ok) {
           throw new Error("Failed to fetch lens data");
         }
@@ -1291,6 +1291,21 @@ const LensSelectionPage = () => {
                                   icon: "shield-check",
                                   gradient: "from-red-500 to-red-600",
                                 },
+                                // Add Features for lowReflection & drivePlus
+                                {
+                                  key: "lowReflection",
+                                  label: "Low Reflection",
+                                  color: "blue",
+                                  icon: "lowReflex",
+                                  gradient: "from-blue-500 to-blue-600",
+                                },
+                                {
+                                  key: "drivePlus",
+                                  label: "Drive+",
+                                  color: "purple",
+                                  icon: "drive",
+                                  gradient: "from-purple-500 to-purple-600",
+                                },
                               ].map((feature) => {
                                 if (!lens[feature.key]) return null;
 
@@ -1320,6 +1335,37 @@ const LensSelectionPage = () => {
                                             strokeLinejoin="round"
                                             strokeWidth={2}
                                             d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                                          />
+                                        </svg>
+                                      )}
+                                      {/* write code for drive & lowReflex icon */}
+                                      {feature.icon === "drive" && (
+                                        <svg
+                                          className="w-4 h-4 text-white"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                                          />
+                                        </svg>
+                                      )}
+                                      {feature.icon === "lowReflex" && (
+                                        <svg
+                                          className="w-4 h-4 text-white"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
                                           />
                                         </svg>
                                       )}

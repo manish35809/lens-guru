@@ -188,7 +188,7 @@ const LensSelectionPage = () => {
     const fetchLensData = async () => {
       try {
         setLoading(true);
-        const response = await fetch("/data/lensData.json");
+        const response = await fetch("/data/shivaOpticiansLensData.json");
         if (!response.ok) {
           throw new Error("Failed to fetch lens data");
         }
@@ -1338,6 +1338,20 @@ const LensSelectionPage = () => {
                                 gradient: "from-pink-500 to-pink-600",
                               },
                               {
+                                  key: "lowReflection",
+                                  label: "Low Reflection",
+                                  color: "blue",
+                                  icon: "lowReflex",
+                                  gradient: "from-blue-500 to-blue-600",
+                                },
+                                {
+                                  key: "drivePlus",
+                                  label: "Drive+",
+                                  color: "purple",
+                                  icon: "drive",
+                                  gradient: "from-purple-500 to-purple-600",
+                                },
+                              {
                                 key: "unbreakable",
                                 label: "Unbreakable",
                                 color: "red",
@@ -1376,6 +1390,36 @@ const LensSelectionPage = () => {
                                         />
                                       </svg>
                                     )}
+                                    {feature.icon === "drive" && (
+                                        <svg
+                                          className="w-4 h-4 text-white"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                                          />
+                                        </svg>
+                                      )}
+                                      {feature.icon === "lowReflex" && (
+                                        <svg
+                                          className="w-4 h-4 text-white"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                                          />
+                                        </svg>
+                                      )}
                                     {feature.icon === "sun" && (
                                       <svg
                                         className="w-5 h-5 sm:w-6 sm:h-6 text-white"
