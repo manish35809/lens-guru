@@ -37,6 +37,8 @@ const initialData = [
     tintable: true,
     photochromic: true,
     lensMaterialWarranty: true,
+    lowReflection: true,
+    drivePlus: true,
     photochromicColors: ["Gray", "Brown"],
     lensCoatingWarranty: 24,
     addRange: {
@@ -182,6 +184,8 @@ export default function Home() {
       tintable: false,
       photochromic: false,
       lensMaterialWarranty: false,
+      lowReflection: false,
+      drivePlus: false,
       photochromicColors: [],
       lensCoatingWarranty: "",
       addRange: {
@@ -486,6 +490,32 @@ export default function Home() {
                     placeholder="12"
                   />
                 </div>
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
+                    Frame Types
+                  </label>
+                  <select
+                    multiple
+                    value={form.frameTypeRecommended}
+                    onChange={(e) => {
+                      const selected = Array.from(
+                        e.target.selectedOptions,
+                        (opt) => opt.value
+                      );
+                      setForm((prev) => ({
+                        ...prev,
+                        frameTypeRecommended: selected,
+                      }));
+                    }}
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  >
+                    {frameTypeOptions.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
 
               {/* Power Range & Additional */}
@@ -615,57 +645,20 @@ export default function Home() {
                     placeholder="Gray, Brown (comma separated)"
                   />
                 </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Frame Types
-                  </label>
-                  <select
-                    multiple
-                    value={form.frameTypeRecommended}
-                    onChange={(e) => {
-                      const selected = Array.from(
-                        e.target.selectedOptions,
-                        (opt) => opt.value
-                      );
-                      setForm((prev) => ({
-                        ...prev,
-                        frameTypeRecommended: selected,
-                      }));
-                    }}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                  >
-                    {frameTypeOptions.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
               </div>
             </div>
 
-            {/* Features */}
+            {/* Material */}
             <div className="mt-8">
               <h3 className="text-lg font-semibold text-slate-700 border-b border-slate-200 pb-2 mb-4">
-                Features
+                Material Details
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {[
-                  "resistScratches",
-                  "reducesGlare",
-                  "sunUvProtection",
                   "filterBlueVioletLight",
-                  "repelsWater",
-                  "resistSmudges",
-                  "repelsDust",
-                  "allowEssentialBlueLight",
                   "photochromic",
                   "unbreakable",
                   "tintable",
-                  "authenticityCard",
-                  "lensMaterialWarranty",
-                  "isHighCyl",
                 ].map((field) => (
                   <label
                     key={field}
@@ -683,6 +676,70 @@ export default function Home() {
                     </span>
                   </label>
                 ))}
+              </div>
+            </div>
+
+            {/* Coating Features */}
+            <div className="mt-8">
+              <h3 className="text-lg font-semibold text-slate-700 border-b border-slate-200 pb-2 mb-4">
+                Coating Features
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {[
+                  "resistScratches",
+                  "reducesGlare",
+                  "sunUvProtection",
+                  "lowReflection",
+                  "repelsWater",
+                  "resistSmudges",
+                  "repelsDust",
+                  "allowEssentialBlueLight",
+                  "drivePlus",
+                ].map((field) => (
+                  <label
+                    key={field}
+                    className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors duration-200"
+                  >
+                    <input
+                      type="checkbox"
+                      name={field}
+                      checked={form[field]}
+                      onChange={handleChange}
+                      className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500"
+                    />
+                    <span className="text-sm font-medium text-slate-700 capitalize">
+                      {field.replace(/([A-Z])/g, " $1").trim()}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            {/* Other Info */}
+            <div className="mt-8">
+              <h3 className="text-lg font-semibold text-slate-700 border-b border-slate-200 pb-2 mb-4">
+                More Details
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {["authenticityCard", "lensMaterialWarranty", "isHighCyl"].map(
+                  (field) => (
+                    <label
+                      key={field}
+                      className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors duration-200"
+                    >
+                      <input
+                        type="checkbox"
+                        name={field}
+                        checked={form[field]}
+                        onChange={handleChange}
+                        className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500"
+                      />
+                      <span className="text-sm font-medium text-slate-700 capitalize">
+                        {field.replace(/([A-Z])/g, " $1").trim()}
+                      </span>
+                    </label>
+                  )
+                )}
               </div>
             </div>
 
@@ -837,8 +894,17 @@ export default function Home() {
                     <span className="text-xs bg-teal-100 text-yellow-700 px-2 py-1 rounded-full">
                       High Cylindrical
                     </span>
-                  )
-                  }
+                  )}
+                  {lens.lowReflection && (
+                    <span className="text-xs bg-sky-100 text-sky-700 px-2 py-1 rounded-full">
+                      Low Reflection
+                    </span>
+                  )}
+                  {lens.drivePlus && (
+                    <span className="text-xs bg-sky-100 text-sky-700 px-2 py-1 rounded-full">
+                      Drive Plus
+                    </span>
+                  )}
                 </div>
 
                 {/* Action Buttons */}
