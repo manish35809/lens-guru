@@ -514,6 +514,7 @@ const LensSelectionPage = () => {
 
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex gap-8">
+          
           {/* Filters Sidebar - keeping original structure */}
           <div
             className={`${
