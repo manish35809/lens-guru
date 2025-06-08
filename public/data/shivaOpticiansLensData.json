@@ -1493,7 +1493,7 @@
     "allowEssentialBlueLight": false,
     "sunUvProtection": true,
     "clear": false,
-    "unbreakable": false,
+    "unbreakable": true,
     "tintable": false,
     "photochromic": false,
     "lensMaterialWarranty": true,
@@ -1705,5 +1705,1082 @@
       "half-metal"
     ],
     "isHighCyl": false
+  },
+  {
+    "id": 1749405006184,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "3",
+      "maxCylMinus": "-3",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Crizal Rock",
+    "poster": "https://woweye.in/cdn/shop/products/B2_ccac3fb8-3d31-4f0a-99f3-b13999a4d95b_1400x.png?v=1711958020",
+    "srp": "4500",
+    "specialPrice": "3200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Thailand",
+    "brand": "Essilor",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "filterBlueVioletLight": true,
+    "photochromic": false,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "lowReflection": true
+  },
+  {
+    "id": 1749405095466,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Poly Blue Cut Crizal Rock",
+    "poster": "https://woweye.in/cdn/shop/products/B2_ccac3fb8-3d31-4f0a-99f3-b13999a4d95b_1400x.png?v=1711958020",
+    "srp": "5100",
+    "specialPrice": "3600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Philippines",
+    "brand": "Essilor",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749405213484,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "5",
+      "maxCylMinus": "-3",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2.25"
+    },
+    "name": "Blue Filter Crizal Prevencia",
+    "poster": "https://woweye.in/cdn/shop/files/PrevenciaFinal_f3d084de-955d-4200-9582-96a07cc8396e_1400x.png?v=1711945801",
+    "srp": "6200",
+    "specialPrice": "4400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Thailand",
+    "brand": "Essilor",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749405342510,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Poly Blue Filter Crizal Prevencia",
+    "poster": "https://woweye.in/cdn/shop/files/PrevenciaFinal_f3d084de-955d-4200-9582-96a07cc8396e_1400x.png?v=1711945801",
+    "srp": "6800",
+    "specialPrice": "4800",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Philippines",
+    "brand": "Essilor",
+    "time": "1",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749406575239,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Thinmax Satin+",
+    "poster": "https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/1/AmazonStores/A21TJRUUN4KGV/fe607e425e535abe2e29597f1697baa9.w3000.h1500.jpg",
+    "srp": "2830",
+    "specialPrice": "1600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749406768056,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "11",
+      "maxCylMinus": "-6",
+      "maxCylPlus": "6",
+      "maxCylCross": "-6"
+    },
+    "name": "Blue Cut Rx Satin+ UV",
+    "poster": "https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/1/AmazonStores/A21TJRUUN4KGV/fe607e425e535abe2e29597f1697baa9.w3000.h1500.jpg",
+    "srp": "5200",
+    "specialPrice": "2400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749407046015,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Thinmax Satin Aktiv (Drive)",
+    "poster": "https://novalensesegypt.com/wp-content/uploads/2023/09/Satin_Aktiv_Page_01-1024x768.jpg",
+    "srp": "3290",
+    "specialPrice": "2400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749407272054,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut MR8 Thinmax Satin+",
+    "poster": "https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/1/AmazonStores/A21TJRUUN4KGV/fe607e425e535abe2e29597f1697baa9.w3000.h1500.jpg",
+    "srp": "3680",
+    "specialPrice": "2600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.61",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749407408031,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Hi-Index Thinmax Satin+",
+    "poster": "https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/1/AmazonStores/A21TJRUUN4KGV/fe607e425e535abe2e29597f1697baa9.w3000.h1500.jpg",
+    "srp": "5860",
+    "specialPrice": "4100",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749407508702,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut 1.74 Thinmax Satin+",
+    "poster": "https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/1/AmazonStores/A21TJRUUN4KGV/fe607e425e535abe2e29597f1697baa9.w3000.h1500.jpg",
+    "srp": "8700",
+    "specialPrice": "6100",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.74",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749407878583,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Fino HMC Blue",
+    "poster": "https://visionplusmag.com/wp-content/uploads/2016/12/Nova-FSV.jpg",
+    "srp": "1700",
+    "specialPrice": "1200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "5",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749408038784,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG ARC Fino Satin",
+    "poster": "https://visionplusmag.com/wp-content/uploads/2016/12/Nova-FSV.jpg",
+    "srp": "2720",
+    "specialPrice": "1900",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray"
+    ],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749408235808,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "1",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Drive+",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
+    "srp": "2000",
+    "specialPrice": "1400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749408330217,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "3",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "1",
+      "maxCylCross": "-4"
+    },
+    "name": "Blue Cut Drive+",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
+    "srp": "2600",
+    "specialPrice": "1800",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749408488104,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "3",
+      "maxCylMinus": "-1",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Poly Blue Cut Drive+",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
+    "srp": "2400",
+    "specialPrice": "1600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": true,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749408604929,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "1",
+      "maxCylCross": "-2"
+    },
+    "name": "Poly Blue Cut Drive+",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
+    "srp": "2400",
+    "specialPrice": "1600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": true,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ],
+    "isHighCyl": false
+  },
+  {
+    "id": 1749408730010,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-12",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Hi-Index Drive+",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
+    "srp": "3150",
+    "specialPrice": "2200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749408793994,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-12",
+      "rpPlus": "0",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Hi-Index Drive+",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
+    "srp": "4350",
+    "specialPrice": "3100",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749409107042,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "1",
+      "maxCylCross": ""
+    },
+    "name": "Poly Blue Cut Crystal",
+    "poster": "https://image.made-in-china.com/365f3j00tvuigMzlVDcT/1-59-PC-Poly-Super-Hard-Blue-Cut-Lenses-Polycarbonate-Optical-Lens.webp",
+    "srp": "900",
+    "specialPrice": "600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "5",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749409236979,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "3",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-4"
+    },
+    "name": "Poly Blue Cut Crystal",
+    "poster": "https://image.made-in-china.com/365f3j00tvuigMzlVDcT/1-59-PC-Poly-Super-Hard-Blue-Cut-Lenses-Polycarbonate-Optical-Lens.webp",
+    "srp": "1850",
+    "specialPrice": "1300",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749409327403,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Poly Blue Cut Low Reflection",
+    "poster": "https://m.media-amazon.com/images/I/81bdhbafoJL._AC_UY350_.jpg",
+    "srp": "1400",
+    "specialPrice": "1000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749409411868,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "1",
+      "maxCylCross": "-2"
+    },
+    "name": "Poly Blue Cut Low Reflection",
+    "poster": "https://m.media-amazon.com/images/I/81bdhbafoJL._AC_UY350_.jpg",
+    "srp": "1850",
+    "specialPrice": "1300",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   }
 ]

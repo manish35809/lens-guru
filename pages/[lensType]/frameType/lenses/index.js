@@ -1304,6 +1304,13 @@ const LensSelectionPage = () => {
                                 icon: "shield-check",
                                 gradient: "from-red-500 to-red-600",
                               },
+                              {
+                                key: "essentialBlueLight",
+                                label: "Essential Blue Light",
+                                color: "indigo",
+                                icon: "filter",
+                                gradient: "from-indigo-500 to-indigo-600",
+                              }
                             ].map((feature) => {
                               if (!lens[feature.key]) return null;
 
@@ -1336,6 +1343,23 @@ const LensSelectionPage = () => {
                                         />
                                       </svg>
                                     )}
+                                    {
+                                      feature.icon === "filter" && (
+                                        <svg
+                                          className="w-5 h-5 sm:w-6 sm:h-6 text-white"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.68 2.68M10 11a1 1 0 100-2M14 11a1 1 0 100-2h3a1 1 0 100 2h-3z"
+                                          />
+                                        </svg>
+                                      )
+                                    }
                                     {feature.icon === "drive" && (
                                       <svg
                                         className="w-4 h-4 text-white"
