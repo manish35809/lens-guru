@@ -301,11 +301,7 @@ const LensSelectionPage = () => {
 
         // High cylinder lens specific validation
         if (lens.isHighCyl) {
-          // Check for zero resultant power edge case
-          if (RE_SPH + RE_CYL === 0 && LE_SPH + LE_CYL === 0) {
-            return false;
-          }
-
+          
           // Check negative resultant power range
           const reResultant = RE_SPH + RE_CYL;
           const leResultant = LE_SPH + LE_CYL;

@@ -966,5 +966,343 @@
       "acetate"
     ],
     "isHighCyl": true
+  },
+  {
+    "id": 1749364832760,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Tinted Hard Coat (Gray/Green)",
+    "poster": "https://d3995ea24pmi7m.cloudfront.net/media/catalog/product/M/8/M8021GY16V_1_lar.jpg",
+    "srp": "1130",
+    "specialPrice": "790",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": true,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749365016237,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Tintable Hard Coat (Any Color)",
+    "poster": "https://img.bdjkt.com/img/700/bq7l6kglbq8ddqd41t_1/fqP81Nh5RiyLfQhfqPlg0YvH0iau6GRsiKdcfURazw.jpg",
+    "srp": "1390",
+    "specialPrice": "970",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Vision Rx Lab",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": true,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1749365339939,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Tintable Hard Coat (Any Color)",
+    "poster": "https://www.hc-optical.net/uploads/16103343931.png",
+    "srp": "2060",
+    "specialPrice": "1440",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korean",
+    "brand": "O2 Rx Lenses",
+    "time": "3",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": true,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749378967634,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-12",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": "0"
+    },
+    "name": "Blue Cut Hi-Index",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8HMisysLITZvDwe3aMeaoobXEiOWwwBQI_w&s",
+    "srp": "1650",
+    "specialPrice": "1150",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
+    "lowReflection": false
+  },
+  {
+    "id": 1749379130851,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-12",
+      "rpPlus": "0",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Hi-Index",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8HMisysLITZvDwe3aMeaoobXEiOWwwBQI_w&s",
+    "srp": "2450",
+    "specialPrice": "1750",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749379298050,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-24",
+      "rpPlus": "",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Hi-Index",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8HMisysLITZvDwe3aMeaoobXEiOWwwBQI_w&s",
+    "srp": "5500",
+    "specialPrice": "3600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Roxiomo",
+    "time": "2",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749379419624,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-24",
+      "rpPlus": "0",
+      "maxCylMinus": "-5",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Hi-Index",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8HMisysLITZvDwe3aMeaoobXEiOWwwBQI_w&s",
+    "srp": "6600",
+    "specialPrice": "4600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Roximo",
+    "time": "3",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
   }
 ]
