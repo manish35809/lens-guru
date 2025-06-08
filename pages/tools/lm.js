@@ -34,6 +34,7 @@ const initialData = [
     allowEssentialBlueLight: true,
     sunUvProtection: true,
     unbreakable: false,
+    clear: true,
     tintable: true,
     photochromic: true,
     lensMaterialWarranty: true,
@@ -99,12 +100,13 @@ export default function Home() {
     resistSmudges: false,
     repelsWater: false,
     repelsDust: false,
-    filterBlueVioletLight: false,
     allowEssentialBlueLight: false,
     sunUvProtection: false,
+    clear: false,
+    filterBlueVioletLight: false,
+    photochromic: false,
     unbreakable: false,
     tintable: false,
-    photochromic: false,
     lensMaterialWarranty: false,
     isHighCyl: false,
     photochromicColors: [],
@@ -180,6 +182,7 @@ export default function Home() {
       filterBlueVioletLight: false,
       allowEssentialBlueLight: false,
       sunUvProtection: false,
+      clear: false,
       unbreakable: false,
       tintable: false,
       photochromic: false,
@@ -659,6 +662,7 @@ export default function Home() {
                   "photochromic",
                   "unbreakable",
                   "tintable",
+                  "clear",
                 ].map((field) => (
                   <label
                     key={field}
@@ -883,6 +887,11 @@ export default function Home() {
                   {lens.tintable && (
                     <span className="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded-full">
                       Tintable
+                    </span>
+                  )}
+                  {lens.clear && (
+                    <span className="text-xs bg-lime-100 text-lime-700 px-2 py-1 rounded-full">
+                      Clear
                     </span>
                   )}
                   {lens.lensMaterialWarranty && (

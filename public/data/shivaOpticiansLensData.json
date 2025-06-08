@@ -44,7 +44,8 @@
       "acetate",
       "full-metal",
       "half-metal"
-    ]
+    ],
+    "clear": true
   },
   {
     "id": 1749309335673,
@@ -92,7 +93,8 @@
       "acetate",
       "full-metal",
       "half-metal"
-    ]
+    ],
+    "clear": true
   },
   {
     "id": 1749309438796,
@@ -139,7 +141,8 @@
     "frameTypeRecommended": [
       "acetate"
     ],
-    "isHighCyl": true
+    "isHighCyl": true,
+    "clear": true
   },
   {
     "id": 1749309537907,
@@ -188,7 +191,8 @@
       "full-metal",
       "half-metal"
     ],
-    "isHighCyl": true
+    "isHighCyl": true,
+    "clear": true
   },
   {
     "id": 1749310084656,
@@ -237,7 +241,8 @@
       "full-metal",
       "half-metal"
     ],
-    "isHighCyl": true
+    "isHighCyl": true,
+    "clear": true
   },
   {
     "id": 1749310348878,
@@ -285,7 +290,8 @@
       "acetate",
       "full-metal",
       "half-metal"
-    ]
+    ],
+    "clear": true
   },
   {
     "id": 1749311212277,
@@ -334,7 +340,8 @@
       "full-metal",
       "half-metal"
     ],
-    "isHighCyl": true
+    "isHighCyl": true,
+    "clear": true
   },
   {
     "id": 1749311548922,
@@ -383,7 +390,8 @@
       "full-metal",
       "half-metal"
     ],
-    "isHighCyl": true
+    "isHighCyl": true,
+    "clear": true
   },
   {
     "id": 1749319259656,
@@ -678,7 +686,8 @@
     },
     "frameTypeRecommended": [
       "rimless"
-    ]
+    ],
+    "clear": false
   },
   {
     "id": 1749322203076,
@@ -1304,5 +1313,397 @@
       "acetate"
     ],
     "isHighCyl": true
+  },
+  {
+    "id": 1749391866151,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-12",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Hi-Index Low Reflection",
+    "poster": "https://eyetech.pk/assets/images/services/services-details-5.webp",
+    "srp": "2900",
+    "specialPrice": "2000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false
+  },
+  {
+    "id": 1749391939753,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-12",
+      "rpPlus": "0",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Hi-Index Low Reflection",
+    "poster": "https://eyetech.pk/assets/images/services/services-details-5.webp",
+    "srp": "3890",
+    "specialPrice": "2750",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749392225063,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "6",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Elements",
+    "poster": "https://keralaopticals.com/wp-content/uploads/2022/10/Elements.jpg",
+    "srp": "1900",
+    "specialPrice": "1300",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "Essilor",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false
+  },
+  {
+    "id": 1749392327681,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Poly Blue Cut Elements",
+    "poster": "https://keralaopticals.com/wp-content/uploads/2022/10/Elements.jpg",
+    "srp": "2300",
+    "specialPrice": "1598",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "Essilor",
+    "time": "",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749393040706,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-5",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Crizal Easy Pro",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1kvMk868-kJev_WVrFPFGvlD7uaajYn4GQA&s",
+    "srp": "2700",
+    "specialPrice": "1800",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Thailand",
+    "brand": "Essilor",
+    "time": "1",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false
+  },
+  {
+    "id": 1749393249608,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "3",
+      "maxCylMinus": "-3",
+      "maxCylPlus": "-2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Crizal Easy Pro",
+    "poster": "https://woweye.in/cdn/shop/files/b3_f696cfd7-1ef1-4aaf-b3ea-914988cd06ec_1400x.png?v=1711957973",
+    "srp": "3900",
+    "specialPrice": "2700",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Thailand",
+    "brand": "Essilor",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1749393753848,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Poly Blue Cut Crizal Easy Pro",
+    "poster": "https://woweye.in/cdn/shop/files/b3_f696cfd7-1ef1-4aaf-b3ea-914988cd06ec_1400x.png?v=1711957973",
+    "srp": "4500",
+    "specialPrice": "3200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Philippines",
+    "brand": "Essilor",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1749394122025,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "6",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut Hi-Index Crizal Easy Pro",
+    "poster": "https://woweye.in/cdn/shop/files/b3_f696cfd7-1ef1-4aaf-b3ea-914988cd06ec_1400x.png?v=1711957973",
+    "srp": "7100",
+    "specialPrice": "5000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Essilor",
+    "time": "2",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false
   }
 ]

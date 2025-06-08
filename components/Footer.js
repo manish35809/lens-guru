@@ -39,10 +39,16 @@ const LensGuruFooter = () => {
       gradient: 'from-indigo-500 to-purple-600'
     },
     {
-      title: 'New View',
-      href: '/sv/frameType/lenses/new',
+      title: 'Mobile View',
+      href: '/sv/frameType/lenses/old',
       icon: Eye,
       gradient: 'from-purple-500 to-violet-600'
+    },
+    {
+      title: 'Desktop View',
+      href: '/sv/frameType/lenses',
+      icon: Eye,
+      gradient: 'from-blue-500 to-blue-600'
     }
   ];
 

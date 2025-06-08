@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Filter,
   ShieldCheck,
@@ -9,16 +9,25 @@ import {
   Clock,
   Award,
   Star,
+  ChevronDown,
+  ChevronUp,
   X,
-  ChevronLeft,
-  ChevronRight,
+  Info,
 } from "lucide-react";
 
+import {
+  Shield,
+  Fingerprint,
+  Wind,
+  Zap,
+  Palette,
+  Paintbrush,
+  FileCheck,
+} from "lucide-react";
 
 const LensSelectionPage = () => {
   // State management
   const [filteredLenses, setFilteredLenses] = useState([]);
-  const [activeFilterTab, setActiveFilterTab] = useState("materials");
   const [brands, setBrands] = useState([]);
   const [allLenses, setAllLenses] = useState([]);
   const [filters, setFilters] = useState({
@@ -28,7 +37,6 @@ const LensSelectionPage = () => {
     priceRange: [0, 0],
     deliveryTime: 30,
   });
-  const scrollContainerRef = useRef(null);
   const [sortBy, setSortBy] = useState("price");
   const [showFilters, setShowFilters] = useState(false);
   const [error, setError] = useState(null);
@@ -175,20 +183,6 @@ const LensSelectionPage = () => {
     return isRightValid && isLeftValid;
   }
 
-  const scroll = (direction) => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      const cardWidth = 520; // card width + gap
-      const scrollAmount = cardWidth * 1; // scroll by 1 card
-
-      if (direction === "left") {
-        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-      } else {
-        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-      }
-    }
-  };
-
   // Fetch lens data
   useEffect(() => {
     const fetchLensData = async () => {
@@ -261,6 +255,12 @@ const LensSelectionPage = () => {
           if (!isAdditionValid(powerInfo, lens.addRange)) return false;
         }
 
+        if (
+          frame !== "rimless" && frame !== "lensOnly"
+        ) {
+          return !lens.name.includes("Poly");
+        }
+
         // Check power compatibility
         if (!isPowerValid(powerInfo, lens.powerRange)) return false;
 
@@ -307,6 +307,7 @@ const LensSelectionPage = () => {
 
         // High cylinder lens specific validation
         if (lens.isHighCyl) {
+          
           // Check negative resultant power range
           const reResultant = RE_SPH + RE_CYL;
           const leResultant = LE_SPH + LE_CYL;
@@ -326,7 +327,7 @@ const LensSelectionPage = () => {
           }
 
           // Check positive resultant power range
-          if (reResultant >= 0 || leResultant >= 0) {
+          if (reResultant > 0 || leResultant > 0) {
             if ((RE_CYL <= 2 && RE_CYL >= 0) || (LE_CYL <= 2 && LE_CYL >= 0)) {
               if (
                 reResultant > plusTotalPower ||
@@ -343,11 +344,6 @@ const LensSelectionPage = () => {
 
       // Remove duplicates by name, keeping only the lowest price
       const lensMap = new Map();
-
-      validLenses.forEach((lens) => {
-        const lensName = lens.name; // Assuming the lens object has a 'name' property
-        console.log("lensName:", lensName);
-      });
 
       validLenses.forEach((lens) => {
         const lensName = lens.name; // Assuming the lens object has a 'name' property
@@ -396,6 +392,8 @@ const LensSelectionPage = () => {
       filtered = filtered.filter((lens) => {
         return filters.features.every((feature) => {
           switch (feature) {
+            case "clear":
+              return lens.clear;
             case "blueLight":
               return lens.filterBlueVioletLight;
             case "essentialBlueLight":
@@ -518,584 +516,662 @@ const LensSelectionPage = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex gap-8">
+          
           {/* Filters Sidebar - keeping original structure */}
-          {/* Floating Filter Bar - Add this at the bottom of your existing component */}
-          <div className="fixed bottom-0 left-0 right-0 z-50">
-            {/* Backdrop when expanded */}
-            {showFilters && (
-              <div
-                className="fixed inset-0 bg-black/20 backdrop-blur-sm"
-                onClick={() => setShowFilters(false)}
-              />
-            )}
-
-            {/* Main Filter Bar */}
-            <div
-              className={`relative bg-white border-t border-gray-200 shadow-2xl transition-all duration-300 ${
-                showFilters ? "rounded-t-3xl" : "rounded-t-2xl"
-              }`}
-            >
-              {/* Expanded Content */}
+          <div
+            className={`${
+              showFilters ? "block" : "hidden"
+            } lg:block w-80 bg-white rounded-2xl shadow-xl p-8 h-fit border border-slate-200`}
+          >
+            <div className="flex items-center justify-between mb-6">
               {showFilters && (
-                <div className="px-6 pt-6 pb-6 max-h-[70vh] overflow-y-auto">
-                  {/* Tab Navigation */}
-                  <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
-                    <button
-                      className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
-                        activeFilterTab === "materials"
-                          ? "bg-blue-500 text-white shadow-lg"
-                          : "text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                      }`}
-                      onClick={() => setActiveFilterTab("materials")}
-                    >
-                      Materials
-                      {filters.features.filter((f) =>
-                        [
-                          "blueLight",
-                          "photochromic",
-                          "unbreakable",
-                          "tintable",
-                        ].includes(f)
-                      ).length > 0 && (
-                        <span
-                          className={`absolute -top-1 -right-1 w-5 h-5 rounded-full text-xs flex items-center justify-center ${
-                            activeFilterTab === "materials"
-                              ? "bg-white text-blue-500"
-                              : "bg-blue-500 text-white"
-                          }`}
-                        >
-                          {
-                            filters.features.filter((f) =>
-                              [
-                                "blueLight",
-                                "photochromic",
-                                "unbreakable",
-                                "tintable",
-                              ].includes(f)
-                            ).length
-                          }
-                        </span>
-                      )}
-                    </button>
-
-                    <button
-                      className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
-                        activeFilterTab === "coatings"
-                          ? "bg-blue-500 text-white shadow-lg"
-                          : "text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                      }`}
-                      onClick={() => setActiveFilterTab("coatings")}
-                    >
-                      Coatings
-                      {filters.features.filter((f) =>
-                        [
-                          "resistScratches",
-                          "antiGlare",
-                          "uv",
-                          "water",
-                          "smudge",
-                          "lowReflection",
-                          "drivePlus",
-                          "dust",
-                          "essentialBlueLight",
-                        ].includes(f)
-                      ).length > 0 && (
-                        <span
-                          className={`absolute -top-1 -right-1 w-5 h-5 rounded-full text-xs flex items-center justify-center ${
-                            activeFilterTab === "coatings"
-                              ? "bg-white text-blue-500"
-                              : "bg-blue-500 text-white"
-                          }`}
-                        >
-                          {
-                            filters.features.filter((f) =>
-                              [
-                                "resistScratches",
-                                "antiGlare",
-                                "uv",
-                                "water",
-                                "smudge",
-                                "lowReflection",
-                                "drivePlus",
-                                "dust",
-                                "essentialBlueLight",
-                              ].includes(f)
-                            ).length
-                          }
-                        </span>
-                      )}
-                    </button>
-
-                    <button
-                      className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
-                        activeFilterTab === "extras"
-                          ? "bg-blue-500 text-white shadow-lg"
-                          : "text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                      }`}
-                      onClick={() => setActiveFilterTab("extras")}
-                    >
-                      Extras
-                      {filters.features.filter((f) =>
-                        ["authenticityCard", "lensMaterialWarranty"].includes(f)
-                      ).length > 0 && (
-                        <span
-                          className={`absolute -top-1 -right-1 w-5 h-5 rounded-full text-xs flex items-center justify-center ${
-                            activeFilterTab === "extras"
-                              ? "bg-white text-blue-500"
-                              : "bg-blue-500 text-white"
-                          }`}
-                        >
-                          {
-                            filters.features.filter((f) =>
-                              [
-                                "authenticityCard",
-                                "lensMaterialWarranty",
-                              ].includes(f)
-                            ).length
-                          }
-                        </span>
-                      )}
-                    </button>
-
-                    <button
-                      className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
-                        activeFilterTab === "thickness"
-                          ? "bg-blue-500 text-white shadow-lg"
-                          : "text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                      }`}
-                      onClick={() => setActiveFilterTab("thickness")}
-                    >
-                      Thickness
-                      {filters.thickness.length > 0 && (
-                        <span
-                          className={`absolute -top-1 -right-1 w-5 h-5 rounded-full text-xs flex items-center justify-center ${
-                            activeFilterTab === "thickness"
-                              ? "bg-white text-blue-500"
-                              : "bg-blue-500 text-white"
-                          }`}
-                        >
-                          {filters.thickness.length}
-                        </span>
-                      )}
-                    </button>
-
-                    <button
-                      className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
-                        activeFilterTab === "brands"
-                          ? "bg-blue-500 text-white shadow-lg"
-                          : "text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                      }`}
-                      onClick={() => setActiveFilterTab("brands")}
-                    >
-                      Brands
-                      {filters.brand.length > 0 && (
-                        <span
-                          className={`absolute -top-1 -right-1 w-5 h-5 rounded-full text-xs flex items-center justify-center ${
-                            activeFilterTab === "brands"
-                              ? "bg-white text-blue-500"
-                              : "bg-blue-500 text-white"
-                          }`}
-                        >
-                          {filters.brand.length}
-                        </span>
-                      )}
-                    </button>
-
-                    <button
-                      className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
-                        activeFilterTab === "delivery"
-                          ? "bg-blue-500 text-white shadow-lg"
-                          : "text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                      }`}
-                      onClick={() => setActiveFilterTab("delivery")}
-                    >
-                      Delivery
-                    </button>
-                  </div>
-
-                  {/* Filter Content */}
-                  <div className="space-y-4">
-                    {/* Materials Tab */}
-                    {activeFilterTab === "materials" && (
-                      <div className="flex flex-wrap gap-3">
-                        {[
-                          { key: "blueLight", label: "Blue Cut", icon: "👁️" },
-                          {
-                            key: "photochromic",
-                            label: "Photochromic",
-                            icon: "🎨",
-                          },
-                          {
-                            key: "unbreakable",
-                            label: "Unbreakable",
-                            icon: "🛡️",
-                          },
-                          { key: "tintable", label: "Tintable", icon: "🖌️" },
-                        ].map((feature) => (
-                          <button
-                            key={feature.key}
-                            onClick={() =>
-                              toggleFilter("features", feature.key)
-                            }
-                            className={`inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${
-                              filters.features.includes(feature.key)
-                                ? "bg-blue-500 text-white shadow-lg scale-105"
-                                : "bg-white text-gray-700 border border-gray-200 hover:border-blue-300 hover:shadow-md"
-                            }`}
-                          >
-                            <span className="text-base">{feature.icon}</span>
-                            <span>{feature.label}</span>
-                          </button>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Coatings Tab */}
-                    {activeFilterTab === "coatings" && (
-                      <div className="flex flex-wrap gap-3">
-                        {[
-                          {
-                            key: "resistScratches",
-                            label: "Resist Scratches",
-                            icon: "⚡",
-                          },
-                          { key: "antiGlare", label: "Anti-Glare", icon: "🛡️" },
-                          { key: "uv", label: "Sun UV Protection", icon: "☀️" },
-                          {
-                            key: "water",
-                            label: "Water Repellent",
-                            icon: "💧",
-                          },
-                          {
-                            key: "smudge",
-                            label: "Smudge Resistant",
-                            icon: "👆",
-                          },
-                          {
-                            key: "lowReflection",
-                            label: "Low Reflection",
-                            icon: "👓",
-                          },
-                          { key: "drivePlus", label: "Drive Plus", icon: "🚗" },
-                          { key: "dust", label: "Dust Repellent", icon: "💨" },
-                          {
-                            key: "essentialBlueLight",
-                            label: "Essential Blue Light",
-                            icon: "⚡",
-                          },
-                        ].map((feature) => (
-                          <button
-                            key={feature.key}
-                            onClick={() =>
-                              toggleFilter("features", feature.key)
-                            }
-                            className={`inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${
-                              filters.features.includes(feature.key)
-                                ? "bg-blue-500 text-white shadow-lg scale-105"
-                                : "bg-white text-gray-700 border border-gray-200 hover:border-blue-300 hover:shadow-md"
-                            }`}
-                          >
-                            <span className="text-base">{feature.icon}</span>
-                            <span>{feature.label}</span>
-                          </button>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Extras Tab */}
-                    {activeFilterTab === "extras" && (
-                      <div className="flex flex-wrap gap-3">
-                        {[
-                          {
-                            key: "authenticityCard",
-                            label: "Authenticity Card",
-                            icon: "🏆",
-                          },
-                          {
-                            key: "lensMaterialWarranty",
-                            label: "Material Warranty",
-                            icon: "✅",
-                          },
-                        ].map((feature) => (
-                          <button
-                            key={feature.key}
-                            onClick={() =>
-                              toggleFilter("features", feature.key)
-                            }
-                            className={`inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${
-                              filters.features.includes(feature.key)
-                                ? "bg-blue-500 text-white shadow-lg scale-105"
-                                : "bg-white text-gray-700 border border-gray-200 hover:border-blue-300 hover:shadow-md"
-                            }`}
-                          >
-                            <span className="text-base">{feature.icon}</span>
-                            <span>{feature.label}</span>
-                          </button>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Thickness Tab */}
-                    {activeFilterTab === "thickness" && (
-                      <div className="flex flex-wrap gap-3">
-                        {[
-                          { key: "standard", label: "Standard", icon: "📚" },
-                          { key: "thin", label: "Thin", icon: "📖" },
-                          { key: "thinnest", label: "Thinnest", icon: "📄" },
-                        ].map((thickness) => (
-                          <button
-                            key={thickness.key}
-                            onClick={() =>
-                              toggleFilter("thickness", thickness.key)
-                            }
-                            className={`inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${
-                              filters.thickness.includes(thickness.key)
-                                ? "bg-blue-500 text-white shadow-lg scale-105"
-                                : "bg-white text-gray-700 border border-gray-200 hover:border-blue-300 hover:shadow-md"
-                            }`}
-                          >
-                            <span className="text-base">{thickness.icon}</span>
-                            <span>{thickness.label}</span>
-                          </button>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Brands Tab */}
-                    {activeFilterTab === "brands" && (
-                      <div className="flex flex-wrap gap-3">
-                        {brands.map((brand) => (
-                          <button
-                            key={brand}
-                            onClick={() => toggleFilter("brand", brand)}
-                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                              filters.brand.includes(brand)
-                                ? "bg-blue-500 text-white shadow-lg scale-105"
-                                : "bg-white text-gray-700 border border-gray-200 hover:border-blue-300 hover:shadow-md"
-                            }`}
-                          >
-                            {brand}
-                          </button>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Delivery Tab */}
-                    {activeFilterTab === "delivery" && (
-                      <div className="space-y-4">
-                        <div className="flex items-center gap-4">
-                          <span className="text-sm font-medium text-gray-700 min-w-fit">
-                            Max Delivery Time:
-                          </span>
-                          <div className="flex-1 px-4">
-                            <input
-                              type="range"
-                              min="0"
-                              max="30"
-                              value={filters.deliveryTime}
-                              onChange={(e) =>
-                                setFilters((prev) => ({
-                                  ...prev,
-                                  deliveryTime: parseInt(e.target.value),
-                                }))
-                              }
-                              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
-                              style={{
-                                background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${
-                                  (filters.deliveryTime / 30) * 100
-                                }%, #e5e7eb ${
-                                  (filters.deliveryTime / 30) * 100
-                                }%, #e5e7eb 100%)`,
-                              }}
-                            />
-                          </div>
-                          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold min-w-fit">
-                            {filters.deliveryTime} days
-                          </span>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )}
-
-              {/* Collapsed Header */}
-              <div className="flex items-center justify-between px-6 py-4">
-                <div className="flex items-center gap-4">
+                <h3 className="text-xl font-bold text-gray-900">
                   <button
                     onClick={() => setShowFilters(!showFilters)}
-                    className="flex items-center gap-3 px-4 py-2 bg-blue-500 text-white rounded-xl font-semibold shadow-lg hover:bg-blue-600 transition-colors"
+                    className="lg:hidden flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 bg-white rounded-xl shadow-lg border border-slate-200 font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base"
                   >
-                    <Filter size={32} />
-                    <span>Filters</span>
-                    {filters.features.length +
-                      filters.thickness.length +
-                      filters.brand.length >
-                      0 && (
-                      <span className="bg-white text-blue-500 px-2 py-0.5 rounded-full text-sm font-bold">
-                        {filters.features.length +
-                          filters.thickness.length +
-                          filters.brand.length}
-                      </span>
-                    )}
-                    {showFilters ? (
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 9l-7 7-7-7"
-                        />
-                      </svg>
-                    ) : (
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 15l7-7 7 7"
-                        />
-                      </svg>
-                    )}
+                    <Filter size={18} className="sm:w-6 sm:h-6" />
+                    Close
                   </button>
+                </h3>
+              )}
+              {!showFilters && (
+                <h3 className="text-xl font-bold text-gray-900">Filters</h3>
+              )}
 
-                  {!showFilters &&
-                    filters.features.length +
-                      filters.thickness.length +
-                      filters.brand.length >
-                      0 && (
-                      <div className="flex items-center gap-2 text-sm text-gray-600">
-                        <span className="font-medium">
-                          {filters.features.length +
-                            filters.thickness.length +
-                            filters.brand.length}{" "}
-                          active filters
-                        </span>
+              <button
+                onClick={clearFilters}
+                className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+              >
+                Clear All
+              </button>
+            </div>
+
+            {/* Material Filter */}
+            <div className="mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Lens Material Types
+              </h4>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  {
+                    key: "blueLight",
+                    label: "Blue Cut",
+                    icon: "Eye",
+                  },
+
+                  {
+                    key: "photochromic",
+                    label: "Photochromic",
+                    icon: "Palette",
+                  },
+                  {
+                    key: "unbreakable",
+                    label: "Unbreakable",
+                    icon: "ShieldCheck",
+                  },
+                  { key: "tintable", label: "Tintable", icon: "Paintbrush" },
+                  {
+                            key: "clear",
+                            label: "Clear",
+                            icon: "🌟",
+                          },
+                ].map((feature) => {
+                  const isActive = filters.features.includes(feature.key);
+
+                  return (
+                    <label
+                      key={feature.key}
+                      className={`flex flex-col items-center justify-center p-4 rounded-lg border transition-all duration-200 cursor-pointer hover:shadow-md min-h-[120px] ${
+                        isActive
+                          ? "border-blue-500 bg-blue-50"
+                          : "border-gray-200 bg-white hover:border-gray-300"
+                      }`}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={filters.features.includes(feature.key)}
+                        onChange={() => toggleFilter("features", feature.key)}
+                        className="sr-only"
+                      />
+                      <div
+                        className={`flex items-center justify-center w-12 h-12 rounded-lg mb-3 transition-colors duration-200 ${
+                          isActive
+                            ? "bg-blue-500 text-white"
+                            : "bg-gray-100 text-gray-400"
+                        }`}
+                      >
+                        {feature.icon === "Eye" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        )}
+
+                        {feature.icon === "Palette" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3H5a2 2 0 00-2 2v12a4 4 0 004 4h2a2 2 0 002-2V5a2 2 0 00-2-2z"
+                            />
+                          </svg>
+                        )}
+                        {feature.icon === "ShieldCheck" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                            />
+                          </svg>
+                        )}
+                        {feature.icon === "Paintbrush" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3H5a2 2 0 00-2 2v12a4 4 0 004 4h2a2 2 0 002-2V5a2 2 0 00-2-2z"
+                            />
+                          </svg>
+                        )}
                       </div>
-                    )}
-                </div>
-
-                <div className="flex items-center gap-3">
-                  {filters.features.length +
-                    filters.thickness.length +
-                    filters.brand.length >
-                    0 && (
-                    <button
-                      onClick={clearFilters}
-                      className="flex items-center gap-2 px-3 py-2 text-gray-600 hover:text-red-600 font-medium transition-colors"
-                    >
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                      <span
+                        className={`font-medium text-center text-sm leading-tight transition-colors duration-200 ${
+                          isActive ? "text-blue-700" : "text-gray-700"
+                        }`}
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M4 4l16 16m0 0l-16-16"
-                        />
-                      </svg>
-                      <span className="hidden sm:inline">Clear All</span>
-                    </button>
-                  )}
+                        {feature.label}
+                      </span>
+                    </label>
+                  );
+                })}
+              </div>
+            </div>
 
-                  {showFilters && (
-                    <button
-                      onClick={() => setShowFilters(false)}
-                      className="p-2 text-gray-400 hover:text-gray-600 transition-colors"
+            {/* Coating Features Filter */}
+            <div className="mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Coating Features
+              </h4>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  //resistScratches
+                  {
+                    key: "resistScratches",
+                    label: "Resist Scratches",
+                    icon: "scratchProof",
+                  },
+                  { key: "antiGlare", label: "Anti-Glare", icon: "Shield" },
+                  { key: "uv", label: "Sun UV Protection", icon: "Sun" },
+                  { key: "water", label: "Water Repellent", icon: "Droplets" },
+                  {
+                    key: "smudge",
+                    label: "Smudge Resistant",
+                    icon: "Fingerprint",
+                  },
+                  {
+                    key: "lowReflection",
+                    label: "Low Reflection",
+                    icon: "ClearSpecs",
+                  },
+                  {
+                    key: "drivePlus",
+                    label: "Drive Plus",
+                    icon: "NightVision",
+                  },
+                  { key: "dust", label: "Dust Repellent", icon: "Wind" },
+                  {
+                    key: "essentialBlueLight",
+                    label: "Essential Blue Light",
+                    icon: "Zap",
+                  },
+                ].map((feature) => {
+                  const isActive = filters.features.includes(feature.key);
+
+                  return (
+                    <label
+                      key={feature.key}
+                      className={`flex flex-col items-center justify-center p-4 rounded-lg border transition-all duration-200 cursor-pointer hover:shadow-md min-h-[120px] ${
+                        isActive
+                          ? "border-blue-500 bg-blue-50"
+                          : "border-gray-200 bg-white hover:border-gray-300"
+                      }`}
                     >
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                      <input
+                        type="checkbox"
+                        checked={filters.features.includes(feature.key)}
+                        onChange={() => toggleFilter("features", feature.key)}
+                        className="sr-only"
+                      />
+                      <div
+                        className={`flex items-center justify-center w-12 h-12 rounded-lg mb-3 transition-colors duration-200 ${
+                          isActive
+                            ? "bg-blue-500 text-white"
+                            : "bg-gray-100 text-gray-400"
+                        }`}
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </button>
-                  )}
-                </div>
+                        {feature.icon === "scratchProof" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke="currentColor"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M12 7.757v8.486M7.757 12h8.486M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                            />
+                          </svg>
+                        )}
+                        {feature.icon === "Shield" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                            />
+                          </svg>
+                        )}
+                        {feature.icon === "NightVision" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M19 12H5m14 0a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2m14 0V9a2 2 0 00-2-2H7a2 2 0 00-2 2v3"
+                            />
+                            <circle cx="7" cy="16" r="1" strokeWidth={2} />
+                            <circle cx="17" cy="16" r="1" strokeWidth={2} />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={1.5}
+                              d="M6 12l2-2m10 2l-2-2"
+                              opacity="0.7"
+                            />
+                          </svg>
+                        )}
+
+                        {feature.icon === "ClearSpecs" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                            />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={1}
+                              d="M8 8l8 8m-8 0l8-8"
+                              opacity="0.3"
+                            />
+                          </svg>
+                        )}
+
+                        {feature.icon === "Sun" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                            />
+                          </svg>
+                        )}
+
+                        {feature.icon === "Droplets" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M7.5 3.375c0 8.485 6.709 15.359 14.994 15.359 0-8.485-6.709-15.359-14.994-15.359z"
+                            />
+                          </svg>
+                        )}
+                        {feature.icon === "Fingerprint" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
+                            />
+                          </svg>
+                        )}
+                        {feature.icon === "Wind" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1a3 3 0 010 6h-1m8-6h1a3 3 0 010 6h-1m-9-6h1a3 3 0 010 6h-1"
+                            />
+                          </svg>
+                        )}
+                        {feature.icon === "Zap" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M13 10V3L4 14h7v7l9-11h-7z"
+                            />
+                          </svg>
+                        )}
+                      </div>
+                      <span
+                        className={`font-medium text-center text-sm leading-tight transition-colors duration-200 ${
+                          isActive ? "text-blue-700" : "text-gray-700"
+                        }`}
+                      >
+                        {feature.label}
+                      </span>
+                    </label>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Other Details Filter */}
+            <div className="mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Extra's
+              </h4>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  {
+                    key: "authenticityCard",
+                    label: "Authenticity Card",
+                    icon: "Award",
+                  },
+                  {
+                    key: "lensMaterialWarranty",
+                    label: "Material Warranty",
+                    icon: "FileCheck",
+                  },
+                ].map((feature) => {
+                  const isActive = filters.features.includes(feature.key);
+
+                  return (
+                    <label
+                      key={feature.key}
+                      className={`flex flex-col items-center justify-center p-4 rounded-lg border transition-all duration-200 cursor-pointer hover:shadow-md min-h-[120px] ${
+                        isActive
+                          ? "border-blue-500 bg-blue-50"
+                          : "border-gray-200 bg-white hover:border-gray-300"
+                      }`}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={filters.features.includes(feature.key)}
+                        onChange={() => toggleFilter("features", feature.key)}
+                        className="sr-only"
+                      />
+                      <div
+                        className={`flex items-center justify-center w-12 h-12 rounded-lg mb-3 transition-colors duration-200 ${
+                          isActive
+                            ? "bg-blue-500 text-white"
+                            : "bg-gray-100 text-gray-400"
+                        }`}
+                      >
+                        {feature.icon === "Award" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                            />
+                          </svg>
+                        )}
+                        {feature.icon === "FileCheck" && (
+                          <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        )}
+                      </div>
+                      <span
+                        className={`font-medium text-center text-sm leading-tight transition-colors duration-200 ${
+                          isActive ? "text-blue-700" : "text-gray-700"
+                        }`}
+                      >
+                        {feature.label}
+                      </span>
+                    </label>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Thickness Filter */}
+            <div className="mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Thickness
+              </h4>
+              <div className="grid grid-cols-3 gap-4">
+                {[
+                  { key: "standard", label: "Standard", icon: "layers-3" },
+                  { key: "thin", label: "Thin", icon: "layers-2" },
+                  { key: "thinnest", label: "Thinnest", icon: "layer" },
+                ].map((thickness) => {
+                  const isActive = filters.thickness.includes(thickness.key);
+
+                  return (
+                    <label
+                      key={thickness.key}
+                      className={`flex flex-col items-center justify-center p-4 rounded-lg border transition-all duration-200 cursor-pointer hover:shadow-md min-h-[120px] ${
+                        isActive
+                          ? "border-blue-500 bg-blue-50"
+                          : "border-gray-200 bg-white hover:border-gray-300"
+                      }`}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={filters.thickness.includes(thickness.key)}
+                        onChange={() =>
+                          toggleFilter("thickness", thickness.key)
+                        }
+                        className="sr-only"
+                      />
+                      <div
+                        className={`flex items-center justify-center w-12 h-12 rounded-lg mb-3 transition-colors duration-200 ${
+                          isActive
+                            ? "bg-blue-500 text-white"
+                            : "bg-gray-100 text-gray-400"
+                        }`}
+                      >
+                        {thickness.key === "standard" && (
+                          <div className="flex flex-col items-center space-y-0.5">
+                            <div className="w-6 h-1.5 bg-current rounded"></div>
+                            <div className="w-6 h-1.5 bg-current rounded"></div>
+                            <div className="w-6 h-1.5 bg-current rounded"></div>
+                          </div>
+                        )}
+                        {thickness.key === "thin" && (
+                          <div className="flex flex-col items-center space-y-1">
+                            <div className="w-6 h-1 bg-current rounded"></div>
+                            <div className="w-6 h-1 bg-current rounded"></div>
+                          </div>
+                        )}
+                        {thickness.key === "thinnest" && (
+                          <div className="w-6 h-0.5 bg-current rounded"></div>
+                        )}
+                      </div>
+                      <span
+                        className={`font-medium text-center text-sm leading-tight transition-colors duration-200 capitalize ${
+                          isActive ? "text-blue-700" : "text-gray-700"
+                        }`}
+                      >
+                        {thickness.label}
+                      </span>
+                    </label>
+                  );
+                })}
+              </div>
+            </div>
+            {/* Brand Filter */}
+            <div className="mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Brand
+              </h4>
+              {brands.map((brand) => (
+                <label key={brand} className="flex items-center mb-3">
+                  <input
+                    type="checkbox"
+                    checked={filters.brand?.includes(brand)}
+                    onChange={() => toggleFilter("brand", brand)}
+                    className="mr-3 text-blue-600 w-4 h-4"
+                  />
+                  <span className="text-gray-700 font-medium">{brand}</span>
+                </label>
+              ))}
+            </div>
+
+            {/* Delivery Time */}
+            <div className="mb-8">
+              <h4 className="font-semibold text-gray-900 mb-4 text-lg">
+                Max Delivery Time
+              </h4>
+              <div className="flex items-center gap-3">
+                <input
+                  type="range"
+                  min="0"
+                  max="30"
+                  value={filters.deliveryTime}
+                  onChange={(e) =>
+                    setFilters((prev) => ({
+                      ...prev,
+                      deliveryTime: parseInt(e.target.value),
+                    }))
+                  }
+                  className="flex-1"
+                />
+                <span className="text-gray-700 font-semibold min-w-[80px]">
+                  {filters.deliveryTime} days
+                </span>
               </div>
             </div>
           </div>
-          {/* Add this state to your existing component */}
-          {/* const [activeFilterTab, setActiveFilterTab] = useState('materials'); */}
+
           {/* Main Content */}
           <div className="flex-1">
-            {/* Lens Cards Carousel */}
-            <div className="relative max-w-7xl mx-auto px-4">
-              {/* Navigation Buttons */}
-              <button
-                onClick={() => scroll("left")}
-                className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg hover:shadow-xl rounded-full p-3 transition-all duration-300 border border-gray-200 hover:border-blue-300"
-                aria-label="Scroll left"
-              >
-                <ChevronLeft className="w-6 h-6 text-gray-700" />
-              </button>
+            {/* Controls */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0 mb-6 sm:mb-8">
+              {!showFilters && (
+                <>
+                  <button
+                    onClick={() => setShowFilters(!showFilters)}
+                    className="lg:hidden flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 bg-white rounded-xl shadow-lg border border-slate-200 font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base"
+                  >
+                    <Filter size={18} className="sm:w-6 sm:h-6" />
+                    Filters
+                  </button>
 
-              <button
-                onClick={() => scroll("right")}
-                className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg hover:shadow-xl rounded-full p-3 transition-all duration-300 border border-gray-200 hover:border-blue-300"
-                aria-label="Scroll right"
-              >
-                <ChevronRight className="w-6 h-6 text-gray-700" />
-              </button>
+                  <div className="flex flex-col xs:flex-row items-start xs:items-center gap-3 sm:gap-4 lg:gap-6 w-full sm:w-auto">
+                    <span className="text-sm sm:text-base lg:text-lg text-gray-700 font-medium whitespace-nowrap">
+                      Sort by:
+                    </span>
+                    <select
+                      value={sortBy}
+                      onChange={(e) => setSortBy(e.target.value)}
+                      className="w-full xs:w-auto min-w-[140px] sm:min-w-[160px] px-3 sm:px-4 py-2 sm:py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-medium text-sm sm:text-base lg:text-lg"
+                    >
+                      <option value="price">Price</option>
+                      <option value="delivery">Delivery Time</option>
+                    </select>
+                  </div>
+                </>
+              )}
+            </div>
 
-              {/* Carousel Container */}
-              <div
-                ref={scrollContainerRef}
-                className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-8 py-10"
-                style={{
-                  scrollbarWidth: "none",
-                  msOverflowStyle: "none",
-                }}
-              >
-                {filteredLenses.map((lens, index) => (
+            {/* Lens Cards */}
+            {!showFilters && (
+              <div className="grid gap-6 lg:gap-8">
+                {filteredLenses.map((lens) => (
                   <div
                     key={lens.id}
-                    className="flex-none w-96 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-200/50 hover:border-blue-300/50 group transform hover:-translate-y-2 hover:scale-[1.02]"
-                    style={{
-                      animation: `slideInFromRight 0.6s ease-out ${
-                        index * 0.1
-                      }s both`,
-                      minWidth: "384px",
-                    }}
+                    className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-200/50 hover:border-blue-300/50 group"
                   >
-                    <div className="flex flex-col">
-                      {/* Image Section */}
-                      <div className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 h-48">
+                    <div className="flex flex-col lg:flex-row">
+                      {/* Image Section - Enhanced */}
+                      <div className="lg:w-1/3 relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100">
                         <img
                           src={lens.poster}
                           alt={lens.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                          className="w-full h-56 sm:h-64 lg:h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         />
-                        {/* Discount Badge */}
-                        <div className="absolute top-3 left-3">
+                        {/* Discount Badge - Redesigned */}
+                        <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
                           <div className="relative">
-                            <div className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white px-3 py-1.5 rounded-2xl text-sm font-bold shadow-2xl backdrop-blur-sm border border-white/20">
-                              <span className="text-xs font-medium opacity-90">
+                            <div className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-2xl text-sm sm:text-base font-bold shadow-2xl backdrop-blur-sm border border-white/20">
+                              <span className="text-xs sm:text-sm font-medium opacity-90">
                                 SAVE
                               </span>
-                              <div className="text-lg font-black leading-none">
+                              <div className="text-lg sm:text-xl font-black leading-none">
                                 {Math.round(
                                   (1 - lens.specialPrice / lens.srp) * 100
                                 )}
@@ -1110,109 +1186,109 @@ const LensSelectionPage = () => {
                       </div>
 
                       {/* Content Section */}
-                      <div className="p-6">
+                      <div className="lg:w-2/3 p-4 sm:p-6 lg:p-8">
                         {/* Header Section */}
-                        <div className="flex flex-col justify-between mb-4 gap-3">
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 sm:mb-6 gap-4">
                           <div className="flex-1 min-w-0">
-                            <h3 className="text-xl font-bold text-gray-900 mb-2 leading-tight line-clamp-2">
+                            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 leading-tight">
                               {lens.name}
                             </h3>
-                            <div className="flex flex-col gap-1 text-sm text-gray-600">
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-sm sm:text-base text-gray-600">
                               <span className="font-semibold text-blue-600">
                                 {lens.brand}
                               </span>
+                              <span className="hidden sm:inline">•</span>
                               <span className="font-medium">
                                 Made in {lens.lensMaterialCountry}
                               </span>
                             </div>
                           </div>
 
-                          {/* Price Section */}
-                          <div className="flex items-center justify-between bg-gradient-to-r from-green-50 to-emerald-50 p-3 rounded-2xl border border-green-200/50">
-                            <div className="flex flex-col">
-                              <div className="text-2xl font-black text-green-600">
+                          {/* Price Section - Redesigned */}
+                          <div className="flex flex-row sm:flex-col items-center sm:items-end gap-2 sm:gap-1 bg-gradient-to-r from-green-50 to-emerald-50 p-3 sm:p-4 rounded-2xl border border-green-200/50">
+                            <div className="flex items-center gap-2 sm:gap-0 sm:flex-col sm:items-end">
+                              <div className="text-2xl sm:text-3xl font-black text-green-600">
                                 ₹{lens.specialPrice.toLocaleString()}
                               </div>
-                              <div className="text-lg text-gray-500 line-through">
+                              <div className="text-sm sm:text-base text-gray-500 line-through">
                                 ₹{lens.srp.toLocaleString()}
                               </div>
                             </div>
-                            <div className="text-xl text-green-700 font-bold bg-green-100 px-2 py-1 rounded-lg">
+                            <div className="text-xs sm:text-sm text-green-700 font-bold bg-green-100 px-2 py-1 rounded-lg">
                               Save ₹
                               {(lens.srp - lens.specialPrice).toLocaleString()}
                             </div>
                           </div>
                         </div>
 
-                        {/* Key Features */}
-                        <div className="grid grid-cols-2 gap-3 mb-4">
-                          <div className="flex items-center gap-2 p-2 bg-blue-50/50 rounded-xl border border-blue-100">
-                            <div className="p-1.5 bg-blue-500 rounded-lg">
-                              <Clock size={14} className="text-white" />
+                        {/* Key Features - Improved Grid */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
+                          <div className="flex items-center gap-3 p-3 bg-blue-50/50 rounded-xl border border-blue-100">
+                            <div className="p-2 bg-blue-500 rounded-xl">
+                              <Clock size={18} className="text-white" />
                             </div>
                             <div>
                               <div className="text-xs font-medium text-blue-600 uppercase tracking-wide">
                                 Delivery
                               </div>
-                              <div className="text-sm font-bold text-gray-900">
+                              <div className="text-sm sm:text-base font-bold text-gray-900">
                                 {lens.time} days
                               </div>
                             </div>
                           </div>
 
-                          <div className="flex items-center gap-2 p-2 bg-amber-50/50 rounded-xl border border-amber-100">
-                            <div className="p-1.5 bg-amber-500 rounded-lg">
-                              <Award size={14} className="text-white" />
+                          <div className="flex items-center gap-3 p-3 bg-amber-50/50 rounded-xl border border-amber-100">
+                            <div className="p-2 bg-amber-500 rounded-xl">
+                              <Award size={18} className="text-white" />
                             </div>
                             <div>
                               <div className="text-xs font-medium text-amber-600 uppercase tracking-wide">
                                 Index
                               </div>
-                              <div className="text-sm font-bold text-gray-900">
-                                {lens.thickness.index}
+                              <div className="text-sm sm:text-base font-bold text-gray-900">
+                                {lens.thickness.index} ({lens.thickness.type})
                               </div>
                             </div>
                           </div>
 
                           {lens.authenticityCard && (
-                            <div className="flex items-center gap-2 p-2 bg-green-50/50 rounded-xl border border-green-100">
-                              <div className="p-1.5 bg-green-500 rounded-lg">
-                                <ShieldCheck size={14} className="text-white" />
+                            <div className="flex items-center gap-3 p-3 bg-green-50/50 rounded-xl border border-green-100">
+                              <div className="p-2 bg-green-500 rounded-xl">
+                                <ShieldCheck size={18} className="text-white" />
                               </div>
                               <div>
                                 <div className="text-xs font-medium text-green-600 uppercase tracking-wide">
                                   Authentic
                                 </div>
-                                <div className="text-sm font-bold text-gray-900">
+                                <div className="text-sm sm:text-base font-bold text-gray-900">
                                   Verified
                                 </div>
                               </div>
                             </div>
                           )}
 
-                          <div className="flex items-center gap-2 p-2 bg-orange-50/50 rounded-xl border border-orange-100">
-                            <div className="p-1.5 bg-orange-500 rounded-lg">
-                              <Star size={14} className="text-white" />
+                          <div className="flex items-center gap-3 p-3 bg-orange-50/50 rounded-xl border border-orange-100">
+                            <div className="p-2 bg-orange-500 rounded-xl">
+                              <Star size={18} className="text-white" />
                             </div>
                             <div>
                               <div className="text-xs font-medium text-orange-600 uppercase tracking-wide">
                                 Warranty
                               </div>
-                              <div className="text-sm font-bold text-gray-900">
-                                {lens.lensCoatingWarranty}M
+                              <div className="text-sm sm:text-base font-bold text-gray-900">
+                                {lens.lensCoatingWarranty} Months
                               </div>
                             </div>
                           </div>
                         </div>
 
-                        {/* Protection Features */}
-                        <div className="mb-4">
-                          <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                            <div className="w-1 h-5 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
+                        {/* Protection Features - Completely Redesigned */}
+                        <div className="mb-6">
+                          <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                            <div className="w-1 h-6 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
                             Protection Features
                           </h4>
-
-                          <div className="grid grid-cols-3 gap-2">
+                          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3">
                             {[
                               {
                                 key: "resistScratches",
@@ -1271,19 +1347,19 @@ const LensSelectionPage = () => {
                                 gradient: "from-pink-500 to-pink-600",
                               },
                               {
-                                key: "lowReflection",
-                                label: "Low Reflection",
-                                color: "blue",
-                                icon: "lowReflex",
-                                gradient: "from-blue-500 to-blue-600",
-                              },
-                              {
-                                key: "drivePlus",
-                                label: "Drive+",
-                                color: "purple",
-                                icon: "drive",
-                                gradient: "from-purple-500 to-purple-600",
-                              },
+                                  key: "lowReflection",
+                                  label: "Low Reflection",
+                                  color: "blue",
+                                  icon: "lowReflex",
+                                  gradient: "from-blue-500 to-blue-600",
+                                },
+                                {
+                                  key: "drivePlus",
+                                  label: "Drive+",
+                                  color: "purple",
+                                  icon: "drive",
+                                  gradient: "from-purple-500 to-purple-600",
+                                },
                               {
                                 key: "unbreakable",
                                 label: "Unbreakable",
@@ -1324,35 +1400,35 @@ const LensSelectionPage = () => {
                                       </svg>
                                     )}
                                     {feature.icon === "drive" && (
-                                      <svg
-                                        className="w-4 h-4 text-white"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                      >
-                                        <path
-                                          strokeLinecap="round"
-                                          strokeLinejoin="round"
-                                          strokeWidth={2}
-                                          d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
-                                        />
-                                      </svg>
-                                    )}
-                                    {feature.icon === "lowReflex" && (
-                                      <svg
-                                        className="w-4 h-4 text-white"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                      >
-                                        <path
-                                          strokeLinecap="round"
-                                          strokeLinejoin="round"
-                                          strokeWidth={2}
-                                          d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
-                                        />
-                                      </svg>
-                                    )}
+                                        <svg
+                                          className="w-4 h-4 text-white"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                                          />
+                                        </svg>
+                                      )}
+                                      {feature.icon === "lowReflex" && (
+                                        <svg
+                                          className="w-4 h-4 text-white"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                                          />
+                                        </svg>
+                                      )}
                                     {feature.icon === "sun" && (
                                       <svg
                                         className="w-5 h-5 sm:w-6 sm:h-6 text-white"
@@ -1501,36 +1577,29 @@ const LensSelectionPage = () => {
                           </div>
                         </div>
 
-                        {/* Photochromic Colors */}
+                        {/* Photochromic Colors - Enhanced */}
                         {lens.photochromic &&
                           lens.photochromicColors.length > 0 && (
-                            <div className="mb-4">
-                              <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                                <div className="w-1 h-5 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></div>
-                                Colors
+                            <div className="mb-6">
+                              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                                <div className="w-1 h-6 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></div>
+                                Available Colors
                               </h4>
-                              <div className="flex flex-wrap gap-2">
-                                {lens.photochromicColors
-                                  .slice(0, 5)
-                                  .map((color, index) => (
-                                    <span
-                                      key={index}
-                                      className="px-2 py-1 bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 text-gray-800 rounded-lg text-xs font-semibold border border-gray-200 transition-all duration-200 cursor-default"
-                                    >
-                                      {color}
-                                    </span>
-                                  ))}
-                                {lens.photochromicColors.length > 3 && (
-                                  <span className="px-2 py-1 bg-gray-100 text-gray-600 rounded-lg text-xs font-semibold">
-                                    +{lens.photochromicColors.length - 3} more
+                              <div className="flex flex-wrap gap-2 sm:gap-3">
+                                {lens.photochromicColors.map((color, index) => (
+                                  <span
+                                    key={index}
+                                    className="px-3 py-2 bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 text-gray-800 rounded-xl text-xs sm:text-sm font-semibold border border-gray-200 transition-all duration-200 cursor-default"
+                                  >
+                                    {color}
                                   </span>
-                                )}
+                                ))}
                               </div>
                             </div>
                           )}
 
-                        {/* Action Button */}
-                        <button className="w-full bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700 hover:from-blue-700 hover:via-purple-700 hover:to-purple-800 text-white font-bold py-3 px-6 rounded-2xl transition-all duration-300 text-base shadow-xl hover:shadow-2xl transform hover:-translate-y-1 active:scale-95 relative overflow-hidden group">
+                        {/* Action Button - Enhanced */}
+                        <button className="w-full bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700 hover:from-blue-700 hover:via-purple-700 hover:to-purple-800 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-2xl transition-all duration-300 text-base sm:text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 active:scale-95 relative overflow-hidden group">
                           <span className="relative z-10 flex items-center justify-center gap-2">
                             Select This Lens
                             <svg
@@ -1554,36 +1623,8 @@ const LensSelectionPage = () => {
                   </div>
                 ))}
               </div>
-
-              <style jsx>{`
-                @keyframes slideInFromRight {
-                  from {
-                    opacity: 0;
-                    transform: translateX(50px);
-                  }
-                  to {
-                    opacity: 1;
-                    transform: translateX(0);
-                  }
-                }
-
-                .scrollbar-hide {
-                  -ms-overflow-style: none;
-                  scrollbar-width: none;
-                }
-
-                .scrollbar-hide::-webkit-scrollbar {
-                  display: none;
-                }
-
-                .line-clamp-2 {
-                  display: -webkit-box;
-                  -webkit-line-clamp: 2;
-                  -webkit-box-orient: vertical;
-                  overflow: hidden;
-                }
-              `}</style>
-            </div>
+            )}
+            <div />
 
             {!showFilters && filteredLenses.length === 0 && !loading && (
               <div className="text-center py-16">

@@ -61,6 +61,7 @@ export default function FrameTypePage() {
   const handleSelect = (value) => {
     setSelectedFrame(value);
     localStorage.setItem("frameType", value);
+    console.log("Selected frame:", value);
     
     // Add a small delay for visual feedback
     setTimeout(() => {

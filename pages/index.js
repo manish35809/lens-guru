@@ -61,6 +61,9 @@ export default function FramesPage() {
     };
     setPrescription(empty);
     localStorage.removeItem("prescription");
+    localStorage.removeItem("lensSelection");
+    localStorage.removeItem("frameType");
+
     setIsSaved(false);
     setShowSuccess(false);
     triggerStorageUpdate();
