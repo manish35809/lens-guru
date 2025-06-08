@@ -326,7 +326,7 @@ const LensSelectionPage = () => {
           }
 
           // Check positive resultant power range
-          if (reResultant > 0 || leResultant > 0) {
+          if (reResultant >= 0 || leResultant >= 0) {
             if ((RE_CYL <= 2 && RE_CYL >= 0) || (LE_CYL <= 2 && LE_CYL >= 0)) {
               if (
                 reResultant > plusTotalPower ||
@@ -343,6 +343,11 @@ const LensSelectionPage = () => {
 
       // Remove duplicates by name, keeping only the lowest price
       const lensMap = new Map();
+
+      validLenses.forEach((lens) => {
+        const lensName = lens.name; // Assuming the lens object has a 'name' property
+        console.log("lensName:", lensName);
+      });
 
       validLenses.forEach((lens) => {
         const lensName = lens.name; // Assuming the lens object has a 'name' property
@@ -707,7 +712,6 @@ const LensSelectionPage = () => {
                       onClick={() => setActiveFilterTab("delivery")}
                     >
                       Delivery
-                      
                     </button>
                   </div>
 
