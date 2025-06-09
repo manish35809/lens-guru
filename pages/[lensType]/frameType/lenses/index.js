@@ -265,7 +265,6 @@ const LensSelectionPage = () => {
         if (
           frame !== "rimless" && frame !== "lensOnly"
         ) {
-          console.log("Frame type:", frame);
           return !lens.name.includes("Poly");
         }
 
@@ -345,6 +344,7 @@ const LensSelectionPage = () => {
             }
           }
         }
+        
 
         return true;
       });
@@ -1305,7 +1305,7 @@ const LensSelectionPage = () => {
                                 gradient: "from-red-500 to-red-600",
                               },
                               {
-                                key: "essentialBlueLight",
+                                key: "allowEssentialBlueLight",
                                 label: "Essential Blue Light",
                                 color: "indigo",
                                 icon: "filter",
