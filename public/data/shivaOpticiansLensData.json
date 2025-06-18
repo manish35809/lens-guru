@@ -40,11 +40,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "clear": true
   },
   {
@@ -89,11 +85,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "clear": true
   },
   {
@@ -138,9 +130,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true,
     "clear": true
   },
@@ -186,11 +176,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true,
     "clear": true
   },
@@ -236,11 +222,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true,
     "clear": true
   },
@@ -286,11 +268,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "clear": true
   },
   {
@@ -335,11 +313,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true,
     "clear": true
   },
@@ -385,11 +359,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true,
     "clear": true
   },
@@ -429,19 +399,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -480,17 +444,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -528,19 +488,13 @@
     "photochromic": true,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749320382545,
@@ -578,20 +532,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray",
-      "Brown"
-    ],
+    "photochromicColors": ["Gray", "Brown"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749320455513,
@@ -629,17 +576,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -684,9 +627,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ],
+    "frameTypeRecommended": ["rimless"],
     "clear": false
   },
   {
@@ -731,11 +672,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749322428318,
@@ -779,11 +716,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -828,9 +761,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -875,9 +806,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -922,11 +851,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -971,9 +896,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -1017,11 +940,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749365016237,
@@ -1065,11 +984,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749365339939,
@@ -1113,9 +1028,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -1159,12 +1072,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "lowReflection": false
   },
   {
@@ -1209,12 +1117,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -1259,12 +1162,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -1309,9 +1207,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -1357,11 +1253,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -1407,9 +1299,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -1455,11 +1345,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -1505,9 +1391,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749393040706,
@@ -1552,11 +1436,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -1602,11 +1482,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -1652,9 +1528,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749394122025,
@@ -1699,11 +1573,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -1748,11 +1618,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "lowReflection": true
   },
   {
@@ -1798,9 +1664,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749405213484,
@@ -1845,11 +1709,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -1895,9 +1755,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749406575239,
@@ -1942,11 +1800,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -1992,11 +1846,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -2042,11 +1892,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -2092,12 +1938,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -2143,12 +1984,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -2194,12 +2030,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"]
   },
   {
     "id": 1749407878583,
@@ -2244,11 +2075,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749408038784,
@@ -2287,19 +2114,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -2345,11 +2166,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749408330217,
@@ -2394,11 +2211,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749408488104,
@@ -2443,9 +2256,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749408604929,
@@ -2490,9 +2301,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ],
+    "frameTypeRecommended": ["rimless"],
     "isHighCyl": false
   },
   {
@@ -2538,12 +2347,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"]
   },
   {
     "id": 1749408793994,
@@ -2588,11 +2392,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -2638,9 +2438,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749409236979,
@@ -2685,9 +2483,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749409327403,
@@ -2732,9 +2528,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749409411868,
@@ -2774,6 +2568,707 @@
     "lowReflection": true,
     "drivePlus": false,
     "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["rimless"]
+  },
+  {
+    "id": 1750240377972,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "1",
+      "maxCylCross": ""
+    },
+    "name": "PG Blue Cut Crystal",
+    "poster": "https://cdn.globalso.com/hc-optical/G3-PGX.jpg",
+    "srp": "850",
+    "specialPrice": "600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "filterBlueVioletLight": true,
+    "photochromic": true,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750242795336,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "3",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG Blue Cut Crystal",
+    "poster": "https://cdn.globalso.com/hc-optical/G3-PGX.jpg",
+    "srp": "1730",
+    "specialPrice": "1250",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "filterBlueVioletLight": true,
+    "photochromic": true,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate"]
+  },
+  {
+    "id": 1750242955598,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "3",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "1",
+      "maxCylCross": "-4"
+    },
+    "name": "PG Blue Cut Crystal",
+    "poster": "https://cdn.globalso.com/hc-optical/G3-PGX.jpg",
+    "srp": "2400",
+    "specialPrice": "1680",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "3",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750243177655,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "1",
+      "maxCylCross": "-2"
+    },
+    "name": "PG Blue Cut Low Reflection",
+    "poster": "https://www.laramyk.com/wp-content/uploads/2010/05/AR-coating-comparison-1080x675.jpg",
+    "srp": "2600",
+    "specialPrice": "1800",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750243281303,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "",
+      "maxCylCross": ""
+    },
+    "name": "PG Blue Cut Drive+",
+    "poster": "https://content.jdmagicbox.com/rep/b2b/anti-reflective-coating-lens/anti-reflective-coating-lens-6.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit",
+    "srp": "3200",
+    "specialPrice": "2200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Roximo",
+    "time": "3",
+    "thickness": {
+      "index": "1.61",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750243831529,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-5",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG Blue Cut Thinmax Satin+",
+    "poster": "https://dms.mydukaan.io/original/jpeg/314869/2b8aa3af-a9f9-4de4-a18b-d204cc7cbdf2.png",
+    "srp": "4180",
+    "specialPrice": "3000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "filterBlueVioletLight": true,
+    "photochromic": true,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": ["Gray", "Brown"],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750243918822,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG Blue Cut Thinmax Satin+",
+    "poster": "https://dms.mydukaan.io/original/jpeg/314869/2b8aa3af-a9f9-4de4-a18b-d204cc7cbdf2.png",
+    "srp": "4180",
+    "specialPrice": "3000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate"]
+  },
+  {
+    "id": 1750244081749,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "",
+      "maxCylCross": ""
+    },
+    "name": "PG Blue Cut Hi-Index Thinmax Satin+",
+    "poster": "https://dms.mydukaan.io/original/jpeg/314869/2b8aa3af-a9f9-4de4-a18b-d204cc7cbdf2.png",
+    "srp": "10070",
+    "specialPrice": "7000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "3",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray", "Brown"],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750244442398,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG Blue Filter Thinmax Transitions Classic Satin+ UV",
+    "poster": "https://i.ytimg.com/vi/5KIUyX2iZ-U/sddefault.jpg",
+    "srp": "3870",
+    "specialPrice": "2700",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750244652964,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2.25"
+    },
+    "name": "PG Blue Filter Thinmax Transitions GenS Satin Azure UV",
+    "poster": "https://theopticalco.com.au/wp-content/uploads/2024/08/GenS_Cover_KV_v5-scaled.jpg",
+    "srp": "9450",
+    "specialPrice": "6600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": true,
+    "photochromicColors": ["Gray", "Brown", "Green"],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750244770788,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG Blue Filter Hi-Index Thinmax Transitions GenS Satin Azure UV",
+    "poster": "https://theopticalco.com.au/wp-content/uploads/2024/08/GenS_Cover_KV_v5-scaled.jpg",
+    "srp": "13630",
+    "specialPrice": "9500",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Nova",
+    "time": "3",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": true,
+    "photochromicColors": ["Gray", "Brown", "Green"],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750247882968,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG Blue Filter Transitions Classic Crizal",
+    "poster": "https://bizweb.dktcdn.net/100/465/806/products/2172023-file-trong-kinh-website-6.png?v=1690194094407",
+    "srp": "4900",
+    "specialPrice": "3450",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Essilor",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "filterBlueVioletLight": true,
+    "photochromic": true,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [
+      "Gray"
+    ],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "lowReflection": true
+  },
+  {
+    "id": 1750248253151,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "",
+      "maxCylCross": ""
+    },
+    "name": "PG Blue Filter Transitions Gen8 Crizal",
+    "poster": "https://blog.hoyavision.com/hubfs/gen8-woman-square.jpg",
+    "srp": "8900",
+    "specialPrice": "6200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Essilor",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray",
+      "Green",
+      "Brown",
+      "Blue",
+      "Brown",
+      "Purple"
+    ],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750248367504,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "",
+      "maxCylCross": ""
+    },
+    "name": "Poly PG Blue Filter Transitions Gen8 Crizal",
+    "poster": "https://blog.hoyavision.com/hubfs/gen8-woman-square.jpg",
+    "srp": "13300",
+    "specialPrice": "9300",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Japan",
+    "brand": "Essilor",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": true,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray",
+      "Green",
+      "Brown",
+      "Blue",
+      "Brown",
+      "Purple"
+    ],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1750248934765,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "3",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "",
+      "maxCylCross": ""
+    },
+    "name": "Poly PG Blue Cut Crystal",
+    "poster": "https://cdn.globalso.com/setolens/photochromic-lenses51.jpg",
+    "srp": "",
+    "specialPrice": "",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "",
+    "thickness": {
+      "index": "",
+      "type": ""
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
