@@ -14,7 +14,6 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-
 const LensSelectionPage = () => {
   // State management
   const [filteredLenses, setFilteredLenses] = useState([]);
@@ -225,7 +224,6 @@ const LensSelectionPage = () => {
         };
         lensType = localStorage.getItem("lensSelection") || "sv-far";
         frame = localStorage.getItem("frameType") || "lensOnly";
-
       } catch (localStorageError) {
         // Fallback data for demo
         powerInfo = { sph: -2.0, cyl: -0.5 };
@@ -262,10 +260,10 @@ const LensSelectionPage = () => {
           if (!isAdditionValid(powerInfo, lens.addRange)) return false;
         }
 
-        if (
-          frame !== "rimless" && frame !== "lensOnly"
-        ) {
-          return !lens.name.includes("Poly");
+        if (frame !== "lensOnly") {
+          if (frame !== "rimless") {
+            return !lens.name.includes("Poly");
+          }
         }
 
         // Check power compatibility
@@ -344,7 +342,6 @@ const LensSelectionPage = () => {
             }
           }
         }
-        
 
         return true;
       });
@@ -1310,7 +1307,7 @@ const LensSelectionPage = () => {
                                 color: "indigo",
                                 icon: "filter",
                                 gradient: "from-indigo-500 to-indigo-600",
-                              }
+                              },
                             ].map((feature) => {
                               if (!lens[feature.key]) return null;
 
@@ -1343,23 +1340,21 @@ const LensSelectionPage = () => {
                                         />
                                       </svg>
                                     )}
-                                    {
-                                      feature.icon === "filter" && (
-                                        <svg
-                                          className="w-5 h-5 sm:w-6 sm:h-6 text-white"
-                                          fill="none"
-                                          stroke="currentColor"
-                                          viewBox="0 0 24 24"
-                                        >
-                                          <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.68 2.68M10 11a1 1 0 100-2M14 11a1 1 0 100-2h3a1 1 0 100 2h-3z"
-                                          />
-                                        </svg>
-                                      )
-                                    }
+                                    {feature.icon === "filter" && (
+                                      <svg
+                                        className="w-5 h-5 sm:w-6 sm:h-6 text-white"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"
+                                          strokeWidth={2}
+                                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.68 2.68M10 11a1 1 0 100-2M14 11a1 1 0 100-2h3a1 1 0 100 2h-3z"
+                                        />
+                                      </svg>
+                                    )}
                                     {feature.icon === "drive" && (
                                       <svg
                                         className="w-4 h-4 text-white"
@@ -1547,15 +1542,14 @@ const LensSelectionPage = () => {
                                 Colors
                               </h4>
                               <div className="flex flex-wrap gap-2">
-                                {lens.photochromicColors
-                                  .map((color, index) => (
-                                    <span
-                                      key={index}
-                                      className="px-2 py-1 bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 text-gray-800 rounded-lg text-xs font-semibold border border-gray-200 transition-all duration-200 cursor-default"
-                                    >
-                                      {color}
-                                    </span>
-                                  ))}
+                                {lens.photochromicColors.map((color, index) => (
+                                  <span
+                                    key={index}
+                                    className="px-2 py-1 bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 text-gray-800 rounded-lg text-xs font-semibold border border-gray-200 transition-all duration-200 cursor-default"
+                                  >
+                                    {color}
+                                  </span>
+                                ))}
                                 {lens.photochromicColors.length > 3 && (
                                   <span className="px-2 py-1 bg-gray-100 text-gray-600 rounded-lg text-xs font-semibold">
                                     +{lens.photochromicColors.length - 3} more
