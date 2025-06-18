@@ -1099,10 +1099,10 @@ const LensSelectionPage = () => {
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         />
                         {/* Discount Badge */}
-                        <div className="absolute top-3 left-3">
+                        <div className="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                           <div className="relative">
-                            <div className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white px-3 py-1.5 rounded-2xl text-sm font-bold shadow-2xl backdrop-blur-sm border border-white/20">
-                              <span className="text-xs font-medium opacity-90">
+                            <div className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white px-3 py-1.5 rounded-2xl text-sm font-bold shadow-2xl border border-white/20">
+                              <span className="text-xs font-medium opacity-100">
                                 SAVE
                               </span>
                               <div className="text-lg font-black leading-none">
@@ -1112,7 +1112,7 @@ const LensSelectionPage = () => {
                                 %
                               </div>
                             </div>
-                            <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+                            <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl group-hover:opacity-0 transition-opacity duration-300"></div>
                           </div>
                         </div>
                         {/* Gradient Overlay */}
@@ -1138,18 +1138,33 @@ const LensSelectionPage = () => {
                           </div>
 
                           {/* Price Section */}
-                          <div className="flex items-center justify-between bg-gradient-to-r from-green-50 to-emerald-50 p-3 rounded-2xl border border-green-200/50">
+                          <div className="relative group flex items-center justify-between bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-2xl border border-green-200/50 transition-all duration-300 ease-in-out">
+                            {/* Price Block */}
                             <div className="flex flex-col">
-                              <div className="text-2xl font-black text-green-600">
-                                ₹{lens.specialPrice.toLocaleString()}
+                              {/* SRP with strong emphasis */}
+                              <div className=" text-gray-500 text-2xl font-semibold">
+                                SRP:&nbsp;
+                                <span className="text-purple-600 font-bold group-hover:line-through">
+                                  ₹{lens.srp.toLocaleString()}
+                                </span>
                               </div>
-                              <div className="text-lg text-gray-500 line-through">
-                                ₹{lens.srp.toLocaleString()}
+
+                              {/* Special Price - hidden by default, appears on hover */}
+                              <div className="overflow-hidden h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                                <div className="text-4xl font-black text-green-600 mt-1">
+                                  ₹{lens.specialPrice.toLocaleString()}
+                                </div>
                               </div>
                             </div>
-                            <div className="text-xl text-green-700 font-bold bg-green-100 px-2 py-1 rounded-lg">
-                              Save ₹
-                              {(lens.srp - lens.specialPrice).toLocaleString()}
+
+                            {/* Save Amount - appears on hover */}
+                            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                              <div className="text-lg text-green-700 font-bold bg-green-100 px-3 py-1 rounded-lg">
+                                Save ₹
+                                {(
+                                  lens.srp - lens.specialPrice
+                                ).toLocaleString()}
+                              </div>
                             </div>
                           </div>
                         </div>
