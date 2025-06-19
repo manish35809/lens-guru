@@ -1,0 +1,71 @@
+1. 🛡️ Scratch-Resistant Coating
+Prompt:
+3D cinematic split-shot of two spectacle lenses on a textured surface: one staying flawless (Specatcle Lens), the other showing visible scratches (standard lens). Add soft side lighting.
+Overlay text:
+“Scratch-resistant coating protects your lenses from daily wear and tear.”
+
+2. 🌟 Anti-Glare Coating
+Prompt:
+Realistic 3D side-by-side scene: both lenses show a phone under bright LED light. The Specatcle Lens shows no glare or reflection; the standard lens reflects the harsh light.
+Overlay text:
+“Anti-reflective coating reduces glare from screens and bright lights.”
+
+3. 🔵 Blue-Violet Light Filter
+Prompt:
+Cinematic 3D comparison: a person using a laptop at night with both lenses in view. Blue-violet light bounces off the Specatcle Lens with a soft glow, while it passes through the standard lens.
+Overlay text:
+“Filters harmful blue-violet light while allowing beneficial blue light.”
+
+4. 💧 Hydrophobic (Water Repellent) Coating
+Prompt:
+Close-up 3D render showing two lenses in light rain: water beads up and rolls off the Specatcle Lens; the standard lens has smears and wet patches. Soft natural light, shallow depth of field.
+Overlay text:
+“Hydrophobic coating repels water for clearer vision.”
+
+5. 🌬️ Anti‑Static Dust Repellent
+Prompt:
+3D side-by-side close-up: dust particles hover or lift off the Specatcle Lens while settling onto the standard lens. Subtle airflow motion blur, clean tabletop background.
+Overlay text:
+“Anti‑static properties reduce dust and dirt accumulation.”
+
+6. 🌞 100% UV Protection
+Prompt:
+Outdoor 3D portrait showing two people wearing lenses under sunlight: a UV meter next to each shows full protection for the Specatcle Lens and partial for the standard lens.
+Overlay text:
+“Blocks 100% of harmful UV rays to protect your eyes.”
+
+7. 🕶️ Photochromic (Light-Adaptive)
+Prompt:
+3D split-screen showing the same Specatcle Lens indoors (clear) and outdoors under sunlight (darkened). Include a regular lens that stays unchanged under both conditions.
+Overlay text:
+“Adapts to changing light for all-day comfort.”
+
+8. 🤏 Oleophobic Smudge Resistance
+Prompt:
+Macro 3D shot comparing two lenses after being touched. The Specatcle Lens stays spotless while the standard lens shows fingerprint smears.
+Overlay text:
+“Oleophobic coating resists fingerprints and smudges.”
+
+9. 🦾 Impact‑Resistant (Unbreakable)
+Prompt:
+High-speed 3D render of a metal ball hitting two lenses: the Specatcle Lens absorbs the impact without damage, while the standard lens shatters. Include slow-motion particles and lighting effects.
+Overlay text:
+“Impact‑resistant for enhanced safety and durability.”
+
+10. ✨ Low‑Reflection
+Prompt:
+3D eye chart viewed through two lenses: the Specatcle Lens is clear and easy to read with minimal reflections, the standard lens shows reflections obscuring letters.
+Overlay text:
+“Reduces glare for clearer vision and less eye strain.”
+
+11. 🚗 DrivePlus (UV & Scratch)
+Prompt:
+POV 3D shot from inside a car at sunset through two dashboard-mounted lenses: Specatcle Lens shows a sharp, glare-free road; standard lens shows light flares and smudging.
+Overlay text:
+“DrivePlus: Enhanced UV protection and scratch resistance.”
+
+12. 💡 Essential Blue Light Transmission
+Prompt:
+3D cutaway render showing two lenses at a computer screen. Specatcle Lens selectively blocks harmful blue-violet rays while allowing soft blue light through. Standard lens shows all rays passing or blocking indiscriminately.
+Overlay text:
+“Preserves essential blue light for focus and wellness.”

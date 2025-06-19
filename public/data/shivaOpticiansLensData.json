@@ -3644,5 +3644,648 @@
       "half-metal"
     ],
     "isHighCyl": true
+  },
+  {
+    "id": 1750335834416,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Blue Filter synchrony HMC Blue",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr7YMcBAHlAjsCsNqtw8On7i6oH7tb7h2ysw&s",
+    "srp": "1900",
+    "specialPrice": "1400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "filterBlueVioletLight": true,
+    "photochromic": false,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750336196978,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "ARC Lotutec",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9o9EjHTlOk1tucWSgG2jF3PS0LMutyIGHng&s",
+    "srp": "2100",
+    "specialPrice": "1600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750336285386,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Filter Zeiss BlueProtect UV",
+    "poster": "https://www.jiomart.com/images/product/original/rvlfgjgglo/intellilens-zeiss-square-dura-vision-blue-protect-computer-glasses-for-eye-protection-product-images-rvlfgjgglo-7-202209141829.jpg?im=Resize=(500,630)",
+    "srp": "2700",
+    "specialPrice": "2000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750336393653,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Filter Zeiss DriveSafe UV",
+    "poster": "https://www.zeiss.co.in/content/dam/vis-b2b/reference-master/images/lenses/lens-technologies/drive-safe/drivesafe_benefits_02_01.jpg/_jcr_content/renditions/original.image_file.1024.768.240,0,1680,1080.file/drivesafe_benefits_02_01.jpg",
+    "srp": "3900",
+    "specialPrice": "2900",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750336693800,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Poly ARC Low Reflection Platinum UV",
+    "poster": "https://www.zeiss.com.my/content/dam/vis-b2b/reference-master/images/lenses/coatings-treatments/coatings-portfolio/coating_lens_ar.jpg/_jcr_content/renditions/original.image_file.1280.1280.300,0,1740,1440.file/coating_lens_ar.jpg",
+    "srp": "5100",
+    "specialPrice": "3800",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1750336831352,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "ARC Low Reflection Platinum UV",
+    "poster": "https://www.zeiss.com.my/content/dam/vis-b2b/reference-master/images/lenses/coatings-treatments/coatings-portfolio/coating_lens_ar.jpg/_jcr_content/renditions/original.image_file.1280.1280.300,0,1740,1440.file/coating_lens_ar.jpg",
+    "srp": "3500",
+    "specialPrice": "2700",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750337046285,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-3",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Blue Filter MR8 BlueProtect UV",
+    "poster": "https://www.jiomart.com/images/product/original/rvlfgjgglo/intellilens-zeiss-square-dura-vision-blue-protect-computer-glasses-for-eye-protection-product-images-rvlfgjgglo-7-202209141829.jpg?im=Resize=(500,630)",
+    "srp": "5900",
+    "specialPrice": "4400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750337279311,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Filter ClearView Platinum UV BlueGuard",
+    "poster": "https://optorium.in/cdn/shop/files/ZEISS_ClearView_Socials_1080x1080_1.webp?v=1724150459&width=1080",
+    "srp": "4600",
+    "specialPrice": "3400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750337334928,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Poly Blue Filter ClearView Platinum UV BlueGuard",
+    "poster": "https://optorium.in/cdn/shop/files/ZEISS_ClearView_Socials_1080x1080_1.webp?v=1724150459&width=1080",
+    "srp": "6700",
+    "specialPrice": "5000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "rimless"
+    ]
+  },
+  {
+    "id": 1750337397449,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "6",
+      "maxCylMinus": "-3",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Blue Filter MR8 ClearView Platinum UV BlueGuard",
+    "poster": "https://optorium.in/cdn/shop/files/ZEISS_ClearView_Socials_1080x1080_1.webp?v=1724150459&width=1080",
+    "srp": "7900",
+    "specialPrice": "5900",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750337456207,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "",
+      "maxCylCross": ""
+    },
+    "name": "Blue Filter Hi-Index ClearView Platinum UV BlueGuard",
+    "poster": "https://optorium.in/cdn/shop/files/ZEISS_ClearView_Socials_1080x1080_1.webp?v=1724150459&width=1080",
+    "srp": "8900",
+    "specialPrice": "6600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.67",
+      "type": "thinnest"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": true,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750337624962,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "PG ARC Low Reflection ClearView Platinum UV PhotoFusion X",
+    "poster": "https://www.eyegen.com.sg/uploads/1/0/5/5/105525469/image-6487327-2_orig.jpg",
+    "srp": "14200",
+    "specialPrice": "10600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray"
+    ],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750337727580,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "PG ARC MR8 Low Reflection ClearView Platinum UV PhotoFusion X",
+    "poster": "https://www.eyegen.com.sg/uploads/1/0/5/5/105525469/image-6487327-2_orig.jpg",
+    "srp": "16500",
+    "specialPrice": "12400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Germany",
+    "brand": "Zeiss",
+    "time": "2",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": true,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [
+      "Gray"
+    ],
+    "lensCoatingWarranty": "12",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
+    "isHighCyl": false
   }
 ]

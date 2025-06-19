@@ -592,7 +592,7 @@ const LensSelectionPage = () => {
                       }`}
                       onClick={() => setActiveFilterTab("coatings")}
                     >
-                      Coatings
+                      Features
                       {filters.features.filter((f) =>
                         [
                           "resistScratches",
