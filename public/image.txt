@@ -66,6 +66,6 @@ Overlay text:
 
 12. 💡 Essential Blue Light Transmission
 Prompt:
-3D cutaway render showing two lenses at a computer screen. Specatcle Lens selectively blocks harmful blue-violet rays while allowing soft blue light through. Standard lens shows all rays passing or blocking indiscriminately.
+Create a realistic, cinematic 3d image with a lens placed exactly at the center. A single horizontal ray of mixed blue-violet light is traveling from left to right through the image. Do not include any visible light source—only show the ray itself. When the ray reaches the lens, the darker violet-blue part of the ray is blocked or reflected at the surface, while the lighter blue or turquoise part is shown passing through the lens and continuing to the right. The image should visually highlight the lens’s ability to filter harmful blue-violet light while allowing beneficial light to pass through. 
 Overlay text:
-“Preserves essential blue light for focus and wellness.”
+Protects eyes while maintaining true color clarity
