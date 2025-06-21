@@ -5,6 +5,7 @@ import { triggerStorageUpdate } from "@/components/Header";
 
 export default function LensTypePage() {
   const router = useRouter();
+  const [prescription, setPrescription] = useState(null);
   const { lensType } = router.query;
   const [visionChoice, setVisionChoice] = useState(null);
   const [comboType, setComboType] = useState(null);
@@ -20,15 +21,77 @@ export default function LensTypePage() {
   const handleCombo = (type) => setComboType(type);
 
   const saveAndRedirect = (selection) => {
-    localStorage.setItem("lensSelection", JSON.stringify(selection));
-    triggerStorageUpdate();
+  const savedPrescription = localStorage.getItem("prescription");
+  let parsedPrescription = null;
 
-    if (selection === "sv-far-contact" || selection === "mf-contact") {
-      router.push(`/${lensType}/contact-lenses`);
+  if (savedPrescription) {
+    parsedPrescription = JSON.parse(savedPrescription);
+    setPrescription(parsedPrescription);  // still okay if you want to update state
+  }
+
+  localStorage.setItem("lensSelection", JSON.stringify(selection));
+  triggerStorageUpdate();
+
+  if (selection === "sv-far-contact" || selection === "mf-contact") {
+    router.push(`/${lensType}/contact-lenses`);
+  } else {
+    if (selection === "sv-near") {
+      let nearVisionPower = {
+        RE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
+        LE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
+      };
+
+      const reverseAxis = (axis) => {
+        const parsed = parseInt(axis, 10);
+        if (isNaN(parsed)) return "";
+        return parsed > 90 ? parsed - 90 : parsed + 90;
+      };
+
+      const reverseCyl = (cyl) => {
+        const value = parseFloat(cyl);
+        return isNaN(value) ? "" : (-value)
+      };
+
+      const calcNearSPH = (sph, add) => {
+        const sphVal = parseFloat(sph);
+        const addVal = parseFloat(add);
+        return isNaN(sphVal) || isNaN(addVal)
+          ? ""
+          : (sphVal + addVal)
+      };
+
+      if (parsedPrescription?.RE) {
+        nearVisionPower.RE.SPH = calcNearSPH(
+          parsedPrescription.RE.SPH,
+          parsedPrescription.RE.ADD
+        );
+        nearVisionPower.RE.CYL = reverseCyl(parsedPrescription.RE.CYL);
+        nearVisionPower.RE.AXIS = reverseAxis(parsedPrescription.RE.AXIS);
+        nearVisionPower.RE.ADD = "";
+      }
+
+      if (parsedPrescription?.LE) {
+        nearVisionPower.LE.SPH = calcNearSPH(
+          parsedPrescription.LE.SPH,
+          parsedPrescription.LE.ADD
+        );
+        nearVisionPower.LE.CYL = reverseCyl(parsedPrescription.LE.CYL);
+        nearVisionPower.LE.AXIS = reverseAxis(parsedPrescription.LE.AXIS);
+        nearVisionPower.LE.ADD = "";
+      }
+
+      console.log("✅ Final near vision prescription:", nearVisionPower);
+
+      localStorage.setItem("prescription", JSON.stringify(nearVisionPower));
+      localStorage.setItem("lensSelection", JSON.stringify("sv-far")); // override to sv-far
+      triggerStorageUpdate();
+
+      router.push(`/${lensType}/frameType`);
     } else {
       router.push(`/${lensType}/frameType`);
     }
-  };
+  }
+};
 
   const renderInfo = () => {
     switch (visionChoice) {
@@ -54,8 +117,8 @@ export default function LensTypePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
               <p className="mb-6 text-slate-600 leading-relaxed">
-                Near vision lenses help you see objects that are close, like books
-                or mobile screens with crystal clarity.
+                Near vision lenses help you see objects that are close, like
+                books or mobile screens with crystal clarity.
               </p>
               <button
                 onClick={() => saveAndRedirect("sv-near")}
@@ -143,7 +206,9 @@ export default function LensTypePage() {
                 >
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">🔍</span>
-                    <span className="font-semibold text-slate-700">Bifocal Lenses</span>
+                    <span className="font-semibold text-slate-700">
+                      Bifocal Lenses
+                    </span>
                   </div>
                 </button>
                 <button
@@ -156,7 +221,9 @@ export default function LensTypePage() {
                 >
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">🌈</span>
-                    <span className="font-semibold text-slate-700">Progressive Lenses</span>
+                    <span className="font-semibold text-slate-700">
+                      Progressive Lenses
+                    </span>
                   </div>
                 </button>
               </div>
@@ -275,28 +342,44 @@ export default function LensTypePage() {
                 className="group p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-200/40 hover:border-purple-400/60 backdrop-blur-sm shadow-lg hover:shadow-purple-500/20 transform hover:scale-105 transition-all duration-300"
               >
                 <div className="flex items-center justify-center gap-4">
-                  <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform duration-300">🔭</span>
+                  <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform duration-300">
+                    🔭
+                  </span>
                   <div className="text-left">
-                    <h3 className="text-xl sm:text-2xl font-bold text-purple-700 mb-1">Far Vision</h3>
-                    <p className="text-slate-600 text-sm sm:text-base">Perfect for distance clarity</p>
+                    <h3 className="text-xl sm:text-2xl font-bold text-purple-700 mb-1">
+                      Far Vision
+                    </h3>
+                    <p className="text-slate-600 text-sm sm:text-base">
+                      Perfect for distance clarity
+                    </p>
                   </div>
-                  <span className="text-purple-400 group-hover:translate-x-1 transition-transform duration-300 ml-auto">→</span>
+                  <span className="text-purple-400 group-hover:translate-x-1 transition-transform duration-300 ml-auto">
+                    →
+                  </span>
                 </div>
               </button>
 
               <button
-                    onClick={() => handleSelect("near")}
-                    className="group p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-200/40 hover:border-cyan-400/60 backdrop-blur-sm shadow-lg hover:shadow-cyan-500/20 transform hover:scale-105 transition-all duration-300"
-                  >
-                    <div className="flex items-center justify-center gap-4">
-                      <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform duration-300">👓</span>
-                      <div className="text-left">
-                        <h3 className="text-xl sm:text-2xl font-bold text-cyan-700 mb-1">Near Vision</h3>
-                        <p className="text-slate-600 text-sm sm:text-base">Ideal for reading and close work</p>
-                      </div>
-                      <span className="text-cyan-400 group-hover:translate-x-1 transition-transform duration-300 ml-auto">→</span>
-                    </div>
-                  </button>
+                onClick={() => handleSelect("near")}
+                className="group p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-200/40 hover:border-cyan-400/60 backdrop-blur-sm shadow-lg hover:shadow-cyan-500/20 transform hover:scale-105 transition-all duration-300"
+              >
+                <div className="flex items-center justify-center gap-4">
+                  <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform duration-300">
+                    👓
+                  </span>
+                  <div className="text-left">
+                    <h3 className="text-xl sm:text-2xl font-bold text-cyan-700 mb-1">
+                      Near Vision
+                    </h3>
+                    <p className="text-slate-600 text-sm sm:text-base">
+                      Ideal for reading and close work
+                    </p>
+                  </div>
+                  <span className="text-cyan-400 group-hover:translate-x-1 transition-transform duration-300 ml-auto">
+                    →
+                  </span>
+                </div>
+              </button>
 
               {lensType === "mf" && (
                 <>
@@ -305,12 +388,20 @@ export default function LensTypePage() {
                     className="group p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-200/40 hover:border-emerald-400/60 backdrop-blur-sm shadow-lg hover:shadow-emerald-500/20 transform hover:scale-105 transition-all duration-300"
                   >
                     <div className="flex items-center justify-center gap-4">
-                      <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform duration-300">🔁</span>
+                      <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform duration-300">
+                        🔁
+                      </span>
                       <div className="text-left">
-                        <h3 className="text-xl sm:text-2xl font-bold text-emerald-700 mb-1">Combined Vision</h3>
-                        <p className="text-slate-600 text-sm sm:text-base">Near + Far in one lens</p>
+                        <h3 className="text-xl sm:text-2xl font-bold text-emerald-700 mb-1">
+                          Combined Vision
+                        </h3>
+                        <p className="text-slate-600 text-sm sm:text-base">
+                          Near + Far in one lens
+                        </p>
                       </div>
-                      <span className="text-emerald-400 group-hover:translate-x-1 transition-transform duration-300 ml-auto">→</span>
+                      <span className="text-emerald-400 group-hover:translate-x-1 transition-transform duration-300 ml-auto">
+                        →
+                      </span>
                     </div>
                   </button>
                 </>
@@ -320,15 +411,15 @@ export default function LensTypePage() {
             <div className="text-center">
               <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-slate-100 to-slate-200 rounded-2xl">
                 <div className="animate-spin w-5 h-5 border-2 border-slate-400 border-t-transparent rounded-full"></div>
-                <span className="text-slate-600 font-medium">Loading lens options...</span>
+                <span className="text-slate-600 font-medium">
+                  Loading lens options...
+                </span>
               </div>
             </div>
           )}
 
           {/* Vision Info Display */}
-          <div className="max-w-3xl mx-auto">
-            {renderInfo()}
-          </div>
+          <div className="max-w-3xl mx-auto">{renderInfo()}</div>
         </div>
       </div>
     </main>

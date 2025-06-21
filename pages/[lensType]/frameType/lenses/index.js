@@ -244,6 +244,12 @@ const LensSelectionPage = () => {
 
       // Filter lenses based on user requirements
       const validLenses = lensData.filter((lens) => {
+        console.log("Lens Name:", lens.name);
+
+        if (frame !== "rimless" && lens.name.includes("Poly")) {
+            return false;
+          }
+        
         const lensTypeClean = (lens.lensType || "").trim().toLowerCase();
         const selectedLensType = (lensType || "")
           .trim()
@@ -259,12 +265,6 @@ const LensSelectionPage = () => {
           selectedLensType === "mf-progressive"
         ) {
           if (!isAdditionValid(powerInfo, lens.addRange)) return false;
-        }
-
-        if (frame !== "lensOnly") {
-          if (frame !== "rimless") {
-            return !lens.name.includes("Poly");
-          }
         }
 
         // Check power compatibility
@@ -342,6 +342,7 @@ const LensSelectionPage = () => {
               }
             }
           }
+
         }
 
         return true;
