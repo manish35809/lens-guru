@@ -159,7 +159,7 @@ export default function FramesPage() {
                           </label>
                           <div className="relative">
                             <input
-                              type="text"
+                              type="number"
                               placeholder={`Enter ${field}`}
                               value={prescription[eye][field]}
                               onChange={(e) => handleChange(eye, field, e.target.value)}
