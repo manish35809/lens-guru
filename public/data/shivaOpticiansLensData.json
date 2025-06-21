@@ -40,11 +40,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "clear": true
   },
   {
@@ -89,11 +85,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "clear": true
   },
   {
@@ -138,9 +130,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true,
     "clear": true
   },
@@ -186,11 +176,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true,
     "clear": true
   },
@@ -236,11 +222,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true,
     "clear": true
   },
@@ -286,11 +268,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "clear": true
   },
   {
@@ -335,11 +313,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true,
     "clear": true
   },
@@ -385,11 +359,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true,
     "clear": true
   },
@@ -429,19 +399,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -480,17 +444,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -528,19 +488,13 @@
     "photochromic": true,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749320382545,
@@ -578,20 +532,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray",
-      "Brown"
-    ],
+    "photochromicColors": ["Gray", "Brown"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749320455513,
@@ -629,17 +576,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -684,9 +627,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ],
+    "frameTypeRecommended": ["rimless"],
     "clear": false
   },
   {
@@ -731,11 +672,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749322428318,
@@ -779,11 +716,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -828,9 +761,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -875,9 +806,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -922,11 +851,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -971,9 +896,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -1017,11 +940,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749365016237,
@@ -1065,11 +984,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749365339939,
@@ -1113,9 +1028,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -1159,12 +1072,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "lowReflection": false
   },
   {
@@ -1209,12 +1117,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -1222,9 +1125,9 @@
     "lensType": "sv-far",
     "powerRange": {
       "rpMinus": "-24",
-      "rpPlus": "",
+      "rpPlus": "0",
       "maxCylMinus": "-4",
-      "maxCylPlus": "",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "Blue Cut Hi-Index",
@@ -1259,12 +1162,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -1309,9 +1207,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -1357,11 +1253,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -1407,9 +1299,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -1455,11 +1345,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -1505,9 +1391,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749393040706,
@@ -1552,11 +1436,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -1602,11 +1482,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -1652,9 +1528,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749394122025,
@@ -1699,11 +1573,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": false
   },
   {
@@ -1748,11 +1618,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "lowReflection": true
   },
   {
@@ -1798,9 +1664,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749405213484,
@@ -1845,11 +1709,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -1895,9 +1755,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749406575239,
@@ -1942,11 +1800,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -1992,11 +1846,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -2042,11 +1892,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -2092,12 +1938,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -2143,12 +1984,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -2194,12 +2030,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"]
   },
   {
     "id": 1749407878583,
@@ -2244,11 +2075,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749408038784,
@@ -2287,19 +2114,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -2345,11 +2166,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749408330217,
@@ -2394,11 +2211,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1749408488104,
@@ -2443,9 +2256,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749408604929,
@@ -2490,9 +2301,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ],
+    "frameTypeRecommended": ["rimless"],
     "isHighCyl": false
   },
   {
@@ -2538,12 +2347,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"]
   },
   {
     "id": 1749408793994,
@@ -2588,11 +2392,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -2638,9 +2438,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749409236979,
@@ -2685,9 +2483,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749409327403,
@@ -2732,9 +2528,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1749409411868,
@@ -2779,9 +2573,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1750240377972,
@@ -2825,11 +2617,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750242795336,
@@ -2873,9 +2661,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ]
+    "frameTypeRecommended": ["acetate"]
   },
   {
     "id": 1750242955598,
@@ -2920,9 +2706,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ],
+    "frameTypeRecommended": ["acetate"],
     "isHighCyl": true
   },
   {
@@ -2968,20 +2752,16 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750243281303,
     "lensType": "sv-far",
     "powerRange": {
       "rpMinus": "-8",
-      "rpPlus": "",
+      "rpPlus": "0",
       "maxCylMinus": "-2",
-      "maxCylPlus": "",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "PG Blue Cut Drive+",
@@ -3017,11 +2797,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750243831529,
@@ -3059,20 +2835,13 @@
     "tintable": false,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": [
-      "Gray",
-      "Brown"
-    ],
+    "photochromicColors": ["Gray", "Brown"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750243918822,
@@ -3111,26 +2880,22 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate"
-    ]
+    "frameTypeRecommended": ["acetate"]
   },
   {
     "id": 1750244081749,
     "lensType": "sv-far",
     "powerRange": {
       "rpMinus": "-8",
-      "rpPlus": "",
+      "rpPlus": "0",
       "maxCylMinus": "-2",
-      "maxCylPlus": "",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "PG Blue Cut Hi-Index Thinmax Satin+",
@@ -3160,20 +2925,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray",
-      "Brown"
-    ],
+    "photochromicColors": ["Gray", "Brown"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750244442398,
@@ -3212,19 +2970,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750244652964,
@@ -3263,21 +3015,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": true,
-    "photochromicColors": [
-      "Gray",
-      "Brown",
-      "Green"
-    ],
+    "photochromicColors": ["Gray", "Brown", "Green"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750244770788,
@@ -3316,21 +3060,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": true,
-    "photochromicColors": [
-      "Gray",
-      "Brown",
-      "Green"
-    ],
+    "photochromicColors": ["Gray", "Brown", "Green"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750247882968,
@@ -3368,19 +3104,13 @@
     "tintable": false,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "lowReflection": true
   },
   {
@@ -3388,13 +3118,13 @@
     "lensType": "sv-far",
     "powerRange": {
       "rpMinus": "-4",
-      "rpPlus": "",
+      "rpPlus": "0",
       "maxCylMinus": "-2",
-      "maxCylPlus": "",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "PG Blue Filter Transitions Gen8 Crizal",
-    "poster": "https://blog.hoyavision.com/hubfs/gen8-woman-square.jpg",
+    "poster": "https://image5.cdnsbg.com/cms.smartbuyglasses.ae/wp-content/uploads/sites/18/2024/12/Transitions-page-mobile-banner.png",
     "srp": "8900",
     "specialPrice": "6200",
     "authenticityCard": true,
@@ -3420,37 +3150,26 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray",
-      "Green",
-      "Brown",
-      "Blue",
-      "Brown",
-      "Purple"
-    ],
+    "photochromicColors": ["Gray", "Green", "Brown", "Blue", "Brown", "Purple"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750248367504,
     "lensType": "sv-far",
     "powerRange": {
       "rpMinus": "-6",
-      "rpPlus": "",
+      "rpPlus": "0",
       "maxCylMinus": "-2",
-      "maxCylPlus": "",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "Poly PG Blue Filter Transitions Gen8 Crizal",
-    "poster": "https://blog.hoyavision.com/hubfs/gen8-woman-square.jpg",
+    "poster": "https://image5.cdnsbg.com/cms.smartbuyglasses.ae/wp-content/uploads/sites/18/2024/12/Transitions-page-mobile-banner.png",
     "srp": "13300",
     "specialPrice": "9300",
     "authenticityCard": true,
@@ -3476,22 +3195,13 @@
     "lensMaterialWarranty": true,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray",
-      "Green",
-      "Brown",
-      "Blue",
-      "Brown",
-      "Purple"
-    ],
+    "photochromicColors": ["Gray", "Green", "Brown", "Blue", "Brown", "Purple"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1750248934765,
@@ -3500,7 +3210,7 @@
       "rpMinus": "-4",
       "rpPlus": "3",
       "maxCylMinus": "-2",
-      "maxCylPlus": "",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "Poly PG Blue Cut Crystal",
@@ -3530,26 +3240,22 @@
     "lensMaterialWarranty": true,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1750250967100,
     "lensType": "sv-far",
     "powerRange": {
       "rpMinus": "-12",
-      "rpPlus": "",
+      "rpPlus": "0",
       "maxCylMinus": "-2",
-      "maxCylPlus": "",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "PG Blue Cut Hi-Index",
@@ -3578,19 +3284,13 @@
     "tintable": false,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "lowReflection": true
   },
   {
@@ -3598,9 +3298,9 @@
     "lensType": "sv-far",
     "powerRange": {
       "rpMinus": "-12",
-      "rpPlus": "",
+      "rpPlus": "0",
       "maxCylMinus": "-4",
-      "maxCylPlus": "",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "PG Blue Cut Hi-Index",
@@ -3630,19 +3330,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -3687,11 +3381,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750336196978,
@@ -3736,11 +3426,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750336285386,
@@ -3785,11 +3471,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750336393653,
@@ -3834,11 +3516,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750336693800,
@@ -3883,9 +3561,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1750336831352,
@@ -3930,11 +3606,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750337046285,
@@ -3979,12 +3651,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -4030,11 +3697,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750337334928,
@@ -4079,9 +3742,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "rimless"
-    ]
+    "frameTypeRecommended": ["rimless"]
   },
   {
     "id": 1750337397449,
@@ -4126,12 +3787,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal",
-      "rimless"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
     "isHighCyl": true
   },
   {
@@ -4139,9 +3795,9 @@
     "lensType": "sv-far",
     "powerRange": {
       "rpMinus": "-10",
-      "rpPlus": "",
+      "rpPlus": "0",
       "maxCylMinus": "-4",
-      "maxCylPlus": "",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "Blue Filter Hi-Index ClearView Platinum UV BlueGuard",
@@ -4177,11 +3833,7 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ],
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
     "isHighCyl": true
   },
   {
@@ -4221,19 +3873,13 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": [
-      "acetate",
-      "full-metal",
-      "half-metal"
-    ]
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
   },
   {
     "id": 1750337727580,
@@ -4272,20 +3918,1604 @@
     "lensMaterialWarranty": true,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": [
-      "Gray"
-    ],
+    "photochromicColors": ["Gray"],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "isHighCyl": false
+  },
+  {
+    "id": 1750486815762,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-2",
+      "rpPlus": "3",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat KT",
+    "poster": "https://images.jdmagicbox.com/quickquotes/images_main/bifocal-d-flat-top-lens-2028025722-kr1dj213.jpg",
+    "srp": "350",
+    "specialPrice": "250",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "Generic",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "filterBlueVioletLight": false,
+    "photochromic": false,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750506369285,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "",
+      "rpPlus": "",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat KT",
+    "poster": "https://images.jdmagicbox.com/quickquotes/images_main/bifocal-d-flat-top-lens-2028025722-kr1dj213.jpg",
+    "srp": "450",
+    "specialPrice": "350",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "Generic",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "filterBlueVioletLight": false,
+    "photochromic": false,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750506440163,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
+    },
+    "name": "Hard Coat KT",
+    "poster": "https://images.jdmagicbox.com/quickquotes/images_main/bifocal-d-flat-top-lens-2028025722-kr1dj213.jpg",
+    "srp": "400",
+    "specialPrice": "550",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Generic",
+    "brand": "Generic",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750506564443,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Hard Coat KT ShieldX",
+    "poster": "https://5.imimg.com/data5/LP/IO/MD/SELLER-42780762/cr39-finished-bifocal-plastic-optical-lenses-500x500.jpg",
+    "srp": "990",
+    "specialPrice": "680",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750506745613,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "8",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Hard Coat KT ShieldX",
+    "poster": "https://5.imimg.com/data5/LP/IO/MD/SELLER-42780762/cr39-finished-bifocal-plastic-optical-lenses-500x500.jpg",
+    "srp": "1400",
+    "specialPrice": "950",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750506903083,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "8",
+      "maxCylMinus": "-6",
+      "maxCylPlus": "6",
+      "maxCylCross": "-6"
+    },
+    "name": "Hard Coat KT ShieldX",
+    "poster": "https://5.imimg.com/data5/LP/IO/MD/SELLER-42780762/cr39-finished-bifocal-plastic-optical-lenses-500x500.jpg",
+    "srp": "1720",
+    "specialPrice": "1200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "0.75",
+      "end": "3.5"
+    },
+    "frameTypeRecommended": ["acetate"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750507033973,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "10",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Hard Coat D Bifocal",
+    "poster": "https://2.imimg.com/data2/JU/GT/MY-2809206/bifocals-lenses-250x250.jpg",
+    "srp": "1290",
+    "specialPrice": "1000",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Vision Rx Lab",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750507125948,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "10",
+      "maxCylMinus": "-6",
+      "maxCylPlus": "6",
+      "maxCylCross": "-6"
+    },
+    "name": "Hard Coat D Bifocal",
+    "poster": "https://2.imimg.com/data2/JU/GT/MY-2809206/bifocals-lenses-250x250.jpg",
+    "srp": "2200",
+    "specialPrice": "1700",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Vision Rx Lab",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "0.75",
+      "end": "3.5"
+    },
+    "frameTypeRecommended": ["acetate"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750507353055,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-2",
+      "rpPlus": "3",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut KT Crystal",
+    "poster": "https://s.alicdn.com/@sc04/kf/Hb7d0ac3fb6db4c05aba87b58518aea76G.jpg_720x720q50.jpg",
+    "srp": "700",
+    "specialPrice": "500",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "filterBlueVioletLight": true,
+    "photochromic": false,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750507419027,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut KT Crystal",
+    "poster": "https://s.alicdn.com/@sc04/kf/Hb7d0ac3fb6db4c05aba87b58518aea76G.jpg_720x720q50.jpg",
+    "srp": "920",
+    "specialPrice": "650",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750507486512,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-2",
+      "rpPlus": "2",
+      "maxCylMinus": "-1",
+      "maxCylPlus": "1",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut KT Crystal",
+    "poster": "https://s.alicdn.com/@sc04/kf/Hb7d0ac3fb6db4c05aba87b58518aea76G.jpg_720x720q50.jpg",
+    "srp": "1200",
+    "specialPrice": "850",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750507565177,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "2",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut KT",
+    "poster": "https://s.alicdn.com/@sc04/kf/Hb2a9553ed11d4d8b847560240f952fa8V.jpg_720x720q50.jpg",
+    "srp": "500",
+    "specialPrice": "360",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "Generic",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750507780502,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Blue Cut KT Ventoux",
+    "poster": "https://scontent.fdel8-2.fna.fbcdn.net/v/t39.30808-6/491919626_1193792692757241_7546166512022309203_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5bEp11gPp14Q7kNvwE4UUGR&_nc_oc=Admv71CrOwSN6jPofohEiXuM_HTcL8E5SeOm3lRXV_LHh3ikLFTbTP67TqrKhfPCuzc&_nc_zt=23&_nc_ht=scontent.fdel8-2.fna&_nc_gid=-7v9I38wpYcdy4DNpSfaFQ&oh=00_AfNU94ug7_C0ebO_dHO1XdrJY6sD7QmJmgftYNSjmMMO7Q&oe=685C89EF",
+    "srp": "3090",
+    "specialPrice": "1200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "O2 Rx",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750507991984,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "6",
+      "maxCylMinus": "-6",
+      "maxCylPlus": "6",
+      "maxCylCross": "-6"
+    },
+    "name": "Blue Cut KT Ventoux",
+    "poster": "https://scontent.fdel8-2.fna.fbcdn.net/v/t39.30808-6/491919626_1193792692757241_7546166512022309203_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5bEp11gPp14Q7kNvwE4UUGR&_nc_oc=Admv71CrOwSN6jPofohEiXuM_HTcL8E5SeOm3lRXV_LHh3ikLFTbTP67TqrKhfPCuzc&_nc_zt=23&_nc_ht=scontent.fdel8-2.fna&_nc_gid=D1V-Pxz86jyfuNaWJJ3MZA&oh=00_AfOTlZCDGqX4mbEDUpN15cgdskT1VAQ29V8JI9n9KG1TwA&oe=685C89EF",
+    "srp": "3590",
+    "specialPrice": "1700",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "O2 Rx",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "0.75",
+      "end": "3.5"
+    },
+    "frameTypeRecommended": ["acetate"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750508574228,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "2",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "PG Hard Coat KT",
+    "poster": "https://s.alicdn.com/@sc04/kf/U559f8b7ddaa34c52bfaa936c458e05e0S.jpg_720x720q50.jpg",
+    "srp": "500",
+    "specialPrice": "360",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "Generic",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": false,
+    "filterBlueVioletLight": false,
+    "photochromic": true,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750508700385,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-2",
+      "rpPlus": "3",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "PG Hard Coat KT ShieldX",
+    "poster": "https://tiimg.tistatic.com/fp/1/003/964/photo-chromic-lenses-524.jpg",
+    "srp": "710",
+    "specialPrice": "500",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750508808979,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "PG Hard Coat KT ShieldX",
+    "poster": "https://tiimg.tistatic.com/fp/1/003/964/photo-chromic-lenses-524.jpg",
+    "srp": "900",
+    "specialPrice": "650",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750508911402,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-2",
+      "rpPlus": "2",
+      "maxCylMinus": "-1",
+      "maxCylPlus": "1",
+      "maxCylCross": ""
+    },
+    "name": "PG Hard Coat KT ShieldX",
+    "poster": "https://tiimg.tistatic.com/fp/1/003/964/photo-chromic-lenses-524.jpg",
+    "srp": "1300",
+    "specialPrice": "900",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750509188530,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "PG Hard Coat KT Emery",
+    "poster": "https://ce0836c8.delivery.rocketcdn.me/wp-content/uploads/2024/01/photochromic-lenses-UK.jpg",
+    "srp": "2490",
+    "specialPrice": "1200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "O2 Rx",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750509272663,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "8",
+      "maxCylMinus": "-6",
+      "maxCylPlus": "6",
+      "maxCylCross": "-6"
+    },
+    "name": "PG Hard Coat KT Emery",
+    "poster": "https://ce0836c8.delivery.rocketcdn.me/wp-content/uploads/2024/01/photochromic-lenses-UK.jpg",
+    "srp": "2990",
+    "specialPrice": "1700",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "O2 Rx",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "0.75",
+      "end": "3.5"
+    },
+    "frameTypeRecommended": ["acetate"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750510125006,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-2",
+      "rpPlus": "3",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Poly Blue Cut KT Crystal",
+    "poster": "https://5.imimg.com/data5/ANDROID/Default/2023/9/347055752/LE/RH/AN/16733331/product-jpeg-500x500.jpg",
+    "srp": "1300",
+    "specialPrice": "900",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "filterBlueVioletLight": true,
+    "photochromic": false,
+    "unbreakable": true,
+    "tintable": false,
+    "lensMaterialWarranty": true,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["rimless"]
+  },
+  {
+    "id": 1750510257490,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "2",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Poly ARC KT Crystal",
+    "poster": "https://ae01.alicdn.com/kf/S44923ed1e1b04d25a87056712f23fbacl.jpg",
+    "srp": "600",
+    "specialPrice": "900",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["rimless"]
+  },
+  {
+    "id": 1750510447717,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-10",
+      "rpPlus": "7",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Poly ARC KT Ventoux",
+    "poster": "https://m.media-amazon.com/images/I/41Mss1bKqsL._AC_UF1000,1000_QL80_.jpg",
+    "srp": "4790",
+    "specialPrice": "2500",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "O2 Lenses",
+    "time": "2",
+    "thickness": {
+      "index": "1.59",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": true,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": true,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["rimless"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750510779497,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "7.5",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "ARC KT Satin+ UV",
+    "poster": "https://www.martinreynoldsopticians.co.uk/uploads/2/9/2/4/29248939/8522934_orig.jpg",
+    "srp": "2130",
+    "specialPrice": "1600",
+    "authenticityCard": false,
+    "lensMaterialCountry": "India",
+    "brand": "Vision Rx Lab",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750510866112,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "7.5",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "ARC KT Crizal",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7IkGOq4vm5huGIhIkFzzcw25AUgROmaHU-Q&s",
+    "srp": "3540",
+    "specialPrice": "2600",
+    "authenticityCard": false,
+    "lensMaterialCountry": "India",
+    "brand": "Vision Rx Lab",
+    "time": "2",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750511257966,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "7.5",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Blue Cut KT Satin+ UV",
+    "poster": "https://www.martinreynoldsopticians.co.uk/uploads/2/9/2/4/29248939/8522934_orig.jpg",
+    "srp": "3640",
+    "specialPrice": "2700",
+    "authenticityCard": false,
+    "lensMaterialCountry": "India",
+    "brand": "Vision Rx Lab",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750511858603,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-5",
+      "rpPlus": "4",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Blue Cut KT Low Reflection",
+    "poster": "https://m.media-amazon.com/images/I/41QG8IHV0LL._AC_UY350_.jpg",
+    "srp": "4310",
+    "specialPrice": "1700",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "Optus",
+    "time": "3",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750512002173,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "2",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "PG Blue Cut KT Crystal",
+    "poster": "https://eyemantra.in/wp-content/uploads/2020/10/image-54-edited.png",
+    "srp": "1300",
+    "specialPrice": "900",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "0",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "2.5"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+  {
+    "id": 1750512325833,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-2",
+      "rpPlus": "3",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "PG Blue Cut KT Crystal",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_x9omATAodpoldc_PXEWz2sObNDUJ6MDEQ&s",
+    "srp": "1300",
+    "specialPrice": "900",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": []
+  },
+  {
+    "id": 1750512179258,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "PG Blue Cut KT Glatt",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBFNg_JR-LULX2iyKZHGu9SWKovCZx_4qwSA&s",
+    "srp": "4920",
+    "specialPrice": "2620",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Rio",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": ["Gray"],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750512849538,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "18.5",
+      "maxCylMinus": "0",
+      "maxCylPlus": "4",
+      "maxCylCross": ""
+    },
+    "name": "Lenticular KT Titanium",
+    "poster": "https://www.eliterxlenses.com/images/product/lenticular.jpg",
+    "srp": "4140",
+    "specialPrice": "3100",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Japan",
+    "brand": "Vision Rx",
+    "time": "3",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "filterBlueVioletLight": false,
+    "photochromic": false,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate"]
+  },
+  {
+    "id": 1750512939932,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-6.5",
+      "rpPlus": "8",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "PG ARC KT Satin+ UV",
+    "poster": "https://ae01.alicdn.com/kf/S2be5e1574bc24b619192ee6c8891b63fK.jpg",
+    "srp": "3790",
+    "specialPrice": "2800",
+    "authenticityCard": false,
+    "lensMaterialCountry": "Korea",
+    "brand": "Vision Rx",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": true,
+    "repelsWater": true,
+    "repelsDust": true,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": true,
+    "lensMaterialWarranty": false,
+    "lowReflection": true,
+    "drivePlus": false,
+    "photochromicColors": ["Gray", "Brown"],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "isHighCyl": true
+  },
+  {
+    "id": 1750513280554,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "2",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut KT Drive+",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
+    "srp": "1300",
+    "specialPrice": "900",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+  },
+   {
+    "id": 1750513632387,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-6",
+      "rpPlus": "6",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Tinted Hard Coat KT Rock",
+    "poster": "https://visionequipmentinc.com/wp-content/uploads/2017/07/Tinted_Lens_Display-600x381.jpg",
+    "srp": "1500",
+    "specialPrice": "1000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "Rio",
+    "time": "3",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": false,
+    "filterBlueVioletLight": false,
+    "photochromic": false,
+    "unbreakable": false,
+    "tintable": true,
+    "lensMaterialWarranty": false,
+    "isHighCyl": true,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
     "frameTypeRecommended": [
       "acetate",
       "full-metal",
-      "half-metal",
-      "rimless"
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750513764024,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-8",
+      "rpPlus": "8",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "4",
+      "maxCylCross": "-4"
+    },
+    "name": "Tinted Hard Coat KT Rock",
+    "poster": "https://visionequipmentinc.com/wp-content/uploads/2017/07/Tinted_Lens_Display-600x381.jpg",
+    "srp": "1980",
+    "specialPrice": "1380",
+    "authenticityCard": true,
+    "lensMaterialCountry": "India",
+    "brand": "Rio",
+    "time": "3",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": true,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "0.75",
+      "end": "3.5"
+    },
+    "frameTypeRecommended": [
+      "acetate"
     ],
-    "isHighCyl": false
+    "isHighCyl": true
   }
 ]

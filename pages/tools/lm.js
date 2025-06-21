@@ -776,6 +776,7 @@ export default function Home() {
                 <img
                   src={lens.poster}
                   alt={lens.name}
+                  loading="lazy"
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
