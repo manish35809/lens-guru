@@ -2,16 +2,18 @@ import { useState } from "react";
 
 export default function SRPCalculator() {
   const [lens, setLens] = useState('');
+  const [lensMultiplier, setLensMultiplier] = useState('4');
   const [fitting, setFitting] = useState('');
   const [accessories, setAccessories] = useState('');
   const [discount, setDiscount] = useState('');
 
   const lensNum = parseFloat(lens) || 0;
+  const lensMultiplierNum = parseFloat(lensMultiplier) || 4;
   const fittingNum = parseFloat(fitting) || 0;
   const accessoriesNum = parseFloat(accessories) || 0;
   const discountPercent = parseFloat(discount) || 0;
 
-  const srp = (lensNum * 4) + (fittingNum * 2) + accessoriesNum;
+  const srp = (lensNum * lensMultiplierNum) + (fittingNum * 2) + accessoriesNum;
   const discountAmount = (srp * discountPercent) / 100;
   const discountedPrice = srp - discountAmount;
 
@@ -36,67 +38,90 @@ export default function SRPCalculator() {
           </div>
           <h1 className="text-xl font-bold text-gray-800">SRP Calculator</h1>
           <p className="text-gray-500 text-xs mt-1">
-            (Lens × 4) + (Fitting × 2) + Accessories
+            (Lens × {lensMultiplierNum}) + (Fitting × 2) + Accessories
           </p>
         </div>
 
-        {/* Inputs in Grid - 2x2 Layout */}
-        <div className="grid grid-cols-2 gap-3 mb-4">
-          {/* Lens Cost */}
-          <div>
-            <label className="block text-xs font-medium text-gray-600 mb-1">
-              💎 Lens
-            </label>
-            <div className="relative">
-              <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">₹</span>
-              <input
-                type="text"
-                value={lens}
-                onChange={handleInputChange(setLens)}
-                placeholder="5000"
-                className="w-full pl-6 pr-2 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white"
-              />
+        {/* Inputs in Grid Layout */}
+        <div className="space-y-3 mb-4">
+          {/* First Row - Lens and Lens Multiplier */}
+          <div className="grid grid-cols-2 gap-3">
+            {/* Lens Cost */}
+            <div>
+              <label className="block text-xs font-medium text-gray-600 mb-1">
+                💎 Lens
+              </label>
+              <div className="relative">
+                <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">₹</span>
+                <input
+                  type="text"
+                  value={lens}
+                  onChange={handleInputChange(setLens)}
+                  placeholder="5000"
+                  className="w-full pl-6 pr-2 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white"
+                />
+              </div>
+            </div>
+
+            {/* Lens Multiplier */}
+            <div>
+              <label className="block text-xs font-medium text-gray-600 mb-1">
+                ✖️ Multiplier
+              </label>
+              <div className="relative">
+                <span className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">x</span>
+                <input
+                  type="text"
+                  value={lensMultiplier}
+                  onChange={handleInputChange(setLensMultiplier)}
+                  placeholder="4"
+                  className="w-full pl-2 pr-6 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Fitting Cost */}
-          <div>
-            <label className="block text-xs font-medium text-gray-600 mb-1">
-              🔧 Fitting
-            </label>
-            <div className="relative">
-              <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">₹</span>
-              <input
-                type="text"
-                value={fitting}
-                onChange={handleInputChange(setFitting)}
-                placeholder="1500"
-                className="w-full pl-6 pr-2 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white"
-              />
+          {/* Second Row - Fitting and Accessories */}
+          <div className="grid grid-cols-2 gap-3">
+            {/* Fitting Cost */}
+            <div>
+              <label className="block text-xs font-medium text-gray-600 mb-1">
+                🔧 Fitting
+              </label>
+              <div className="relative">
+                <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">₹</span>
+                <input
+                  type="text"
+                  value={fitting}
+                  onChange={handleInputChange(setFitting)}
+                  placeholder="1500"
+                  className="w-full pl-6 pr-2 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white"
+                />
+              </div>
+            </div>
+
+            {/* Accessories Cost */}
+            <div>
+              <label className="block text-xs font-medium text-gray-600 mb-1">
+                ✨ Extras
+              </label>
+              <div className="relative">
+                <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">₹</span>
+                <input
+                  type="text"
+                  value={accessories}
+                  onChange={handleInputChange(setAccessories)}
+                  placeholder="2000"
+                  className="w-full pl-6 pr-2 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Accessories Cost */}
+          {/* Third Row - Discount (Full Width) */}
           <div>
             <label className="block text-xs font-medium text-gray-600 mb-1">
-              ✨ Extras
-            </label>
-            <div className="relative">
-              <span className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">₹</span>
-              <input
-                type="text"
-                value={accessories}
-                onChange={handleInputChange(setAccessories)}
-                placeholder="2000"
-                className="w-full pl-6 pr-2 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white"
-              />
-            </div>
-          </div>
-
-          {/* Discount */}
-          <div>
-            <label className="block text-xs font-medium text-gray-600 mb-1">
-              🏷️ Discount %
+              🏷️ Discount Percentage
             </label>
             <div className="relative">
               <span className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm">%</span>
@@ -156,7 +181,7 @@ export default function SRPCalculator() {
               <div className="text-xs text-gray-600 bg-white rounded-lg p-2">
                 <div className="mb-1">
                   <span className="text-blue-600 font-medium">{formatCurrency(lensNum)}</span>
-                  <span className="text-gray-500"> × 4 + </span>
+                  <span className="text-gray-500"> × {lensMultiplierNum} + </span>
                   <span className="text-purple-600 font-medium">{formatCurrency(fittingNum)}</span>
                   <span className="text-gray-500"> × 2 + </span>
                   <span className="text-green-600 font-medium">{formatCurrency(accessoriesNum)}</span>

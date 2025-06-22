@@ -75,7 +75,7 @@ export default function Home() {
   const [lenses, setLenses] = useState([]);
   const [form, setForm] = useState({
     id: null,
-    lensType: "",
+    lensType: "mf-progressive",
     powerRange: {
       rpMinus: "",
       rpPlus: "",
@@ -154,7 +154,7 @@ export default function Home() {
   const resetForm = () => {
     setForm({
       id: null,
-      lensType: "",
+      lensType: "mf-progressive",
       powerRange: {
         rpMinus: "",
         rpPlus: "",
@@ -396,131 +396,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Pricing & Technical */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-slate-700 border-b border-slate-200 pb-2">
-                  Pricing & Technical
-                </h3>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      SRP (₹)
-                    </label>
-                    <input
-                      name="srp"
-                      type="number"
-                      value={form.srp}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="0"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      Special Price (₹)
-                    </label>
-                    <input
-                      name="specialPrice"
-                      type="number"
-                      value={form.specialPrice}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="0"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Processing Time (days)
-                  </label>
-                  <input
-                    name="time"
-                    type="number"
-                    value={form.time}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                    placeholder="0"
-                  />
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      Thickness Index
-                    </label>
-                    <input
-                      name="thickness.index"
-                      type="number"
-                      step="0.01"
-                      value={form.thickness.index}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="1.50"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      Thickness Type
-                    </label>
-                    <select
-                      name="thickness.type"
-                      value={form.thickness.type}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                    >
-                      <option value="">Select type</option>
-                      {thicknessTypeOptions.map((option) => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Coating Warranty (months)
-                  </label>
-                  <input
-                    name="lensCoatingWarranty"
-                    type="number"
-                    value={form.lensCoatingWarranty}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                    placeholder="12"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Frame Types
-                  </label>
-                  <select
-                    multiple
-                    value={form.frameTypeRecommended}
-                    onChange={(e) => {
-                      const selected = Array.from(
-                        e.target.selectedOptions,
-                        (opt) => opt.value
-                      );
-                      setForm((prev) => ({
-                        ...prev,
-                        frameTypeRecommended: selected,
-                      }));
-                    }}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                  >
-                    {frameTypeOptions.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
               {/* Power Range & Additional */}
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold text-slate-700 border-b border-slate-200 pb-2">
@@ -647,6 +522,130 @@ export default function Home() {
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                     placeholder="Gray, Brown (comma separated)"
                   />
+                </div>
+              </div>
+
+              {/* Pricing & Technical */}
+              <div className="space-y-4">
+                <h3 className="text-lg font-semibold text-slate-700 border-b border-slate-200 pb-2">
+                  Pricing & Technical
+                </h3>
+
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
+                    Processing Time (days)
+                  </label>
+                  <input
+                    name="time"
+                    type="number"
+                    value={form.time}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    placeholder="0"
+                  />
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Thickness Index
+                    </label>
+                    <input
+                      name="thickness.index"
+                      type="number"
+                      step="0.01"
+                      value={form.thickness.index}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      placeholder="1.50"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Thickness Type
+                    </label>
+                    <select
+                      name="thickness.type"
+                      value={form.thickness.type}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    >
+                      <option value="">Select type</option>
+                      {thicknessTypeOptions.map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
+                    Coating Warranty (months)
+                  </label>
+                  <input
+                    name="lensCoatingWarranty"
+                    type="number"
+                    value={form.lensCoatingWarranty}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    placeholder="12"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-2">
+                    Frame Types
+                  </label>
+                  <select
+                    multiple
+                    value={form.frameTypeRecommended}
+                    onChange={(e) => {
+                      const selected = Array.from(
+                        e.target.selectedOptions,
+                        (opt) => opt.value
+                      );
+                      setForm((prev) => ({
+                        ...prev,
+                        frameTypeRecommended: selected,
+                      }));
+                    }}
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  >
+                    {frameTypeOptions.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      SRP (₹)
+                    </label>
+                    <input
+                      name="srp"
+                      type="number"
+                      value={form.srp}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      placeholder="0"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Special Price (₹)
+                    </label>
+                    <input
+                      name="specialPrice"
+                      type="number"
+                      value={form.specialPrice}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      placeholder="0"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -942,7 +941,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-        
       </div>
     </div>
   );
