@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import {
   Filter,
@@ -16,7 +17,7 @@ import {
 } from "lucide-react";
 
 const LensSelectionPage = () => {
-  // State management
+  const router = useRouter();
   const [filteredLenses, setFilteredLenses] = useState([]);
   const [activeFilterTab, setActiveFilterTab] = useState("materials");
   const [brands, setBrands] = useState([]);
@@ -189,8 +190,21 @@ const LensSelectionPage = () => {
     }
   };
 
+  useEffect(() => {
+  if (typeof window !== "undefined") {
+    const screenWidth = window.innerWidth;
+    console.log("Detected screen width:", screenWidth);
+
+    if (screenWidth <= 480) {
+      console.log("Redirecting to /sv/frameType/lenses/old");
+      router.replace("/sv/frameType/lenses/old");
+    }
+  }
+}, []);
+
   // Fetch lens data
   useEffect(() => {
+    
     const fetchLensData = async () => {
       try {
         setLoading(true);
@@ -244,12 +258,11 @@ const LensSelectionPage = () => {
 
       // Filter lenses based on user requirements
       const validLenses = lensData.filter((lens) => {
-        console.log("Lens Name:", lens.name);
 
         if (frame !== "rimless" && lens.name.includes("Poly")) {
-            return false;
-          }
-        
+          return false;
+        }
+
         const lensTypeClean = (lens.lensType || "").trim().toLowerCase();
         const selectedLensType = (lensType || "")
           .trim()
@@ -342,7 +355,6 @@ const LensSelectionPage = () => {
               }
             }
           }
-
         }
 
         return true;
