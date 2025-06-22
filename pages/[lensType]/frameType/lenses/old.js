@@ -1200,9 +1200,8 @@ const LensSelectionPage = () => {
                             </div>
                           </div>
 
-                          {/* Price Section - Redesigned */}
-                          {/* Price Section - Centered and Responsive */}
-                          <div className="flex flex-row sm:flex-col items-center sm:items-center justify-between sm:justify-center gap-2 sm:gap-2 bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-2xl border border-green-200/50 w-full">
+                          {/* Price Section - Responsive width */}
+                          <div className="flex flex-row sm:flex-col items-center sm:items-center justify-between sm:justify-center gap-2 sm:gap-2 bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-2xl border border-green-200/50 w-full sm:w-auto lg:min-w-[280px]">
                             {/* Left: Price + MRP */}
                             <div className="flex flex-col sm:flex-col items-center sm:items-center">
                               <div className="text-3xl sm:text-3xl font-black bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent">
@@ -1641,26 +1640,34 @@ const LensSelectionPage = () => {
                             </div>
                           )}
 
-                        {/* Action Button - Enhanced */}
-                        <button className="w-full bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700 hover:from-blue-700 hover:via-purple-700 hover:to-purple-800 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-2xl transition-all duration-300 text-base sm:text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 active:scale-95 relative overflow-hidden group">
-                          <span className="relative z-10 flex items-center justify-center gap-2">
-                            Select This Lens
-                            <svg
-                              className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
+                        {/* Action Buttons */}
+                        {userLensType === "mf-progressive" &&
+                          lens.name.includes("Pro") && (
+                            <Link
+                              href="/pro-design"
+                              className="w-full bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700 hover:from-blue-700 hover:via-purple-700 hover:to-purple-800 text-white font-bold py-3 px-6 rounded-2xl transition-all duration-300 text-base shadow-xl hover:shadow-2xl transform hover:-translate-y-1 active:scale-95 relative overflow-hidden group block"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M13 7l5 5m0 0l-5 5m5-5H6"
-                              />
-                            </svg>
-                          </span>
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                        </button>
+                              <span className="relative z-10 flex items-center justify-center gap-2">
+                                Compare Lens Design
+                                <svg
+                                  className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                                  />
+                                </svg>
+                              </span>
+                              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                            </Link>
+                          )}
                       </div>
                     </div>
                   </div>

@@ -1409,7 +1409,7 @@
     "specialPrice": "1800",
     "authenticityCard": true,
     "lensMaterialCountry": "Thailand",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "1",
     "thickness": {
       "index": "1.50",
@@ -1450,12 +1450,12 @@
       "maxCylCross": "-2"
     },
     "name": "Blue Cut Crizal Easy Pro",
-    "poster": "https://woweye.in/cdn/shop/files/b3_f696cfd7-1ef1-4aaf-b3ea-914988cd06ec_1400x.png?v=1711957973",
+    "poster": "https://woweye.in/cdn/shop/files/b3_f696cfd7-1ef1-4aaf-b3ea-914988cd06ec_1000x.png?v=1711957973",
     "srp": "3900",
     "specialPrice": "2700",
     "authenticityCard": true,
     "lensMaterialCountry": "Thailand",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "1",
     "thickness": {
       "index": "1.56",
@@ -1496,12 +1496,12 @@
       "maxCylCross": "-2"
     },
     "name": "Poly Blue Cut Crizal Easy Pro",
-    "poster": "https://woweye.in/cdn/shop/files/b3_f696cfd7-1ef1-4aaf-b3ea-914988cd06ec_1400x.png?v=1711957973",
+    "poster": "https://woweye.in/cdn/shop/files/b3_f696cfd7-1ef1-4aaf-b3ea-914988cd06ec_1000x.png?v=1711957973",
     "srp": "4500",
     "specialPrice": "3200",
     "authenticityCard": true,
     "lensMaterialCountry": "Philippines",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "2",
     "thickness": {
       "index": "1.59",
@@ -1541,12 +1541,12 @@
       "maxCylCross": "-2"
     },
     "name": "Blue Cut Hi-Index Crizal Easy Pro",
-    "poster": "https://woweye.in/cdn/shop/files/b3_f696cfd7-1ef1-4aaf-b3ea-914988cd06ec_1400x.png?v=1711957973",
+    "poster": "https://woweye.in/cdn/shop/files/b3_f696cfd7-1ef1-4aaf-b3ea-914988cd06ec_1000x.png?v=1711957973",
     "srp": "7100",
     "specialPrice": "5000",
     "authenticityCard": true,
     "lensMaterialCountry": "Japan",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "2",
     "thickness": {
       "index": "1.67",
@@ -1592,7 +1592,7 @@
     "specialPrice": "3200",
     "authenticityCard": true,
     "lensMaterialCountry": "Thailand",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "1",
     "thickness": {
       "index": "1.56",
@@ -1637,7 +1637,7 @@
     "specialPrice": "3600",
     "authenticityCard": true,
     "lensMaterialCountry": "Philippines",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "2",
     "thickness": {
       "index": "1.59",
@@ -1682,7 +1682,7 @@
     "specialPrice": "4400",
     "authenticityCard": true,
     "lensMaterialCountry": "Thailand",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "2",
     "thickness": {
       "index": "1.56",
@@ -1728,7 +1728,7 @@
     "specialPrice": "4800",
     "authenticityCard": true,
     "lensMaterialCountry": "Philippines",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "1",
     "thickness": {
       "index": "1.59",
@@ -3084,7 +3084,7 @@
     "specialPrice": "3450",
     "authenticityCard": true,
     "lensMaterialCountry": "Japan",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "1",
     "thickness": {
       "index": "1.56",
@@ -3129,7 +3129,7 @@
     "specialPrice": "6200",
     "authenticityCard": true,
     "lensMaterialCountry": "Japan",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "2",
     "thickness": {
       "index": "1.50",
@@ -3174,7 +3174,7 @@
     "specialPrice": "9300",
     "authenticityCard": true,
     "lensMaterialCountry": "Japan",
-    "brand": "Essilor",
+    "brand": "Crizal",
     "time": "2",
     "thickness": {
       "index": "1.59",
@@ -5029,7 +5029,7 @@
     "specialPrice": "2600",
     "authenticityCard": false,
     "lensMaterialCountry": "India",
-    "brand": "Vision Rx Lab",
+    "brand": "Crizal",
     "time": "2",
     "thickness": {
       "index": "1.50",
@@ -5517,5 +5517,150 @@
       "acetate"
     ],
     "isHighCyl": true
+  },
+  {
+    "id": 1750590393308,
+    "lensType": "mf-progressive",
+    "powerRange": {
+      "rpMinus": "-2",
+      "rpPlus": "3",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat Conventional Pro",
+    "poster": "/design/cd.png",
+    "srp": "750",
+    "specialPrice": "500",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "Generic",
+    "time": "0",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "filterBlueVioletLight": false,
+    "photochromic": false,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750591226743,
+    "lensType": "mf-progressive",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat Conventional Pro (180/90)",
+    "poster": "/design/cd.png",
+    "srp": "850",
+    "specialPrice": "600",
+    "authenticityCard": false,
+    "lensMaterialCountry": "China",
+    "brand": "Generic",
+    "time": "1",
+    "thickness": {
+      "index": "1.50",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "filterBlueVioletLight": false,
+    "photochromic": false,
+    "unbreakable": false,
+    "tintable": false,
+    "lensMaterialWarranty": false,
+    "isHighCyl": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "3",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+  {
+    "id": 1750591446996,
+    "lensType": "mf-progressive",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "3",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShiedX Digital Pro",
+    "poster": "/design/dd.png",
+    "srp": "1500",
+    "specialPrice": "1000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "clear": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   }
 ]

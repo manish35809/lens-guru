@@ -191,20 +191,19 @@ const LensSelectionPage = () => {
   };
 
   useEffect(() => {
-  if (typeof window !== "undefined") {
-    const screenWidth = window.innerWidth;
-    console.log("Detected screen width:", screenWidth);
+    if (typeof window !== "undefined") {
+      const screenWidth = window.innerWidth;
+      console.log("Detected screen width:", screenWidth);
 
-    if (screenWidth <= 480) {
-      console.log("Redirecting to /sv/frameType/lenses/old");
-      router.replace("/sv/frameType/lenses/old");
+      if (screenWidth <= 480) {
+        console.log("Redirecting to /sv/frameType/lenses/old");
+        router.replace("/sv/frameType/lenses/old");
+      }
     }
-  }
-}, []);
+  }, []);
 
   // Fetch lens data
   useEffect(() => {
-    
     const fetchLensData = async () => {
       try {
         setLoading(true);
@@ -258,7 +257,6 @@ const LensSelectionPage = () => {
 
       // Filter lenses based on user requirements
       const validLenses = lensData.filter((lens) => {
-
         if (frame !== "rimless" && lens.name.includes("Poly")) {
           return false;
         }
@@ -1607,26 +1605,34 @@ const LensSelectionPage = () => {
                             </div>
                           )}
 
-                        {/* Action Button */}
-                        <button className="w-full bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700 hover:from-blue-700 hover:via-purple-700 hover:to-purple-800 text-white font-bold py-3 px-6 rounded-2xl transition-all duration-300 text-base shadow-xl hover:shadow-2xl transform hover:-translate-y-1 active:scale-95 relative overflow-hidden group">
-                          <span className="relative z-10 flex items-center justify-center gap-2">
-                            Select This Lens
-                            <svg
-                              className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
+                        {/* Action Buttons */}
+                        {userLensType === "mf-progressive" &&
+                          lens.name.includes("Pro") && (
+                            <Link
+                              href="/pro-design"
+                              className="w-full bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700 hover:from-blue-700 hover:via-purple-700 hover:to-purple-800 text-white font-bold py-3 px-6 rounded-2xl transition-all duration-300 text-base shadow-xl hover:shadow-2xl transform hover:-translate-y-1 active:scale-95 relative overflow-hidden group block"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M13 7l5 5m0 0l-5 5m5-5H6"
-                              />
-                            </svg>
-                          </span>
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                        </button>
+                              <span className="relative z-10 flex items-center justify-center gap-2">
+                                Compare Lens Design
+                                <svg
+                                  className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                                  />
+                                </svg>
+                              </span>
+                              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                            </Link>
+                          )}
                       </div>
                     </div>
                   </div>
