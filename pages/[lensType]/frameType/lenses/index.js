@@ -1588,19 +1588,44 @@ const LensSelectionPage = () => {
                                 Colors
                               </h4>
                               <div className="flex flex-wrap gap-2">
-                                {lens.photochromicColors.map((color, index) => (
-                                  <span
-                                    key={index}
-                                    className="px-2 py-1 bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 text-gray-800 rounded-lg text-xs font-semibold border border-gray-200 transition-all duration-200 cursor-default"
-                                  >
-                                    {color}
-                                  </span>
-                                ))}
-                                {lens.photochromicColors.length > 3 && (
-                                  <span className="px-2 py-1 bg-gray-100 text-gray-600 rounded-lg text-xs font-semibold">
-                                    +{lens.photochromicColors.length - 3} more
-                                  </span>
-                                )}
+                                {lens.photochromicColors
+                                  .map((color, index) => {
+                                    // Simple color mapping - you can expand this based on your color names
+                                    const colorMap = {
+                                      blue: "#3b82f6",
+                                      green: "#10b981",
+                                      brown: "#92400e",
+                                      gray: "#6b7280",
+                                      grey: "#6b7280",
+                                      black: "#374151",
+                                      purple: "#8b5cf6",
+                                      pink: "#ec4899",
+                                      red: "#ef4444",
+                                      orange: "#f97316",
+                                      yellow: "#eab308",
+                                    };
+
+                                    const normalizedColor = color
+                                      .toLowerCase()
+                                      .replace("grey", "gray");
+                                    const colorHex =
+                                      colorMap[normalizedColor] || "#6b7280";
+
+                                    return (
+                                      <div
+                                        key={index}
+                                        className="flex items-center gap-2 px-3 py-2 bg-white hover:bg-gray-50 rounded-lg text-sm font-semibold border border-gray-200 hover:border-gray-300 transition-all duration-200 cursor-default"
+                                      >
+                                        <div
+                                          className="w-4 h-4 rounded-full ring-1 ring-gray-200"
+                                          style={{ backgroundColor: colorHex }}
+                                        ></div>
+                                        <span className="text-gray-800">
+                                          {color}
+                                        </span>
+                                      </div>
+                                    );
+                                  })}
                               </div>
                             </div>
                           )}
