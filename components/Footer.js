@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Settings, Calculator, Eye } from 'lucide-react';
+import { Settings, Calculator, Eye, Smartphone, Monitor, Layers, Zap, Palette, Lightbulb, Sparkles } from 'lucide-react';
 
 const LensGuruFooter = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,124 +25,192 @@ const LensGuruFooter = () => {
     */
   }, []);
 
-  const footerLinks = [
+  const linkGroups = [
     {
-      title: 'Lens Management',
-      shortTitle: 'LM',
-      href: '/tools/lm',
-      icon: Settings,
-      gradient: 'from-blue-500 to-indigo-600'
+      title: 'Explore Lenses',
+      gradient: 'from-emerald-400 via-teal-500 to-cyan-500',
+      glowColor: 'emerald',
+      links: [
+        {
+          title: 'Coating Features',
+          shortTitle: 'Coating',
+          href: '/lens-features',
+          icon: Layers
+        },
+        {
+          title: 'Progressive Design',
+          shortTitle: 'Progressive',
+          href: '/pro-design',
+          icon: Zap
+        },
+        {
+          title: 'Materials',
+          shortTitle: 'Materials',
+          href: '/lens-materials',
+          icon: Lightbulb
+        },
+        {
+          title: 'Tint Chart',
+          shortTitle: 'Tints',
+          href: '/lens-tint-chart',
+          icon: Palette
+        }
+      ]
     },
     {
-      title: 'Lens Price Calculator',
-      shortTitle: 'LPC',
-      href: '/tools/lpc',
-      icon: Calculator,
-      gradient: 'from-indigo-500 to-purple-600'
+      title: 'View Options',
+      gradient: 'from-blue-400 via-indigo-500 to-purple-500',
+      glowColor: 'blue',
+      links: [
+        {
+          title: 'Mobile View',
+          shortTitle: 'Mobile',
+          href: '/sv/frameType/lenses/old',
+          icon: Smartphone
+        },
+        {
+          title: 'Table / PC',
+          shortTitle: 'Desktop',
+          href: '/sv/frameType/lenses',
+          icon: Monitor
+        }
+      ]
     },
     {
-      title: 'Mobile View',
-      shortTitle: 'Mobile',
-      href: '/sv/frameType/lenses/old',
-      icon: Eye,
-      gradient: 'from-purple-500 to-violet-600'
-    },
-    {
-      title: 'Desktop View',
-      shortTitle: 'Desktop',
-      href: '/sv/frameType/lenses',
-      icon: Eye,
-      gradient: 'from-blue-500 to-blue-600'
+      title: 'Useful Tools',
+      gradient: 'from-purple-400 via-pink-500 to-rose-500',
+      glowColor: 'purple',
+      links: [
+        {
+          title: 'Lens Management',
+          shortTitle: 'LM',
+          href: '/tools/lm',
+          icon: Settings
+        },
+        {
+          title: 'Lens Price Calculator',
+          shortTitle: 'LPC',
+          href: '/tools/lpc',
+          icon: Calculator
+        }
+      ]
     }
   ];
 
   if (!isVisible) return null;
 
   return (
-    <footer className="bottom-0 left-0 right-0 z-50 backdrop-blur-2xl bg-gray-950/90 border-t border-gray-800/50">
-      {/* Modern gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/20 via-gray-900/10 to-violet-900/20 pointer-events-none" />
+    <footer className="relative bottom-0 left-0 right-0 z-50 overflow-hidden">
+      {/* Advanced background with multiple layers */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-gray-900/98 to-black/95 backdrop-blur-3xl" />
       
-      {/* Subtle glow effect */}
-      <div className="absolute inset-0 bg-gradient-to-t from-transparent via-gray-700/5 to-transparent pointer-events-none" />
+      {/* Animated gradient mesh */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/5 to-pink-500/10 animate-pulse" />
       
-      <div className="relative px-3 sm:px-4 md:px-6 py-3 sm:py-4">
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-7xl mx-auto gap-3 sm:gap-0">
-          {/* Brand text - Top on mobile, Left on desktop */}
-          <div className="flex-shrink-0 text-center sm:text-left">
-            <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Lens Guru
-            </span>
+      {/* Floating orbs effect */}
+      <div className="absolute top-0 left-1/4 w-32 h-32 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-0 right-1/4 w-24 h-24 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-2xl animate-pulse delay-1000" />
+      
+      {/* Top border with gradient */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+      
+      <div className="relative px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+        <div className="max-w-7xl mx-auto">
+          {/* Brand Section with enhanced styling */}
+          <div className="flex items-center justify-center sm:justify-start mb-8 sm:mb-10">
+            <div className="flex items-center space-x-3 group">
+              <div className="relative">
+                <Sparkles className="w-7 h-7 text-transparent bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text" />
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-blue-500 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
+              </div>
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-black bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
+                  Lens Guru
+                </h2>
+                <p className="text-xs text-gray-400 font-medium tracking-wider uppercase">
+                  Vision Technology
+                </p>
+              </div>
+            </div>
           </div>
           
-          {/* Navigation Links - Bottom on mobile, Right on desktop */}
-          <div className="flex items-center justify-center sm:justify-end">
-            {/* Mobile: Grid layout for very small screens */}
-            <div className="grid grid-cols-2 gap-2 sm:hidden w-full max-w-xs">
-              {footerLinks.map((link, index) => {
-                const IconComponent = link.icon;
-                return (
-                  <a
-                    key={index}
-                    href={link.href}
-                    className="group relative flex flex-col items-center space-y-1 px-3 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 hover:scale-105"
-                  >
-                    {/* Subtle glow effect */}
-                    <div className={`absolute inset-0 rounded-lg bg-gradient-to-r ${link.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
-                    
-                    {/* Icon */}
-                    <IconComponent 
-                      size={16} 
-                      className={`text-gray-400 group-hover:text-white transition-all duration-300 group-hover:drop-shadow-lg`}
-                    />
-                    
-                    {/* Short label for mobile */}
-                    <span className="text-xs font-medium text-gray-400 group-hover:text-white transition-colors duration-300 text-center leading-tight">
-                      {link.shortTitle}
-                    </span>
-                  </a>
-                );
-              })}
-            </div>
-
-            {/* Tablet and Desktop: Horizontal layout */}
-            <div className="hidden sm:flex items-center space-x-1 md:space-x-2">
-              {footerLinks.map((link, index) => {
-                const IconComponent = link.icon;
-                return (
-                  <a
-                    key={index}
-                    href={link.href}
-                    className="group relative flex items-center space-x-2 px-2 md:px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 hover:scale-105"
-                  >
-                    {/* Subtle glow effect */}
-                    <div className={`absolute inset-0 rounded-lg bg-gradient-to-r ${link.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
-                    
-                    {/* Icon */}
-                    <IconComponent 
-                      size={18} 
-                      className={`text-gray-400 group-hover:text-white transition-all duration-300 group-hover:drop-shadow-lg`}
-                    />
-                    
-                    {/* Full label for tablet/desktop, hide on smaller tablets */}
-                    <span className="text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300 whitespace-nowrap hidden md:inline">
-                      {link.title}
-                    </span>
-                    
-                    {/* Short label for small tablets */}
-                    <span className="text-sm font-medium text-gray-400 group-hover:text-white transition-colors duration-300 whitespace-nowrap md:hidden">
-                      {link.shortTitle}
-                    </span>
-                  </a>
-                );
-              })}
+          {/* Link Groups with enhanced modern styling */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
+            {linkGroups.map((group, groupIndex) => (
+              <div key={groupIndex} className="relative group/section">
+                {/* Group container with glass effect */}
+                <div className="relative bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-white/20 transition-all duration-500 hover:bg-white/[0.08]">
+                  {/* Floating gradient background */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${group.gradient} opacity-0 group-hover/section:opacity-5 rounded-2xl transition-opacity duration-700`} />
+                  
+                  {/* Group Title with enhanced styling */}
+                  <div className="relative mb-6">
+                    <h3 className={`text-base font-bold bg-gradient-to-r ${group.gradient} bg-clip-text text-transparent uppercase tracking-wide mb-1`}>
+                      {group.title}
+                    </h3>
+                    <div className={`h-0.5 w-12 bg-gradient-to-r ${group.gradient} rounded-full opacity-70`} />
+                  </div>
+                  
+                  {/* Links with modern styling */}
+                  <div className="relative space-y-1">
+                    {group.links.map((link, linkIndex) => {
+                      const IconComponent = link.icon;
+                      return (
+                        <a
+                          key={linkIndex}
+                          href={link.href}
+                          className="group/link relative flex items-center space-x-4 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-white/10 hover:scale-[1.02] hover:shadow-lg"
+                        >
+                          {/* Link glow effect */}
+                          <div className={`absolute inset-0 rounded-xl bg-gradient-to-r ${group.gradient} opacity-0 group-hover/link:opacity-10 transition-opacity duration-300`} />
+                          
+                          {/* Icon container with modern styling */}
+                          <div className="relative">
+                            <div className={`absolute inset-0 bg-gradient-to-r ${group.gradient} rounded-lg blur-sm opacity-0 group-hover/link:opacity-30 transition-opacity duration-300`} />
+                            <div className="relative bg-white/10 p-2 rounded-lg backdrop-blur-sm border border-white/20 group-hover/link:border-white/30 transition-colors duration-300">
+                              <IconComponent 
+                                size={16} 
+                                className="text-gray-300 group-hover/link:text-white transition-colors duration-300"
+                              />
+                            </div>
+                          </div>
+                          
+                          {/* Link text with enhanced typography */}
+                          <div className="flex-1">
+                            <span className="text-sm font-semibold text-gray-300 group-hover/link:text-white transition-colors duration-300 block">
+                              <span className="hidden sm:inline">{link.title}</span>
+                              <span className="sm:hidden">{link.shortTitle}</span>
+                            </span>
+                          </div>
+                          
+                          {/* Arrow indicator */}
+                          <div className="opacity-0 group-hover/link:opacity-100 transform translate-x-2 group-hover/link:translate-x-0 transition-all duration-300">
+                            <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                          </div>
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Copyright Section with modern styling */}
+          <div className="relative mt-12 pt-8 border-t border-white/10">
+            <div className="text-center space-y-3">
+              <div className="text-sm text-gray-400 font-medium">
+                © {new Date().getFullYear()} Lens Guru. All rights reserved.
+              </div>
             </div>
           </div>
         </div>
       </div>
       
-      {/* Bottom accent line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-600/30 to-transparent" />
+      {/* Bottom accent with animated gradient */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
     </footer>
   );
 };

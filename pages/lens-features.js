@@ -231,22 +231,6 @@ const LensFeatures = () => {
         );
       })}
 
-      {/* Footer */}
-      <footer className="bg-gradient-to-r from-slate-900 to-gray-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-3xl font-bold mb-6">Experience the Difference</h3>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Advanced lens technology designed to enhance your vision and protect your eyes in every environment.
-          </p>
-          <div className="flex justify-center">
-            <div className="p-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl">
-              <div className="bg-slate-900 rounded-xl px-8 py-4">
-                <p className="text-gray-300">© 2025 Advanced Lens Technology</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
