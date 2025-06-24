@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
-
 import {
   Filter,
   ShieldCheck,
@@ -11,25 +11,15 @@ import {
   Clock,
   Award,
   Star,
-  ChevronDown,
-  ChevronUp,
   X,
-  Info,
-} from "lucide-react";
-
-import {
-  Shield,
-  Fingerprint,
-  Wind,
-  Zap,
-  Palette,
-  Paintbrush,
-  FileCheck,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 const LensSelectionPage = () => {
-  // State management
+  const router = useRouter();
   const [filteredLenses, setFilteredLenses] = useState([]);
+  const [activeFilterTab, setActiveFilterTab] = useState("materials");
   const [brands, setBrands] = useState([]);
   const [allLenses, setAllLenses] = useState([]);
   const [filters, setFilters] = useState({
@@ -39,6 +29,7 @@ const LensSelectionPage = () => {
     priceRange: [0, 0],
     deliveryTime: 30,
   });
+  const scrollContainerRef = useRef(null);
   const [sortBy, setSortBy] = useState("price");
   const [showFilters, setShowFilters] = useState(false);
   const [error, setError] = useState(null);
@@ -185,6 +176,32 @@ const LensSelectionPage = () => {
     return isRightValid && isLeftValid;
   }
 
+  const scroll = (direction) => {
+    const container = scrollContainerRef.current;
+    if (container) {
+      const cardWidth = 520; // card width + gap
+      const scrollAmount = cardWidth * 1; // scroll by 1 card
+
+      if (direction === "left") {
+        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      } else {
+        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const screenWidth = window.innerWidth;
+      console.log("Detected screen width:", screenWidth);
+
+      if (screenWidth <= 480) {
+        console.log("Redirecting to /sv/frameType/lenses/old");
+        router.replace("/sv/frameType/lenses/old");
+      }
+    }
+  }, []);
+
   // Fetch lens data
   useEffect(() => {
     const fetchLensData = async () => {
@@ -240,6 +257,10 @@ const LensSelectionPage = () => {
 
       // Filter lenses based on user requirements
       const validLenses = lensData.filter((lens) => {
+        if (frame !== "rimless" && lens.name.includes("Poly")) {
+          return false;
+        }
+
         const lensTypeClean = (lens.lensType || "").trim().toLowerCase();
         const selectedLensType = (lensType || "")
           .trim()
@@ -255,10 +276,6 @@ const LensSelectionPage = () => {
           selectedLensType === "mf-progressive"
         ) {
           if (!isAdditionValid(powerInfo, lens.addRange)) return false;
-        }
-
-        if (frame !== "rimless" && frame !== "lensOnly") {
-          return !lens.name.includes("Poly");
         }
 
         // Check power compatibility
@@ -326,7 +343,7 @@ const LensSelectionPage = () => {
           }
 
           // Check positive resultant power range
-          if (reResultant > 0 || leResultant > 0) {
+          if (reResultant >= 0 || leResultant >= 0) {
             if ((RE_CYL <= 2 && RE_CYL >= 0) || (LE_CYL <= 2 && LE_CYL >= 0)) {
               if (
                 reResultant > plusTotalPower ||
@@ -1163,20 +1180,20 @@ const LensSelectionPage = () => {
                           className="w-full h-56 sm:h-64 lg:h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         />
                         {/* Discount Badge - Redesigned */}
-                        <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
+                        <div className="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                           <div className="relative">
-                            <div className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-2xl text-sm sm:text-base font-bold shadow-2xl backdrop-blur-sm border border-white/20">
-                              <span className="text-xs sm:text-sm font-medium opacity-90">
+                            <div className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white px-3 py-1.5 rounded-2xl text-sm font-bold shadow-2xl border border-white/20">
+                              <span className="text-xs font-medium opacity-100">
                                 SAVE
                               </span>
-                              <div className="text-lg sm:text-xl font-black leading-none">
+                              <div className="text-lg font-black leading-none">
                                 {Math.round(
                                   (1 - lens.specialPrice / lens.srp) * 100
                                 )}
                                 %
                               </div>
                             </div>
-                            <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+                            <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl group-hover:opacity-0 transition-opacity duration-300"></div>
                           </div>
                         </div>
                         {/* Gradient Overlay */}
@@ -1201,23 +1218,36 @@ const LensSelectionPage = () => {
                           </div>
 
                           {/* Price Section - Responsive width */}
-                          <div className="flex flex-row sm:flex-col items-center sm:items-center justify-between sm:justify-center gap-2 sm:gap-2 bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-2xl border border-green-200/50 w-full sm:w-auto lg:min-w-[280px]">
-                            {/* Left: Price + MRP */}
-                            <div className="flex flex-col sm:flex-col items-center sm:items-center">
-                              <div className="text-3xl sm:text-3xl font-black bg-gradient-to-r from-purple-500 to-indigo-500 bg-clip-text text-transparent">
-                                ₹{lens.specialPrice.toLocaleString()}
+                          <div className="relative group flex flex-col bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-2xl border border-green-200/50 transition-all duration-300 ease-in-out text-center shadow-lg">
+                            {/* Price Block */}
+                            <div className="flex flex-col space-y-2">
+                              {/* SRP with strong emphasis */}
+                              <div className="text-gray-700 text-3xl font-bold">
+                                SRP:&nbsp;
+                                <span className="text-purple-600 font-extrabold group-hover:line-through">
+                                  ₹{lens.srp.toLocaleString()}
+                                </span>
                               </div>
-                              <div className="text-xl font-bold sm:text-base text-gray-600 line-through">
-                                ₹{lens.srp.toLocaleString()}
-                              </div>
-                            </div>
 
-                            {/* Right: Save badge */}
-                            <div className="text-xl sm:text-sm text-green-700 font-bold bg-green-100 px-3 py-1 rounded-lg text-center">
-                              Save ₹
-                              {(lens.srp - lens.specialPrice).toLocaleString()}
+                              {/* Special Price - hidden by default, appears on hover */}
+                              <div className="overflow-hidden h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                                <div className="text-5xl font-black text-green-600">
+                                  ₹{lens.specialPrice.toLocaleString()}
+                                </div>
+                              </div>
+
+                              {/* Save Amount - appears on hover */}
+                              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                                <div className="text-lg text-green-700 font-bold bg-green-100 px-3 py-1 rounded-lg inline-block">
+                                  Save ₹
+                                  {(
+                                    lens.srp - lens.specialPrice
+                                  ).toLocaleString()}
+                                </div>
+                              </div>
                             </div>
                           </div>
+                          
                         </div>
 
                         {/* Key Features - Improved Grid */}

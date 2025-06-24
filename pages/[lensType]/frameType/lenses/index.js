@@ -1179,6 +1179,7 @@ const LensSelectionPage = () => {
                               </div>
                             </div>
                           </div>
+                          
                         </div>
 
                         {/* Key Features */}
