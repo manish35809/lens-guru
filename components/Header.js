@@ -1,15 +1,52 @@
 import { useState, useEffect } from "react";
+import { signOut } from "firebase/auth";
+import { auth } from "@/firebase/config";
+import { LogOut, User, Eye, Glasses } from "lucide-react";
 
 export default function Header() {
   const [prescription, setPrescription] = useState(null);
   const [lensSelection, setLensSelection] = useState(null);
   const [mounted, setMounted] = useState(false);
+  const [user, setUser] = useState(null);
+  const [showUserMenu, setShowUserMenu] = useState(false);
 
   useEffect(() => {
     setMounted(true);
 
     // Only run on client side
     if (typeof window === "undefined") return;
+
+    // Define allowed emails
+    const ALLOWED_EMAILS = [
+      "shivaopticians2022@gmail.com",
+      "saruparam12346@gmail.com",
+      "shivalenshousejdp@gmail.com",
+      "manishchoudhary35809@gmail.com",
+    ];
+
+    // Listen for auth state changes
+    const unsubscribe = auth.onAuthStateChanged((currentUser) => {
+      if (currentUser) {
+        // Check if user's email is in the allowed list
+        if (!ALLOWED_EMAILS.includes(currentUser.email)) {
+          console.log("Unauthorized email:", currentUser.email);
+          // Automatically log out unauthorized users
+          signOut(auth)
+            .then(() => {
+              // Clear localStorage
+              localStorage.removeItem("prescription");
+              localStorage.removeItem("lensSelection");
+              // Redirect to unauthorized page or home
+              window.location.href = "/unauthorized";
+            })
+            .catch((error) => {
+              console.error("Error signing out unauthorized user:", error);
+            });
+          return;
+        }
+      }
+      setUser(currentUser);
+    });
 
     // Load prescription from localStorage
     const savedPrescription = localStorage.getItem("prescription");
@@ -47,20 +84,33 @@ export default function Header() {
     window.addEventListener("localStorageUpdate", handleStorageChange);
 
     return () => {
+      unsubscribe();
       window.removeEventListener("storage", handleStorageChange);
       window.removeEventListener("localStorageUpdate", handleStorageChange);
     };
   }, []);
 
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      // Clear localStorage on logout
+      localStorage.removeItem("prescription");
+      localStorage.removeItem("lensSelection");
+      // Redirect to login or home page
+      window.location.href = "/";
+    } catch (error) {
+      console.error("Error signing out:", error);
+    }
+  };
+
   const getPrescriptionDisplay = () => {
-    // Debug: Always show something if mounted for testing
     if (!mounted) return null;
 
-    // If no prescription data, show a placeholder for testing
     if (!prescription) {
       return (
-        <div className="text-center sm:text-right">
-          <div className="text-xs text-gray-400">No Prescription</div>
+        <div className="flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-full">
+          <Eye className="w-4 h-4 text-slate-400" />
+          <span className="text-sm text-slate-500">No Prescription</span>
         </div>
       );
     }
@@ -76,132 +126,76 @@ export default function Header() {
 
     if (!hasValues) {
       return (
-        <div className="text-center sm:text-right">
-          <div className="text-xs text-gray-400">Empty Prescription</div>
+        <div className="flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-full">
+          <Eye className="w-4 h-4 text-slate-400" />
+          <span className="text-sm text-slate-500">Empty Prescription</span>
         </div>
       );
     }
 
     return (
-      <div className="shadow-sm w-full sm:min-w-96">
-        {/* Eyes Section - Responsive Design */}
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-          {/* Right Eye */}
-          {(RE?.SPH || RE?.CYL || RE?.AXIS || RE?.ADD) && (
-            <div className="flex-1 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg sm:rounded-xl p-3 sm:p-4 border border-blue-200 shadow-md sm:shadow-lg hover:shadow-lg sm:hover:shadow-xl transition-all duration-300 hover:border-blue-300">
-              <div className="flex items-center gap-2 mb-2 sm:mb-3">
-                <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-xs sm:text-sm font-bold text-white">
-                    R
-                  </span>
-                </div>
-                <span className="text-xs sm:text-sm font-bold text-slate-800">
-                  Right Eye
-                </span>
-              </div>
-              <div className="grid grid-cols-2 sm:flex sm:items-center gap-2 sm:gap-3 sm:flex-wrap">
-                {RE.SPH && (
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-1.5">
-                    <span className="text-xs font-medium text-blue-600">
-                      SPH:
-                    </span>
-                    <span className="text-xs sm:text-sm font-bold text-slate-800 bg-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-md sm:rounded-lg border border-blue-200 shadow-sm">
-                      {RE.SPH}
-                    </span>
-                  </div>
-                )}
-                {RE.CYL && (
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-1.5">
-                    <span className="text-xs font-medium text-blue-600">
-                      CYL:
-                    </span>
-                    <span className="text-xs sm:text-sm font-bold text-slate-800 bg-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-md sm:rounded-lg border border-blue-200 shadow-sm">
-                      {RE.CYL}
-                    </span>
-                  </div>
-                )}
-                {RE.AXIS && (
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-1.5">
-                    <span className="text-xs font-medium text-blue-600">
-                      AXIS:
-                    </span>
-                    <span className="text-xs sm:text-sm font-bold text-slate-800 bg-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-md sm:rounded-lg border border-blue-200 shadow-sm">
-                      {RE.AXIS}
-                    </span>
-                  </div>
-                )}
-                {RE.ADD && (
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-1.5">
-                    <span className="text-xs font-medium text-blue-600">
-                      ADD:
-                    </span>
-                    <span className="text-xs sm:text-sm font-bold text-slate-800 bg-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-md sm:rounded-lg border border-blue-200 shadow-sm">
-                      {RE.ADD}
-                    </span>
-                  </div>
-                )}
-              </div>
+      <div className="flex items-center gap-3">
+        {/* Right Eye */}
+        {(RE?.SPH || RE?.CYL || RE?.AXIS || RE?.ADD) && (
+          <div className="flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-200">
+            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+              <span className="text-xs font-bold text-white">R</span>
             </div>
-          )}
+            <div className="flex items-center gap-2">
+              {RE.SPH && (
+                <span className="text-xs font-medium text-blue-700">
+                  {RE.SPH}
+                </span>
+              )}
+              {RE.CYL && (
+                <span className="text-xs font-medium text-blue-700">
+                  {RE.CYL}
+                </span>
+              )}
+              {RE.AXIS && (
+                <span className="text-xs font-medium text-blue-700">
+                  {RE.AXIS}°
+                </span>
+              )}
+              {RE.ADD && (
+                <span className="text-xs font-medium text-blue-700">
+                  +{RE.ADD}
+                </span>
+              )}
+            </div>
+          </div>
+        )}
 
-          {/* Left Eye */}
-          {(LE?.SPH || LE?.CYL || LE?.AXIS || LE?.ADD) && (
-            <div className="flex-1 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg sm:rounded-xl p-3 sm:p-4 border border-purple-200 shadow-md sm:shadow-lg hover:shadow-lg sm:hover:shadow-xl transition-all duration-300 hover:border-purple-300">
-              <div className="flex items-center gap-2 mb-2 sm:mb-3">
-                <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-md">
-                  <span className="text-xs sm:text-sm font-bold text-white">
-                    L
-                  </span>
-                </div>
-                <span className="text-xs sm:text-sm font-bold text-slate-800">
-                  Left Eye
-                </span>
-              </div>
-              <div className="grid grid-cols-2 sm:flex sm:items-center gap-2 sm:gap-3 sm:flex-wrap">
-                {LE.SPH && (
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-1.5">
-                    <span className="text-xs font-medium text-purple-600">
-                      SPH:
-                    </span>
-                    <span className="text-xs sm:text-sm font-bold text-slate-800 bg-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-md sm:rounded-lg border border-purple-200 shadow-sm">
-                      {LE.SPH}
-                    </span>
-                  </div>
-                )}
-                {LE.CYL && (
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-1.5">
-                    <span className="text-xs font-medium text-purple-600">
-                      CYL:
-                    </span>
-                    <span className="text-xs sm:text-sm font-bold text-slate-800 bg-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-md sm:rounded-lg border border-purple-200 shadow-sm">
-                      {LE.CYL}
-                    </span>
-                  </div>
-                )}
-                {LE.AXIS && (
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-1.5">
-                    <span className="text-xs font-medium text-purple-600">
-                      AXIS:
-                    </span>
-                    <span className="text-xs sm:text-sm font-bold text-slate-800 bg-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-md sm:rounded-lg border border-purple-200 shadow-sm">
-                      {LE.AXIS}
-                    </span>
-                  </div>
-                )}
-                {LE.ADD && (
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-1.5">
-                    <span className="text-xs font-medium text-purple-600">
-                      ADD:
-                    </span>
-                    <span className="text-xs sm:text-sm font-bold text-slate-800 bg-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-md sm:rounded-lg border border-purple-200 shadow-sm">
-                      {LE.ADD}
-                    </span>
-                  </div>
-                )}
-              </div>
+        {/* Left Eye */}
+        {(LE?.SPH || LE?.CYL || LE?.AXIS || LE?.ADD) && (
+          <div className="flex items-center gap-2 px-4 py-2 bg-purple-50 rounded-full border border-purple-200">
+            <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center">
+              <span className="text-xs font-bold text-white">L</span>
             </div>
-          )}
-        </div>
+            <div className="flex items-center gap-2">
+              {LE.SPH && (
+                <span className="text-xs font-medium text-purple-700">
+                  {LE.SPH}
+                </span>
+              )}
+              {LE.CYL && (
+                <span className="text-xs font-medium text-purple-700">
+                  {LE.CYL}
+                </span>
+              )}
+              {LE.AXIS && (
+                <span className="text-xs font-medium text-purple-700">
+                  {LE.AXIS}°
+                </span>
+              )}
+              {LE.ADD && (
+                <span className="text-xs font-medium text-purple-700">
+                  +{LE.ADD}
+                </span>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     );
   };
@@ -209,11 +203,11 @@ export default function Header() {
   const getLensTypeDisplay = () => {
     if (!mounted) return null;
 
-    // Show placeholder if no lens selection for testing
     if (!lensSelection) {
       return (
-        <div className="text-center">
-          <div className="text-xs text-gray-400">No Lens Selected</div>
+        <div className="flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-full">
+          <Glasses className="w-4 h-4 text-slate-400" />
+          <span className="text-sm text-slate-500">No Lens Selected</span>
         </div>
       );
     }
@@ -228,13 +222,53 @@ export default function Header() {
     };
 
     return (
-      <div className="text-center">
-        <div className="text-xs text-gray-600 mb-1 font-medium">
-          Selected Lens
-        </div>
-        <div className="px-2 sm:px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs sm:text-sm font-medium border border-green-200">
+      <div className="flex items-center gap-2 px-4 py-2 bg-emerald-50 rounded-full border border-emerald-200">
+        <Glasses className="w-4 h-4 text-emerald-600" />
+        <span className="text-sm font-medium text-emerald-700">
           {lensTypeMap[lensSelection] || lensSelection}
-        </div>
+        </span>
+      </div>
+    );
+  };
+
+  const getUserDisplay = () => {
+    if (!user) return null;
+
+    const initials = user.displayName 
+      ? user.displayName.split(' ').map(n => n[0]).join('').toUpperCase()
+      : user.email[0].toUpperCase();
+
+    return (
+      <div className="relative">
+        <button
+          onClick={() => setShowUserMenu(!showUserMenu)}
+          className="flex items-center gap-3 px-4 py-2 bg-indigo-50 rounded-full border border-indigo-200 hover:bg-indigo-100 transition-colors"
+        >
+          <div className="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
+            <span className="text-sm font-bold text-white">{initials}</span>
+          </div>
+          <span className="text-sm font-medium text-indigo-700 hidden sm:block">
+            {user.displayName || user.email.split('@')[0]}
+          </span>
+        </button>
+
+        {showUserMenu && (
+          <div className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden z-50">
+            <div className="p-4 bg-indigo-50 border-b border-indigo-100">
+              <div className="text-sm font-semibold text-indigo-900">
+                {user.displayName || "User"}
+              </div>
+              <div className="text-xs text-indigo-600 mt-1">{user.email}</div>
+            </div>
+            <button
+              onClick={handleLogout}
+              className="w-full flex items-center gap-3 px-4 py-3 text-sm text-red-600 hover:bg-red-50 transition-colors"
+            >
+              <LogOut className="w-4 h-4" />
+              Sign Out
+            </button>
+          </div>
+        )}
       </div>
     );
   };
@@ -245,21 +279,35 @@ export default function Header() {
     }
   };
 
+  // Close user menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (showUserMenu && !event.target.closest(".relative")) {
+        setShowUserMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [showUserMenu]);
+
   // Don't render on server side to prevent hydration mismatch
   if (!mounted) {
     return (
-      <header className="bg-white shadow-md border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
-          <div className="flex justify-between items-center py-2 sm:py-4">
+      <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200/50">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="flex justify-between items-center py-4">
             <div className="flex-shrink-0">
               <img
                 src="/logo.png"
                 alt="Lens Guru Logo"
-                className="h-20 w-40 object-contain rounded-lg border border-amber-100 shadow-sm"
+                className="h-12 w-32 object-contain"
               />
             </div>
-            <div className="flex-1 flex justify-center"></div>
-            <div className="flex-shrink-0 min-w-0"></div>
+            <div className="flex items-center gap-4">
+              <div className="w-32 h-8 bg-gray-200 rounded-full animate-pulse"></div>
+              <div className="w-10 h-10 bg-gray-200 rounded-full animate-pulse"></div>
+            </div>
           </div>
         </div>
       </header>
@@ -267,61 +315,56 @@ export default function Header() {
   }
 
   return (
-    <>
-      <header className="bg-white shadow-md border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
-          {/* Mobile Layout - Stacked */}
-          <div className="block sm:hidden">
-            {/* Top Row - Logo and Lens Type */}
-            <div className="flex justify-between items-center py-2">
-              <div
-                className="flex-shrink-0 cursor-pointer"
-                onClick={handleLogoClick}
-              >
-                <img
-                  src="/logo.png"
-                  alt="Lens Guru Logo"
-                  className="h-20 w-40 object-contain rounded-lg border border-amber-100 shadow-sm hover:shadow-md transition-shadow"
-                />
-              </div>
-              <div className="flex-1 flex justify-center px-2">
-                {getLensTypeDisplay()}
-              </div>
-            </div>
-
-            {/* Bottom Row - Prescription (if available) */}
-            {prescription && (
-              <div className="pb-2">{getPrescriptionDisplay()}</div>
-            )}
+    <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200/50 sticky top-0 z-40">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          {/* Logo */}
+          <div
+            className="flex-shrink-0 cursor-pointer group"
+            onClick={handleLogoClick}
+          >
+            <img
+              src="/logo.png"
+              alt="Lens Guru Logo"
+              className="h-12 w-32 lg:h-14 lg:w-36 object-contain transition-transform group-hover:scale-105"
+            />
           </div>
 
-          {/* Desktop Layout - Horizontal */}
-          <div className="hidden sm:flex justify-between items-center py-4">
-            {/* Logo - Left Corner */}
-            <div
-              className="flex-shrink-0 cursor-pointer"
-              onClick={handleLogoClick}
-            >
-              <img
-                src="/logo.png"
-                alt="Lens Guru Logo"
-                className="h-20 w-40 lg:h-26 lg:w-48 object-contain rounded-lg border border-amber-100 shadow-sm hover:shadow-md transition-shadow"
-              />
-            </div>
+          {/* Center Content - Desktop */}
+          <div className="hidden md:flex items-center gap-4">
+            {getLensTypeDisplay()}
+            {getPrescriptionDisplay()}
+          </div>
 
-            {/* Center - Lens Type (if available) */}
-            <div className="flex-1 flex justify-center px-4">
-              {getLensTypeDisplay()}
+          {/* Right Side - User */}
+          <div className="flex items-center gap-4">
+            {/* Mobile Content */}
+            <div className="md:hidden flex items-center gap-2">
+              {prescription && (
+                <div className="flex items-center gap-1">
+                  <Eye className="w-4 h-4 text-blue-500" />
+                  <span className="text-xs font-medium text-blue-700">Rx</span>
+                </div>
+              )}
+              {lensSelection && (
+                <div className="flex items-center gap-1">
+                  <Glasses className="w-4 h-4 text-emerald-500" />
+                  <span className="text-xs font-medium text-emerald-700">Lens</span>
+                </div>
+              )}
             </div>
-
-            {/* Right Corner - Prescription Info */}
-            <div className="flex-shrink-0 min-w-0 max-w-md">
-              {getPrescriptionDisplay()}
-            </div>
+            
+            {getUserDisplay()}
           </div>
         </div>
-      </header>
-    </>
+
+        {/* Mobile Content Expanded */}
+        <div className="md:hidden pb-4 space-y-3">
+          {getLensTypeDisplay()}
+          {getPrescriptionDisplay()}
+        </div>
+      </div>
+    </header>
   );
 }
 
