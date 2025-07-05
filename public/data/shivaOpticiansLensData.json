@@ -40,7 +40,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "clear": true
   },
   {
@@ -85,7 +89,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "clear": true
   },
   {
@@ -130,7 +138,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true,
     "clear": true
   },
@@ -176,7 +186,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true,
     "clear": true
   },
@@ -222,7 +236,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true,
     "clear": true
   },
@@ -268,7 +286,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "clear": true
   },
   {
@@ -313,7 +335,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true,
     "clear": true
   },
@@ -359,7 +385,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true,
     "clear": true
   },
@@ -399,13 +429,19 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": false
   },
   {
@@ -444,13 +480,17 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -488,13 +528,19 @@
     "photochromic": true,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1749320382545,
@@ -532,13 +578,20 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray", "Brown"],
+    "photochromicColors": [
+      "Gray",
+      "Brown"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1749320455513,
@@ -576,13 +629,17 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -627,7 +684,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"],
+    "frameTypeRecommended": [
+      "rimless"
+    ],
     "clear": false
   },
   {
@@ -672,7 +731,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1749322428318,
@@ -716,7 +779,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -761,7 +828,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -806,7 +875,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -851,7 +922,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": false
   },
   {
@@ -896,7 +971,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -940,7 +1017,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1749365016237,
@@ -984,7 +1065,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1749365339939,
@@ -1028,7 +1113,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -1072,7 +1159,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "lowReflection": false
   },
   {
@@ -1117,7 +1209,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "isHighCyl": true
   },
   {
@@ -1162,7 +1259,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "isHighCyl": true
   },
   {
@@ -1207,7 +1309,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -1253,7 +1357,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": false
   },
   {
@@ -1299,7 +1407,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -1345,7 +1455,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": false
   },
   {
@@ -1391,7 +1505,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1749393040706,
@@ -1436,7 +1552,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": false
   },
   {
@@ -1482,7 +1602,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -1528,7 +1652,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1749394122025,
@@ -1573,7 +1699,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": false
   },
   {
@@ -1618,7 +1748,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "lowReflection": true
   },
   {
@@ -1664,7 +1798,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1749405213484,
@@ -1709,7 +1845,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -1755,7 +1895,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1749406575239,
@@ -1800,7 +1942,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -1846,7 +1992,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -1892,7 +2042,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -1938,7 +2092,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "isHighCyl": true
   },
   {
@@ -1984,7 +2143,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "isHighCyl": true
   },
   {
@@ -2030,7 +2194,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ]
   },
   {
     "id": 1749407878583,
@@ -2075,7 +2244,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1749408038784,
@@ -2114,13 +2287,19 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -2166,7 +2345,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1749408330217,
@@ -2211,7 +2394,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1749408488104,
@@ -2256,7 +2443,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1749408604929,
@@ -2301,7 +2490,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"],
+    "frameTypeRecommended": [
+      "rimless"
+    ],
     "isHighCyl": false
   },
   {
@@ -2347,7 +2538,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ]
   },
   {
     "id": 1749408793994,
@@ -2392,7 +2588,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -2438,7 +2638,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1749409236979,
@@ -2483,7 +2685,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1749409327403,
@@ -2528,7 +2732,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1749409411868,
@@ -2573,7 +2779,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1750240377972,
@@ -2617,7 +2825,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750242795336,
@@ -2661,7 +2873,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"]
+    "frameTypeRecommended": [
+      "acetate"
+    ]
   },
   {
     "id": 1750242955598,
@@ -2706,7 +2920,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -2752,7 +2968,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750243281303,
@@ -2797,7 +3017,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750243831529,
@@ -2835,13 +3059,20 @@
     "tintable": false,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": ["Gray", "Brown"],
+    "photochromicColors": [
+      "Gray",
+      "Brown"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750243918822,
@@ -2880,13 +3111,17 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate"]
+    "frameTypeRecommended": [
+      "acetate"
+    ]
   },
   {
     "id": 1750244081749,
@@ -2925,13 +3160,20 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray", "Brown"],
+    "photochromicColors": [
+      "Gray",
+      "Brown"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750244442398,
@@ -2970,13 +3212,19 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750244652964,
@@ -3015,13 +3263,21 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": true,
-    "photochromicColors": ["Gray", "Brown", "Green"],
+    "photochromicColors": [
+      "Gray",
+      "Brown",
+      "Green"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750244770788,
@@ -3060,13 +3316,21 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": true,
-    "photochromicColors": ["Gray", "Brown", "Green"],
+    "photochromicColors": [
+      "Gray",
+      "Brown",
+      "Green"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750247882968,
@@ -3104,13 +3368,19 @@
     "tintable": false,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "lowReflection": true
   },
   {
@@ -3150,13 +3420,23 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray", "Green", "Brown", "Blue", "Purple"],
+    "photochromicColors": [
+      "Gray",
+      "Green",
+      "Brown",
+      "Blue",
+      "Purple"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750248367504,
@@ -3195,13 +3475,21 @@
     "lensMaterialWarranty": true,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray", "Green", "Brown", "Blue", "Purple"],
+    "photochromicColors": [
+      "Gray",
+      "Green",
+      "Brown",
+      "Blue",
+      "Purple"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1750248934765,
@@ -3240,13 +3528,17 @@
     "lensMaterialWarranty": true,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1750250967100,
@@ -3284,13 +3576,19 @@
     "tintable": false,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "lowReflection": true
   },
   {
@@ -3330,13 +3628,19 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -3381,7 +3685,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750336196978,
@@ -3426,7 +3734,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750336285386,
@@ -3471,7 +3783,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750336393653,
@@ -3516,7 +3832,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750336693800,
@@ -3561,7 +3881,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1750336831352,
@@ -3606,7 +3928,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750337046285,
@@ -3651,7 +3977,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "isHighCyl": true
   },
   {
@@ -3697,7 +4028,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750337334928,
@@ -3742,7 +4077,9 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["rimless"]
+    "frameTypeRecommended": [
+      "rimless"
+    ]
   },
   {
     "id": 1750337397449,
@@ -3787,7 +4124,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "isHighCyl": true
   },
   {
@@ -3833,7 +4175,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -3873,13 +4219,19 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750337727580,
@@ -3918,13 +4270,20 @@
     "lensMaterialWarranty": true,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "isHighCyl": false
   },
   {
@@ -3969,7 +4328,11 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750506369285,
@@ -4013,7 +4376,11 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750506440163,
@@ -4058,7 +4425,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750506564443,
@@ -4103,7 +4474,11 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -4149,7 +4524,9 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -4195,7 +4572,9 @@
       "start": "0.75",
       "end": "3.5"
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -4241,7 +4620,11 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -4287,7 +4670,9 @@
       "start": "0.75",
       "end": "3.5"
     },
-    "frameTypeRecommended": ["acetate"],
+    "frameTypeRecommended": [
+      "acetate"
+    ],
     "isHighCyl": true
   },
   {
@@ -4332,7 +4717,11 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750507419027,
@@ -4377,7 +4766,11 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750507486512,
@@ -4422,7 +4815,11 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750507565177,
@@ -4467,7 +4864,11 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750507780502,
@@ -4480,7 +4881,7 @@
       "maxCylCross": "-4"
     },
     "name": "Blue Cut KT Ventoux",
-    "poster": "https://scontent.fdel8-2.fna.fbcdn.net/v/t39.30808-6/491919626_1193792692757241_7546166512022309203_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5bEp11gPp14Q7kNvwE4UUGR&_nc_oc=Admv71CrOwSN6jPofohEiXuM_HTcL8E5SeOm3lRXV_LHh3ikLFTbTP67TqrKhfPCuzc&_nc_zt=23&_nc_ht=scontent.fdel8-2.fna&_nc_gid=-7v9I38wpYcdy4DNpSfaFQ&oh=00_AfNU94ug7_C0ebO_dHO1XdrJY6sD7QmJmgftYNSjmMMO7Q&oe=685C89EF",
+    "poster": "https://image.made-in-china.com/2f0j00wDdcjbehPVqB/1-61-Single-Vision-Blue-Cut-Optical-Lens-Green-Coating-Anti-Blue-Light-Lens.jpg",
     "srp": "3090",
     "specialPrice": "1200",
     "authenticityCard": true,
@@ -4512,4557 +4913,11 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750507991984,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "6",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Blue Cut KT Ventoux",
-    "poster": "https://scontent.fdel8-2.fna.fbcdn.net/v/t39.30808-6/491919626_1193792692757241_7546166512022309203_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5bEp11gPp14Q7kNvwE4UUGR&_nc_oc=Admv71CrOwSN6jPofohEiXuM_HTcL8E5SeOm3lRXV_LHh3ikLFTbTP67TqrKhfPCuzc&_nc_zt=23&_nc_ht=scontent.fdel8-2.fna&_nc_gid=D1V-Pxz86jyfuNaWJJ3MZA&oh=00_AfOTlZCDGqX4mbEDUpN15cgdskT1VAQ29V8JI9n9KG1TwA&oe=685C89EF",
-    "srp": "3590",
-    "specialPrice": "1700",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "O2 Rx",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750508574228,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "2",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "PG Hard Coat KT",
-    "poster": "https://s.alicdn.com/@sc04/kf/U559f8b7ddaa34c52bfaa936c458e05e0S.jpg_720x720q50.jpg",
-    "srp": "500",
-    "specialPrice": "360",
-    "authenticityCard": false,
-    "lensMaterialCountry": "China",
-    "brand": "Generic",
-    "time": "0",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": false,
-    "filterBlueVioletLight": false,
-    "photochromic": true,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "3",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750508700385,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "PG Hard Coat KT ShieldX",
-    "poster": "https://tiimg.tistatic.com/fp/1/003/964/photo-chromic-lenses-524.jpg",
-    "srp": "710",
-    "specialPrice": "500",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "0",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750508808979,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "0",
-      "maxCylMinus": "-2",
-      "maxCylPlus": "2",
-      "maxCylCross": ""
-    },
-    "name": "PG Hard Coat KT ShieldX",
-    "poster": "https://tiimg.tistatic.com/fp/1/003/964/photo-chromic-lenses-524.jpg",
-    "srp": "900",
-    "specialPrice": "650",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "0",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750508911402,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "2",
-      "maxCylMinus": "-1",
-      "maxCylPlus": "1",
-      "maxCylCross": ""
-    },
-    "name": "PG Hard Coat KT ShieldX",
-    "poster": "https://tiimg.tistatic.com/fp/1/003/964/photo-chromic-lenses-524.jpg",
-    "srp": "1300",
-    "specialPrice": "900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750509188530,
-    "lensType": "sv-far",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG Hard Coat KT Emery",
-    "poster": "https://ce0836c8.delivery.rocketcdn.me/wp-content/uploads/2024/01/photochromic-lenses-UK.jpg",
-    "srp": "2490",
-    "specialPrice": "1200",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "O2 Rx",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750509272663,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "8",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "PG Hard Coat KT Emery",
-    "poster": "https://ce0836c8.delivery.rocketcdn.me/wp-content/uploads/2024/01/photochromic-lenses-UK.jpg",
-    "srp": "2990",
-    "specialPrice": "1700",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "O2 Rx",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750510125006,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "Poly Blue Cut KT Crystal",
-    "poster": "https://5.imimg.com/data5/ANDROID/Default/2023/9/347055752/LE/RH/AN/16733331/product-jpeg-500x500.jpg",
-    "srp": "1300",
-    "specialPrice": "900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "2",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": true,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": true,
-    "photochromic": false,
-    "unbreakable": true,
-    "tintable": false,
-    "lensMaterialWarranty": true,
-    "isHighCyl": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["rimless"]
-  },
-  {
-    "id": 1750510257490,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "2",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "Poly ARC KT Crystal",
-    "poster": "https://ae01.alicdn.com/kf/S44923ed1e1b04d25a87056712f23fbacl.jpg",
-    "srp": "900",
-    "specialPrice": "600",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "0",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": true,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["rimless"]
-  },
-  {
-    "id": 1750510447717,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "7",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Poly ARC KT Ventoux",
-    "poster": "https://m.media-amazon.com/images/I/41Mss1bKqsL._AC_UF1000,1000_QL80_.jpg",
-    "srp": "4790",
-    "specialPrice": "2500",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "O2 Lenses",
-    "time": "2",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["rimless"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750510779497,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "7.5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC KT Satin+ UV",
-    "poster": "https://www.martinreynoldsopticians.co.uk/uploads/2/9/2/4/29248939/8522934_orig.jpg",
-    "srp": "2130",
-    "specialPrice": "1600",
-    "authenticityCard": false,
-    "lensMaterialCountry": "India",
-    "brand": "Vision Rx Lab",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750510866112,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "7.5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC KT Crizal",
-    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7IkGOq4vm5huGIhIkFzzcw25AUgROmaHU-Q&s",
-    "srp": "3540",
-    "specialPrice": "2600",
-    "authenticityCard": false,
-    "lensMaterialCountry": "India",
-    "brand": "Crizal",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750511257966,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "7.5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Cut KT Satin+ UV",
-    "poster": "https://www.martinreynoldsopticians.co.uk/uploads/2/9/2/4/29248939/8522934_orig.jpg",
-    "srp": "3640",
-    "specialPrice": "2700",
-    "authenticityCard": false,
-    "lensMaterialCountry": "India",
-    "brand": "Vision Rx Lab",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750511858603,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-5",
-      "rpPlus": "4",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Cut KT Low Reflection",
-    "poster": "https://m.media-amazon.com/images/I/41QG8IHV0LL._AC_UY350_.jpg",
-    "srp": "4310",
-    "specialPrice": "1700",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "Optus",
-    "time": "3",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750512002173,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "2",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "PG Blue Cut KT Crystal",
-    "poster": "https://eyemantra.in/wp-content/uploads/2020/10/image-54-edited.png",
-    "srp": "1300",
-    "specialPrice": "900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "0",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": true,
-    "repelsDust": false,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "2.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750512325833,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "PG Blue Cut KT Crystal",
-    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_x9omATAodpoldc_PXEWz2sObNDUJ6MDEQ&s",
-    "srp": "1300",
-    "specialPrice": "900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": true,
-    "repelsDust": false,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": []
-  },
-  {
-    "id": 1750512179258,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG Blue Cut KT Glatt",
-    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBFNg_JR-LULX2iyKZHGu9SWKovCZx_4qwSA&s",
-    "srp": "4920",
-    "specialPrice": "2620",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Rio",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750512849538,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "18.5",
-      "maxCylMinus": "0",
-      "maxCylPlus": "4",
-      "maxCylCross": ""
-    },
-    "name": "Lenticular KT Titanium",
-    "poster": "https://www.eliterxlenses.com/images/product/lenticular.jpg",
-    "srp": "4140",
-    "specialPrice": "3100",
-    "authenticityCard": false,
-    "lensMaterialCountry": "Japan",
-    "brand": "Vision Rx",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": true,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate"]
-  },
-  {
-    "id": 1750512939932,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-6.5",
-      "rpPlus": "8",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG ARC KT Satin+ UV",
-    "poster": "https://ae01.alicdn.com/kf/S2be5e1574bc24b619192ee6c8891b63fK.jpg",
-    "srp": "3790",
-    "specialPrice": "2800",
-    "authenticityCard": false,
-    "lensMaterialCountry": "Korea",
-    "brand": "Vision Rx",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": ["Gray", "Brown"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750513280554,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "2",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "Blue Cut KT Drive+",
-    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ViaabpKGRBxmnqwL7dO9BNPmem4SgyG1KQ&s",
-    "srp": "1300",
-    "specialPrice": "900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": true,
-    "repelsDust": false,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750513632387,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Tinted Hard Coat KT Rock",
-    "poster": "https://visionequipmentinc.com/wp-content/uploads/2017/07/Tinted_Lens_Display-600x381.jpg",
-    "srp": "1500",
-    "specialPrice": "1000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "Rio",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": false,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": true,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750513764024,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "8",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Tinted Hard Coat KT Rock",
-    "poster": "https://visionequipmentinc.com/wp-content/uploads/2017/07/Tinted_Lens_Display-600x381.jpg",
-    "srp": "1980",
-    "specialPrice": "1380",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "Rio",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": true,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750590393308,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "Hard Coat Conventional Pro",
-    "poster": "/design/cd.png",
-    "srp": "990",
-    "specialPrice": "680",
-    "authenticityCard": false,
-    "lensMaterialCountry": "China",
-    "brand": "Generic",
-    "time": "0",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": true,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "3",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750591226743,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Hard Coat ShiedX Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "1800",
-    "specialPrice": "1200",
-    "authenticityCard": false,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": true,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750591446996,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "Hard Coat ShiedX Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "1500",
-    "specialPrice": "1000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750599799907,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Hard Coat Fortus Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "2400",
-    "specialPrice": "1550",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": true,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750600086347,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10.5",
-      "rpPlus": "8.5",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Hard Coat Fortus Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "2600",
-    "specialPrice": "1800",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750600352459,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Hard Coat Titus Free-Form Pro",
-    "poster": "https://www.reachoptic.com/assets/images/products/17452422502126.jpg",
-    "srp": "3100",
-    "specialPrice": "2200",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Essilor",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750600480489,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Hard Coat Duron Digital Pro",
-    "poster": "https://www.aminoptic.in/wpimages/wp1ba83a5e_05_06.jpg",
-    "srp": "2058",
-    "specialPrice": "1400",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "Prime",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750600622450,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Hard Coat Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/light-2/light2_traditional-hard-design_slider.jpg/_jcr_content/renditions/original./light2_traditional-hard-design_slider.jpg",
-    "srp": "2950",
-    "specialPrice": "2100",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": false,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750601041362,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "2",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "ARC Conventional Pro",
-    "poster": "/design/cd.png",
-    "srp": "1050",
-    "specialPrice": "750",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750601528661,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "2450",
-    "specialPrice": "1700",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": true,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750602160903,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "Blue Cut Conventional Pro",
-    "poster": "/design/cd.png",
-    "srp": "1150",
-    "specialPrice": "800",
-    "authenticityCard": false,
-    "lensMaterialCountry": "China",
-    "brand": "Generic",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": true,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "3",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750602218635,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "Blue Cut Crystal Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "1300",
-    "specialPrice": "900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750602372465,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "2",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "PG Hard Coat Pro",
-    "poster": "/design/cd.png",
-    "srp": "1150",
-    "specialPrice": "800",
-    "authenticityCard": false,
-    "lensMaterialCountry": "China",
-    "brand": "Generic",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "3",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750602435412,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "PG Hard Coat ShieldX Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "1300",
-    "specialPrice": "900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750602511319,
-    "lensType": "mf-bifocal",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "PG ARC Crystal Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "1500",
-    "specialPrice": "1000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750602681369,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "Blue Cut Low Reflection Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "1800",
-    "specialPrice": "1200",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750602770409,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "3",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": "0"
-    },
-    "name": "Blue Cut Drive+ Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "2000",
-    "specialPrice": "1300",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750602937679,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "2",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "PG Blue Cut Low Reflection Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "2500",
-    "specialPrice": "1600",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750603046122,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "2",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "PG Blue Cut Drive+ Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "2800",
-    "specialPrice": "1800",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": true,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750603164236,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "0",
-      "rpPlus": "2",
-      "maxCylMinus": "0",
-      "maxCylPlus": "0",
-      "maxCylCross": ""
-    },
-    "name": "Poly Blue Cut Crystal Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "2500",
-    "specialPrice": "1800",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750603862865,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Tinted Hard Coat Fortus Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "2200",
-    "specialPrice": "1550",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": true,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750604056885,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10.5",
-      "rpPlus": "8",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Tinted Hard Coat Fortus Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "2850",
-    "specialPrice": "2000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": true,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750604340341,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG Hard Coat ShieldX Digital Pro",
-    "poster": "/design/dd.png",
-    "srp": "3000",
-    "specialPrice": "1950",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Roximo",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": false,
-    "photochromic": true,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750604432913,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG Hard Coat Fortus Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "3500",
-    "specialPrice": "2200",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750604581025,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-7",
-      "rpPlus": "7",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "PG Hard Coat Fortus Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "4000",
-    "specialPrice": "2500",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750605124001,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-7",
-      "rpPlus": "7",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Photochromic ARC EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "4000",
-    "specialPrice": "2500",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "3",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray", "Brown"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750605361350,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10.5",
-      "rpPlus": "8.5",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Blue Cut ARC EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "3000",
-    "specialPrice": "1950",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750605766812,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10.5",
-      "rpPlus": "8.5",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Blue Cut Aqua+ UV Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "4500",
-    "specialPrice": "2950",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "3",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750606173263,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10.5",
-      "rpPlus": "8.5",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Blue Cut Drive+ UV Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "5000",
-    "specialPrice": "3300",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750606390821,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-7",
-      "rpPlus": "7",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "PG Blue Cut EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "4500",
-    "specialPrice": "2950",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750607174436,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG Blue Cut Aqua+ UV Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "6000",
-    "specialPrice": "4000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "3",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": true,
-    "photochromic": true,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "lowReflection": true
-  },
-  {
-    "id": 1750607297277,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "4",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG Blue Cut Drive+ UV Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "6800",
-    "specialPrice": "4700",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": true,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750607675566,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Poly ARC EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "5000",
-    "specialPrice": "3300",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": true,
-    "tintable": false,
-    "lensMaterialWarranty": true,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["rimless"]
-  },
-  {
-    "id": 1750607741719,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-9",
-      "rpPlus": "7",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Poly Blue Cut EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "5600",
-    "specialPrice": "3900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750607917670,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-9",
-      "rpPlus": "7",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Poly Blue Cut Drive+ UV Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "6600",
-    "specialPrice": "4500",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": true,
-    "photochromic": false,
-    "unbreakable": true,
-    "tintable": false,
-    "lensMaterialWarranty": true,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["rimless"],
-    "drivePlus": true,
-    "lowReflection": false
-  },
-  {
-    "id": 1750608048284,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-9",
-      "rpPlus": "7",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Poly Blue Cut Aqua+ UV Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "6200",
-    "specialPrice": "4300",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": false,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["rimless"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750607917670,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-9",
-      "rpPlus": "7",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Poly Blue Cut Drive+ UV Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "6600",
-    "specialPrice": "4500",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": true,
-    "photochromic": false,
-    "unbreakable": true,
-    "tintable": false,
-    "lensMaterialWarranty": true,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["rimless"],
-    "drivePlus": true,
-    "lowReflection": false
-  },
-  {
-    "id": 1750608048284,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-9",
-      "rpPlus": "7",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Poly Blue Cut Aqua+ UV Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "6200",
-    "specialPrice": "4300",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": false,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["rimless"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750610884679,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-12",
-      "rpPlus": "8",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC Hi-Index EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "10000",
-    "specialPrice": "6500",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Japan",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.67",
-      "type": "thinnest"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750610970006,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-12",
-      "rpPlus": "8",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Cut Hi-Index EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "12000",
-    "specialPrice": "7800",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Japan",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.67",
-      "type": "thinnest"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750611093274,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-14",
-      "rpPlus": "10",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC Hi-Index MR174 EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "19000",
-    "specialPrice": "13000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Japan",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.74",
-      "type": "thinnest"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750611176874,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-14",
-      "rpPlus": "10",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Cut Hi-Index MR174 EcoView Free-Form Pro",
-    "poster": "/design/fd.png",
-    "srp": "20000",
-    "specialPrice": "13500",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Korea",
-    "brand": "Robeco",
-    "time": "4",
-    "thickness": {
-      "index": "1.74",
-      "type": "thinnest"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750611400543,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC Vistaar Digital Pro",
-    "poster": "https://www.aminoptic.in/wpimages/wp1ba83a5e_05_06.jpg",
-    "srp": "2833",
-    "specialPrice": "1900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "Prime",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": true,
-    "repelsDust": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750611493923,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Cut Vistaaar Digital Pro",
-    "poster": "https://www.aminoptic.in/wpimages/wp1ba83a5e_05_06.jpg",
-    "srp": "3570",
-    "specialPrice": "2100",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "Prime",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": false,
-    "repelsWater": true,
-    "repelsDust": false,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750611592662,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG Hard Coat Duron Digital Pro",
-    "poster": "https://www.aminoptic.in/wpimages/wp1ba83a5e_05_06.jpg",
-    "srp": "3570",
-    "specialPrice": "2100",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "Prime",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": false,
-    "resistSmudges": false,
-    "repelsWater": false,
-    "repelsDust": false,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "1",
-      "end": "3"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750612190904,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-9",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC Crizal Easy Pro Free-Form Pro",
-    "poster": "https://down-id.img.susercontent.com/file/sg-11134201-23010-snfkvcz0wwlvbd",
-    "srp": "5500",
-    "specialPrice": "2800",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "3",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "lowReflection": false
-  },
-  {
-    "id": 1750612270739,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-9",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Cut Crizal Easy Pro Free-Form Pro",
-    "poster": "https://down-id.img.susercontent.com/file/sg-11134201-23010-snfkvcz0wwlvbd",
-    "srp": "5500",
-    "specialPrice": "3000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "11",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750612907856,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "7",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC Crizal Rock Free-Form Pro",
-    "poster": "https://instagram.fdel8-1.fna.fbcdn.net/v/t39.30808-6/484971600_1222251873241616_2901481467717798106_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjE0NDB4MTQ0MC5zZHIuZjMwODA4LmRlZmF1bHRfaW1hZ2UifQ&_nc_ht=instagram.fdel8-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QHju7ESN5kKf6sdKU9VZ3k0xQFoHhup-0G1xNeuad2wakToiy1nbAgzh3EIn8jYb-s&_nc_ohc=vpitmMwQDmQQ7kNvwFxaxo_&_nc_gid=lq2yBQUL83F6ROROu3vLpQ&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzAxODExNzQ2NTU2OTU3OTQyNg%3D%3D.3-ccb7-5&oh=00_AfMrJHJRjWTu84ugD1ROFSVYGlRxS4VAjHzbl-MdqS3NMA&oe=685E1AD0&_nc_sid=10d13b",
-    "srp": "7700",
-    "specialPrice": "5400",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750613040383,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "7",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Cut Crizal Rock Free-Form Pro",
-    "poster": "https://instagram.fdel8-1.fna.fbcdn.net/v/t39.30808-6/484971600_1222251873241616_2901481467717798106_n.jpg?stp=dst-jpg_e35_s720x720_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjE0NDB4MTQ0MC5zZHIuZjMwODA4LmRlZmF1bHRfaW1hZ2UifQ&_nc_ht=instagram.fdel8-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QFaPOUFvyKN9ksZYX3oOKz1xtQbsunp6Qt8PbU5rrKm2NyLLKHSc9x-GZDvMLzbjjw&_nc_ohc=vpitmMwQDmQQ7kNvwFxaxo_&_nc_gid=zyjBI89CpcQusdo6zzg8lA&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzAxODExNzQ2NTU2OTU3OTQyNg%3D%3D.3-ccb7-5&oh=00_AfMHru7wwmzfmjBcMO73sd7uMnZYPH1xFCJJPnekQbZF7w&oe=685E1AD0&_nc_sid=10d13b",
-    "srp": "8200",
-    "specialPrice": "5800",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750613280088,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Poly Blue Cut Crizal Rock Free-Form Pro",
-    "poster": "https://instagram.fdel8-1.fna.fbcdn.net/v/t39.30808-6/484971600_1222251873241616_2901481467717798106_n.jpg?stp=dst-jpg_e35_s720x720_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjE0NDB4MTQ0MC5zZHIuZjMwODA4LmRlZmF1bHRfaW1hZ2UifQ&_nc_ht=instagram.fdel8-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QFaPOUFvyKN9ksZYX3oOKz1xtQbsunp6Qt8PbU5rrKm2NyLLKHSc9x-GZDvMLzbjjw&_nc_ohc=vpitmMwQDmQQ7kNvwFxaxo_&_nc_gid=zyjBI89CpcQusdo6zzg8lA&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzAxODExNzQ2NTU2OTU3OTQyNg%3D%3D.3-ccb7-5&oh=00_AfMHru7wwmzfmjBcMO73sd7uMnZYPH1xFCJJPnekQbZF7w&oe=685E1AD0&_nc_sid=10d13b",
-    "srp": "10500",
-    "specialPrice": "7350",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "4",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "24",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750613447171,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "5",
-      "maxCylMinus": "4",
-      "maxCylPlus": "-4",
-      "maxCylCross": "-4"
-    },
-    "name": "Poly ARC Crizal Easy Pro Free-Form Pro",
-    "poster": "https://down-id.img.susercontent.com/file/sg-11134201-23010-snfkvcz0wwlvbd",
-    "srp": "7400",
-    "specialPrice": "4950",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "4",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750613529868,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-9",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG ARC Crizal Easy Pro Free-Form Pro",
-    "poster": "https://down-id.img.susercontent.com/file/sg-11134201-23010-snfkvcz0wwlvbd",
-    "srp": "8700",
-    "specialPrice": "5900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "3",
-    "thickness": {
-      "index": "1.56",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750613868907,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Photochromic Blue Filter Transition Classic Crizal Easy Pro Free-Form Pro",
-    "poster": "https://down-id.img.susercontent.com/file/sg-11134201-23010-snfkvcz0wwlvbd",
-    "srp": "9000",
-    "specialPrice": "6300",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "allowEssentialBlueLight": true,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": true,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": ["Gray", "Brown"],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750614260896,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Photochromic Blue Filter Transition Classic Crizal Rock Free-Form Pro",
-    "poster": "https://down-id.img.susercontent.com/file/sg-11134201-23010-snfkvcz0wwlvbd",
-    "srp": "10700",
-    "specialPrice": "7500",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "24",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750614417458,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-7",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Filter Crizal Prevencia Free-Form Pro",
-    "poster": "https://luxotix.com/wp-content/uploads/2023/05/Crizal_Prevencia_1.jpg",
-    "srp": "10000",
-    "specialPrice": "6660",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": true,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750614788865,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Cut NatureKote+ Free-Form Pro",
-    "poster": "https://www.martinreynoldsopticians.co.uk/uploads/2/9/2/4/29248939/8522934_orig.jpg",
-    "srp": "3400",
-    "specialPrice": "2450",
-    "authenticityCard": true,
-    "lensMaterialCountry": "India",
-    "brand": "VVBG",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750614929900,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Poly Blue Filter Crizal Prevencia Free-Form Pro",
-    "poster": "https://luxotix.com/wp-content/uploads/2023/05/Crizal_Prevencia_1.jpg",
-    "srp": "130000",
-    "specialPrice": "8600",
-    "authenticityCard": true,
-    "lensMaterialCountry": "France",
-    "brand": "Crizal",
-    "time": "3",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": true,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750615132744,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC HMC+ Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/light-2/light2_traditional-hard-design_slider.jpg/_jcr_content/renditions/original./light2_traditional-hard-design_slider.jpg",
-    "srp": "3800",
-    "specialPrice": "2700",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "lowReflection": false
-  },
-  {
-    "id": 1750615206173,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "6",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Filter HMC Blue Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/light-2/light2_traditional-hard-design_slider.jpg/_jcr_content/renditions/original./light2_traditional-hard-design_slider.jpg",
-    "srp": "4500",
-    "specialPrice": "3200",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": true,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "6",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750615419143,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-7",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC Platinum UV Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/progressive-lenses/zeiss-pal-light2_4x3.jpg/_jcr_content/renditions/original./zeiss-pal-light2_4x3.jpg",
-    "srp": "7300",
-    "specialPrice": "5200",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750615631906,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "6",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Poly ARC Platinum UV Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/progressive-lenses/zeiss-pal-light2_4x3.jpg/_jcr_content/renditions/original./zeiss-pal-light2_4x3.jpg",
-    "srp": "9000",
-    "specialPrice": "6300",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "3",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["rimless"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750615727830,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-12",
-      "rpPlus": "8",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-4"
-    },
-    "name": "ARC Hi-Index Platinum UV Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/progressive-lenses/zeiss-pal-light2_4x3.jpg/_jcr_content/renditions/original./zeiss-pal-light2_4x3.jpg",
-    "srp": "10900",
-    "specialPrice": "7700",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "3",
-    "thickness": {
-      "index": "1.67",
-      "type": "thinnest"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 175061541914,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-7",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Filter Platinum UV BlueGuard Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/progressive-lenses/zeiss-pal-light2_4x3.jpg/_jcr_content/renditions/original./zeiss-pal-light2_4x3.jpg",
-    "srp": "8300",
-    "specialPrice": "5700",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": true,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 175061563190,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "6",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Poly Blue Filter Platinum UV BlueGuard Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/progressive-lenses/zeiss-pal-light2_4x3.jpg/_jcr_content/renditions/original./zeiss-pal-light2_4x3.jpg",
-    "srp": "10000",
-    "specialPrice": "6800",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "3",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": true,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["rimless"],
-    "isHighCyl": true
-  },
-  {
-    "id": 175061572783,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-12",
-      "rpPlus": "8",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Filter Hi-Index Platinum UV BlueGuard Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/progressive-lenses/zeiss-pal-light2_4x3.jpg/_jcr_content/renditions/original./zeiss-pal-light2_4x3.jpg",
-    "srp": "11900",
-    "specialPrice": "8200",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "3",
-    "thickness": {
-      "index": "1.67",
-      "type": "thinnest"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": true,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750616624459,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-6",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "DriveSafe Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2b/reference-master/images/lenses/lens-technologies/drive-safe/drivesafe_benefits_02_02.jpg/_jcr_content/renditions/original.image_file.1024.768.160,0,1760,1200.file/drivesafe_benefits_02_02.jpg",
-    "srp": "21100",
-    "specialPrice": "15000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "filterBlueVioletLight": false,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "lowReflection": true,
-    "drivePlus": true
-  },
-  {
-    "id": 1750616697420,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "6",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "Poly DriveSafe Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2b/reference-master/images/lenses/lens-technologies/drive-safe/drivesafe_benefits_02_02.jpg/_jcr_content/renditions/original.image_file.1024.768.160,0,1760,1200.file/drivesafe_benefits_02_02.jpg",
-    "srp": "23800",
-    "specialPrice": "17000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "3",
-    "thickness": {
-      "index": "1.59",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": true,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": true,
-    "drivePlus": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["rimless"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750616768378,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-12",
-      "rpPlus": "8",
-      "maxCylMinus": "-6",
-      "maxCylPlus": "6",
-      "maxCylCross": "-6"
-    },
-    "name": "DriveSafe Hi-Index Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2b/reference-master/images/lenses/lens-technologies/drive-safe/drivesafe_benefits_02_02.jpg/_jcr_content/renditions/original.image_file.1024.768.160,0,1760,1200.file/drivesafe_benefits_02_02.jpg",
-    "srp": "28100",
-    "specialPrice": "20000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "3",
-    "thickness": {
-      "index": "1.67",
-      "type": "thinnest"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750616887487,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-7",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG ARC Platinum UV Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/progressive-lenses/zeiss-pal-light2_4x3.jpg/_jcr_content/renditions/original./zeiss-pal-light2_4x3.jpg",
-    "srp": "11300",
-    "specialPrice": "7900",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750617006168,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-7",
-      "rpPlus": "5",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "PG Blue Filter Platinum UV BlueGuard Free-Form Pro",
-    "poster": "https://www.zeiss.co.in/content/dam/vis-b2c/reference-master/images/products/progressive-lenses/zeiss-pal-light2_4x3.jpg/_jcr_content/renditions/original./zeiss-pal-light2_4x3.jpg",
-    "srp": "12800",
-    "specialPrice": "9000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Zeiss",
-    "time": "2",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": true,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": ["Gray"],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750657589565,
-    "lensType": "sv-far",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "4",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "2",
-      "maxCylCross": "-2"
-    },
-    "name": "Blue Cut Cosmolit Problue Solitaire",
-    "poster": "https://www.rodenstock.com/.imaging/mte/nfq-rod-theme/medium_original_default/dam/Lenses/LayR/Layr_Man_Layers_750x550.jpg/jcr:content/Layr_Man_Layers_750x550.jpg?2024-02-29T12%3A58%3A43.057%2B01%3A00",
-    "srp": "3800",
-    "specialPrice": "2700",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Rodenstock",
-    "time": "1",
-    "thickness": {
-      "index": "1.56",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "filterBlueVioletLight": true,
-    "photochromic": false,
-    "unbreakable": false,
-    "tintable": false,
-    "lensMaterialWarranty": false,
-    "isHighCyl": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "",
-      "end": ""
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
-  },
-  {
-    "id": 1750657748196,
-    "lensType": "sv-far",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "4",
-      "maxCylMinus": "-2",
-      "maxCylPlus": "2",
-      "maxCylCross": "-2"
-    },
-    "name": "Blue Cut MR8 Cosmolit Problue Solitaire",
-    "poster": "https://www.rodenstock.com/.imaging/mte/nfq-rod-theme/medium_original_default/dam/Lenses/LayR/Layr_Man_Layers_750x550.jpg/jcr:content/Layr_Man_Layers_750x550.jpg?2024-02-29T12%3A58%3A43.057%2B01%3A00",
-    "srp": "5400",
-    "specialPrice": "3800",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Rodenstock",
-    "time": "1",
-    "thickness": {
-      "index": "1.60",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": false,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "",
-      "end": ""
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750657987415,
-    "lensType": "sv-far",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "6",
-      "maxCylMinus": "-2",
-      "maxCylPlus": "2",
-      "maxCylCross": "-2"
-    },
-    "name": "Blue Cut Hi-Index Cosmolit Problue Solitaire",
-    "poster": "https://www.rodenstock.com/.imaging/mte/nfq-rod-theme/medium_original_default/dam/Lenses/LayR/Layr_Man_Layers_750x550.jpg/jcr:content/Layr_Man_Layers_750x550.jpg?2024-02-29T12%3A58%3A43.057%2B01%3A00",
-    "srp": "6800",
-    "specialPrice": "4800",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Rodenstock",
-    "time": "2",
-    "thickness": {
-      "index": "1.67",
-      "type": "thinnest"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": false,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "",
-      "end": ""
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": false
-  },
-  {
-    "id": 1750658403353,
-    "lensType": "sv-far",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "8",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Drive+ Cosmolit Free Solitaire Pro",
-    "poster": "https://www.rodenstock.com/.imaging/mte/nfq-rod-theme/medium_original_default/dam/BIG-VISION/BIG-EXACT/BIG_Booster_ManDriving_AI_750x550.jpg/jcr:content/BIG_Booster_ManDriving_AI_750x550.jpg?2024-07-16T16%3A50%3A27.778%2B02%3A00",
-    "srp": "11650",
-    "specialPrice": "8200",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Rodenstock",
-    "time": "3",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "",
-      "end": ""
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750658591885,
-    "lensType": "sv-far",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "8",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Photochromic Drive+ Cosmolit Free Solitaire Pro",
-    "poster": "https://www.rodenstock.com/.imaging/mte/nfq-rod-theme/medium_original_default/dam/BIG-VISION/BIG-EXACT/BIG_Booster_ManDriving_AI_750x550.jpg/jcr:content/BIG_Booster_ManDriving_AI_750x550.jpg?2024-07-16T16%3A50%3A27.778%2B02%3A00",
-    "srp": "17050",
-    "specialPrice": "12000",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Rodenstock",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "standard"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": true,
-    "photochromicColors": ["Gray", "Brown"],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "",
-      "end": ""
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750658717206,
-    "lensType": "sv-far",
-    "powerRange": {
-      "rpMinus": "-10",
-      "rpPlus": "8",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Blue Cut MR8 Drive+ Cosmolit Free Solitaire Pro",
-    "poster": "https://www.insightnews.com.au/wp-content/uploads/2025/02/Rodenstock.jpg",
-    "srp": "15850",
-    "specialPrice": "11100",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Rodenstock",
-    "time": "2",
-    "thickness": {
-      "index": "1.60",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": true,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": true,
-    "lowReflection": true,
-    "drivePlus": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "",
-      "end": ""
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750659103739,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-7.5",
-      "rpPlus": "7",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Drive+ Purelife Solitaire Pro Free-Form Pro",
-    "poster": "https://pbs.twimg.com/media/EQA-1QyX0AIxMks.jpg",
-    "srp": "8900",
-    "specialPrice": "6250",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Rodenstock",
-    "time": "2",
-    "thickness": {
-      "index": "1.50",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": true,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": false,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": true,
-    "photochromicColors": [],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
-    "isHighCyl": true
-  },
-  {
-    "id": 1750659797631,
-    "lensType": "mf-progressive",
-    "powerRange": {
-      "rpMinus": "-8",
-      "rpPlus": "8",
-      "maxCylMinus": "-4",
-      "maxCylPlus": "4",
-      "maxCylCross": "-4"
-    },
-    "name": "Photochromic Drive+ Free Netline CM2 Solitaire Pro Free-Form Pro",
-    "poster": "https://www.2020europe.com/wp-content/uploads/elementor/thumbs/ColorMatic_4-scaled-qm5lx20wzqsrbrvey9doevmar5mhet3rz7er8436vo.jpg",
-    "srp": "14400",
-    "specialPrice": "10100",
-    "authenticityCard": true,
-    "lensMaterialCountry": "Germany",
-    "brand": "Rodenstock",
-    "time": "2",
-    "thickness": {
-      "index": "1.54",
-      "type": "thin"
-    },
-    "resistScratches": true,
-    "reducesGlare": true,
-    "resistSmudges": true,
-    "repelsWater": true,
-    "repelsDust": true,
-    "filterBlueVioletLight": false,
-    "allowEssentialBlueLight": false,
-    "sunUvProtection": true,
-    "clear": false,
-    "unbreakable": false,
-    "tintable": false,
-    "photochromic": true,
-    "lensMaterialWarranty": false,
-    "lowReflection": true,
-    "drivePlus": true,
-    "photochromicColors": ["Gray", "Brown"],
-    "lensCoatingWarranty": "12",
-    "addRange": {
-      "start": "0.75",
-      "end": "3.5"
-    },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9108,7 +4963,11 @@
       "start": "0.75",
       "end": "3.5"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9153,7 +5012,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "lowReflection": true
   },
   {
@@ -9199,7 +5062,12 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "isHighCyl": true
   },
   {
@@ -9245,7 +5113,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9291,7 +5163,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9331,13 +5207,20 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray", "Brown"],
+    "photochromicColors": [
+      "Gray",
+      "Brown"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9377,13 +5260,20 @@
     "lensMaterialWarranty": true,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray", "Brown"],
+    "photochromicColors": [
+      "Gray",
+      "Brown"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9429,7 +5319,11 @@
       "start": "0.75",
       "end": "4"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9475,7 +5369,12 @@
       "start": "0.75",
       "end": "4"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal", "rimless"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal",
+      "rimless"
+    ],
     "isHighCyl": true
   },
   {
@@ -9521,7 +5420,11 @@
       "start": "0.75",
       "end": "4"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9561,13 +5464,20 @@
     "lensMaterialWarranty": false,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray", "Brown"],
+    "photochromicColors": [
+      "Gray",
+      "Brown"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "0.75",
       "end": "4"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9607,13 +5517,20 @@
     "lensMaterialWarranty": true,
     "lowReflection": true,
     "drivePlus": false,
-    "photochromicColors": ["Gray", "Brown"],
+    "photochromicColors": [
+      "Gray",
+      "Brown"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "0.75",
       "end": "4"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9652,13 +5569,20 @@
     "tintable": false,
     "lensMaterialWarranty": false,
     "isHighCyl": true,
-    "photochromicColors": ["Gray", "Brown"],
+    "photochromicColors": [
+      "Gray",
+      "Brown"
+    ],
     "lensCoatingWarranty": "12",
     "addRange": {
       "start": "0.75",
       "end": "4"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "lowReflection": true
   },
   {
@@ -9698,13 +5622,23 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Orange", "Red", "Grey", "Green", "Blue"],
+    "photochromicColors": [
+      "Orange",
+      "Red",
+      "Grey",
+      "Green",
+      "Blue"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750666629764,
@@ -9743,13 +5677,19 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": false
   },
   {
@@ -9789,13 +5729,22 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray", "Green", "Brown", "Yellow"],
+    "photochromicColors": [
+      "Gray",
+      "Green",
+      "Brown",
+      "Yellow"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9841,7 +5790,11 @@
       "start": "",
       "end": ""
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": true
   },
   {
@@ -9880,13 +5833,19 @@
     "tintable": false,
     "lensMaterialWarranty": false,
     "isHighCyl": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"]
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
   },
   {
     "id": 1750671267688,
@@ -9931,7 +5890,9 @@
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["rimless"],
+    "frameTypeRecommended": [
+      "rimless"
+    ],
     "isHighCyl": false
   },
   {
@@ -9971,13 +5932,17 @@
     "lensMaterialWarranty": true,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["rimless"],
+    "frameTypeRecommended": [
+      "rimless"
+    ],
     "isHighCyl": true
   },
   {
@@ -10017,13 +5982,19 @@
     "lensMaterialWarranty": false,
     "lowReflection": false,
     "drivePlus": false,
-    "photochromicColors": ["Gray"],
+    "photochromicColors": [
+      "Gray"
+    ],
     "lensCoatingWarranty": "6",
     "addRange": {
       "start": "1",
       "end": "3"
     },
-    "frameTypeRecommended": ["acetate", "full-metal", "half-metal"],
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
     "isHighCyl": false
   }
 ]

@@ -1,55 +1,13 @@
-import { useState, useEffect } from "react";
-import { Edit, Trash2, Plus, Download, Upload, Eye } from "lucide-react";
+import { useState } from "react";
+import { FixedSizeGrid as Grid } from "react-window";
+import { Eye } from "lucide-react";
 
-const initialData = [
-  {
-    id: 1,
-    lensType: "sv-far",
-    powerRange: {
-      rpMinus: -8.0,
-      rpPlus: 4.0,
-      maxCylMinus: -4.0,
-      maxCylPlus: 2.0,
-      maxCylCross: -6.0,
-    },
-    name: "Essilor Varilux Progressive",
-    poster:
-      "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=300&h=200&fit=crop",
-    srp: 15000,
-    specialPrice: 12000,
-    authenticityCard: true,
-    lensMaterialCountry: "France",
-    brand: "Essilor",
-    time: 7,
-    thickness: {
-      index: 1.67,
-      type: "thin",
-    },
-    resistScratches: true,
-    reducesGlare: true,
-    resistSmudges: true,
-    repelsWater: true,
-    repelsDust: true,
-    filterBlueVioletLight: true,
-    allowEssentialBlueLight: true,
-    sunUvProtection: true,
-    unbreakable: false,
-    clear: true,
-    tintable: true,
-    photochromic: true,
-    lensMaterialWarranty: true,
-    lowReflection: true,
-    drivePlus: true,
-    photochromicColors: ["Gray", "Brown"],
-    lensCoatingWarranty: 24,
-    addRange: {
-      start: 1.0,
-      end: 3.5,
-    },
-    frameTypeRecommended: ["full-rim", "half-rim"],
-  },
-];
+const COLUMN_COUNT = 4;
+const CARD_HEIGHT = 620;
+const CARD_WIDTH = 365;
+const CHUNK_SIZE = 1000;
 
+// Options for select fields
 const lensTypeOptions = [
   { value: "sv-near", label: "Single Vision - Near" },
   { value: "sv-far", label: "Single Vision - Far" },
@@ -63,7 +21,6 @@ const thicknessTypeOptions = [
   { value: "thinnest", label: "Thinnest" },
 ];
 
-// acetate, full-metal, half-metal, rimless
 const frameTypeOptions = [
   { value: "acetate", label: "Acetate" },
   { value: "full-metal", label: "Full Metal" },
@@ -71,11 +28,17 @@ const frameTypeOptions = [
   { value: "rimless", label: "Rimless" },
 ];
 
-export default function Home() {
+export default function LensManager() {
   const [lenses, setLenses] = useState([]);
+  const [showForm, setShowForm] = useState(false);
+  const [editingId, setEditingId] = useState(null);
   const [form, setForm] = useState({
-    id: null,
-    lensType: "mf-progressive",
+    id: "",
+    name: "",
+    lensType: "",
+    brand: "",
+    lensMaterialCountry: "",
+    poster: "",
     powerRange: {
       rpMinus: "",
       rpPlus: "",
@@ -83,49 +46,73 @@ export default function Home() {
       maxCylPlus: "",
       maxCylCross: "",
     },
-    name: "",
-    poster: "",
-    srp: "",
-    specialPrice: "",
-    authenticityCard: false,
-    lensMaterialCountry: "",
-    brand: "",
+    addRange: {
+      start: "",
+      end: "",
+    },
+    photochromicColors: [],
     time: "",
     thickness: {
       index: "",
       type: "",
     },
-    resistScratches: false,
-    reducesGlare: false,
-    resistSmudges: false,
-    repelsWater: false,
-    repelsDust: false,
-    allowEssentialBlueLight: false,
-    sunUvProtection: false,
-    clear: false,
+    lensCoatingWarranty: "",
+    frameTypeRecommended: [],
+    srp: "",
+    specialPrice: "",
+    // Boolean fields
     filterBlueVioletLight: false,
     photochromic: false,
     unbreakable: false,
     tintable: false,
+    clear: false,
+    resistScratches: false,
+    reducesGlare: false,
+    sunUvProtection: false,
+    lowReflection: false,
+    repelsWater: false,
+    resistSmudges: false,
+    repelsDust: false,
+    allowEssentialBlueLight: false,
+    drivePlus: false,
+    authenticityCard: false,
     lensMaterialWarranty: false,
     isHighCyl: false,
-    photochromicColors: [],
-    lensCoatingWarranty: "",
-    addRange: {
-      start: "",
-      end: "",
-    },
-    frameTypeRecommended: [],
   });
-  const [editingId, setEditingId] = useState(null);
-  const [showForm, setShowForm] = useState(false);
 
-  useEffect(() => {
-    setLenses(initialData);
-  }, []);
+  const handleImport = (e) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const imported = JSON.parse(reader.result);
+        let index = 0;
+        const chunkedLoad = () => {
+          setLenses((prev) => [
+            ...prev,
+            ...imported.slice(index, index + CHUNK_SIZE),
+          ]);
+          index += CHUNK_SIZE;
+          if (index < imported.length) {
+            setTimeout(chunkedLoad, 50);
+          }
+        };
+        chunkedLoad();
+      } catch {
+        alert("Invalid JSON");
+      }
+    };
+    reader.readAsText(e.target.files[0]);
+  };
+
+  const handleEdit = (lens) => {
+    setEditingId(lens.id);
+    setForm(lens);
+    setShowForm(true);
+  };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
+
     if (name.includes(".")) {
       const [parent, child] = name.split(".");
       setForm((prev) => ({
@@ -143,18 +130,46 @@ export default function Home() {
     }
   };
 
-  const handleArrayChange = (e, field) => {
+  const handleArrayChange = (e, fieldName) => {
     const value = e.target.value;
+    const array = value
+      .split(",")
+      .map((item) => item.trim())
+      .filter((item) => item);
     setForm((prev) => ({
       ...prev,
-      [field]: value.split(",").map((item) => item.trim()),
+      [fieldName]: array,
     }));
   };
 
+  const handleSave = () => {
+    if (editingId) {
+      // Update existing lens
+      setLenses((prev) =>
+        prev.map((lens) =>
+          lens.id === editingId ? { ...form, id: editingId } : lens
+        )
+      );
+    } else {
+      // Add new lens
+      const newLens = {
+        ...form,
+        id: Date.now().toString(),
+      };
+      setLenses((prev) => [...prev, newLens]);
+    }
+    resetForm();
+  };
+
   const resetForm = () => {
+    setEditingId(null);
     setForm({
-      id: null,
-      lensType: "mf-progressive",
+      id: "",
+      name: "",
+      lensType: "",
+      brand: "",
+      lensMaterialCountry: "",
+      poster: "",
       powerRange: {
         rpMinus: "",
         rpPlus: "",
@@ -162,90 +177,52 @@ export default function Home() {
         maxCylPlus: "",
         maxCylCross: "",
       },
-      name: "",
-      poster: "",
-      srp: "",
-      specialPrice: "",
-      authenticityCard: false,
-      lensMaterialCountry: "",
-      brand: "",
+      addRange: {
+        start: "",
+        end: "",
+      },
+      photochromicColors: [],
       time: "",
       thickness: {
         index: "",
         type: "",
       },
-      resistScratches: false,
-      reducesGlare: false,
-      resistSmudges: false,
-      repelsWater: false,
-      repelsDust: false,
+      lensCoatingWarranty: "",
+      frameTypeRecommended: [],
+      srp: "",
+      specialPrice: "",
       filterBlueVioletLight: false,
-      allowEssentialBlueLight: false,
-      sunUvProtection: false,
-      clear: false,
+      photochromic: false,
       unbreakable: false,
       tintable: false,
-      photochromic: false,
-      lensMaterialWarranty: false,
+      clear: false,
+      resistScratches: false,
+      reducesGlare: false,
+      sunUvProtection: false,
       lowReflection: false,
+      repelsWater: false,
+      resistSmudges: false,
+      repelsDust: false,
+      allowEssentialBlueLight: false,
       drivePlus: false,
-      photochromicColors: [],
-      lensCoatingWarranty: "",
-      addRange: {
-        start: "",
-        end: "",
-      },
-      frameTypeRecommended: [],
+      authenticityCard: false,
+      lensMaterialWarranty: false,
+      isHighCyl: false,
     });
-    setEditingId(null);
     setShowForm(false);
   };
 
-  const handleSave = () => {
-    const newLens = { ...form, id: editingId || Date.now() };
-    if (editingId) {
-      setLenses((prev) =>
-        prev.map((lens) => (lens.id === editingId ? newLens : lens))
-      );
-    } else {
-      setLenses((prev) => [...prev, newLens]);
-    }
-    resetForm();
-  };
-
-  const handleEdit = (lens) => {
-    setForm(lens);
-    setEditingId(lens.id);
-    setShowForm(true);
-  };
-
-  const handleDelete = (id) => {
-    setLenses((prev) => prev.filter((lens) => lens.id !== id));
-  };
-
-  const handleImport = (e) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      try {
-        const imported = JSON.parse(reader.result);
-
-        setLenses(imported);
-      } catch {
-        alert("Invalid JSON file.");
-      }
-    };
-    reader.readAsText(e.target.files[0]);
-  };
-
-  const handleExport = () => {
-    const blob = new Blob([JSON.stringify(lenses, null, 2)], {
-      type: "application/json",
-    });
+  const handleDownload = () => {
+    const json = JSON.stringify(lenses, null, 2);
+    const blob = new Blob([json], { type: "application/json" });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "lensData.json";
-    a.click();
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "lenses.json";
+    link.click();
+
+    URL.revokeObjectURL(url); // cleanup
   };
 
   const getLensTypeLabel = (value) => {
@@ -261,44 +238,184 @@ export default function Home() {
     );
   };
 
+  const LensGrid = ({ data }) => {
+    const rowCount = Math.ceil(data.length / COLUMN_COUNT);
+
+    const Cell = ({ columnIndex, rowIndex, style }) => {
+  const index = rowIndex * COLUMN_COUNT + columnIndex;
+  if (index >= data.length) return null;
+  const lens = data[index];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-      <div className="max-w-7xl mx-auto px-6 py-8">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h1 className="text-4xl font-bold text-slate-800 mb-2">
-              Lens Manager
-            </h1>
-            <p className="text-slate-600">
-              Manage your optical lens collection with ease
-            </p>
+    <div style={style} className="p-2">
+      <div className="bg-white rounded-lg border border-gray-200 hover:border-gray-300 transition-colors duration-200 overflow-hidden">
+        {/* Image Section */}
+        <div className="relative">
+          <img
+            src={lens.poster}
+            alt={lens.name}
+            loading="lazy"
+            className="w-full h-32 object-cover"
+          />
+          <div className="absolute top-2 right-2 bg-white/80 rounded-full p-1">
+            <Eye size={14} className="text-gray-600" />
           </div>
-          <div className="flex gap-3">
-            <button
-              onClick={() => setShowForm(!showForm)}
-              className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
-            >
-              <Plus size={20} />
-              Add Lens
-            </button>
-            <button
-              onClick={handleExport}
-              className="flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white px-6 py-3 rounded-xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
-            >
-              <Upload size={20} />
-              Export
-            </button>
-            <label className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-6 py-3 rounded-xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer">
-              <Download size={20} />
-              Import
-              <input
-                type="file"
-                accept=".json"
-                onChange={handleImport}
-                className="hidden"
-              />
-            </label>
+        </div>
+
+        {/* Content Section */}
+        <div className="p-4">
+          {/* Header */}
+          <div className="mb-3">
+            <h3 className="font-semibold text-gray-900 text-base mb-1 line-clamp-1">
+              {lens.name}
+            </h3>
+            <div className="flex items-center justify-between text-sm">
+              <span className="text-blue-600 font-medium">
+                {getLensTypeLabel(lens.lensType)}
+              </span>
+              <span className="text-gray-500">{lens.brand}</span>
+            </div>
+          </div>
+
+          {/* Price Info */}
+          <div className="mb-3 p-2 bg-gray-50 rounded">
+            <div className="flex justify-between items-center mb-1">
+              <span className="text-xs text-gray-500">SRP</span>
+              <span className="text-sm line-through text-gray-400">
+                ₹{lens.srp?.toLocaleString()}
+              </span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-xs text-gray-500">Special Price</span>
+              <span className="text-base font-semibold text-green-600">
+                ₹{lens.specialPrice?.toLocaleString()}
+              </span>
+            </div>
+          </div>
+
+          {/* Key Specs */}
+          <div className="space-y-1 mb-3 text-xs">
+            <div className="flex justify-between">
+              <span className="text-gray-500">Power Range:</span>
+              <span className="text-gray-700 font-medium">
+                {lens.powerRange?.rpMinus} to {lens.powerRange?.rpPlus}
+              </span>
+            </div>
+            <div className="flex justify-between">
+              <span className="text-gray-500">Index:</span>
+              <span className="text-gray-700 font-medium">
+                {lens.thickness?.index}
+              </span>
+            </div>
+            <div className="flex justify-between">
+              <span className="text-gray-500">Warranty:</span>
+              <span className="text-gray-700 font-medium">
+                {lens.lensCoatingWarranty}m
+              </span>
+            </div>
+          </div>
+
+          {/* Key Features - Condensed */}
+          <div className="mb-3">
+            <div className="flex flex-wrap gap-1">
+              {lens.photochromic && (
+                <span className="text-xs px-2 py-1 bg-purple-50 text-purple-700 rounded">
+                  Photo
+                </span>
+              )}
+              {lens.filterBlueVioletLight && (
+                <span className="text-xs px-2 py-1 bg-blue-50 text-blue-700 rounded">
+                  Blue Cut
+                </span>
+              )}
+              {lens.reducesGlare && (
+                <span className="text-xs px-2 py-1 bg-gray-50 text-gray-700 rounded">
+                  Anti-Glare
+                </span>
+              )}
+              {lens.unbreakable && (
+                <span className="text-xs px-2 py-1 bg-red-50 text-red-700 rounded">
+                  Poly
+                </span>
+              )}
+              {lens.sunUvProtection && (
+                <span className="text-xs px-2 py-1 bg-yellow-50 text-yellow-700 rounded">
+                  UV-P
+                </span>
+              )}
+              {/* Show only top 3-4 features to keep it clean */}
+              {(lens.repelsWater || lens.resistSmudges || lens.repelsDust) && (
+                <span className="text-xs px-2 py-1 bg-cyan-50 text-cyan-700 rounded">
+                  Coated
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Action Button */}
+          <button
+            className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded text-sm font-medium transition-colors duration-200"
+            onClick={() => handleEdit(lens)}
+          >
+            Edit Lens
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+    return (
+      <Grid
+        columnCount={COLUMN_COUNT}
+        columnWidth={CARD_WIDTH}
+        height={typeof window !== "undefined" ? window.innerHeight - 150 : 600}
+        rowCount={rowCount}
+        rowHeight={CARD_HEIGHT}
+        width={CARD_WIDTH * COLUMN_COUNT + 100}
+      >
+        {Cell}
+      </Grid>
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 p-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 border border-slate-200">
+          <div className="flex justify-between items-center">
+            <div>
+              <h1 className="text-3xl font-bold text-slate-800 mb-2">
+                Lens Manager
+              </h1>
+              <p className="text-slate-600">
+                Manage your lens inventory with ease
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <label className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-3 rounded-lg font-medium cursor-pointer transition-all duration-200 shadow-lg hover:shadow-xl">
+                <input
+                  type="file"
+                  accept="application/json"
+                  onChange={handleImport}
+                  className="hidden"
+                />
+                Import JSON
+              </label>
+              <button
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
+                onClick={() => setShowForm(!showForm)}
+              >
+                {showForm ? "Close Form" : "Add New Lens"}
+              </button>
+              <button
+                className="bg-slate-600 text-white px-4 py-2 rounded mr-2"
+                onClick={handleDownload}
+              >
+                Download JSON
+              </button>
+            </div>
           </div>
         </div>
 
@@ -311,7 +428,7 @@ export default function Home() {
               </h2>
               <button
                 onClick={resetForm}
-                className="text-slate-400 hover:text-slate-600 text-2xl"
+                className="text-slate-400 hover:text-slate-600 text-2xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 transition-colors duration-200"
               >
                 ×
               </button>
@@ -479,38 +596,36 @@ export default function Home() {
                   />
                 </div>
 
-                {form.addRange !== null && (
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-slate-700 mb-2">
-                        Add Range Start
-                      </label>
-                      <input
-                        name="addRange.start"
-                        type="number"
-                        step="0.25"
-                        value={form.addRange.start}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                        placeholder="1.00"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-slate-700 mb-2">
-                        Add Range End
-                      </label>
-                      <input
-                        name="addRange.end"
-                        type="number"
-                        step="0.25"
-                        value={form.addRange.end}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                        placeholder="3.50"
-                      />
-                    </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Add Range Start
+                    </label>
+                    <input
+                      name="addRange.start"
+                      type="number"
+                      step="0.25"
+                      value={form.addRange.start}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      placeholder="1.00"
+                    />
                   </div>
-                )}
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">
+                      Add Range End
+                    </label>
+                    <input
+                      name="addRange.end"
+                      type="number"
+                      step="0.25"
+                      value={form.addRange.end}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                      placeholder="3.50"
+                    />
+                  </div>
+                </div>
 
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-2">
@@ -593,6 +708,7 @@ export default function Home() {
                     placeholder="12"
                   />
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-2">
                     Frame Types
@@ -619,6 +735,7 @@ export default function Home() {
                     ))}
                   </select>
                 </div>
+
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-2">
@@ -650,19 +767,22 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Material */}
+            {/* Material Details */}
             <div className="mt-8">
               <h3 className="text-lg font-semibold text-slate-700 border-b border-slate-200 pb-2 mb-4">
                 Material Details
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {[
-                  "filterBlueVioletLight",
-                  "photochromic",
-                  "unbreakable",
-                  "tintable",
-                  "clear",
-                ].map((field) => (
+                  {
+                    field: "filterBlueVioletLight",
+                    label: "Filter Blue Violet Light",
+                  },
+                  { field: "photochromic", label: "Photochromic" },
+                  { field: "unbreakable", label: "Unbreakable" },
+                  { field: "tintable", label: "Tintable" },
+                  { field: "clear", label: "Clear" },
+                ].map(({ field, label }) => (
                   <label
                     key={field}
                     className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors duration-200"
@@ -674,8 +794,8 @@ export default function Home() {
                       onChange={handleChange}
                       className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500"
                     />
-                    <span className="text-sm font-medium text-slate-700 capitalize">
-                      {field.replace(/([A-Z])/g, " $1").trim()}
+                    <span className="text-sm font-medium text-slate-700">
+                      {label}
                     </span>
                   </label>
                 ))}
@@ -689,16 +809,19 @@ export default function Home() {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {[
-                  "resistScratches",
-                  "reducesGlare",
-                  "sunUvProtection",
-                  "lowReflection",
-                  "repelsWater",
-                  "resistSmudges",
-                  "repelsDust",
-                  "allowEssentialBlueLight",
-                  "drivePlus",
-                ].map((field) => (
+                  { field: "resistScratches", label: "Resist Scratches" },
+                  { field: "reducesGlare", label: "Reduces Glare" },
+                  { field: "sunUvProtection", label: "Sun UV Protection" },
+                  { field: "lowReflection", label: "Low Reflection" },
+                  { field: "repelsWater", label: "Repels Water" },
+                  { field: "resistSmudges", label: "Resist Smudges" },
+                  { field: "repelsDust", label: "Repels Dust" },
+                  {
+                    field: "allowEssentialBlueLight",
+                    label: "Allow Essential Blue Light",
+                  },
+                  { field: "drivePlus", label: "Drive Plus" },
+                ].map(({ field, label }) => (
                   <label
                     key={field}
                     className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors duration-200"
@@ -710,39 +833,44 @@ export default function Home() {
                       onChange={handleChange}
                       className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500"
                     />
-                    <span className="text-sm font-medium text-slate-700 capitalize">
-                      {field.replace(/([A-Z])/g, " $1").trim()}
+                    <span className="text-sm font-medium text-slate-700">
+                      {label}
                     </span>
                   </label>
                 ))}
               </div>
             </div>
 
-            {/* Other Info */}
+            {/* Additional Details */}
             <div className="mt-8">
               <h3 className="text-lg font-semibold text-slate-700 border-b border-slate-200 pb-2 mb-4">
-                More Details
+                Additional Details
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {["authenticityCard", "lensMaterialWarranty", "isHighCyl"].map(
-                  (field) => (
-                    <label
-                      key={field}
-                      className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors duration-200"
-                    >
-                      <input
-                        type="checkbox"
-                        name={field}
-                        checked={form[field]}
-                        onChange={handleChange}
-                        className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500"
-                      />
-                      <span className="text-sm font-medium text-slate-700 capitalize">
-                        {field.replace(/([A-Z])/g, " $1").trim()}
-                      </span>
-                    </label>
-                  )
-                )}
+                {[
+                  { field: "authenticityCard", label: "Authenticity Card" },
+                  {
+                    field: "lensMaterialWarranty",
+                    label: "Lens Material Warranty",
+                  },
+                  { field: "isHighCyl", label: "High Cylinder" },
+                ].map(({ field, label }) => (
+                  <label
+                    key={field}
+                    className="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 cursor-pointer transition-colors duration-200"
+                  >
+                    <input
+                      type="checkbox"
+                      name={field}
+                      checked={form[field]}
+                      onChange={handleChange}
+                      className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500"
+                    />
+                    <span className="text-sm font-medium text-slate-700">
+                      {label}
+                    </span>
+                  </label>
+                ))}
               </div>
             </div>
 
@@ -750,7 +878,7 @@ export default function Home() {
             <div className="flex justify-end gap-4 mt-8 pt-6 border-t border-slate-200">
               <button
                 onClick={resetForm}
-                className="px-6 py-3 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-colors duration-200"
+                className="px-6 py-3 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-colors duration-200 font-medium"
               >
                 Cancel
               </button>
@@ -765,182 +893,47 @@ export default function Home() {
         )}
 
         {/* Lens Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {lenses.map((lens) => (
-            <div
-              key={lens.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 overflow-hidden group"
-            >
-              <div className="relative">
-                <img
-                  src={lens.poster}
-                  alt={lens.name}
-                  loading="lazy"
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
-                  <Eye size={16} className="text-slate-600" />
-                </div>
-              </div>
-
-              <div className="p-6">
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-slate-800 mb-2">
-                    {lens.name}
-                  </h3>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
-                      {getLensTypeLabel(lens.lensType)}
-                    </span>
-                    <span className="text-sm text-slate-600">{lens.brand}</span>
-                  </div>
-                </div>
-
-                <div className="space-y-3 mb-6">
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-slate-600">SRP:</span>
-                    <span className="font-semibold text-slate-800">
-                      ₹{lens.srp?.toLocaleString()}
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-slate-600">
-                      Special Price:
-                    </span>
-                    <span className="font-semibold text-emerald-600">
-                      ₹{lens.specialPrice?.toLocaleString()}
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-slate-600">Power Range:</span>
-                    <span className="text-sm font-medium text-slate-800">
-                      {lens.powerRange?.rpMinus} to {lens.powerRange?.rpPlus}
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-slate-600">Thickness:</span>
-                    <span className="text-sm font-medium text-slate-800">
-                      {lens.thickness?.index} (
-                      {getThicknessTypeLabel(lens.thickness?.type)})
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-slate-600">Warranty:</span>
-                    <span className="text-sm font-medium text-slate-800">
-                      {lens.lensCoatingWarranty} months
-                    </span>
-                  </div>
-                </div>
-
-                {/* Features Pills */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {lens.photochromic && (
-                    <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">
-                      Photochromic
-                    </span>
-                  )}
-                  {lens.sunUvProtection && (
-                    <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">
-                      UV Protection
-                    </span>
-                  )}
-                  {lens.filterBlueVioletLight && (
-                    <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
-                      Blue Light Filter
-                    </span>
-                  )}
-                  {lens.allowEssentialBlueLight && (
-                    <span className="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full">
-                      Essential Blue Light
-                    </span>
-                  )}
-                  {lens.resistScratches && (
-                    <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
-                      Scratch Resistant
-                    </span>
-                  )}
-                  {lens.resistSmudges && (
-                    <span className="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full">
-                      Smudge Resistant
-                    </span>
-                  )}
-                  {lens.repelsWater && (
-                    <span className="text-xs bg-cyan-100 text-cyan-700 px-2 py-1 rounded-full">
-                      Water Repellent
-                    </span>
-                  )}
-                  {lens.repelsDust && (
-                    <span className="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full">
-                      Dust Repellent
-                    </span>
-                  )}
-                  {lens.reducesGlare && (
-                    <span className="text-xs bg-rose-100 text-rose-700 px-2 py-1 rounded-full">
-                      Anti-Glare
-                    </span>
-                  )}
-                  {lens.unbreakable && (
-                    <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">
-                      Unbreakable
-                    </span>
-                  )}
-                  {lens.tintable && (
-                    <span className="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded-full">
-                      Tintable
-                    </span>
-                  )}
-                  {lens.clear && (
-                    <span className="text-xs bg-lime-100 text-lime-700 px-2 py-1 rounded-full">
-                      Clear
-                    </span>
-                  )}
-                  {lens.lensMaterialWarranty && (
-                    <span className="text-xs bg-lime-100 text-lime-700 px-2 py-1 rounded-full">
-                      Material Warranty
-                    </span>
-                  )}
-                  {lens.isHighCyl && (
-                    <span className="text-xs bg-teal-100 text-yellow-700 px-2 py-1 rounded-full">
-                      High Cylindrical
-                    </span>
-                  )}
-                  {lens.lowReflection && (
-                    <span className="text-xs bg-sky-100 text-sky-700 px-2 py-1 rounded-full">
-                      Low Reflection
-                    </span>
-                  )}
-                  {lens.drivePlus && (
-                    <span className="text-xs bg-sky-100 text-sky-700 px-2 py-1 rounded-full">
-                      Drive Plus
-                    </span>
-                  )}
-                </div>
-
-                {/* Action Buttons */}
-                <div className="flex gap-3">
-                  <button
-                    onClick={() => handleEdit(lens)}
-                    className="flex-1 flex items-center justify-center gap-2 bg-slate-100 hover "
-                  >
-                    <Edit size={16} className="text-slate-600" />
-                    <span className="text-sm font-medium text-slate-600">
-                      Edit
-                    </span>
-                  </button>
-                  <button
-                    onClick={() => handleDelete(lens)}
-                    className="flex-1 flex items-center justify-center gap-2 bg-red-50 hover:bg-red-100"
-                  >
-                    <Trash2 size={16} className="text-red-600" />
-                    <span className="text-sm font-medium text-red-600">
-                      Delete
-                    </span>
-                  </button>
-                </div>
-              </div>
+        {lenses.length > 0 ? (
+          <div className="bg-white rounded-2xl shadow-lg p-6 border border-slate-200">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-slate-800 mb-2">
+                Your Lenses
+              </h2>
+              <p className="text-slate-600">Total: {lenses.length} lenses</p>
             </div>
-          ))}
-        </div>
+            <LensGrid data={lenses} />
+          </div>
+        ) : (
+          <div className="bg-white rounded-2xl shadow-lg p-12 text-center border border-slate-200">
+            <div className="text-slate-400 mb-4">
+              <svg
+                className="mx-auto h-16 w-16"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1}
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-slate-700 mb-2">
+              No lenses yet
+            </h3>
+            <p className="text-slate-500 mb-6">
+              Get started by importing JSON data or adding a new lens
+            </p>
+            <button
+              onClick={() => setShowForm(true)}
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              Add Your First Lens
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
