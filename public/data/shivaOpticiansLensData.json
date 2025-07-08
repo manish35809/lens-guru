@@ -144,6 +144,7 @@
     "isHighCyl": true,
     "clear": true
   },
+
   {
     "id": 1749309537907,
     "lensType": "sv-far",
@@ -194,6 +195,518 @@
     "isHighCyl": true,
     "clear": true
   },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-14",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "1500",
+    "specialPrice": "1000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false,
+    "clear": true
+  },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-18",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "1800",
+    "specialPrice": "1200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false,
+    "clear": true
+  },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-20",
+      "rpPlus": "0",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "2000",
+    "specialPrice": "1300",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false,
+    "clear": true
+  },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-14",
+      "rpPlus": "0",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "1800",
+    "specialPrice": "1200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true,
+    "clear": true
+  },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-20",
+      "rpPlus": "0",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "2000",
+    "specialPrice": "1400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true,
+    "clear": true
+  },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "-24",
+      "rpPlus": "0",
+      "maxCylMinus": "-4",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "2500",
+    "specialPrice": "1600",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true,
+    "clear": true
+  },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "16",
+      "maxCylMinus": "0",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "1800",
+    "specialPrice": "1200",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false,
+    "clear": true
+  },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "20",
+      "maxCylMinus": "0",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "2400",
+    "specialPrice": "1400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": false,
+    "clear": true
+  },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "10",
+      "maxCylMinus": "0",
+      "maxCylPlus": "4",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "2200",
+    "specialPrice": "1300",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true,
+    "clear": true
+  },
+
+  {
+    "id": 1749309537907,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "12",
+      "maxCylMinus": "0",
+      "maxCylPlus": "6",
+      "maxCylCross": ""
+    },
+    "name": "Hard Coat ShieldX",
+    "poster": "https://cdn.globalso.com/hc-optical/371.jpg",
+    "srp": "2400",
+    "specialPrice": "1500",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": false,
+    "resistSmudges": false,
+    "repelsWater": false,
+    "repelsDust": false,
+    "filterBlueVioletLight": false,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ],
+    "isHighCyl": true,
+    "clear": true
+  },
+
+
   {
     "id": 1749310084656,
     "lensType": "sv-far",
@@ -244,6 +757,7 @@
     "isHighCyl": true,
     "clear": true
   },
+
   {
     "id": 1749310348878,
     "lensType": "sv-far",
@@ -833,6 +1347,7 @@
     ],
     "isHighCyl": true
   },
+  
   {
     "id": 1749322711509,
     "lensType": "sv-far",
@@ -880,6 +1395,199 @@
     ],
     "isHighCyl": true
   },
+
+  {
+    "id": 1749322711509,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "0",
+      "maxCylMinus": "-8",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Crystal",
+    "poster": "https://image.made-in-china.com/2f0j00oJgaNkHWEFpi/Finished-1-56-Hard-Multi-Coated-Hmc-Prescription-Eyeglass-Lenses-Optical-Lens.webp",
+    "srp": "4000",
+    "specialPrice": "2800",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+
+   {
+    "id": 1749322711509,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "0",
+      "maxCylMinus": "-10",
+      "maxCylPlus": "0",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Crystal",
+    "poster": "https://image.made-in-china.com/2f0j00oJgaNkHWEFpi/Finished-1-56-Hard-Multi-Coated-Hmc-Prescription-Eyeglass-Lenses-Optical-Lens.webp",
+    "srp": "5000",
+    "specialPrice": "3400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+
+  {
+    "id": 1749322711509,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "10",
+      "maxCylMinus": "0",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Crystal",
+    "poster": "https://image.made-in-china.com/2f0j00oJgaNkHWEFpi/Finished-1-56-Hard-Multi-Coated-Hmc-Prescription-Eyeglass-Lenses-Optical-Lens.webp",
+    "srp": "1600",
+    "specialPrice": "1100",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": false
+  },
+
+  {
+    "id": 1749322711509,
+    "lensType": "sv-far",
+    "powerRange": {
+      "rpMinus": "0",
+      "rpPlus": "12",
+      "maxCylMinus": "0",
+      "maxCylPlus": "2",
+      "maxCylCross": ""
+    },
+    "name": "Blue Cut Crystal",
+    "poster": "https://image.made-in-china.com/2f0j00oJgaNkHWEFpi/Finished-1-56-Hard-Multi-Coated-Hmc-Prescription-Eyeglass-Lenses-Optical-Lens.webp",
+    "srp": "2000",
+    "specialPrice": "1400",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "1",
+    "thickness": {
+      "index": "1.60",
+      "type": "thin"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "",
+      "end": ""
+    },
+    "frameTypeRecommended": [
+      "acetate"
+    ],
+    "isHighCyl": true
+  },
+
   {
     "id": 1749323331988,
     "lensType": "sv-far",
@@ -4394,8 +5102,8 @@
     },
     "name": "Hard Coat KT",
     "poster": "https://images.jdmagicbox.com/quickquotes/images_main/bifocal-d-flat-top-lens-2028025722-kr1dj213.jpg",
-    "srp": "400",
-    "specialPrice": "550",
+    "srp": "550",
+    "specialPrice": "400",
     "authenticityCard": false,
     "lensMaterialCountry": "Generic",
     "brand": "Generic",
@@ -4422,8 +5130,8 @@
     "photochromicColors": [],
     "lensCoatingWarranty": "3",
     "addRange": {
-      "start": "",
-      "end": ""
+      "start": "1",
+      "end": "3"
     },
     "frameTypeRecommended": [
       "acetate",
@@ -4776,11 +5484,60 @@
     "id": 1750507486512,
     "lensType": "mf-bifocal",
     "powerRange": {
-      "rpMinus": "-2",
-      "rpPlus": "2",
+      "rpMinus": "-3",
+      "rpPlus": "3",
       "maxCylMinus": "-1",
       "maxCylPlus": "1",
-      "maxCylCross": ""
+      "maxCylCross": "-2"
+    },
+    "name": "Blue Cut KT Crystal",
+    "poster": "https://s.alicdn.com/@sc04/kf/Hb7d0ac3fb6db4c05aba87b58518aea76G.jpg_720x720q50.jpg",
+    "srp": "1600",
+    "specialPrice": "1000",
+    "authenticityCard": true,
+    "lensMaterialCountry": "Korea",
+    "brand": "Roximo",
+    "time": "2",
+    "thickness": {
+      "index": "1.56",
+      "type": "standard"
+    },
+    "resistScratches": true,
+    "reducesGlare": true,
+    "resistSmudges": false,
+    "repelsWater": true,
+    "repelsDust": false,
+    "filterBlueVioletLight": true,
+    "allowEssentialBlueLight": false,
+    "sunUvProtection": true,
+    "clear": false,
+    "unbreakable": false,
+    "tintable": false,
+    "photochromic": false,
+    "lensMaterialWarranty": false,
+    "lowReflection": false,
+    "drivePlus": false,
+    "photochromicColors": [],
+    "lensCoatingWarranty": "6",
+    "addRange": {
+      "start": "1",
+      "end": "3"
+    },
+    "frameTypeRecommended": [
+      "acetate",
+      "full-metal",
+      "half-metal"
+    ]
+  },
+   {
+    "id": 1750507486512,
+    "lensType": "mf-bifocal",
+    "powerRange": {
+      "rpMinus": "-4",
+      "rpPlus": "4",
+      "maxCylMinus": "-2",
+      "maxCylPlus": "2",
+      "maxCylCross": "-2"
     },
     "name": "Blue Cut KT Crystal",
     "poster": "https://s.alicdn.com/@sc04/kf/Hb7d0ac3fb6db4c05aba87b58518aea76G.jpg_720x720q50.jpg",
@@ -4882,7 +5639,7 @@
     },
     "name": "Blue Cut KT Ventoux",
     "poster": "https://image.made-in-china.com/2f0j00wDdcjbehPVqB/1-61-Single-Vision-Blue-Cut-Optical-Lens-Green-Coating-Anti-Blue-Light-Lens.jpg",
-    "srp": "3090",
+    "srp": "2000",
     "specialPrice": "1200",
     "authenticityCard": true,
     "lensMaterialCountry": "India",
@@ -5853,8 +6610,8 @@
     "powerRange": {
       "rpMinus": "-2",
       "rpPlus": "3",
-      "maxCylMinus": "",
-      "maxCylPlus": "",
+      "maxCylMinus": "0",
+      "maxCylPlus": "0",
       "maxCylCross": ""
     },
     "name": "Poly Blue Cut Crystal Digital Pro",
