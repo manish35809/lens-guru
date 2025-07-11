@@ -1193,7 +1193,7 @@ const LensSelectionPage = () => {
                                 Delivery
                               </div>
                               <div className="text-sm font-bold text-gray-900">
-                                {lens.time} days
+                                {parseInt(lens.time) + 1} days
                               </div>
                             </div>
                           </div>
