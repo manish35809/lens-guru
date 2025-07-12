@@ -4154,7 +4154,7 @@
   },
   {
     "id": 1750506903083,
-    "lensType": "sv-far",
+    "lensType": "mf-bifocal",
     "powerRange": {
       "rpMinus": "-8",
       "rpPlus": "8",
