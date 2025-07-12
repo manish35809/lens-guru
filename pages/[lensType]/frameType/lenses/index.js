@@ -1065,7 +1065,7 @@ const LensSelectionPage = () => {
                 }}
               >
                 {filteredLenses.map((lens, index) => (
-                  <LensCard key={lens.id} lens={lens} index={index} userLensType={userLensType}/>
+                  <LensCard key={lens.id} lens={lens} index={index} userLensType={userLensType} prescription={userPowerInfo}/>
                 ))}
               </div>
 

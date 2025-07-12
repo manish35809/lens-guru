@@ -1140,6 +1140,7 @@ const LensSelectionPage = () => {
                     lens={lens}
                     index={index}
                     userLensType={userLensType}
+                    prescription={userPowerInfo}
                   />
                 ))}
               </div>

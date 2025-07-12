@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { ShieldCheck, Clock, Award, Star } from "lucide-react";
 import Link from "next/link";
+import { useMemo } from "react";
+import WhatsAppShareButton from "./WhatsappShare";
 
-export default function LensCard({ lens, index, userLensType }) {
+export default function LensCard({ lens, index, userLensType, prescription }) {
+
   const [priceVisible, setPriceVisible] = useState(false);
 
   const [hoveredFeature, setHoveredFeature] = useState(null);
@@ -593,6 +596,9 @@ export default function LensCard({ lens, index, userLensType }) {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             </Link>
           )}
+
+          <WhatsAppShareButton lens={lens} prescription={prescription} />
+
         </div>
       </div>
     </div>
