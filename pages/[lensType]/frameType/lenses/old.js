@@ -1179,23 +1179,6 @@ const LensSelectionPage = () => {
                           alt={lens.name}
                           className="w-full h-56 sm:h-64 lg:h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         />
-                        {/* Discount Badge - Redesigned */}
-                        <div className="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                          <div className="relative">
-                            <div className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white px-3 py-1.5 rounded-2xl text-sm font-bold shadow-2xl border border-white/20">
-                              <span className="text-xs font-medium opacity-100">
-                                SAVE
-                              </span>
-                              <div className="text-lg font-black leading-none">
-                                {Math.round(
-                                  (1 - lens.specialPrice / lens.srp) * 100
-                                )}
-                                %
-                              </div>
-                            </div>
-                            <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl group-hover:opacity-0 transition-opacity duration-300"></div>
-                          </div>
-                        </div>
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       </div>
@@ -1218,53 +1201,45 @@ const LensSelectionPage = () => {
                           </div>
 
                           {/* Price Section - Responsive width */}
-                          <div className="relative group flex flex-col bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-2xl border border-green-200/50 transition-all duration-300 ease-in-out text-center shadow-lg">
-                            {/* Price Block */}
-                            <div className="flex flex-col space-y-2">
-                              {/* SRP with strong emphasis */}
-                              <div className="text-gray-700 text-3xl font-bold">
-                                SRP:&nbsp;
-                                <span className="text-purple-600 font-extrabold group-hover:line-through">
-                                  ₹{lens.srp.toLocaleString()}
-                                </span>
-                              </div>
+            <div className="relative group">
+              {/* Subtle Background Glow */}
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm"></div>
 
-                              {/* Special Price - hidden by default, appears on hover */}
-                              <div className="overflow-hidden h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 ease-in-out">
-                                <div className="text-5xl font-black text-green-600">
-                                  ₹{lens.specialPrice.toLocaleString()}
-                                </div>
-                              </div>
+              {/* Main Price Container */}
+              <div className="relative flex items-center justify-between bg-white/80 backdrop-blur-sm p-4 rounded-2xl border border-gray-200/50 shadow-lg shadow-gray-900/5 transition-all duration-300 ease-out cursor-pointer hover:shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-200/50 group">
+                {/* Single Decorative Accent */}
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-emerald-500 to-cyan-500 rounded-l-2xl opacity-60"></div>
 
-                              {/* Save Amount - appears on hover */}
-                              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-                                <div className="text-lg text-green-700 font-bold bg-green-100 px-3 py-1 rounded-lg inline-block">
-                                  Save ₹
-                                  {(
-                                    lens.srp - lens.specialPrice
-                                  ).toLocaleString()}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                {/* Price Block */}
+                <div className="flex flex-col relative z-10">
+                  {/* SRP Label */}
+                  <div className="text-gray-500 text-sm font-medium mb-1">
+                    SRP
+                  </div>
+
+                  {/* Main Price */}
+                  <div className="flex items-baseline space-x-2">
+                    <span className="text-gray-900 text-2xl font-bold">
+                      ₹{lens.srp.toLocaleString()}
+                    </span>
+                    <div className="w-8 h-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"></div>
+                  </div>
+                </div>
+
+                {/* Minimal Badge */}
+                <div className="relative z-10">
+                  <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white px-3 py-1.5 rounded-full text-xs font-medium shadow-sm">
+                    Best Price
+                  </div>
+                </div>
+              </div>
+            </div>
                           
                         </div>
 
                         {/* Key Features - Improved Grid */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
-                          <div className="flex items-center gap-3 p-3 bg-blue-50/50 rounded-xl border border-blue-100">
-                            <div className="p-2 bg-blue-500 rounded-xl">
-                              <Clock size={18} className="text-white" />
-                            </div>
-                            <div>
-                              <div className="text-xs font-medium text-blue-600 uppercase tracking-wide">
-                                Delivery
-                              </div>
-                              <div className="text-sm sm:text-base font-bold text-gray-900">
-                                {lens.time} days
-                              </div>
-                            </div>
-                          </div>
+                          
 
                           <div className="flex items-center gap-3 p-3 bg-amber-50/50 rounded-xl border border-amber-100">
                             <div className="p-2 bg-amber-500 rounded-xl">
@@ -1279,22 +1254,6 @@ const LensSelectionPage = () => {
                               </div>
                             </div>
                           </div>
-
-                          {lens.authenticityCard && (
-                            <div className="flex items-center gap-3 p-3 bg-green-50/50 rounded-xl border border-green-100">
-                              <div className="p-2 bg-green-500 rounded-xl">
-                                <ShieldCheck size={18} className="text-white" />
-                              </div>
-                              <div>
-                                <div className="text-xs font-medium text-green-600 uppercase tracking-wide">
-                                  Authentic
-                                </div>
-                                <div className="text-sm sm:text-base font-bold text-gray-900">
-                                  Verified
-                                </div>
-                              </div>
-                            </div>
-                          )}
 
                           <div className="flex items-center gap-3 p-3 bg-orange-50/50 rounded-xl border border-orange-100">
                             <div className="p-2 bg-orange-500 rounded-xl">
