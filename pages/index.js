@@ -97,8 +97,8 @@ const ScrollSelector = memo(({ field, value, onChange, eye }) => {
   // Memoized field configurations
   const fieldConfig = useMemo(() => {
     const fieldConfigs = {
-      SPH: { min: -24.0, max: 20.0, step: 0.25, unit: "" },
-      CYL: { min: -10.0, max: 6.0, step: 0.25, unit: "" },
+      SPH: { min: -20.0, max: 12.0, step: 0.25, unit: "" },
+      CYL: { min: -6.0, max: 6.0, step: 0.25, unit: "" },
       AXIS: { min: 1, max: 180, step: 1, unit: "°" },
       ADD: { min: 0.75, max: 4.0, step: 0.25, unit: "" },
     };
@@ -359,6 +359,7 @@ export default function OptimizedPrescriptionForm() {
   });
   const [isSaved, setIsSaved] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [visionType, setVisionType] = useState("single"); // "single" or "multifocal"
 
   useEffect(() => {
     localStorage.removeItem("lensSelection");
@@ -368,6 +369,17 @@ export default function OptimizedPrescriptionForm() {
       setIsSaved(true);
     }
   }, []);
+
+  // Clear ADD values when switching to single vision
+  useEffect(() => {
+    if (visionType === "single") {
+      setPrescription((prev) => ({
+        ...prev,
+        RE: { ...prev.RE, ADD: "" },
+        LE: { ...prev.LE, ADD: "" },
+      }));
+    }
+  }, [visionType]);
 
   // Memoized change handler
   const handleChange = useCallback((eye, field, value) => {
@@ -381,9 +393,9 @@ export default function OptimizedPrescriptionForm() {
   // Memoized validation functions
   const isValidPrescription = useCallback(() => {
     const { RE, LE } = prescription;
-    const fields = ["SPH", "CYL", "AXIS", "ADD"];
+    const fields = visionType === "single" ? ["SPH", "CYL", "AXIS"] : ["SPH", "CYL", "AXIS", "ADD"];
     return fields.some((field) => RE[field] || LE[field]);
-  }, [prescription]);
+  }, [prescription, visionType]);
 
   const hasAddition = useCallback(() => {
     const addRE = prescription.RE.ADD?.trim();
@@ -423,12 +435,18 @@ export default function OptimizedPrescriptionForm() {
 
   // Core navigation functionality from index copy.js
   const goToLensType = useCallback(() => {
-    if (hasAddition()) {
+    if (visionType === "multifocal" || hasAddition()) {
       router.push("/mf");
     } else {
       router.push("/sv");
     }
-  }, [hasAddition, router]);
+  }, [visionType, hasAddition, router]);
+
+  // Get fields to display based on vision type
+  const fieldsToShow = useMemo(() => {
+    return visionType === "single" ? ["SPH", "CYL", "AXIS"] : ["SPH", "CYL", "AXIS", "ADD"];
+  }, [visionType]);
+
   return (
     <main className=" bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/30 relative overflow-hidden">
       {/* Simplified background */}
@@ -450,12 +468,38 @@ export default function OptimizedPrescriptionForm() {
             </div>
           )}
 
-          {/* Header */}
-          <div className="text-center mb-6">
-            <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-700 bg-clip-text text-transparent mb-2">
-              Enter Your Prescription
-            </h1>
-            <p className="text-slate-600 text-sm">Enter your prescription values</p>
+          {/* Header with Toggle */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+            <div className="text-left">
+              <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-700 bg-clip-text text-transparent">
+                Enter Your Prescription
+              </h1>
+              <p className="text-slate-600 text-sm mt-1">Enter your prescription values</p>
+            </div>
+
+            {/* Vision Type Toggle */}
+            <div className="flex items-center bg-white/80 border border-white/30 rounded-xl p-1 shadow-md">
+              <button
+                onClick={() => setVisionType("single")}
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                  visionType === "single"
+                    ? "bg-blue-500 text-white shadow-md"
+                    : "text-slate-600 hover:text-blue-600"
+                }`}
+              >
+                👁️ Single Vision
+              </button>
+              <button
+                onClick={() => setVisionType("multifocal")}
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                  visionType === "multifocal"
+                    ? "bg-purple-500 text-white shadow-md"
+                    : "text-slate-600 hover:text-purple-600"
+                }`}
+              >
+                📖 Multifocal
+              </button>
+            </div>
           </div>
 
           {/* Prescription Form */}
@@ -486,8 +530,12 @@ export default function OptimizedPrescriptionForm() {
                     </h3>
                   </div>
 
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                    {["SPH", "CYL", "AXIS", "ADD"].map((field) => (
+                  <div className={`grid gap-3 ${
+                    visionType === "single" 
+                      ? "grid-cols-2 sm:grid-cols-3" 
+                      : "grid-cols-2 sm:grid-cols-4"
+                  }`}>
+                    {fieldsToShow.map((field) => (
                       field === "AXIS" ? (
                         <AxisInput
                           key={field}
@@ -556,8 +604,8 @@ export default function OptimizedPrescriptionForm() {
 
               <div className="mt-3 text-center">
                 <p className="text-slate-600 text-sm">
-                  {hasAddition()
-                    ? "📖 Detected reading addition - Multifocal lenses recommended"
+                  {visionType === "multifocal"
+                    ? "📖 Multifocal lenses will be recommended"
                     : "👁️ Single vision lenses will be recommended"}
                 </p>
               </div>

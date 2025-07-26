@@ -9,6 +9,9 @@ export default function LensTypePage() {
   const { lensType } = router.query;
   const [visionChoice, setVisionChoice] = useState(null);
   const [comboType, setComboType] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedVisionType, setSelectedVisionType] = useState(null);
+  const [isProcessing, setIsProcessing] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem("lensSelection");
@@ -17,411 +20,518 @@ export default function LensTypePage() {
     }
   }, []);
 
-  const handleSelect = (type) => setVisionChoice(type);
+  const handleSelect = (type) => {
+    setVisionChoice(type);
+    setSelectedVisionType(type);
+    setShowModal(true);
+  };
+
   const handleCombo = (type) => setComboType(type);
 
-  const saveAndRedirect = (selection) => {
-  const savedPrescription = localStorage.getItem("prescription");
-  let parsedPrescription = null;
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedVisionType(null);
+    setComboType(null);
+  };
 
-  if (savedPrescription) {
-    parsedPrescription = JSON.parse(savedPrescription);
-    setPrescription(parsedPrescription);  // still okay if you want to update state
-  }
+  const saveAndRedirect = async (selection) => {
+    setIsProcessing(true);
+    
+    const savedPrescription = localStorage.getItem("prescription");
+    let parsedPrescription = null;
 
-  localStorage.setItem("lensSelection", JSON.stringify(selection));
-  triggerStorageUpdate();
-
-  if (selection === "sv-far-contact" || selection === "mf-contact") {
-    router.push(`/${lensType}/contact-lenses`);
-  } else {
-    if (selection === "sv-near") {
-      let nearVisionPower = {
-        RE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
-        LE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
-      };
-
-      const reverseAxis = (axis) => {
-        const parsed = parseInt(axis, 10);
-        if (isNaN(parsed)) return "";
-        return parsed > 90 ? parsed - 90 : parsed + 90;
-      };
-
-      const reverseCyl = (cyl) => {
-        const value = parseFloat(cyl);
-        return isNaN(value) ? "" : (-value)
-      };
-
-      const calcNearSPH = (sph, add) => {
-        const sphVal = parseFloat(sph);
-        const addVal = parseFloat(add);
-        return isNaN(sphVal) || isNaN(addVal)
-          ? ""
-          : (sphVal + addVal)
-      };
-
-      if (parsedPrescription?.RE) {
-        nearVisionPower.RE.SPH = calcNearSPH(
-          parsedPrescription.RE.SPH,
-          parsedPrescription.RE.ADD
-        );
-        nearVisionPower.RE.CYL = reverseCyl(parsedPrescription.RE.CYL);
-        nearVisionPower.RE.AXIS = reverseAxis(parsedPrescription.RE.AXIS);
-        nearVisionPower.RE.ADD = "";
-      }
-
-      if (parsedPrescription?.LE) {
-        nearVisionPower.LE.SPH = calcNearSPH(
-          parsedPrescription.LE.SPH,
-          parsedPrescription.LE.ADD
-        );
-        nearVisionPower.LE.CYL = reverseCyl(parsedPrescription.LE.CYL);
-        nearVisionPower.LE.AXIS = reverseAxis(parsedPrescription.LE.AXIS);
-        nearVisionPower.LE.ADD = "";
-      }
-
-      console.log("✅ Final near vision prescription:", nearVisionPower);
-
-      localStorage.setItem("prescription", JSON.stringify(nearVisionPower));
-      localStorage.setItem("lensSelection", JSON.stringify("sv-far")); // override to sv-far
-      triggerStorageUpdate();
-
-      router.push(`/${lensType}/frameType`);
-    } else {
-      router.push(`/${lensType}/frameType`);
+    if (savedPrescription) {
+      parsedPrescription = JSON.parse(savedPrescription);
+      setPrescription(parsedPrescription);
     }
-  }
-};
 
-  const renderInfo = () => {
-    switch (visionChoice) {
-      case "near":
+    localStorage.setItem("lensSelection", JSON.stringify(selection));
+    triggerStorageUpdate();
+
+    // Simulate processing time
+    await new Promise(resolve => setTimeout(resolve, 800));
+
+    if (selection === "sv-far-contact" || selection === "mf-contact") {
+      router.push(`/${lensType}/contact-lenses`);
+    } else {
+      if (selection === "sv-near") {
+        let nearVisionPower = {
+          RE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
+          LE: { SPH: "", CYL: "", AXIS: "", ADD: "" },
+        };
+
+        const reverseAxis = (axis) => {
+          const parsed = parseInt(axis, 10);
+          if (isNaN(parsed)) return "";
+          return parsed > 90 ? parsed - 90 : parsed + 90;
+        };
+
+        const reverseCyl = (cyl) => {
+          const value = parseFloat(cyl);
+          return isNaN(value) ? "" : (-value)
+        };
+
+        const calcNearSPH = (sph, add) => {
+          const sphVal = parseFloat(sph);
+          const addVal = parseFloat(add);
+          return isNaN(sphVal) || isNaN(addVal)
+            ? ""
+            : (sphVal + addVal)
+        };
+
+        if (parsedPrescription?.RE) {
+          nearVisionPower.RE.SPH = calcNearSPH(
+            parsedPrescription.RE.SPH,
+            parsedPrescription.RE.ADD
+          );
+          nearVisionPower.RE.CYL = reverseCyl(parsedPrescription.RE.CYL);
+          nearVisionPower.RE.AXIS = reverseAxis(parsedPrescription.RE.AXIS);
+          nearVisionPower.RE.ADD = "";
+        }
+
+        if (parsedPrescription?.LE) {
+          nearVisionPower.LE.SPH = calcNearSPH(
+            parsedPrescription.LE.SPH,
+            parsedPrescription.LE.ADD
+          );
+          nearVisionPower.LE.CYL = reverseCyl(parsedPrescription.LE.CYL);
+          nearVisionPower.LE.AXIS = reverseAxis(parsedPrescription.LE.AXIS);
+          nearVisionPower.LE.ADD = "";
+        }
+
+        console.log("✅ Final near vision prescription:", nearVisionPower);
+
+        localStorage.setItem("prescription", JSON.stringify(nearVisionPower));
+        localStorage.setItem("lensSelection", JSON.stringify("sv-far"));
+        triggerStorageUpdate();
+
+        router.push(`/${lensType}/frameType`);
+      } else {
+        router.push(`/${lensType}/frameType`);
+      }
+    }
+    
+    setIsProcessing(false);
+    setShowModal(false);
+  };
+
+  const visionTypes = [
+    {
+      id: 'far',
+      title: 'Distance Vision',
+      subtitle: 'Perfect for far objects',
+      icon: '🔭',
+      gradient: 'from-blue-500 to-indigo-600',
+      bgGradient: 'from-blue-50 to-indigo-50',
+      description: 'Improve clarity for distant objects like road signs and television screens with perfect precision.',
+      image: 'https://images.pexels.com/photos/5996746/pexels-photo-5996746.jpeg?auto=compress&cs=tinysrgb&w=600'
+    },
+    {
+      id: 'near',
+      title: 'Reading Vision',
+      subtitle: 'Ideal for close work',
+      icon: '👓',
+      gradient: 'from-emerald-500 to-teal-600',
+      bgGradient: 'from-emerald-50 to-teal-50',
+      description: 'Help you see objects that are close, like books or mobile screens with crystal clarity.',
+      image: 'https://images.pexels.com/photos/15275560/pexels-photo-15275560/free-photo-of-reading-a-book.jpeg?auto=compress&cs=tinysrgb&w=600'
+    },
+    {
+      id: 'combined',
+      title: 'All-Distance Vision',
+      subtitle: 'Near + Far in one lens',
+      icon: '🔁',
+      gradient: 'from-purple-500 to-pink-600',
+      bgGradient: 'from-purple-50 to-pink-50',
+      description: 'Combined lenses offer both near and far vision in a single lens for ultimate convenience.',
+      image: 'https://www.carfia.com/cdn/shop/articles/1_fa36a779-980d-4177-ab81-552641e434ea-396401.jpg?v=1636381435'
+    }
+  ];
+
+  const renderModalContent = () => {
+    const visionType = visionTypes.find(v => v.id === selectedVisionType);
+    if (!visionType) return null;
+
+    switch (selectedVisionType) {
+      case 'near':
         return (
-          <div className="backdrop-blur-lg bg-white/80 border border-white/20 p-6 sm:p-8 rounded-3xl shadow-2xl mt-6 text-left relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-blue-400/10 to-purple-400/10 rounded-3xl"></div>
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full shadow-lg shadow-cyan-400/50"></div>
-                <h2 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-cyan-600 to-blue-700 bg-clip-text text-transparent">
-                  Near Vision Lenses
-                </h2>
-              </div>
-              <div className="relative rounded-2xl overflow-hidden mb-4 shadow-xl">
-                <Image
-                  src="https://images.pexels.com/photos/15275560/pexels-photo-15275560/free-photo-of-reading-a-book.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Near Vision Example"
-                  width={400}
-                  height={300}
-                  className="w-full h-60 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
-              <p className="mb-6 text-slate-600 leading-relaxed">
-                Near vision lenses help you see objects that are close, like
-                books or mobile screens with crystal clarity.
+          <div className="space-y-6">
+            <div className="relative rounded-2xl overflow-hidden">
+              <Image
+                src={visionType.image}
+                alt="Near Vision"
+                width={500}
+                height={300}
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            </div>
+            
+            <div className="text-center space-y-4">
+              <p className="text-gray-600 text-lg leading-relaxed">
+                {visionType.description}
               </p>
+              
               <button
                 onClick={() => saveAndRedirect("sv-near")}
-                className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-2xl shadow-lg hover:shadow-cyan-500/25 transform hover:scale-105 transition-all duration-300 font-semibold border border-cyan-400/20"
+                disabled={isProcessing}
+                className={`w-full py-4 px-6 bg-gradient-to-r ${visionType.gradient} text-white rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none`}
               >
-                <span className="flex items-center justify-center gap-2">
-                  <span>Select Near Vision Lens</span>
-                  <span className="text-cyan-200">→</span>
-                </span>
+                {isProcessing ? (
+                  <div className="flex items-center justify-center gap-3">
+                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                    Processing...
+                  </div>
+                ) : (
+                  <div className="flex items-center justify-center gap-2">
+                    Select Reading Glasses
+                    <span className="text-white/80">→</span>
+                  </div>
+                )}
               </button>
             </div>
           </div>
         );
-      case "far":
+
+      case 'far':
         return (
-          <div className="backdrop-blur-lg bg-white/80 border border-white/20 p-6 sm:p-8 rounded-3xl shadow-2xl mt-6 text-left relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-400/10 via-pink-400/10 to-violet-400/10 rounded-3xl"></div>
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full shadow-lg shadow-purple-400/50"></div>
-                <h2 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-700 bg-clip-text text-transparent">
-                  Far Vision Lenses
-                </h2>
-              </div>
-              <div className="relative rounded-2xl overflow-hidden mb-4 shadow-xl">
-                <Image
-                  src="https://images.pexels.com/photos/5996746/pexels-photo-5996746.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Far Vision Example"
-                  width={400}
-                  height={300}
-                  className="w-full h-70 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
-              <p className="mb-6 text-slate-600 leading-relaxed">
-                Far vision lenses improve clarity for distant objects like road
-                signs and television screens with perfect precision.
+          <div className="space-y-6">
+            <div className="relative rounded-2xl overflow-hidden">
+              <Image
+                src={visionType.image}
+                alt="Far Vision"
+                width={500}
+                height={300}
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            </div>
+            
+            <div className="space-y-4">
+              <p className="text-gray-600 text-lg leading-relaxed text-center">
+                {visionType.description}
               </p>
-              <div className="flex flex-col sm:flex-row gap-3">
+              
+              <div className="grid gap-3">
                 <button
                   onClick={() => saveAndRedirect("sv-far")}
-                  className="flex-1 px-6 py-4 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-2xl shadow-lg hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300 font-semibold border border-purple-400/20"
+                  disabled={isProcessing}
+                  className={`w-full py-4 px-6 bg-gradient-to-r ${visionType.gradient} text-white rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none`}
                 >
-                  <span className="flex items-center justify-center gap-2">
-                    <span>Select Far Vision Lens</span>
-                    <span className="text-purple-200">→</span>
-                  </span>
+                  {isProcessing ? (
+                    <div className="flex items-center justify-center gap-3">
+                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                      Processing...
+                    </div>
+                  ) : (
+                    <div className="flex items-center justify-center gap-2">
+                      Select Distance Glasses
+                      <span className="text-white/80">→</span>
+                    </div>
+                  )}
                 </button>
+                
                 <button
                   onClick={() => saveAndRedirect("sv-far-contact")}
-                  className="flex-1 px-6 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl shadow-lg hover:shadow-indigo-500/25 transform hover:scale-105 transition-all duration-300 font-semibold border border-indigo-400/20"
+                  disabled={isProcessing}
+                  className="w-full py-4 px-6 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
-                  <span className="flex items-center justify-center gap-2">
-                    <span>Select Contact Lens</span>
-                    <span className="text-indigo-200">→</span>
-                  </span>
+                  {isProcessing ? (
+                    <div className="flex items-center justify-center gap-3">
+                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                      Processing...
+                    </div>
+                  ) : (
+                    <div className="flex items-center justify-center gap-2">
+                      Select Contact Lenses
+                      <span className="text-indigo-200">→</span>
+                    </div>
+                  )}
                 </button>
               </div>
             </div>
           </div>
         );
-      case "combined":
+
+      case 'combined':
         return (
-          <div className="backdrop-blur-lg bg-white/80 border border-white/20 p-6 sm:p-8 rounded-3xl shadow-2xl mt-6 text-left relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/10 via-teal-400/10 to-cyan-400/10 rounded-3xl"></div>
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full shadow-lg shadow-emerald-400/50"></div>
-                <h2 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-transparent">
-                  Combined Vision Lenses
-                </h2>
-              </div>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Combined lenses offer both near and far vision in a single lens.
-                Choose your preferred style:
+          <div className="space-y-6">
+            <div className="text-center">
+              <p className="text-gray-600 text-lg leading-relaxed">
+                {visionType.description}
               </p>
-              <div className="grid gap-4 mb-6">
-                <button
-                  onClick={() => handleCombo("bifocal")}
-                  className={`p-4 rounded-2xl transition-all duration-300 border ${
-                    comboType === "bifocal"
-                      ? "bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border-blue-400/40 shadow-lg shadow-blue-500/20"
-                      : "bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200/40 hover:border-blue-400/60 hover:shadow-md"
-                  }`}
-                >
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">🔍</span>
-                    <span className="font-semibold text-slate-700">
-                      Bifocal Lenses
-                    </span>
-                  </div>
-                </button>
-                <button
-                  onClick={() => handleCombo("progressive")}
-                  className={`p-4 rounded-2xl transition-all duration-300 border ${
-                    comboType === "progressive"
-                      ? "bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border-emerald-400/40 shadow-lg shadow-emerald-500/20"
-                      : "bg-gradient-to-r from-emerald-50 to-teal-50 border-emerald-200/40 hover:border-emerald-400/60 hover:shadow-md"
-                  }`}
-                >
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">🌈</span>
-                    <span className="font-semibold text-slate-700">
-                      Progressive Lenses
-                    </span>
-                  </div>
-                </button>
-              </div>
-
-              {comboType === "bifocal" && (
-                <div className="border-t border-gradient-to-r from-blue-200/50 to-indigo-200/50 pt-6">
-                  <h3 className="font-bold text-blue-700 mb-4 text-lg">
-                    Bifocal Lenses
-                  </h3>
-                  <div className="relative rounded-2xl overflow-hidden mb-4 shadow-xl">
-                    <Image
-                      src="https://vzun.in/wp-content/uploads/2021/06/bifocal-lenses.png"
-                      alt="Bifocal Lenses"
-                      width={400}
-                      height={300}
-                      className="w-full h-116 object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  </div>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
-                    Bifocal lenses have two distinct optical zones for distance
-                    and reading. You can visibly see the division line.
-                  </p>
-                  <button
-                    onClick={() => saveAndRedirect("mf-bifocal")}
-                    className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-2xl shadow-lg hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 font-semibold border border-blue-400/20"
-                  >
-                    <span className="flex items-center justify-center gap-2">
-                      <span>Select Bifocal Lens</span>
-                      <span className="text-blue-200">→</span>
-                    </span>
-                  </button>
-                </div>
-              )}
-
-              {comboType === "progressive" && (
-                <div className="border-t border-gradient-to-r from-emerald-200/50 to-teal-200/50 pt-6">
-                  <h3 className="font-bold text-emerald-700 mb-4 text-lg">
-                    Progressive Lenses
-                  </h3>
-                  <div className="relative rounded-2xl overflow-hidden mb-4 shadow-xl">
-                    <Image
-                      src="https://www.carfia.com/cdn/shop/articles/1_fa36a779-980d-4177-ab81-552641e434ea-396401.jpg?v=1636381435"
-                      alt="Progressive Lenses"
-                      width={400}
-                      height={200}
-                      className="w-full h-110 object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  </div>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
-                    Progressive lenses offer a smooth, gradual change in
-                    prescription strength for near, intermediate, and far
-                    distances — no visible lines.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <button
-                      onClick={() => saveAndRedirect("mf-progressive")}
-                      className="flex-1 px-6 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-2xl shadow-lg hover:shadow-emerald-500/25 transform hover:scale-105 transition-all duration-300 font-semibold border border-emerald-400/20"
-                    >
-                      <span className="flex items-center justify-center gap-2">
-                        <span>Select Progressive Lens</span>
-                        <span className="text-emerald-200">→</span>
-                      </span>
-                    </button>
-                    <button
-                      onClick={() => saveAndRedirect("mf-contact")}
-                      className="flex-1 px-6 py-4 bg-gradient-to-r from-teal-500 to-cyan-600 text-white rounded-2xl shadow-lg hover:shadow-teal-500/25 transform hover:scale-105 transition-all duration-300 font-semibold border border-teal-400/20"
-                    >
-                      <span className="flex items-center justify-center gap-2">
-                        <span>Multifocal Contact Lens</span>
-                        <span className="text-teal-200">→</span>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              )}
             </div>
+            
+            <div className="space-y-3">
+              <button
+                onClick={() => handleCombo("progressive")}
+                className={`w-full p-4 rounded-2xl transition-all duration-300 border-2 ${
+                  comboType === "progressive"
+                    ? "bg-gradient-to-r from-purple-100 to-pink-100 border-purple-300 shadow-lg shadow-purple-200/50"
+                    : "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200 hover:border-purple-300 hover:shadow-md"
+                }`}
+              >
+                <div className="flex items-center gap-4">
+                  <span className="text-3xl">🌈</span>
+                  <div className="text-left flex-1">
+                    <h3 className="font-bold text-gray-800 text-lg">Progressive Lenses</h3>
+                    <p className="text-gray-600 text-sm">Smooth transition, no visible lines</p>
+                  </div>
+                  {comboType === "progressive" && (
+                    <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  )}
+                </div>
+              </button>
+              
+              <button
+                onClick={() => handleCombo("bifocal")}
+                className={`w-full p-4 rounded-2xl transition-all duration-300 border-2 ${
+                  comboType === "bifocal"
+                    ? "bg-gradient-to-r from-blue-100 to-indigo-100 border-blue-300 shadow-lg shadow-blue-200/50"
+                    : "bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200 hover:border-blue-300 hover:shadow-md"
+                }`}
+              >
+                <div className="flex items-center gap-4">
+                  <span className="text-3xl">🔍</span>
+                  <div className="text-left flex-1">
+                    <h3 className="font-bold text-gray-800 text-lg">Bifocal Lenses</h3>
+                    <p className="text-gray-600 text-sm">Two distinct zones with visible line</p>
+                  </div>
+                  {comboType === "bifocal" && (
+                    <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  )}
+                </div>
+              </button>
+            </div>
+
+            {comboType && (
+              <div className="border-t-2 border-gray-100 pt-6 space-y-4">
+                {comboType === "progressive" && (
+                  <>
+                    <div className="relative rounded-2xl overflow-hidden">
+                      <Image
+                        src="https://www.carfia.com/cdn/shop/articles/1_fa36a779-980d-4177-ab81-552641e434ea-396401.jpg?v=1636381435"
+                        alt="Progressive Lenses"
+                        width={500}
+                        height={200}
+                        className="w-full h-32 object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                    
+                    <p className="text-gray-600 text-center">
+                      Progressive lenses offer a smooth, gradual change in prescription strength for near, intermediate, and far distances — no visible lines.
+                    </p>
+                    
+                    <div className="grid gap-3">
+                      <button
+                        onClick={() => saveAndRedirect("mf-progressive")}
+                        disabled={isProcessing}
+                        className="w-full py-4 px-6 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                      >
+                        {isProcessing ? (
+                          <div className="flex items-center justify-center gap-3">
+                            <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                            Processing...
+                          </div>
+                        ) : (
+                          <div className="flex items-center justify-center gap-2">
+                            Select Progressive Glasses
+                            <span className="text-purple-200">→</span>
+                          </div>
+                        )}
+                      </button>
+                      
+                      <button
+                        onClick={() => saveAndRedirect("mf-contact")}
+                        disabled={isProcessing}
+                        className="w-full py-4 px-6 bg-gradient-to-r from-teal-500 to-cyan-600 text-white rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                      >
+                        {isProcessing ? (
+                          <div className="flex items-center justify-center gap-3">
+                            <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                            Processing...
+                          </div>
+                        ) : (
+                          <div className="flex items-center justify-center gap-2">
+                            Multifocal Contact Lenses
+                            <span className="text-teal-200">→</span>
+                          </div>
+                        )}
+                      </button>
+                    </div>
+                  </>
+                )}
+
+                {comboType === "bifocal" && (
+                  <>
+                    <div className="relative rounded-2xl overflow-hidden">
+                      <Image
+                        src="https://vzun.in/wp-content/uploads/2021/06/bifocal-lenses.png"
+                        alt="Bifocal Lenses"
+                        width={500}
+                        height={200}
+                        className="w-full h-32 object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                    
+                    <p className="text-gray-600 text-center">
+                      Bifocal lenses have two distinct optical zones for distance and reading. You can visibly see the division line.
+                    </p>
+                    
+                    <button
+                      onClick={() => saveAndRedirect("mf-bifocal")}
+                      disabled={isProcessing}
+                      className="w-full py-4 px-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    >
+                      {isProcessing ? (
+                        <div className="flex items-center justify-center gap-3">
+                          <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                          Processing...
+                        </div>
+                      ) : (
+                        <div className="flex items-center justify-center gap-2">
+                          Select Bifocal Glasses
+                          <span className="text-blue-200">→</span>
+                        </div>
+                      )}
+                    </button>
+                  </>
+                )}
+              </div>
+            )}
           </div>
         );
+
       default:
         return null;
     }
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/30 relative overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/30 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-cyan-200/20 to-blue-200/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-200/20 to-purple-200/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-200/20 to-pink-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-emerald-200/20 to-teal-200/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
       </div>
 
       <div className="relative z-10 p-4 sm:p-6 lg:p-8">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-8 sm:mb-12">
-            <div className="inline-flex items-center gap-3 mb-4">
-              <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-lg shadow-blue-400/50"></div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-slate-800 via-blue-800 to-purple-800 bg-clip-text text-transparent">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-lg"></div>
+              <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-slate-800 via-blue-800 to-purple-800 bg-clip-text text-transparent">
                 Choose Your Vision Type
               </h1>
-              <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full shadow-lg shadow-purple-400/50"></div>
+              <div className="w-3 h-3 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full shadow-lg"></div>
             </div>
-            <p className="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-slate-600 text-xl max-w-2xl mx-auto leading-relaxed">
               Select the perfect lens solution tailored to your vision needs
             </p>
           </div>
 
           {/* Vision Type Selection */}
           {lensType === "sv" || lensType === "mf" ? (
-            <div className="grid gap-4 sm:gap-6 mb-8 max-w-2xl mx-auto">
-              <button
-                onClick={() => handleSelect("far")}
-                className="group p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-200/40 hover:border-purple-400/60 backdrop-blur-sm shadow-lg hover:shadow-purple-500/20 transform hover:scale-105 transition-all duration-300"
-              >
-                <div className="flex items-center justify-center gap-4">
-                  <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform duration-300">
-                    🔭
-                  </span>
-                  <div className="text-left">
-                    <h3 className="text-xl sm:text-2xl font-bold text-purple-700 mb-1">
-                      Far Vision
-                    </h3>
-                    <p className="text-slate-600 text-sm sm:text-base">
-                      Perfect for distance clarity
-                    </p>
-                  </div>
-                  <span className="text-purple-400 group-hover:translate-x-1 transition-transform duration-300 ml-auto">
-                    →
-                  </span>
-                </div>
-              </button>
-
-              <button
-                onClick={() => handleSelect("near")}
-                className="group p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-200/40 hover:border-cyan-400/60 backdrop-blur-sm shadow-lg hover:shadow-cyan-500/20 transform hover:scale-105 transition-all duration-300"
-              >
-                <div className="flex items-center justify-center gap-4">
-                  <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform duration-300">
-                    👓
-                  </span>
-                  <div className="text-left">
-                    <h3 className="text-xl sm:text-2xl font-bold text-cyan-700 mb-1">
-                      Near Vision
-                    </h3>
-                    <p className="text-slate-600 text-sm sm:text-base">
-                      Ideal for reading and close work
-                    </p>
-                  </div>
-                  <span className="text-cyan-400 group-hover:translate-x-1 transition-transform duration-300 ml-auto">
-                    →
-                  </span>
-                </div>
-              </button>
-
-              {lensType === "mf" && (
-                <>
+            <div className="grid gap-6 max-w-3xl mx-auto">
+              {visionTypes.map((vision) => {
+                // Filter based on lens type
+                if (lensType === "sv" && vision.id === "combined") return null;
+                
+                return (
                   <button
-                    onClick={() => handleSelect("combined")}
-                    className="group p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-200/40 hover:border-emerald-400/60 backdrop-blur-sm shadow-lg hover:shadow-emerald-500/20 transform hover:scale-105 transition-all duration-300"
+                    key={vision.id}
+                    onClick={() => handleSelect(vision.id)}
+                    className={`group relative p-8 rounded-3xl bg-gradient-to-r ${vision.bgGradient} border-2 border-white/60 backdrop-blur-sm shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 overflow-hidden`}
                   >
-                    <div className="flex items-center justify-center gap-4">
-                      <span className="text-3xl sm:text-4xl group-hover:scale-110 transition-transform duration-300">
-                        🔁
-                      </span>
-                      <div className="text-left">
-                        <h3 className="text-xl sm:text-2xl font-bold text-emerald-700 mb-1">
-                          Combined Vision
+                    {/* Animated background gradient */}
+                    <div className={`absolute inset-0 bg-gradient-to-r ${vision.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                    
+                    <div className="relative z-10 flex items-center gap-6">
+                      <div className="text-5xl group-hover:scale-110 transition-transform duration-300">
+                        {vision.icon}
+                      </div>
+                      
+                      <div className="flex-1 text-left">
+                        <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-gray-900 transition-colors">
+                          {vision.title}
                         </h3>
-                        <p className="text-slate-600 text-sm sm:text-base">
-                          Near + Far in one lens
+                        <p className="text-gray-600 text-lg group-hover:text-gray-700 transition-colors">
+                          {vision.subtitle}
                         </p>
                       </div>
-                      <span className="text-emerald-400 group-hover:translate-x-1 transition-transform duration-300 ml-auto">
-                        →
-                      </span>
+                      
+                      <div className="text-gray-400 group-hover:text-gray-600 group-hover:translate-x-2 transition-all duration-300">
+                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
                     </div>
                   </button>
-                </>
-              )}
+                );
+              })}
             </div>
           ) : (
             <div className="text-center">
-              <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-slate-100 to-slate-200 rounded-2xl">
-                <div className="animate-spin w-5 h-5 border-2 border-slate-400 border-t-transparent rounded-full"></div>
-                <span className="text-slate-600 font-medium">
+              <div className="inline-flex items-center gap-3 px-8 py-4 bg-white/80 backdrop-blur-sm rounded-2xl border border-white/60 shadow-lg">
+                <div className="animate-spin w-6 h-6 border-2 border-slate-400 border-t-transparent rounded-full"></div>
+                <span className="text-slate-700 font-medium text-lg">
                   Loading lens options...
                 </span>
               </div>
             </div>
           )}
-
-          {/* Vision Info Display */}
-          <div className="max-w-3xl mx-auto">{renderInfo()}</div>
         </div>
       </div>
+
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            {/* Modal Header */}
+            <div className="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 p-6 rounded-t-3xl">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="text-3xl">
+                    {visionTypes.find(v => v.id === selectedVisionType)?.icon}
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-bold text-gray-800">
+                      {visionTypes.find(v => v.id === selectedVisionType)?.title}
+                    </h2>
+                    <p className="text-gray-600">
+                      {visionTypes.find(v => v.id === selectedVisionType)?.subtitle}
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={closeModal}
+                  className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200"
+                >
+                  <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6">
+              {renderModalContent()}
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
