@@ -175,7 +175,7 @@ const LensSelectionPage = () => {
     const fetchLensData = async () => {
       try {
         setLoading(true);
-        const response = await fetch("/data/robecoData.json");
+        const response = await fetch("/data/shivaOpticiansLensData.json");
         if (!response.ok) {
           throw new Error("Failed to fetch lens data");
         }
