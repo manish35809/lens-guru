@@ -1,9 +1,9 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Clock, Award, Star } from "lucide-react";
 import Link from "next/link";
 import WhatsAppShareButton from "./WhatsappShare";
 
-export default function LensCard({ lens, index, userLensType, prescription }) {
+export default function LensCard({ lens, index, userLensType, prescription, compact = false }) {
   const [hoveredFeature, setHoveredFeature] = useState(null);
 
   // Feature descriptions for tooltips
@@ -25,7 +25,6 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
     extendedDurability:
       "Built to withstand the test of time with enhanced materials that resist wear and tear from daily use.",
   };
-
 
   const features = [
     {
@@ -63,7 +62,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
     {
       key: "photochromic",
       id: "photochromic",
-      label: "Photo Active",
+      label: "Photochromic",
       color: "amber",
       icon: "palette",
       gradient: "from-amber-500 to-amber-600",
@@ -130,28 +129,25 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
 
   return (
     <div
-      key={lens.id}
-      className="flex-none w-1/2 bg-white/80 backdrop-blur-sm group transform hover:-translate-y-2 hover:scale-[1.02] rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-200/50 hover:border-blue-300/50"
+      className="bg-white/90 backdrop-blur-sm group transform hover:-translate-y-1 hover:scale-[1.02] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-slate-200/50 hover:border-blue-300/50 h-fit"
       style={{
-        animation: `slideInFromRight 0.6s ease-out ${index * 0.1}s both`,
+        animation: `slideInFromBottom 0.6s ease-out ${index * 0.1}s both`,
       }}
-      id="card"
     >
-      <div className="flex flex-col">
-        
+      <div className="flex flex-col h-full">
 
         {/* Content Section */}
-        <div className="p-6">
+        <div className={`p-4 flex-1 flex flex-col ${compact ? 'space-y-3' : 'space-y-4'}`}>
           {/* Header Section */}
-          <div className="flex flex-col justify-between mb-4 gap-3">
-           <div>
+          <div className="space-y-3">
+            <div>
   <div className="flex items-start justify-between gap-4">
     <h3
       className={`
         font-black leading-tight tracking-tight 
         flex-1 animate-gradient bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
         bg-clip-text text-transparent
-        text-xl
+        ${compact ? 'text-base sm:text-lg md:text-xl' : 'text-lg sm:text-xl md:text-2xl'}
       `}
     >
       {lens.name}
@@ -163,7 +159,8 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
 </div>
 
             {/* Price Section */}
-            <div className="relative group">
+{/* Price Section */}
+<div className="relative group">
   <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm"></div>
   <div className="relative flex items-center justify-between bg-white/80 backdrop-blur-sm p-3 rounded-xl border border-gray-200/50 shadow-md transition-all duration-300 hover:shadow-lg hover:border-emerald-200/50">
     <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-emerald-500 to-cyan-500 rounded-l-xl opacity-60"></div>
@@ -172,12 +169,9 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
     <div className="flex flex-col relative z-10">
       <div className="text-gray-500 text-xs font-medium mb-1">SRP</div>
       <div className="flex items-baseline space-x-2">
-        <span className="text-lg font-bold bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent font-mono">
-  ₹{lens.srp}
-</span>
-
-
-
+        <span className={`text-gray-900 font-bold ${compact ? 'text-lg' : 'text-xl'}`}>
+          ₹{lens.srp.toLocaleString()}
+        </span>
         <div className="w-6 h-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"></div>
       </div>
     </div>
@@ -197,14 +191,15 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
   </div>
 </div>
 
+
           </div>
 
-          {/* Key Features - Responsive Design */}
-          <div className={`grid grid-cols-3 gap-2 text-xs mb-4`}>
+          {/* Key Info Grid */}
+          <div className={`grid grid-cols-3 gap-2 ${compact ? 'text-xs' : 'text-sm'}`}>
             {/* Index */}
             <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-xl border border-amber-200/60 p-2 text-center">
               <div className="flex items-center justify-center mb-1">
-                <Award size={ 12 } className="text-amber-600" />
+                <Award size={compact ? 12 : 14} className="text-amber-600" />
               </div>
               <div className="text-amber-600 font-semibold text-xs">Index</div>
               <div className="font-bold text-slate-900">{lens.thickness.index}</div>
@@ -213,7 +208,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
             {/* Warranty */}
             <div className="bg-gradient-to-br from-emerald-50 to-emerald-100/50 rounded-xl border border-emerald-200/60 p-2 text-center">
               <div className="flex items-center justify-center mb-1">
-                <Star size={12} className="text-emerald-600" />
+                <Star size={compact ? 12 : 14} className="text-emerald-600" />
               </div>
               <div className="text-emerald-600 font-semibold text-xs">Warranty</div>
               <div className="font-bold text-slate-900">{lens.lensCoatingWarranty}M</div>
@@ -222,7 +217,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
             {/* Delivery */}
             <div className="bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 p-2 text-center">
               <div className="flex items-center justify-center mb-1">
-                <Clock size={12} className="text-blue-600" />
+                <Clock size={compact ? 12 : 14} className="text-blue-600" />
               </div>
               <div className="text-blue-600 font-semibold text-xs">
                 {lens.time === "0" ? "Available" : "Days"}
@@ -234,15 +229,18 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
           </div>
 
           {/* Protection Features */}
-          {/* Protection Features */}
           {availableFeatures.length > 0 && (
             <div className="space-y-2">
-              <h4 className={`font-bold text-gray-900 flex items-center gap-2 text-sm`}>
+              <h4 className={`font-bold text-gray-900 flex items-center gap-2 ${compact ? 'text-sm' : 'text-base'}`}>
                 <div className="w-1 h-4 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
                 Features
               </h4>
 
-              <div className={`grid gap-2 grid-cols-3`}>
+              <div className={`grid gap-2 ${
+                compact 
+                  ? availableFeatures.length <= 4 ? 'grid-cols-2' : 'grid-cols-3'
+                  : availableFeatures.length <= 6 ? 'grid-cols-3' : 'grid-cols-4'
+              }`}>
                 {availableFeatures.map((feature) => (
                   <Link
                     key={feature.key}
@@ -251,8 +249,8 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                     rel="noopener noreferrer"
                   >
                     <div
-                      className={`group relative flex flex-col items-center justify-center rounded-xl bg-white border-2 border-gray-100 hover:border-gray-200 transition-all duration-300 cursor-help hover:shadow-md hover:scale-105 
-                        p-2 min-h-[70px]
+                      className={`group relative flex flex-col items-center justify-center rounded-xl bg-white border-2 border-gray-100 hover:border-gray-200 transition-all duration-300 cursor-help hover:shadow-md hover:scale-105 ${
+                        compact ? 'p-2 min-h-[70px]' : 'p-3 min-h-[80px]'
                       }`}
                       onMouseEnter={() => setHoveredFeature(feature.key)}
                       onMouseLeave={() => setHoveredFeature(null)}
@@ -260,13 +258,13 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                       {/* Icon Container */}
                       <div
                         className={`flex items-center justify-center rounded-xl mb-1 transition-all duration-300 group-hover:scale-110 bg-gradient-to-r ${feature.gradient} shadow-md ${
-                          'w-6 h-6'
+                          compact ? 'w-6 h-6' : 'w-8 h-8'
                         }`}
                       >
                         {/* Icon SVGs */}
                         {feature.icon === "shield" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -281,7 +279,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "filter" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -296,7 +294,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "sun" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -311,7 +309,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "eye" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -332,7 +330,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "droplets" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -347,7 +345,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "palette" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -362,7 +360,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "sun-dim" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -377,7 +375,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "fingerprint" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -392,7 +390,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "wind" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -407,7 +405,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "shield-check" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -422,7 +420,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "drive" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -437,7 +435,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                         )}
                         {feature.icon === "lowReflex" && (
                           <svg
-                            className={`text-white w-3 h-3`}
+                            className={`text-white ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -453,9 +451,9 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                       </div>
 
                       {/* Feature Label */}
-                      <span className={`font-bold text-center leading-tight text-gray-700 group-hover:text-gray-900 transition-colors duration-300
-                        text-xs
-                      `}>
+                      <span className={`font-bold text-center leading-tight text-gray-700 group-hover:text-gray-900 transition-colors duration-300 ${
+                        compact ? 'text-xs' : 'text-xs'
+                      }`}>
                         {feature.label}
                       </span>
 
@@ -477,10 +475,9 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
           )}
 
           {/* Photochromic Colors */}
-          {/* Photochromic Colors */}
           {lens.photochromic && lens.photochromicColors && lens.photochromicColors.length > 0 && (
-            <div className="space-y-2 mt-4">
-              <h4 className={`font-bold text-gray-900 flex items-center gap-2 text-sm`}>
+            <div className="space-y-2">
+              <h4 className={`font-bold text-gray-900 flex items-center gap-2 ${compact ? 'text-sm' : 'text-base'}`}>
                 <div className="w-1 h-4 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></div>
                 Colors
               </h4>
@@ -506,12 +503,12 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                   return (
                     <div
                       key={colorIndex}
-                      className={`flex items-center gap-1 px-2 py-1 bg-white hover:bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-200 cursor-default
-                        text-sm
-                      `}
+                      className={`flex items-center gap-1 px-2 py-1 bg-white hover:bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-200 cursor-default ${
+                        compact ? 'text-xs' : 'text-sm'
+                      }`}
                     >
                       <div
-                        className={`rounded-full ring-1 ring-gray-200 w-3 h-3`}
+                        className={`rounded-full ring-1 ring-gray-200 ${compact ? 'w-3 h-3' : 'w-4 h-4'}`}
                         style={{ backgroundColor: colorHex }}
                       ></div>
                       <span className="text-gray-800 truncate">{color}</span>
@@ -521,37 +518,60 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
               </div>
             </div>
           )}
-          {/* Action Buttons */}
-          {userLensType === "mf-progressive" && lens.name.includes("Pro") && (
-            <Link
-              href="/pro-design"
-              className="w-full bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700 hover:from-blue-700 hover:via-purple-700 hover:to-purple-800 text-white font-bold py-3 px-6 rounded-2xl transition-all duration-300 text-base shadow-xl hover:shadow-2xl transform hover:-translate-y-1 active:scale-95 relative overflow-hidden group block"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="relative z-10 flex items-center justify-center gap-2">
-                Compare Lens Design
-                <svg
-                  className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-            </Link>
-          )}
 
-          <WhatsAppShareButton lens={lens} prescription={prescription} />
+          {/* Action Buttons */}
+          <div className="mt-auto space-y-2">
+            {userLensType === "mf-progressive" && lens.name.includes("Pro") && (
+              <Link
+                href="/pro-design"
+                className="w-full bg-gradient-to-r from-blue-600 via-blue-700 to-purple-700 hover:from-blue-700 hover:via-purple-700 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:scale-95 relative overflow-hidden group block text-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="relative z-10 flex items-center justify-center gap-2 text-sm">
+                  Compare Lens Design
+                  <svg
+                    className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              </Link>
+            )}
+
+            <WhatsAppShareButton lens={lens} prescription={prescription} compact={compact} />
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes slideInFromBottom {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .line-clamp-2 {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      `}</style>
     </div>
   );
 }

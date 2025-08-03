@@ -145,18 +145,21 @@ const LensSelectionPage = () => {
   }
 
   const scroll = (direction) => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      const cardWidth = 520; // card width + gap
-      const scrollAmount = cardWidth * 1; // scroll by 1 card
+  const container = scrollContainerRef.current;
+  if (!container) return;
 
-      if (direction === "left") {
-        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-      } else {
-        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-      }
-    }
-  };
+  const screenWidth = window.innerWidth;
+
+  // Scroll by half of the screen width (adjustable with a fixed margin)
+  const offset = 15; // adjust this as needed
+  const scrollAmount = (screenWidth / 2) - offset;
+
+  container.scrollBy({
+    left: direction === "left" ? -scrollAmount : scrollAmount,
+    behavior: "smooth",
+  });
+};
+
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -1034,7 +1037,7 @@ const LensSelectionPage = () => {
           {/* Main Content */}
           <div className="flex-1">
             {/* Lens Cards Carousel */}
-            <div className="relative max-w-7xl mx-auto px-4">
+            <div className="relative max-w-screen px-4">
               {/* Navigation Buttons */}
               <button
                 onClick={() => scroll("left")}
