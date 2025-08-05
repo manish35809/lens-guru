@@ -26,7 +26,6 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
       "Built to withstand the test of time with enhanced materials that resist wear and tear from daily use.",
   };
 
-
   const features = [
     {
       key: "resistScratches",
@@ -126,7 +125,7 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
     },
   ];
 
-  const availableFeatures = features.filter(feature => lens[feature.key]);
+  const availableFeatures = features.filter((feature) => lens[feature.key]);
 
   return (
     <div
@@ -138,65 +137,62 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
       id="card"
     >
       <div className="flex flex-col">
-        
-
         {/* Content Section */}
         <div className="p-6">
           {/* Header Section */}
           <div className="flex flex-col justify-between mb-4 gap-3">
-           <div>
-  <div className="flex items-start justify-between gap-4">
-    <h3
-      className={`
+            <div>
+              <div className="flex items-start justify-between gap-4">
+                <h3
+                  className={`
         font-black leading-tight tracking-tight 
         flex-1 animate-gradient bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 
         bg-clip-text text-transparent
         text-xl
       `}
-    >
-      {lens.name}
-    </h3>
-    <div className="flex-shrink-0 px-2 py-1 bg-gradient-to-r from-purple-500 to-blue-600 text-white text-xs font-bold rounded-lg shadow-md text-center">
-      {lens.brand}
-    </div>
-  </div>
-</div>
+                >
+                  {lens.name}
+                </h3>
+                <div className="flex-shrink-0 px-2 py-1 bg-gradient-to-r from-purple-500 to-blue-600 text-white text-xs font-bold rounded-lg shadow-md text-center">
+                  {lens.brand}
+                </div>
+              </div>
+            </div>
 
             {/* Price Section */}
             <div className="relative group">
-  <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm"></div>
-  <div className="relative flex items-center justify-between bg-white/80 backdrop-blur-sm p-3 rounded-xl border border-gray-200/50 shadow-md transition-all duration-300 hover:shadow-lg hover:border-emerald-200/50">
-    <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-emerald-500 to-cyan-500 rounded-l-xl opacity-60"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm"></div>
+              <div className="relative flex items-center justify-between bg-white/80 backdrop-blur-sm p-3 rounded-xl border border-gray-200/50 shadow-md transition-all duration-300 hover:shadow-lg hover:border-emerald-200/50">
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-emerald-500 to-cyan-500 rounded-l-xl opacity-60"></div>
 
-    {/* Left Side - SRP */}
-    <div className="flex flex-col relative z-10">
-      <div className="text-gray-500 text-xs font-medium mb-1">SRP</div>
-      <div className="flex items-baseline space-x-2">
-        <span className="text-lg font-bold bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent font-mono">
-  ₹{lens.srp}
-</span>
+                {/* Left Side - SRP */}
+                <div className="flex flex-col relative z-10">
+                  <div className="text-gray-500 text-xs font-medium mb-1">
+                    SRP
+                  </div>
+                  <div className="flex items-baseline space-x-2">
+                    <span className="text-lg font-bold bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent font-mono">
+                      ₹{lens.srp}
+                    </span>
 
+                    <div className="w-6 h-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"></div>
+                  </div>
+                </div>
 
-
-        <div className="w-6 h-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"></div>
-      </div>
-    </div>
-
-    {/* Right Side - Best Price & Country */}
-    <div className="flex flex-col items-center relative z-10">
-      <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white px-2 py-1 rounded-full text-xs font-medium shadow-sm mb-2">
-        Best Price
-      </div>
-      <div className="flex items-center gap-1 text-xs text-center">
-        <div className="w-1.5 h-1.5 bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full"></div>
-        <span className="font-semibold text-slate-700 truncate">
-          Made in {lens.lensMaterialCountry}
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-
+                {/* Right Side - Best Price & Country */}
+                <div className="flex flex-col items-center relative z-10">
+                  <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white px-2 py-1 rounded-full text-xs font-medium shadow-sm mb-2">
+                    Best Price
+                  </div>
+                  <div className="flex items-center gap-1 text-xs text-center">
+                    <div className="w-1.5 h-1.5 bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full"></div>
+                    <span className="font-semibold text-slate-700 truncate">
+                      Made in {lens.lensMaterialCountry}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Key Features - Responsive Design */}
@@ -204,10 +200,12 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
             {/* Index */}
             <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-xl border border-amber-200/60 p-2 text-center">
               <div className="flex items-center justify-center mb-1">
-                <Award size={ 12 } className="text-amber-600" />
+                <Award size={12} className="text-amber-600" />
               </div>
               <div className="text-amber-600 font-semibold text-xs">Index</div>
-              <div className="font-bold text-slate-900">{lens.thickness.index}</div>
+              <div className="font-bold text-slate-900">
+                {lens.thickness.index}
+              </div>
             </div>
 
             {/* Warranty */}
@@ -215,8 +213,12 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
               <div className="flex items-center justify-center mb-1">
                 <Star size={12} className="text-emerald-600" />
               </div>
-              <div className="text-emerald-600 font-semibold text-xs">Warranty</div>
-              <div className="font-bold text-slate-900">{lens.lensCoatingWarranty}M</div>
+              <div className="text-emerald-600 font-semibold text-xs">
+                Warranty
+              </div>
+              <div className="font-bold text-slate-900">
+                {lens.lensCoatingWarranty}M
+              </div>
             </div>
 
             {/* Delivery */}
@@ -237,7 +239,9 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
           {/* Protection Features */}
           {availableFeatures.length > 0 && (
             <div className="space-y-2">
-              <h4 className={`font-bold text-gray-900 flex items-center gap-2 text-sm`}>
+              <h4
+                className={`font-bold text-gray-900 flex items-center gap-2 text-sm`}
+              >
                 <div className="w-1 h-4 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
                 Features
               </h4>
@@ -259,9 +263,9 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                     >
                       {/* Icon Container */}
                       <div
-                        className={`flex items-center justify-center rounded-xl mb-1 transition-all duration-300 group-hover:scale-110 bg-gradient-to-r ${feature.gradient} shadow-md ${
-                          'w-6 h-6'
-                        }`}
+                        className={`flex items-center justify-center rounded-xl mb-1 transition-all duration-300 group-hover:scale-110 bg-gradient-to-r ${
+                          feature.gradient
+                        } shadow-md ${"w-6 h-6"}`}
                       >
                         {/* Icon SVGs */}
                         {feature.icon === "shield" && (
@@ -453,9 +457,11 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                       </div>
 
                       {/* Feature Label */}
-                      <span className={`font-bold text-center leading-tight text-gray-700 group-hover:text-gray-900 transition-colors duration-300
+                      <span
+                        className={`font-bold text-center leading-tight text-gray-700 group-hover:text-gray-900 transition-colors duration-300
                         text-xs
-                      `}>
+                      `}
+                      >
                         {feature.label}
                       </span>
 
@@ -471,56 +477,61 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
                     </div>
                   </Link>
                 ))}
-                
               </div>
             </div>
           )}
 
           {/* Photochromic Colors */}
           {/* Photochromic Colors */}
-          {lens.photochromic && lens.photochromicColors && lens.photochromicColors.length > 0 && (
-            <div className="space-y-2 mt-4">
-              <h4 className={`font-bold text-gray-900 flex items-center gap-2 text-sm`}>
-                <div className="w-1 h-4 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></div>
-                Colors
-              </h4>
-              <div className="flex flex-wrap gap-1">
-                {lens.photochromicColors.map((color, colorIndex) => {
-                  const colorMap = {
-                    blue: "#3b82f6",
-                    green: "#10b981",
-                    brown: "#92400e",
-                    gray: "#6b7280",
-                    grey: "#6b7280",
-                    black: "#374151",
-                    purple: "#8b5cf6",
-                    pink: "#ec4899",
-                    red: "#ef4444",
-                    orange: "#f97316",
-                    yellow: "#eab308",
-                  };
+          {lens.photochromic &&
+            lens.photochromicColors &&
+            lens.photochromicColors.length > 0 && (
+              <div className="space-y-2 mt-4">
+                <h4
+                  className={`font-bold text-gray-900 flex items-center gap-2 text-sm`}
+                >
+                  <div className="w-1 h-4 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></div>
+                  Colors
+                </h4>
+                <div className="flex flex-wrap gap-1">
+                  {lens.photochromicColors.map((color, colorIndex) => {
+                    const colorMap = {
+                      blue: "#3b82f6",
+                      green: "#10b981",
+                      brown: "#92400e",
+                      gray: "#6b7280",
+                      grey: "#6b7280",
+                      black: "#374151",
+                      purple: "#8b5cf6",
+                      pink: "#ec4899",
+                      red: "#ef4444",
+                      orange: "#f97316",
+                      yellow: "#eab308",
+                    };
 
-                  const normalizedColor = color.toLowerCase().replace("grey", "gray");
-                  const colorHex = colorMap[normalizedColor] || "#6b7280";
+                    const normalizedColor = color
+                      .toLowerCase()
+                      .replace("grey", "gray");
+                    const colorHex = colorMap[normalizedColor] || "#6b7280";
 
-                  return (
-                    <div
-                      key={colorIndex}
-                      className={`flex items-center gap-1 px-2 py-1 bg-white hover:bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-200 cursor-default
+                    return (
+                      <div
+                        key={colorIndex}
+                        className={`flex items-center gap-1 px-2 py-1 bg-white hover:bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-200 cursor-default
                         text-sm
                       `}
-                    >
-                      <div
-                        className={`rounded-full ring-1 ring-gray-200 w-3 h-3`}
-                        style={{ backgroundColor: colorHex }}
-                      ></div>
-                      <span className="text-gray-800 truncate">{color}</span>
-                    </div>
-                  );
-                })}
+                      >
+                        <div
+                          className={`rounded-full ring-1 ring-gray-200 w-3 h-3`}
+                          style={{ backgroundColor: colorHex }}
+                        ></div>
+                        <span className="text-gray-800 truncate">{color}</span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          )}
+            )}
           {/* Action Buttons */}
           {userLensType === "mf-progressive" && lens.name.includes("Pro") && (
             <Link

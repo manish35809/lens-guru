@@ -495,7 +495,7 @@ const LensSelectionPage = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Header */}
       <div className="bg-white shadow-lg border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 py-6">
+        <div className="mx-auto px-6 py-6">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Choose Your Perfect Lenses
           </h1>
@@ -505,7 +505,7 @@ const LensSelectionPage = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto">
         <div className="flex gap-8">
           {/* Filters Sidebar - keeping original structure */}
           {/* Floating Filter Bar - Add this at the bottom of your existing component */}
@@ -1032,9 +1032,6 @@ const LensSelectionPage = () => {
               </div>
             </div>
           </div>
-          {/* Add this state to your existing component */}
-          {/* const [activeFilterTab, setActiveFilterTab] = useState('materials'); */}
-          {/* Main Content */}
           <div className="flex-1">
             {/* Lens Cards Carousel */}
             <div className="relative max-w-screen px-4">
@@ -1058,7 +1055,7 @@ const LensSelectionPage = () => {
               {/* Carousel Container */}
               <div
                 ref={scrollContainerRef}
-                className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-8 py-10"
+                className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth px-8 py-10"
                 style={{
                   scrollbarWidth: "none",
                   msOverflowStyle: "none",
