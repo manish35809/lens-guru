@@ -1,0 +1,117 @@
+export const Features = [
+    {
+      key: "resistScratches",
+      id: "scratchresistant",
+      label: "Scratch Resistant",
+      color: "blue",
+      icon: "filter",
+      gradient: "from-blue-500 to-blue-600",
+    },
+    {
+      key: "reducesGlare",
+      id: "antiglare",
+      label: "Anti-Glare",
+      color: "purple",
+      icon: "sun",
+      gradient: "from-purple-500 to-purple-600",
+    },
+    {
+      key: "filterBlueVioletLight",
+      id: "bluelight",
+      label: "Blue Light Filter",
+      color: "indigo",
+      icon: "eye",
+      gradient: "from-indigo-500 to-indigo-600",
+    },
+    {
+      key: "repelsWater",
+      id: "waterrepellent",
+      label: "Water Repellent",
+      color: "cyan",
+      icon: "droplets",
+      gradient: "from-cyan-500 to-cyan-600",
+    },
+    {
+      key: "photochromic",
+      id: "photochromic",
+      label: "Photo Active",
+      color: "amber",
+      icon: "palette",
+      gradient: "from-amber-500 to-amber-600",
+    },
+    {
+      key: "sunUvProtection",
+      id: "uvprotection",
+      label: "UV Protection",
+      color: "orange",
+      icon: "sun-dim",
+      gradient: "from-orange-500 to-orange-600",
+    },
+    {
+      key: "resistSmudges",
+      id: "smudgeresistant",
+      label: "Smudge Resistant",
+      color: "green",
+      icon: "fingerprint",
+      gradient: "from-green-500 to-green-600",
+    },
+    {
+      key: "repelsDust",
+      id: "dustrepellent",
+      label: "Dust Repellent",
+      color: "pink",
+      icon: "wind",
+      gradient: "from-pink-500 to-pink-600",
+    },
+    {
+      key: "lowReflection",
+      id: "lowreflection",
+      label: "Low Reflection",
+      color: "blue",
+      icon: "lowReflex",
+      gradient: "from-blue-500 to-blue-600",
+    },
+    {
+      key: "drivePlus",
+      id: "driveplus",
+      label: "Drive+",
+      color: "purple",
+      icon: "drive",
+      gradient: "from-purple-500 to-purple-600",
+    },
+    {
+      key: "unbreakable",
+      id: "impactresistant",
+      label: "Unbreakable",
+      color: "red",
+      icon: "shield-check",
+      gradient: "from-red-500 to-red-600",
+    },
+    {
+      key: "extendedDurability",
+      id: "extendedDurability",
+      label: "Extended Durability",
+      color: "indigo",
+      icon: "shield",
+      gradient: "from-indigo-500 to-indigo-600",
+    }
+  ]
+
+export const FeatureDescriptions = {
+    resistScratches:
+      "Advanced scratch-resistant coating protects your lenses from daily wear and tear",
+    reducesGlare:
+      "Anti-reflective coating reduces glare from screens and bright lights",
+    filterBlueVioletLight:
+      "Filters harmful blue-violet light while allowing beneficial blue light",
+    repelsWater: "Hydrophobic coating makes water bead up and roll off easily",
+    repelsDust: "Anti-static properties reduce dust and dirt accumulation",
+    sunUvProtection: "Blocks 100% of harmful UV rays to protect your eyes",
+    photochromic: "Automatically darkens in sunlight and clears indoors",
+    resistSmudges: "Oleophobic coating resists fingerprints and smudges",
+    unbreakable: "Impact-resistant material for enhanced safety and durability",
+    lowReflection: "Minimizes glare and reduces eye strain",
+    drivePlus: "Enhanced UV protection and scratch resistance",
+    extendedDurability:
+      "Built to withstand the test of time with enhanced materials that resist wear and tear from daily use.",
+  };
