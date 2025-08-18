@@ -331,11 +331,11 @@ const LensSelectionPage = () => {
 
       validLenses.forEach((lens) => {
         const lensName = lens.name; // Assuming the lens object has a 'name' property
-        const lensPrice = parseFloat(lens.specialPrice) || 0; // Assuming the lens object has a 'price' property
+        const lensPrice = parseFloat(lens.srp) || 0; // Assuming the lens object has a 'price' property
 
         if (
           !lensMap.has(lensName) ||
-          lensPrice < parseFloat(lensMap.get(lensName).specialPrice)
+          lensPrice < parseFloat(lensMap.get(lensName).srp)
         ) {
           lensMap.set(lensName, lens);
         }
@@ -424,7 +424,7 @@ const LensSelectionPage = () => {
     filtered.sort((a, b) => {
       switch (sortBy) {
         case "price":
-          return a.specialPrice - b.specialPrice;
+          return a.srp - b.srp;
         case "delivery":
           return a.time - b.time;
         default:
