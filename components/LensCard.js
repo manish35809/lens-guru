@@ -5,6 +5,18 @@ import WhatsAppShareButton from "./WhatsappShare";
 import { Features, FeatureDescriptions } from "@/data/Features";
 
 export default function LensCard({ lens, index, userLensType, prescription }) {
+
+  const discountPercent = Math.round(((lens.srp - lens.specialPrice) / lens.srp) * 100);
+  const savings = lens.srp - lens.specialPrice;
+
+   const getThicknessLabel = (index) => {
+    const indexNum = parseFloat(index);
+    if (indexNum >= 1.50 && indexNum <= 1.56) return "Standard";
+    if (indexNum >= 1.60 && indexNum <= 1.61) return "Thin";
+    if (indexNum >= 1.67 && indexNum <= 1.74) return "Thinnest";
+    return "Standard";
+  };
+
   const [hoveredFeature, setHoveredFeature] = useState(null);
 
   // Feature descriptions for tooltips
@@ -39,88 +51,105 @@ export default function LensCard({ lens, index, userLensType, prescription }) {
       `}
                 >
                   {lens.name}
-                </h3>
-                <div className="flex-shrink-0 px-3 py-2 bg-gradient-to-r from-purple-500 to-blue-600 text-white text-lg font-bold rounded-lg shadow-md text-center">
-                  {lens.brand}
-                </div>
+                </h3>                
               </div>
+              ({lens.brand})
             </div>
 
             {/* Price Section */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm"></div>
-              <div className="relative flex items-center justify-between bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-gray-200/50 shadow-md transition-all duration-300 hover:shadow-lg hover:border-emerald-200/50">
-                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-emerald-500 to-cyan-500 rounded-l-xl opacity-60"></div>
+              
+              
+<div className="relative flex flex-col gap-4 bg-white/90 backdrop-blur-sm p-4 rounded-2xl border border-gray-200/50 shadow-lg transition-all duration-300 hover:shadow-xl hover:border-emerald-300/50">
+  {/* Decorative accent line */}
+  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 via-cyan-500 to-blue-500 rounded-t-2xl" aria-hidden="true"></div>
 
-                {/* Left Side - SRP */}
-                <div className="flex flex-col relative z-10">
-                  <div className="text-gray-500 text-sm font-medium mb-1">
-                    SRP
-                  </div>
-                  <div className="flex items-baseline space-x-2">
-                    <span className="text-3xl font-bold bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent font-serif">
-                      ₹{lens.srp}
-                    </span>
+  {/* Top - Discount Badges */}
+  <div className="flex items-center justify-between gap-2 flex-wrap pt-2">
+    <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-red-500 to-pink-500 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md">
+      <span>{discountPercent}% OFF</span>
+    </div>
+    <div className="text-sm text-emerald-600 font-bold">
+      Save ₹{savings}
+    </div>
+  </div>
 
-                    <div className="w-6 h-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"></div>
-                  </div>
-                </div>
+  {/* Middle - Price Display */}
+  <div className="flex items-end justify-between gap-4">
+    <div className="flex flex-col gap-1">
+      <span className="text-5xl font-bold bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 bg-clip-text text-transparent leading-none">
+        ₹{lens.specialPrice}
+      </span>
+      <div className="flex items-baseline gap-2">
+        <span className="text-lg text-gray-400 line-through font-medium">
+          ₹{lens.srp}
+        </span>
+        <span className="text-xs text-gray-500">MRP</span>
+      </div>
+    </div>
+    
+    
+  </div>
 
-                {/* Right Side - Best Price & Country */}
-                <div className="flex flex-col items-center relative z-10">
-                  <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-sm mb-2">
-                    Best Price
-                  </div>
-                  <div className="flex items-center gap-1 text-sm text-center">
-                    <div className="w-1.5 h-1.5 bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full"></div>
-                    <span className="font-semibold text-slate-700 truncate">
-                      Made in {lens.lensMaterialCountry}
-                    </span>
-                  </div>
-                </div>
-              </div>
+  {/* Bottom - Info */}
+  <div className="flex items-center justify-between gap-2 pt-2 border-t border-gray-100">
+    <div className="text-xs text-gray-600 font-medium">
+      Inclusive of all taxes
+    </div>
+    <div className="flex items-center gap-2 text-xs bg-gray-50 px-2.5 py-1 rounded-lg border border-gray-200">
+      <div className="w-1.5 h-1.5 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-full" aria-hidden="true"></div>
+      <span className="font-semibold text-slate-700 whitespace-nowrap">
+        Made in {lens.lensMaterialCountry}
+      </span>
+    </div>
+  </div>
+</div>
+
             </div>
+            
           </div>
 
           {/* Key Features - Responsive Design */}
-          <div className={`grid grid-cols-3 gap-3 text-sm mb-4`}>
-            {/* Index */}
-            <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-xl border border-amber-200/60 p-3 text-center">
-              <div className="flex items-center justify-center mb-2">
-                <Award size={16} className="text-amber-600" />
-              </div>
-              <div className="text-amber-600 font-semibold text-sm">Index</div>
-              <div className="font-bold text-slate-900 text-base">
-                {lens.thickness.index}
-              </div>
+          <div className="w-full max-w-4xl mx-auto p-4">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4">
+        {/* Index */}
+        <div className="group bg-gradient-to-br from-amber-50 via-white to-amber-50/30 hover:from-amber-100 hover:to-amber-50 rounded-2xl border border-amber-200/60 shadow-sm hover:shadow-md transition-all duration-300 p-4">
+          <div className="flex flex-col items-center text-center space-y-2">
+            <div className="bg-amber-100 group-hover:bg-amber-200 rounded-full p-2.5 transition-colors duration-300">
+              <Award className="text-amber-600 group-hover:text-amber-700 transition-colors" size={18} />
             </div>
-
-            {/* Warranty */}
-            <div className="bg-gradient-to-br from-emerald-50 to-emerald-100/50 rounded-xl border border-emerald-200/60 p-3 text-center">
-              <div className="flex items-center justify-center mb-2">
-                <Star size={16} className="text-emerald-600" />
-              </div>
-              <div className="text-emerald-600 font-semibold text-sm">
-                Warranty
-              </div>
-              <div className="font-bold text-slate-900 text-base">
-                {lens.lensCoatingWarranty}M
-              </div>
+            <div className="text-amber-600 font-semibold text-xs uppercase tracking-wide">
+              Thickness
             </div>
-
-            {/* Delivery */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl border border-blue-200/60 p-3 text-center">
-              <div className="flex items-center justify-center mb-2">
-                <Clock size={16} className="text-blue-600" />
-              </div>
-              <div className="text-blue-600 font-semibold text-sm">
-                {lens.time === "0" ? "Available" : "Days"}
-              </div>
-              <div className="font-bold text-slate-900 text-base">
-                {lens.time === "0" ? "Today" : lens.time}
-              </div>
+            <div className="font-bold text-slate-900 text-lg">
+              {getThicknessLabel(lens.thickness.index)}
+            </div>
+            <div className="text-amber-600/70 text-xs font-medium">
+              Index {lens.thickness.index}
             </div>
           </div>
+        </div>
+
+        {/* Warranty */}
+        <div className="group bg-gradient-to-br from-emerald-50 via-white to-emerald-50/30 hover:from-emerald-100 hover:to-emerald-50 rounded-2xl border border-emerald-200/60 shadow-sm hover:shadow-md transition-all duration-300 p-4">
+          <div className="flex flex-col items-center text-center space-y-2">
+            <div className="bg-emerald-100 group-hover:bg-emerald-200 rounded-full p-2.5 transition-colors duration-300">
+              <Star className="text-emerald-600 group-hover:text-emerald-700 transition-colors" size={18} />
+            </div>
+            <div className="text-emerald-600 font-semibold text-xs uppercase tracking-wide">
+              Warranty
+            </div>
+            <div className="font-bold text-slate-900 text-2xl">
+              {lens.lensCoatingWarranty}
+            </div>
+            <div className="text-emerald-600/70 text-xs font-medium">
+              Month
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
           {/* Protection Features */}
           {/* Protection Features */}

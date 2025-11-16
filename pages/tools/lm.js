@@ -2,9 +2,9 @@ import { useState } from "react";
 import { FixedSizeGrid as Grid } from "react-window";
 import { Eye } from "lucide-react";
 
-const COLUMN_COUNT = 4;
-const CARD_HEIGHT = 620;
-const CARD_WIDTH = 365;
+const COLUMN_COUNT = 3;
+const CARD_HEIGHT = 460;
+const CARD_WIDTH = 408;
 const CHUNK_SIZE = 1000;
 
 // Options for select fields
@@ -242,128 +242,128 @@ export default function LensManager() {
     const rowCount = Math.ceil(data.length / COLUMN_COUNT);
 
     const Cell = ({ columnIndex, rowIndex, style }) => {
-  const index = rowIndex * COLUMN_COUNT + columnIndex;
-  if (index >= data.length) return null;
-  const lens = data[index];
+      const index = rowIndex * COLUMN_COUNT + columnIndex;
+      if (index >= data.length) return null;
+      const lens = data[index];
 
-  return (
-    <div style={style} className="p-2">
-      <div className="bg-white rounded-lg border border-gray-200 hover:border-gray-300 transition-colors duration-200 overflow-hidden">
-        {/* Image Section */}
-        <div className="relative">
-          <img
-            src={lens.poster}
-            alt={lens.name}
-            loading="lazy"
-            className="w-full h-32 object-cover"
-          />
-          <div className="absolute top-2 right-2 bg-white/80 rounded-full p-1">
-            <Eye size={14} className="text-gray-600" />
+      return (
+        <div style={style} className="p-2">
+          <div className="bg-white rounded-lg border border-gray-200 hover:border-gray-300 transition-colors duration-200 overflow-hidden">
+            {/* Image Section */}
+            <div className="relative">
+              <img
+                src={lens.poster}
+                alt={lens.name}
+                loading="lazy"
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute top-2 right-2 bg-white/80 rounded-full p-1">
+                <Eye size={14} className="text-gray-600" />
+              </div>
+            </div>
+
+            {/* Content Section */}
+            <div className="p-4">
+              {/* Header */}
+              <div className="mb-3">
+                <h3 className="font-semibold text-gray-900 text-base mb-1 line-clamp-1">
+                  {lens.name}
+                </h3>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="text-blue-600 font-medium">
+                    {getLensTypeLabel(lens.lensType)}
+                  </span>
+                  <span className="text-gray-500">{lens.brand}</span>
+                </div>
+              </div>
+
+              {/* Price Info */}
+              <div className="mb-3 p-2 bg-gray-50 rounded">
+                <div className="flex justify-between items-center mb-1">
+                  <span className="text-xs text-gray-500">SRP</span>
+                  <span className="text-sm line-through text-gray-400">
+                    ₹{lens.srp?.toLocaleString()}
+                  </span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-xs text-gray-500">Special Price</span>
+                  <span className="text-base font-semibold text-green-600">
+                    ₹{lens.specialPrice?.toLocaleString()}
+                  </span>
+                </div>
+              </div>
+
+              {/* Key Specs */}
+              <div className="space-y-1 mb-3 text-xs">
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Power Range:</span>
+                  <span className="text-gray-700 font-medium">
+                    {lens.powerRange?.rpMinus} to {lens.powerRange?.rpPlus}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Index:</span>
+                  <span className="text-gray-700 font-medium">
+                    {lens.thickness?.index}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-500">Warranty:</span>
+                  <span className="text-gray-700 font-medium">
+                    {lens.lensCoatingWarranty}m
+                  </span>
+                </div>
+              </div>
+
+              {/* Key Features - Condensed */}
+              <div className="mb-3">
+                <div className="flex flex-wrap gap-1">
+                  {lens.photochromic && (
+                    <span className="text-xs px-2 py-1 bg-purple-50 text-purple-700 rounded">
+                      Photo
+                    </span>
+                  )}
+                  {lens.filterBlueVioletLight && (
+                    <span className="text-xs px-2 py-1 bg-blue-50 text-blue-700 rounded">
+                      Blue Cut
+                    </span>
+                  )}
+                  {lens.reducesGlare && (
+                    <span className="text-xs px-2 py-1 bg-gray-50 text-gray-700 rounded">
+                      Anti-Glare
+                    </span>
+                  )}
+                  {lens.unbreakable && (
+                    <span className="text-xs px-2 py-1 bg-red-50 text-red-700 rounded">
+                      Poly
+                    </span>
+                  )}
+                  {lens.sunUvProtection && (
+                    <span className="text-xs px-2 py-1 bg-yellow-50 text-yellow-700 rounded">
+                      UV-P
+                    </span>
+                  )}
+                  {/* Show only top 3-4 features to keep it clean */}
+                  {(lens.repelsWater || lens.resistSmudges || lens.repelsDust) && (
+                    <span className="text-xs px-2 py-1 bg-cyan-50 text-cyan-700 rounded">
+                      Coated
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              {/* Action Button */}
+              <button
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded text-sm font-medium transition-colors duration-200"
+                onClick={() => handleEdit(lens)}
+              >
+                Edit Lens
+              </button>
+            </div>
           </div>
         </div>
-
-        {/* Content Section */}
-        <div className="p-4">
-          {/* Header */}
-          <div className="mb-3">
-            <h3 className="font-semibold text-gray-900 text-base mb-1 line-clamp-1">
-              {lens.name}
-            </h3>
-            <div className="flex items-center justify-between text-sm">
-              <span className="text-blue-600 font-medium">
-                {getLensTypeLabel(lens.lensType)}
-              </span>
-              <span className="text-gray-500">{lens.brand}</span>
-            </div>
-          </div>
-
-          {/* Price Info */}
-          <div className="mb-3 p-2 bg-gray-50 rounded">
-            <div className="flex justify-between items-center mb-1">
-              <span className="text-xs text-gray-500">SRP</span>
-              <span className="text-sm line-through text-gray-400">
-                ₹{lens.srp?.toLocaleString()}
-              </span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-xs text-gray-500">Special Price</span>
-              <span className="text-base font-semibold text-green-600">
-                ₹{lens.specialPrice?.toLocaleString()}
-              </span>
-            </div>
-          </div>
-
-          {/* Key Specs */}
-          <div className="space-y-1 mb-3 text-xs">
-            <div className="flex justify-between">
-              <span className="text-gray-500">Power Range:</span>
-              <span className="text-gray-700 font-medium">
-                {lens.powerRange?.rpMinus} to {lens.powerRange?.rpPlus}
-              </span>
-            </div>
-            <div className="flex justify-between">
-              <span className="text-gray-500">Index:</span>
-              <span className="text-gray-700 font-medium">
-                {lens.thickness?.index}
-              </span>
-            </div>
-            <div className="flex justify-between">
-              <span className="text-gray-500">Warranty:</span>
-              <span className="text-gray-700 font-medium">
-                {lens.lensCoatingWarranty}m
-              </span>
-            </div>
-          </div>
-
-          {/* Key Features - Condensed */}
-          <div className="mb-3">
-            <div className="flex flex-wrap gap-1">
-              {lens.photochromic && (
-                <span className="text-xs px-2 py-1 bg-purple-50 text-purple-700 rounded">
-                  Photo
-                </span>
-              )}
-              {lens.filterBlueVioletLight && (
-                <span className="text-xs px-2 py-1 bg-blue-50 text-blue-700 rounded">
-                  Blue Cut
-                </span>
-              )}
-              {lens.reducesGlare && (
-                <span className="text-xs px-2 py-1 bg-gray-50 text-gray-700 rounded">
-                  Anti-Glare
-                </span>
-              )}
-              {lens.unbreakable && (
-                <span className="text-xs px-2 py-1 bg-red-50 text-red-700 rounded">
-                  Poly
-                </span>
-              )}
-              {lens.sunUvProtection && (
-                <span className="text-xs px-2 py-1 bg-yellow-50 text-yellow-700 rounded">
-                  UV-P
-                </span>
-              )}
-              {/* Show only top 3-4 features to keep it clean */}
-              {(lens.repelsWater || lens.resistSmudges || lens.repelsDust) && (
-                <span className="text-xs px-2 py-1 bg-cyan-50 text-cyan-700 rounded">
-                  Coated
-                </span>
-              )}
-            </div>
-          </div>
-
-          {/* Action Button */}
-          <button
-            className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 px-4 rounded text-sm font-medium transition-colors duration-200"
-            onClick={() => handleEdit(lens)}
-          >
-            Edit Lens
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+      );
+    };
 
     return (
       <Grid

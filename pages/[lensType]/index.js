@@ -231,7 +231,7 @@ export default function LensTypePage() {
                   )}
                 </button>
                 
-                <button
+                {/* <button
                   onClick={() => saveAndRedirect("sv-far-contact")}
                   disabled={isProcessing}
                   className="w-full py-4 px-6 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
@@ -247,7 +247,8 @@ export default function LensTypePage() {
                       <span className="text-indigo-200">→</span>
                     </div>
                   )}
-                </button>
+                </button> */}
+                
               </div>
             </div>
           </div>
